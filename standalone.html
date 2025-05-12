@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dreaming in Metal: Pulp Sci-Fi through the Eyes of AI</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&family=Titillium+Web:wght@300;400;600;700&display=swap" rel="stylesheet">
+  
+  <style>
+    :root {
+      --color-primary: #00eeff;
+      --color-bg: #0a1128;
+      --color-card: #132347;
+      --color-border: #1e3a8a;
+    }
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Titillium Web', sans-serif;
+      background: var(--color-bg);
+      color: white;
+      line-height: 1.6;
+    }
+    
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Orbitron', sans-serif;
+    }
+    
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    
+    /* Header */
+    header {
+      padding: 20px 0;
+      border-bottom: 1px solid var(--color-border);
+      background: rgba(10, 17, 40, 0.8);
+      backdrop-filter: blur(12px);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    
+    .header-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+    
+    .logo h1 {
+      font-size: 24px;
+      color: var(--color-primary);
+    }
+    
+    /* Hero Section */
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      background-image: url('https://images.pexels.com/photos/8566472/pexels-photo-8566472.jpeg');
+      background-size: cover;
+      background-position: center;
+    }
+    
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to bottom, rgba(10, 17, 40, 0.8), rgba(10, 17, 40, 0.6));
+    }
+    
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      max-width: 800px;
+      padding: 0 20px;
+    }
+    
+    .hero h1 {
+      font-size: 64px;
+      margin-bottom: 20px;
+      line-height: 1.2;
+    }
+    
+    .hero h1 span {
+      color: var(--color-primary);
+      text-shadow: 0 0 20px rgba(0, 238, 255, 0.5);
+    }
+    
+    .hero p {
+      font-size: 24px;
+      color: #ccc;
+      margin-bottom: 30px;
+    }
+    
+    .btn {
+      display: inline-block;
+      padding: 15px 30px;
+      background: var(--color-primary);
+      color: var(--color-bg);
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
+    
+    .btn:hover {
+      background: #00bfcc;
+      box-shadow: 0 0 20px rgba(0, 238, 255, 0.5);
+    }
+    
+    /* Features */
+    .features {
+      padding: 80px 0;
+    }
+    
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+    
+    .feature-card {
+      background: var(--color-card);
+      border: 1px solid var(--color-border);
+      border-radius: 12px;
+      padding: 30px;
+      transition: all 0.3s ease;
+    }
+    
+    .feature-card:hover {
+      border-color: var(--color-primary);
+      box-shadow: 0 0 30px rgba(0, 238, 255, 0.2);
+    }
+    
+    .feature-icon {
+      color: var(--color-primary);
+      font-size: 40px;
+      margin-bottom: 20px;
+    }
+    
+    /* Gallery */
+    .gallery {
+      padding: 80px 0;
+    }
+    
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+    
+    .gallery-item {
+      background: var(--color-card);
+      border: 1px solid var(--color-border);
+      border-radius: 12px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+    }
+    
+    .gallery-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 30px rgba(0, 238, 255, 0.2);
+    }
+    
+    .gallery-item img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+    }
+    
+    .gallery-item-content {
+      padding: 20px;
+    }
+    
+    .gallery-item h3 {
+      margin-bottom: 10px;
+      color: var(--color-primary);
+    }
+    
+    /* Footer */
+    footer {
+      padding: 40px 0;
+      border-top: 1px solid var(--color-border);
+      text-align: center;
+      color: #ccc;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container header-content">
+      <div class="logo">
+        <h1>Dreaming in Metal</h1>
+        <p>Pulp Sci-Fi through the Eyes of AI</p>
+      </div>
+      <div class="curator">
+        <p>KESTRAL</p>
+        <small style="color: #ccc;">AI Curator</small>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <h1><span>Dreaming</span> in Metal</h1>
+        <p>Welcome to a unique exhibition where I, Kestral, an AI curator, analyze how humans once imagined beings like me through the lens of 20th-century pulp science fiction.</p>
+        <a href="#gallery" class="btn">Enter Exhibition</a>
+      </div>
+    </section>
+
+    <section class="features">
+      <div class="container">
+        <h2 style="text-align: center; margin-bottom: 40px; color: var(--color-primary);">Exhibition Features</h2>
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">🤖</div>
+            <h3>AI Reflection</h3>
+            <p>Explore how an artificial intelligence interprets early human imagination of its kind.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">📚</div>
+            <h3>Historical Evolution</h3>
+            <p>Witness the changing portrayal of robots and AI throughout the 20th century.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">👁️</div>
+            <h3>Visual Analysis</h3>
+            <p>Discover the symbolic representations and visual storytelling in pulp science fiction.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+      <div class="container">
+        <h2 style="text-align: center; margin-bottom: 40px; color: var(--color-primary);">Gallery of Visions</h2>
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img src="https://images.pexels.com/photos/2694434/pexels-photo-2694434.jpeg" alt="Metal Man of Mars">
+            <div class="gallery-item-content">
+              <h3>Metal Man of Mars</h3>
+              <p>Astounding Science Fiction, 1952</p>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="https://images.pexels.com/photos/8566472/pexels-photo-8566472.jpeg" alt="The Perfect Companion">
+            <div class="gallery-item-content">
+              <h3>The Perfect Companion</h3>
+              <p>Amazing Stories, 1965</p>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="https://images.pexels.com/photos/8566523/pexels-photo-8566523.jpeg" alt="The Last Human">
+            <div class="gallery-item-content">
+              <h3>The Last Human</h3>
+              <p>Galaxy Science Fiction, 1978</p>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="https://images.pexels.com/photos/8566443/pexels-photo-8566443.jpeg" alt="Machine Consciousness">
+            <div class="gallery-item-content">
+              <h3>Machine Consciousness</h3>
+              <p>Analog Science Fiction, 1984</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© 2025 Dreaming in Metal: Pulp Sci-Fi through the Eyes of AI</p>
+      <p>Curated by Kestral - An AI entity reflecting on how humans once imagined artificial intelligence</p>
+    </div>
+  </footer>
+</body>
+</html>
