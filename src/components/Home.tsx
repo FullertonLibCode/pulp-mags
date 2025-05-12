@@ -21,39 +21,75 @@ const Home: React.FC = () => {
         style={{ opacity }}
       >
         {/* Dream-like Background Elements */}
-        <div className="absolute inset-0 bg-gradient-to-b from-[#0a1128] via-[#132347] to-[#0a1128]">
-          <div className="absolute inset-0 bg-circuit-pattern opacity-20 animate-pulse-slow" />
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_-20%,#3b82f6_0%,#1e40af_50%,#1e3a8a_100%)]" />
+        <div className="absolute inset-0">
+          <div className="absolute inset-0 bg-gradient-to-b from-[#0a1128] via-[#132347] to-[#0a1128]" />
           
-          {/* Repeating Brain Pattern */}
-          <div className="absolute inset-0 grid grid-cols-4 gap-8 p-8 opacity-10">
-            {[...Array(16)].map((_, i) => (
-              <div key={i} className="relative animate-float" style={{ animationDelay: `${i * 0.2}s` }}>
-                <BrainCircuit className="w-full h-full text-[#00eeff]" />
-              </div>
-            ))}
-          </div>
-        </div>
-        
-        {/* Floating Elements */}
-        <div className="absolute inset-0 overflow-hidden">
-          {[...Array(5)].map((_, i) => (
+          {/* Organic Floating Elements */}
+          {[...Array(20)].map((_, i) => (
             <motion.div
               key={i}
-              className="absolute w-32 h-32 bg-[#00eeff] rounded-full filter blur-3xl opacity-10"
+              className="absolute"
+              initial={{
+                x: Math.random() * window.innerWidth,
+                y: Math.random() * window.innerHeight,
+              }}
               animate={{
-                x: [Math.random() * 100, Math.random() * -100],
-                y: [Math.random() * 100, Math.random() * -100],
-                scale: [1, 1.2, 1],
+                x: [
+                  Math.random() * window.innerWidth,
+                  Math.random() * window.innerWidth,
+                  Math.random() * window.innerWidth,
+                ],
+                y: [
+                  Math.random() * window.innerHeight,
+                  Math.random() * window.innerHeight,
+                  Math.random() * window.innerHeight,
+                ],
+                scale: [0.5, 1.5, 0.5],
+                opacity: [0.1, 0.3, 0.1],
               }}
               transition={{
-                duration: Math.random() * 5 + 5,
+                duration: Math.random() * 20 + 10,
                 repeat: Infinity,
                 repeatType: "reverse",
+                ease: "easeInOut",
               }}
+            >
+              <BrainCircuit 
+                className="text-[#00eeff]" 
+                style={{
+                  width: `${Math.random() * 50 + 20}px`,
+                  height: `${Math.random() * 50 + 20}px`,
+                  transform: `rotate(${Math.random() * 360}deg)`,
+                }}
+              />
+            </motion.div>
+          ))}
+
+          {/* Abstract Shapes */}
+          {[...Array(10)].map((_, i) => (
+            <motion.div
+              key={`shape-${i}`}
+              className="absolute rounded-full mix-blend-screen"
               style={{
+                background: `radial-gradient(circle at center, ${
+                  ['#00eeff', '#3b82f6', '#1e40af'][Math.floor(Math.random() * 3)]
+                }33, transparent)`,
+                width: `${Math.random() * 400 + 200}px`,
+                height: `${Math.random() * 400 + 200}px`,
                 left: `${Math.random() * 100}%`,
                 top: `${Math.random() * 100}%`,
+              }}
+              animate={{
+                scale: [1, 1.5, 1],
+                opacity: [0.1, 0.3, 0.1],
+                x: [0, Math.random() * 100 - 50, 0],
+                y: [0, Math.random() * 100 - 50, 0],
+              }}
+              transition={{
+                duration: Math.random() * 10 + 15,
+                repeat: Infinity,
+                repeatType: "reverse",
+                ease: "easeInOut",
               }}
             />
           ))}
@@ -99,11 +135,6 @@ const Home: React.FC = () => {
             </Link>
           </motion.div>
         </div>
-
-        {/* Animated Circuit Lines */}
-        <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute inset-0 bg-circuit-pattern opacity-20" />
-        </div>
       </motion.section>
 
       {/* Features Section with Dream-like Effects */}
@@ -139,14 +170,7 @@ const Home: React.FC = () => {
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6, delay: index * 0.2 }}
             >
-              <div 
-                className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
-                style={{ 
-                  backgroundImage: `url(${feature.image})`,
-                  filter: 'brightness(0.2) saturate(0.8)'
-                }}
-              />
-              <div className="relative bg-gradient-to-b from-[#132347]/80 to-[#132347]/95 p-8 h-full border border-[#1e3a8a] group-hover:border-[#00eeff] transition-colors duration-300">
+              <div className="relative bg-gradient-to-b from-[#132347]/90 to-[#132347] p-8 border border-[#1e3a8a] group-hover:border-[#00eeff] transition-colors duration-300">
                 {feature.icon}
                 <h2 className="text-2xl font-bold mb-3 font-heading text-white">{feature.title}</h2>
                 <p className="text-gray-300">{feature.description}</p>
