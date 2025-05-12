@@ -115,17 +115,17 @@ const Slideshow: React.FC<SlideshowProps> = ({ onClose, initialIndex = 0 }) => {
             
             <div className="space-y-6">
               <div>
-                <h4 className="font-semibold mb-2 text-white">Visual Observation</h4>
+                <h4 className="font-semibold mb-2 text-white">Robot Design Analysis</h4>
                 <p className="text-gray-300">{currentCover.analysis.observation}</p>
               </div>
               
               <div>
-                <h4 className="font-semibold mb-2 text-white">AI Depiction</h4>
+                <h4 className="font-semibold mb-2 text-white">Visual Design Elements</h4>
                 <p className="text-gray-300">{currentCover.analysis.aiDepiction}</p>
               </div>
               
               <div>
-                <h4 className="font-semibold mb-2 text-white">Cultural Context</h4>
+                <h4 className="font-semibold mb-2 text-white">Setting & Emotional Tone</h4>
                 <p className="text-gray-300">{currentCover.analysis.culturalContext}</p>
               </div>
               
