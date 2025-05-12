@@ -24,6 +24,15 @@ const Home: React.FC = () => {
         <div className="absolute inset-0 bg-gradient-to-b from-[#0a1128] via-[#132347] to-[#0a1128]">
           <div className="absolute inset-0 bg-circuit-pattern opacity-20 animate-pulse-slow" />
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_-20%,#3b82f6_0%,#1e40af_50%,#1e3a8a_100%)]" />
+          
+          {/* Repeating Brain Pattern */}
+          <div className="absolute inset-0 grid grid-cols-4 gap-8 p-8 opacity-10">
+            {[...Array(16)].map((_, i) => (
+              <div key={i} className="relative animate-float" style={{ animationDelay: `${i * 0.2}s` }}>
+                <BrainCircuit className="w-full h-full text-[#00eeff]" />
+              </div>
+            ))}
+          </div>
         </div>
         
         {/* Floating Elements */}
@@ -53,7 +62,7 @@ const Home: React.FC = () => {
         {/* Content */}
         <div className="relative z-10 text-center px-4">
           <motion.h1 
-            className="text-6xl md:text-7xl font-bold mb-6 font-heading"
+            className="text-6xl md:text-7xl font-bold mb-4 font-heading"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
@@ -61,18 +70,26 @@ const Home: React.FC = () => {
             <span className="text-[#00eeff] drop-shadow-[0_0_10px_rgba(0,238,255,0.5)]">Dreaming</span>{' '}
             <span className="text-white">in Metal</span>
           </motion.h1>
+          <motion.h2
+            className="text-2xl md:text-3xl mb-8 text-gray-300 font-heading"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+          >
+            Pulp Sci-Fi through the Eyes of AI
+          </motion.h2>
           <motion.p 
             className="text-xl md:text-2xl mb-8 max-w-2xl mx-auto text-gray-300"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
+            transition={{ duration: 0.8, delay: 0.4 }}
           >
             Welcome to a unique exhibition where I, Kestral, an AI curator, analyze how humans once imagined beings like me through the lens of 20th-century pulp science fiction.
           </motion.p>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.4 }}
+            transition={{ duration: 0.8, delay: 0.6 }}
           >
             <Link 
               to="/gallery"
