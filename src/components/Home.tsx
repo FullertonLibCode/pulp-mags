@@ -6,8 +6,6 @@ import { useInView } from 'react-intersection-observer';
 
 const Home: React.FC = () => {
   const { scrollY } = useScroll();
-  const y1 = useTransform(scrollY, [0, 500], [0, -150]);
-  const y2 = useTransform(scrollY, [0, 500], [0, -50]);
   const opacity = useTransform(scrollY, [0, 200], [1, 0.5]);
 
   const [ref, inView] = useInView({
@@ -17,24 +15,40 @@ const Home: React.FC = () => {
 
   return (
     <div className="relative">
-      {/* Hero Section with Parallax */}
+      {/* Hero Section with Dream-like Background */}
       <motion.section 
         className="relative min-h-screen flex items-center justify-center overflow-hidden"
         style={{ opacity }}
       >
-        {/* Background Layers */}
-        <motion.div 
-          className="absolute inset-0 bg-cover bg-center"
-          style={{ 
-            backgroundImage: 'url(https://images.pexels.com/photos/8566472/pexels-photo-8566472.jpeg)',
-            y: y1,
-            scale: 1.2
-          }}
-        />
-        <motion.div 
-          className="absolute inset-0 bg-gradient-to-b from-[#0a1128]/80 via-[#0a1128]/60 to-[#0a1128]"
-          style={{ y: y2 }}
-        />
+        {/* Dream-like Background Elements */}
+        <div className="absolute inset-0 bg-gradient-to-b from-[#0a1128] via-[#132347] to-[#0a1128]">
+          <div className="absolute inset-0 bg-circuit-pattern opacity-20 animate-pulse-slow" />
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_-20%,#3b82f6_0%,#1e40af_50%,#1e3a8a_100%)]" />
+        </div>
+        
+        {/* Floating Elements */}
+        <div className="absolute inset-0 overflow-hidden">
+          {[...Array(5)].map((_, i) => (
+            <motion.div
+              key={i}
+              className="absolute w-32 h-32 bg-[#00eeff] rounded-full filter blur-3xl opacity-10"
+              animate={{
+                x: [Math.random() * 100, Math.random() * -100],
+                y: [Math.random() * 100, Math.random() * -100],
+                scale: [1, 1.2, 1],
+              }}
+              transition={{
+                duration: Math.random() * 5 + 5,
+                repeat: Infinity,
+                repeatType: "reverse",
+              }}
+              style={{
+                left: `${Math.random() * 100}%`,
+                top: `${Math.random() * 100}%`,
+              }}
+            />
+          ))}
+        </div>
         
         {/* Content */}
         <div className="relative z-10 text-center px-4">
@@ -133,14 +147,7 @@ const Home: React.FC = () => {
         transition={{ duration: 0.8 }}
       >
         <div className="max-w-4xl mx-auto relative overflow-hidden rounded-xl">
-          <div 
-            className="absolute inset-0 bg-cover bg-center"
-            style={{ 
-              backgroundImage: 'url(https://images.pexels.com/photos/8566472/pexels-photo-8566472.jpeg)',
-              filter: 'brightness(0.2) saturate(0.8)'
-            }}
-          />
-          <div className="relative bg-gradient-to-b from-[#132347]/50 to-[#132347]/90 p-8 border border-[#1e3a8a]">
+          <div className="relative bg-gradient-to-b from-[#132347]/90 to-[#132347] p-8 border border-[#1e3a8a]">
             <div className="flex items-center mb-6">
               <Zap className="h-8 w-8 text-[#00eeff] mr-3" />
               <h2 className="text-3xl font-bold font-heading text-white">About Kestral</h2>
