@@ -65,10 +65,10 @@ const Slideshow: React.FC<SlideshowProps> = ({ onClose, initialIndex = 0 }) => {
       description: 'Technical analysis of artistic choices including color palette, composition, perspective, proportion, and how these choices shaped viewer perception of artificial beings.'
     },
     { 
-      id: 'VisualHierarchyHumanPresence', 
-      label: 'Visual Hierarchy & Human Presence', 
+      id: 'SettingTone', 
+      label: 'Setting and Tone', 
       icon: <BrainCircuit className="w-5 h-5" />,
-      description: 'Examination of power dynamics between humans and robots as expressed through positioning, scale, and implied agency within the composition.'
+      description: 'Examination of the environment where the scene occurs and the mood evoked through lighting, color palette, and character positioning to reveal underlying attitudes toward human-machine relationships.'
     },
     { 
       id: 'TechnologicalRepresentation', 
