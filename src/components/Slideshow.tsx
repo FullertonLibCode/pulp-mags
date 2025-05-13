@@ -53,26 +53,32 @@ const Slideshow: React.FC<SlideshowProps> = ({ onClose, initialIndex = 0 }) => {
 
   const sections = [
     { 
-      id: 'observation', 
-      label: 'Visual Analysis', 
+      id: 'Observations', 
+      label: 'Visual Summary & Analysis', 
       icon: <Eye className="w-5 h-5" />,
       description: 'A detailed examination of the cover\'s visual elements, composition, and artistic techniques.'
     },
     { 
-      id: 'aiDepiction', 
+      id: 'VisualDesignElements', 
       label: 'Robot Portrayal', 
       icon: <BrainCircuit className="w-5 h-5" />,
+      description: 'Technical analysis of artistic choices including color palette, composition, perspective, proportion, and stylistic influences, and how these choices shaped viewer perception of artificial beings.'
+    },
+    { 
+      id: 'VisualHierarchyHumanPresence', 
+      label: 'Visual Hierarchy & Human Presence', 
+      icon: <BrainCircuit className="w-5 h-5" />,
+      description: 'This includes analysis of physical positioning (who is dominant in the frame), implied agency (who is acting vs. being acted upon), and emotional dynamics conveyed through posture and expression.'
+    },
+    { 
+      id: 'TechnologicalRepresentation', 
+      label: 'Robot Portrayal', 
+      icon: <History className="w-5 h-5" />,
       description: 'Analysis of how artificial beings are depicted and what this reveals about contemporary attitudes.'
     },
     { 
-      id: 'culturalContext', 
-      label: 'Historical Context', 
-      icon: <History className="w-5 h-5" />,
-      description: 'The social, technological, and cultural backdrop that influenced this cover\'s creation.'
-    },
-    { 
-      id: 'comparisonWithReality', 
-      label: 'Reality Check', 
+      id: 'LiteraryVisualConnections', 
+      label: 'Literary Visual Connections', 
       icon: <Globe className="w-5 h-5" />,
       description: 'Comparing these historical visions with the actual development of AI and robotics.'
     },
