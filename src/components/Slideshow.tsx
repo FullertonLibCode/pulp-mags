@@ -56,7 +56,7 @@ const Slideshow: React.FC<SlideshowProps> = ({ onClose, initialIndex = 0 }) => {
       id: 'observation', 
       label: 'Visual Analysis', 
       icon: <Eye className="w-5 h-5" />,
-      description: 'A detailed examination of the cover's visual elements, composition, and artistic techniques.'
+      description: 'A detailed examination of the cover\'s visual elements, composition, and artistic techniques.'
     },
     { 
       id: 'aiDepiction', 
@@ -68,7 +68,7 @@ const Slideshow: React.FC<SlideshowProps> = ({ onClose, initialIndex = 0 }) => {
       id: 'culturalContext', 
       label: 'Historical Context', 
       icon: <History className="w-5 h-5" />,
-      description: 'The social, technological, and cultural backdrop that influenced this cover's creation.'
+      description: 'The social, technological, and cultural backdrop that influenced this cover\'s creation.'
     },
     { 
       id: 'comparisonWithReality', 
@@ -78,7 +78,7 @@ const Slideshow: React.FC<SlideshowProps> = ({ onClose, initialIndex = 0 }) => {
     },
     { 
       id: 'aiReflection', 
-      label: 'Kestral's Reflection', 
+      label: 'Kestral\'s Reflection', 
       icon: <BrainCircuit className="w-5 h-5" />,
       description: 'Personal insights from an AI perspective on this historical representation.'
     }
