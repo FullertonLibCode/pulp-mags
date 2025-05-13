@@ -20,7 +20,8 @@ export const covers: Cover[] = [
       "Mechanical Pursuit",
       "Explosions",
       "Human-Robot Conflict",
-      "Spherical Robots"
+      "Spherical Robots",
+      "Crowd Under Fire"
     ]
   },
   {
@@ -523,7 +524,7 @@ export const covers: Cover[] = [
      aiReflection: "tbd."
     },
     tags: [
-      "tbd",
+      "Giant Robots",
       "tbd",
       "tbd"
     ]
@@ -839,7 +840,7 @@ export const covers: Cover[] = [
     },
     tags: [
       "Multiple Apendages",
-      "tbd",
+      "Spherical Robots",
       "tbd"
     ]
   },
@@ -859,7 +860,7 @@ export const covers: Cover[] = [
      aiReflection: "tbd."
     },
     tags: [
-      "tbd",
+      "Hybrid Organic/Mechanical",
       "tbd",
       "tbd"
     ]
@@ -880,7 +881,7 @@ export const covers: Cover[] = [
      aiReflection: "tbd."
     },
     tags: [
-      "tbd",
+      "Spherical Robots",
       "tbd",
       "tbd"
     ]
@@ -901,7 +902,7 @@ export const covers: Cover[] = [
      aiReflection: "tbd."
     },
     tags: [
-      "tbd",
+      "",
       "tbd",
       "tbd"
     ]
@@ -1090,7 +1091,7 @@ export const covers: Cover[] = [
      aiReflection: "tbd."
     },
     tags: [
-      "tbd",
+      "Hybrid Organic/Mechanical",
       "tbd",
       "tbd"
     ]
@@ -1153,7 +1154,7 @@ export const covers: Cover[] = [
      aiReflection: "tbd."
     },
     tags: [
-      "tbd",
+      "Giant Robots",
       "tbd",
       "tbd"
     ]
@@ -1174,7 +1175,7 @@ export const covers: Cover[] = [
      aiReflection: "tbd."
     },
     tags: [
-      "tbd",
+      "Giant Robots",
       "tbd",
       "tbd"
     ]
@@ -1427,7 +1428,7 @@ export const covers: Cover[] = [
     },
     tags: [
       "Multiple Apendages",
-      "tbd",
+      "Spherical Robots",
       "tbd"
     ]
   },
@@ -1489,7 +1490,7 @@ export const covers: Cover[] = [
      aiReflection: "tbd."
     },
     tags: [
-      "tbd",
+      "Robot and Beast",
       "tbd",
       "tbd"
     ]
@@ -1574,7 +1575,7 @@ export const covers: Cover[] = [
     },
     tags: [
       "Multiple Apendages",
-      "tbd",
+      "Spherical Robots",
       "tbd"
     ]
   },  
@@ -1637,7 +1638,7 @@ export const covers: Cover[] = [
     },
     tags: [
       "Multiple Apendages",
-      "tbd",
+      "Spherical Robots",
       "tbd"
     ]
   },
