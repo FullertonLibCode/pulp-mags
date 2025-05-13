@@ -54,33 +54,33 @@ const Slideshow: React.FC<SlideshowProps> = ({ onClose, initialIndex = 0 }) => {
   const sections = [
     { 
       id: 'Observations', 
-      label: 'Visual Summary & Analysis', 
+      label: 'Summary & Analysis', 
       icon: <Eye className="w-5 h-5" />,
-      description: 'A detailed examination of the cover\'s visual elements, composition, and artistic techniques.'
+      description: 'Identification of notable features, patterns, or unique elements that distinguish this cover within the broader collection of robot pulp art.'
     },
     { 
       id: 'VisualDesignElements', 
-      label: 'Robot Portrayal', 
+      label: 'Design Elements', 
       icon: <BrainCircuit className="w-5 h-5" />,
-      description: 'Technical analysis of artistic choices including color palette, composition, perspective, proportion, and stylistic influences, and how these choices shaped viewer perception of artificial beings.'
+      description: 'Technical analysis of artistic choices including color palette, composition, perspective, proportion, and how these choices shaped viewer perception of artificial beings.'
     },
     { 
       id: 'VisualHierarchyHumanPresence', 
       label: 'Visual Hierarchy & Human Presence', 
       icon: <BrainCircuit className="w-5 h-5" />,
-      description: 'This includes analysis of physical positioning (who is dominant in the frame), implied agency (who is acting vs. being acted upon), and emotional dynamics conveyed through posture and expression.'
+      description: 'Examination of power dynamics between humans and robots as expressed through positioning, scale, and implied agency within the composition.'
     },
     { 
       id: 'TechnologicalRepresentation', 
       label: 'Robot Portrayal', 
       icon: <History className="w-5 h-5" />,
-      description: 'Analysis of how artificial beings are depicted and what this reveals about contemporary attitudes.'
+      description: 'Assessment of how mechanical components and systems are visualized to convey "robot-ness".'
     },
     { 
       id: 'LiteraryVisualConnections', 
       label: 'Literary Visual Connections', 
       icon: <Globe className="w-5 h-5" />,
-      description: 'Comparing these historical visions with the actual development of AI and robotics.'
+      description: 'Exploration of how the cover artwork relates to literary themes in science fiction of the period.'
     },
     { 
       id: 'aiReflection', 
