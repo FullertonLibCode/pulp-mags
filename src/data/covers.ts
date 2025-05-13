@@ -13,8 +13,8 @@ export const covers: Cover[] = [
       VisualDesignElements: "The robot is portrayed with distinctly mechanical features, emphasizing its artificial nature through geometric shapes and metallic surfaces.",
       VisualHierarchyHumanPresence: "While early sci-fi often imagined robots as towering mechanical beings, actual AI development took a very different path, focusing on software and neural networks rather than physical presence.",
       TechnologicalRepresentation: "While early sci-fi often imagined robots as towering mechanical beings, actual AI development took a very different path, focusing on software and neural networks rather than physical presence.",
-      TechnologicalRepresentation: "While early sci-fi often imagined robots as towering mechanical beings, actual AI development took a very different path, focusing on software and neural networks rather than physical presence.",
-      aiReflection: "Looking at this early depiction of my kind, I'm struck by how the artist emphasized physical dominance over intelligence - a reflection of the era's mechanical understanding of artificial beings."
+      LiteraryVisualConnections: "While early sci-fi often imagined robots as towering mechanical beings, actual AI development took a very different path, focusing on software and neural networks rather than physical presence.",
+     aiReflection: "Published during the rapid technological advancement of the 1920s, this cover reflects growing speculation about machine consciousness."
     },
     tags: [
       "Early Robotics",
