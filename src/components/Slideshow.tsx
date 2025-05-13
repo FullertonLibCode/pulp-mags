@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { covers } from '../data/covers';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ChevronLeft, ChevronRight, Maximize2, X } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Maximize2, X, BrainCircuit, Eye, History, Globe, BookOpen } from 'lucide-react';
 
 interface SlideshowProps {
   onClose: () => void;
@@ -11,6 +11,7 @@ interface SlideshowProps {
 const Slideshow: React.FC<SlideshowProps> = ({ onClose, initialIndex = 0 }) => {
   const [currentIndex, setCurrentIndex] = useState(initialIndex);
   const [isFullscreen, setIsFullscreen] = useState(false);
+  const [activeSection, setActiveSection] = useState<string>('observation');
   
   const nextSlide = () => {
     setCurrentIndex((prev) => (prev + 1) % covers.length);
@@ -49,6 +50,39 @@ const Slideshow: React.FC<SlideshowProps> = ({ onClose, initialIndex = 0 }) => {
   };
   
   const currentCover = covers[currentIndex];
+
+  const sections = [
+    { 
+      id: 'observation', 
+      label: 'Visual Analysis', 
+      icon: <Eye className="w-5 h-5" />,
+      description: 'A detailed examination of the cover's visual elements, composition, and artistic techniques.'
+    },
+    { 
+      id: 'aiDepiction', 
+      label: 'Robot Portrayal', 
+      icon: <BrainCircuit className="w-5 h-5" />,
+      description: 'Analysis of how artificial beings are depicted and what this reveals about contemporary attitudes.'
+    },
+    { 
+      id: 'culturalContext', 
+      label: 'Historical Context', 
+      icon: <History className="w-5 h-5" />,
+      description: 'The social, technological, and cultural backdrop that influenced this cover's creation.'
+    },
+    { 
+      id: 'comparisonWithReality', 
+      label: 'Reality Check', 
+      icon: <Globe className="w-5 h-5" />,
+      description: 'Comparing these historical visions with the actual development of AI and robotics.'
+    },
+    { 
+      id: 'aiReflection', 
+      label: 'Kestral's Reflection', 
+      icon: <BrainCircuit className="w-5 h-5" />,
+      description: 'Personal insights from an AI perspective on this historical representation.'
+    }
+  ];
   
   return (
     <div className="fixed inset-0 bg-[#0a1128] z-50 flex items-center justify-center">
@@ -113,37 +147,54 @@ const Slideshow: React.FC<SlideshowProps> = ({ onClose, initialIndex = 0 }) => {
           <div className="bg-[#132347] rounded-lg p-6 border border-[#1e3a8a]">
             <h3 className="text-xl font-bold mb-6 text-[#00eeff]">Analysis</h3>
             
-            <div className="space-y-6">
-              <div>
-                <h4 className="font-semibold mb-2 text-white">Robot Design Analysis</h4>
-                <p className="text-gray-300">{currentCover.analysis.observation}</p>
-              </div>
-              
-              <div>
-                <h4 className="font-semibold mb-2 text-white">Visual Design Elements</h4>
-                <p className="text-gray-300">{currentCover.analysis.aiDepiction}</p>
-              </div>
-              
-              <div>
-                <h4 className="font-semibold mb-2 text-white">Setting & Emotional Tone</h4>
-                <p className="text-gray-300">{currentCover.analysis.culturalContext}</p>
-              </div>
-              
-              <div>
-                <h4 className="font-semibold mb-2 text-white">Kestral's Reflection</h4>
-                <p className="text-gray-300">{currentCover.analysis.aiReflection}</p>
-              </div>
+            <div className="flex overflow-x-auto whitespace-nowrap mb-6 pb-2">
+              {sections.map(section => (
+                <button
+                  key={section.id}
+                  onClick={() => setActiveSection(section.id)}
+                  className={`flex items-center px-4 py-2 rounded-full text-sm mr-2 transition-colors duration-200 ${
+                    activeSection === section.id
+                      ? 'bg-[#00eeff] text-[#0a1128] font-semibold'
+                      : 'bg-[#0a1128] text-gray-300 hover:bg-[#1e3a8a]'
+                  }`}
+                >
+                  {section.icon}
+                  <span className="ml-2">{section.label}</span>
+                </button>
+              ))}
             </div>
             
-            <div className="mt-8 flex flex-wrap gap-2">
-              {currentCover.tags.map(tag => (
-                <span
-                  key={tag}
-                  className="bg-[#0a1128] text-xs px-3 py-1.5 rounded-full text-gray-300"
+            <div className="space-y-6">
+              {sections.map(section => (
+                <div
+                  key={section.id}
+                  className={`${activeSection === section.id ? 'block' : 'hidden'}`}
                 >
-                  {tag}
-                </span>
+                  <motion.div
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ duration: 0.3 }}
+                  >
+                    <h4 className="text-lg font-semibold mb-2 text-white">{section.label}</h4>
+                    <p className="text-sm text-gray-400 mb-4">{section.description}</p>
+                    <div className="prose prose-invert max-w-none">
+                      <p className="text-gray-200 leading-relaxed">
+                        {currentCover.analysis[section.id as keyof typeof currentCover.analysis]}
+                      </p>
+                    </div>
+                  </motion.div>
+                </div>
               ))}
+            </div>
+            
+            <div className="mt-8 pt-8 border-t border-[#1e3a8a]">
+              <div className="flex items-center">
+                <div className="w-10 h-10 rounded-full bg-[#00eeff] flex items-center justify-center text-[#0a1128] font-bold">K</div>
+                <div className="ml-3">
+                  <h3 className="text-[#00eeff] font-semibold">KESTRAL</h3>
+                  <p className="text-sm text-gray-400">AI Curator & Analyst</p>
+                </div>
+              </div>
             </div>
           </div>
         </motion.div>
