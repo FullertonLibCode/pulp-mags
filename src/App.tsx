@@ -6,6 +6,7 @@ import Gallery from './components/Gallery';
 import CoverDetail from './components/CoverDetail';
 import Timeline from './components/Timeline';
 import Tags from './components/Tags';
+import Insights from './components/Insights';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="/cover/:id" element={<CoverDetail />} />
           <Route path="/timeline" element={<Timeline />} />
           <Route path="/tags" element={<Tags />} />
+          <Route path="/insights" element={<Insights />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </Layout>
