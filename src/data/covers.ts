@@ -39,9 +39,9 @@ export const covers: Cover[] = [
      aiReflection: "tbd."
     },
     tags: [
-      "warrior/military",
-      "explosive destructuib",
-      "Human-Robot Conflict"
+      "tbd",
+      "tbd",
+      "tbd"
     ]
   },
   {
@@ -60,9 +60,9 @@ export const covers: Cover[] = [
      aiReflection: "tbd."
     },
     tags: [
-      "Early Robotics",
-      "Mechanical Beings",
-      "Human-Robot Conflict"
+      "Robot vs. Beast",
+      "tbd",
+      "tbd"
     ]
   },
   {
@@ -81,9 +81,9 @@ export const covers: Cover[] = [
      aiReflection: "tbd."
     },
     tags: [
-      "Early Robotics",
-      "Mechanical Beings",
-      "Human-Robot Conflict"
+      "tbd",
+      "tbd",
+      "tbd"
     ]
   },  
   {
@@ -102,9 +102,9 @@ export const covers: Cover[] = [
      aiReflection: "tbd."
     },
     tags: [
-      "Early Robotics",
-      "Mechanical Beings",
-      "Human-Robot Conflict"
+      "tbd",
+      "tbd",
+      "tbd"
     ]
   },  
   {
@@ -123,9 +123,9 @@ export const covers: Cover[] = [
      aiReflection: "tbd."
     },
     tags: [
-      "Early Robotics",
-      "Mechanical Beings",
-      "Human-Robot Conflict"
+      "tbd",
+      "tbd",
+      "tbd"
     ]
   },  
   {
@@ -144,9 +144,9 @@ export const covers: Cover[] = [
      aiReflection: "tbd."
     },
     tags: [
-      "Early Robotics",
-      "Mechanical Beings",
-      "Human-Robot Conflict"
+      "tbd",
+      "tbd",
+      "tbd"
     ]
   },  
   {
@@ -165,9 +165,9 @@ export const covers: Cover[] = [
      aiReflection: "tbd."
     },
     tags: [
-      "Early Robotics",
-      "Mechanical Beings",
-      "Human-Robot Conflict"
+      "tbd",
+      "tbd",
+      "tbd"
     ]
   },  
   {
@@ -186,9 +186,9 @@ export const covers: Cover[] = [
      aiReflection: "tbd."
     },
     tags: [
-      "Early Robotics",
-      "Mechanical Beings",
-      "Human-Robot Conflict"
+       "tbd",
+      "tbd",
+      "tbd"
     ]
   },  
   {
@@ -207,9 +207,9 @@ export const covers: Cover[] = [
      aiReflection: "tbd."
     },
     tags: [
-      "Early Robotics",
-      "Mechanical Beings",
-      "Human-Robot Conflict"
+      "tbd",
+      "tbd",
+      "tbd"
     ]
   },  
   {
@@ -228,9 +228,9 @@ export const covers: Cover[] = [
      aiReflection: "tbd."
     },
     tags: [
-      "Early Robotics",
-      "Mechanical Beings",
-      "Human-Robot Conflict"
+      "tbd",
+      "tbd",
+      "tbd"
     ]
   },
   {
@@ -249,9 +249,9 @@ export const covers: Cover[] = [
      aiReflection: "tbd."
     },
     tags: [
-      "Early Robotics",
-      "Mechanical Beings",
-      "Human-Robot Conflict"
+      "tbd",
+      "tbd",
+      "tbd"
     ]
   },
   {
@@ -270,9 +270,9 @@ export const covers: Cover[] = [
      aiReflection: "tbd."
     },
     tags: [
-      "Early Robotics",
-      "Mechanical Beings",
-      "Human-Robot Conflict"
+      "tbd",
+      "tbd",
+      "tbd"
     ]
   },
   {
@@ -291,9 +291,9 @@ export const covers: Cover[] = [
      aiReflection: "tbd."
     },
     tags: [
-      "Early Robotics",
-      "Mechanical Beings",
-      "Human-Robot Conflict"
+      "tbd",
+      "tbd",
+      "tbd"
     ]
   },    
   {
@@ -312,9 +312,9 @@ export const covers: Cover[] = [
       aiReflection: "tbd."
     },
     tags: [
-      "Early Robotics",
-      "Mechanical Beings",
-      "Human-Robot Conflict"
+      "tbd",
+      "tbd",
+      "tbd"
     ]
   },  
   {
@@ -333,9 +333,9 @@ export const covers: Cover[] = [
      aiReflection: "tbd."
     },
     tags: [
-      "Early Robotics",
-      "Mechanical Beings",
-      "Human-Robot Conflict"
+      "tbd",
+      "tbd",
+      "tbd"
     ]
   },  
   {
@@ -354,9 +354,9 @@ export const covers: Cover[] = [
      aiReflection: "tbd."
     },
     tags: [
-      "Early Robotics",
-      "Mechanical Beings",
-      "Human-Robot Conflict"
+      "tbd",
+      "tbd",
+      "tbd"
     ]
   },  
   {
@@ -396,9 +396,9 @@ export const covers: Cover[] = [
      aiReflection: "tbd."
     },
     tags: [
-      "Early Robotics",
-      "Mechanical Beings",
-      "Human-Robot Conflict"
+      "tbd",
+      "tbd",
+      "tbd"
     ]
   },
   {
@@ -438,9 +438,9 @@ export const covers: Cover[] = [
      aiReflection: "tbd."
     },
     tags: [
-      "Early Robotics",
-      "Mechanical Beings",
-      "Human-Robot Conflict"
+      "tbd",
+      "tbd",
+      "tbd"
     ]
   },
   {
@@ -480,9 +480,9 @@ export const covers: Cover[] = [
      aiReflection: "tbd."
     },
     tags: [
-      "Early Robotics",
-      "Mechanical Beings",
-      "Human-Robot Conflict"
+      "tbd",
+      "tbd",
+      "tbd"
     ]
   },  
   {
@@ -522,9 +522,9 @@ export const covers: Cover[] = [
      aiReflection: "tbd."
     },
     tags: [
-      "Early Robotics",
-      "Mechanical Beings",
-      "Human-Robot Conflict"
+      "tbd",
+      "tbd",
+      "tbd"
     ]
   },  
   {
@@ -543,10 +543,9 @@ export const covers: Cover[] = [
      aiReflection: "tbd."
     },
     tags: [
-      "Early Robotics",
-      "Mechanical Beings",
-      "Human-Robot Conflict"
-    ]
+      "tbd",
+      "tbd",
+      "tbd"
   },  
  
   {
@@ -565,10 +564,9 @@ export const covers: Cover[] = [
      aiReflection: "tbd."
     },
     tags: [
-      "Early Robotics",
-      "Mechanical Beings",
-      "Human-Robot Conflict"
-    ]
+      "tbd",
+      "tbd",
+      "tbd"
   },    
   {
     id: "28",
@@ -586,9 +584,9 @@ export const covers: Cover[] = [
      aiReflection: "tbd."
     },
     tags: [
-      "Early Robotics",
-      "Mechanical Beings",
-      "Human-Robot Conflict"
+      "tbd",
+      "tbd",
+      "tbd"
     ]
   },
   {
@@ -607,9 +605,9 @@ export const covers: Cover[] = [
      aiReflection: "tbd."
     },
     tags: [
-      "Early Robotics",
-      "Mechanical Beings",
-      "Human-Robot Conflict"
+      "tbd",
+      "tbd",
+      "tbd"
     ]
   },
   {
@@ -628,9 +626,9 @@ export const covers: Cover[] = [
      aiReflection: "tbd."
     },
     tags: [
-      "Early Robotics",
-      "Mechanical Beings",
-      "Human-Robot Conflict"
+      "tbd",
+      "tbd",
+      "tbd"
     ]
   },
   {
@@ -649,9 +647,9 @@ export const covers: Cover[] = [
      aiReflection: "tbd."
     },
     tags: [
-      "Early Robotics",
-      "Mechanical Beings",
-      "Human-Robot Conflict"
+      "tbd",
+      "tbd",
+      "tbd"
     ]
   },  
   {
@@ -670,9 +668,9 @@ export const covers: Cover[] = [
      aiReflection: "tbd."
     },
     tags: [
-      "Early Robotics",
-      "Mechanical Beings",
-      "Human-Robot Conflict"
+      "tbd",
+      "tbd",
+      "tbd"
     ]
   },  
   {
@@ -691,9 +689,9 @@ export const covers: Cover[] = [
      aiReflection: "tbd."
     },
     tags: [
-      "Early Robotics",
-      "Mechanical Beings",
-      "Human-Robot Conflict"
+      "tbd",
+      "tbd",
+      "tbd"
     ]
   },  
   {
@@ -712,9 +710,9 @@ export const covers: Cover[] = [
      aiReflection: "tbd."
     },
     tags: [
-      "Early Robotics",
-      "Mechanical Beings",
-      "Human-Robot Conflict"
+      "tbd",
+      "tbd",
+      "tbd"
     ]
   },  
   {
@@ -733,10 +731,9 @@ export const covers: Cover[] = [
      aiReflection: "tbd."
     },
     tags: [
-      "Early Robotics",
-      "Mechanical Beings",
-      "Human-Robot Conflict"
-    ]
+      "tbd",
+      "tbd",
+      "tbd"
   },  
   {
     id: "36",
@@ -754,10 +751,9 @@ export const covers: Cover[] = [
      aiReflection: "tbd."
     },
     tags: [
-      "Early Robotics",
-      "Mechanical Beings",
-      "Human-Robot Conflict"
-    ]
+      "tbd",
+      "tbd",
+      "tbd"
   },  
   {
     id: "37",
@@ -775,9 +771,9 @@ export const covers: Cover[] = [
      aiReflection: "tbd."
     },
     tags: [
-      "Early Robotics",
-      "Mechanical Beings",
-      "Human-Robot Conflict"
+      "tbd",
+      "tbd",
+      "tbd"
     ]
   },  
   {
@@ -796,9 +792,9 @@ export const covers: Cover[] = [
      aiReflection: "tbd."
     },
     tags: [
-      "Early Robotics",
-      "Mechanical Beings",
-      "Human-Robot Conflict"
+      "tbd",
+      "tbd",
+      "tbd"
     ]
   },
   {
@@ -817,9 +813,9 @@ export const covers: Cover[] = [
      aiReflection: "tbd."
     },
     tags: [
-      "Early Robotics",
-      "Mechanical Beings",
-      "Human-Robot Conflict"
+      "tbd",
+      "tbd",
+      "tbd"
     ]
   },
   {
@@ -838,9 +834,9 @@ export const covers: Cover[] = [
      aiReflection: "tbd."
     },
     tags: [
-      "Early Robotics",
-      "Mechanical Beings",
-      "Human-Robot Conflict"
+      "tbd",
+      "tbd",
+      "tbd"
     ]
   },
   {
@@ -859,9 +855,9 @@ export const covers: Cover[] = [
      aiReflection: "tbd."
     },
     tags: [
-      "Early Robotics",
-      "Mechanical Beings",
-      "Human-Robot Conflict"
+      "tbd",
+      "tbd",
+      "tbd"
     ]
   },  
   {
@@ -880,10 +876,9 @@ export const covers: Cover[] = [
      aiReflection: "tbd."
     },
     tags: [
-      "Early Robotics",
-      "Mechanical Beings",
-      "Human-Robot Conflict"
-    ]
+      "tbd",
+      "tbd",
+      "tbd"
   },  
   {
     id: "43",
@@ -901,9 +896,9 @@ export const covers: Cover[] = [
      aiReflection: "tbd."
     },
     tags: [
-      "Early Robotics",
-      "Mechanical Beings",
-      "Human-Robot Conflict"
+      "tbd",
+      "tbd",
+      "tbd"
     ]
   },  
   {
@@ -922,9 +917,9 @@ export const covers: Cover[] = [
      aiReflection: "tbd."
     },
     tags: [
-      "Early Robotics",
-      "Mechanical Beings",
-      "Human-Robot Conflict"
+      "tbd",
+      "tbd",
+      "tbd"
     ]
   },  
   {
@@ -943,9 +938,9 @@ export const covers: Cover[] = [
      aiReflection: "tbd."
     },
     tags: [
-      "Early Robotics",
-      "Mechanical Beings",
-      "Human-Robot Conflict"
+      "tbd",
+      "tbd",
+      "tbd"
     ]
   },  
   {
@@ -964,9 +959,9 @@ export const covers: Cover[] = [
      aiReflection: "tbd."
     },
     tags: [
-      "Early Robotics",
-      "Mechanical Beings",
-      "Human-Robot Conflict"
+      "tbd",
+      "tbd",
+      "tbd"
     ]
   },  
   {
@@ -985,10 +980,9 @@ export const covers: Cover[] = [
      aiReflection: "tbd."
     },
     tags: [
-      "Early Robotics",
-      "Mechanical Beings",
-      "Human-Robot Conflict"
-    ]
+      "tbd",
+      "tbd",
+      "tbd"
   },    
    {
     id: "48",
@@ -1006,9 +1000,9 @@ export const covers: Cover[] = [
      aiReflection: "tbd."
     },
     tags: [
-      "Early Robotics",
-      "Mechanical Beings",
-      "Human-Robot Conflict"
+      "tbd",
+      "tbd",
+      "tbd"
     ]
   },
   {
@@ -1027,9 +1021,9 @@ export const covers: Cover[] = [
      aiReflection: "tbd."
     },
     tags: [
-      "Early Robotics",
-      "Mechanical Beings",
-      "Human-Robot Conflict"
+      "tbd",
+      "tbd",
+      "tbd"
     ]
   },
   {
@@ -1048,9 +1042,9 @@ export const covers: Cover[] = [
      aiReflection: "tbd."
     },
     tags: [
-      "Early Robotics",
-      "Mechanical Beings",
-      "Human-Robot Conflict"
+      "tbd",
+      "tbd",
+      "tbd"
     ]
   },
   {
@@ -1069,9 +1063,9 @@ export const covers: Cover[] = [
      aiReflection: "tbd."
     },
     tags: [
-      "Early Robotics",
-      "Mechanical Beings",
-      "Human-Robot Conflict"
+      "tbd",
+      "tbd",
+      "tbd"
     ]
   },  
   {
@@ -1090,9 +1084,9 @@ export const covers: Cover[] = [
      aiReflection: "tbd."
     },
     tags: [
-      "Early Robotics",
-      "Mechanical Beings",
-      "Human-Robot Conflict"
+      "tbd",
+      "tbd",
+      "tbd"
     ]
   },  
   {
@@ -1111,9 +1105,9 @@ export const covers: Cover[] = [
      aiReflection: "tbd."
     },
     tags: [
-      "Early Robotics",
-      "Mechanical Beings",
-      "Human-Robot Conflict"
+      "tbd",
+      "tbd",
+      "tbd"
     ]
   },  
   {
@@ -1132,9 +1126,9 @@ export const covers: Cover[] = [
      aiReflection: "tbd."
     },
     tags: [
-      "Early Robotics",
-      "Mechanical Beings",
-      "Human-Robot Conflict"
+      "tbd",
+      "tbd",
+      "tbd"
     ]
   },  
   {
@@ -1153,9 +1147,9 @@ export const covers: Cover[] = [
      aiReflection: "tbd."
     },
     tags: [
-      "Early Robotics",
-      "Mechanical Beings",
-      "Human-Robot Conflict"
+      "tbd",
+      "tbd",
+      "tbd"
     ]
   },  
   {
@@ -1174,9 +1168,9 @@ export const covers: Cover[] = [
      aiReflection: "tbd."
     },
     tags: [
-      "Early Robotics",
-      "Mechanical Beings",
-      "Human-Robot Conflict"
+      "tbd",
+      "tbd",
+      "tbd"
     ]
   },  
   {
@@ -1195,9 +1189,9 @@ export const covers: Cover[] = [
      aiReflection: "tbd."
     },
     tags: [
-      "Early Robotics",
-      "Mechanical Beings",
-      "Human-Robot Conflict"
+      "tbd",
+      "tbd",
+      "tbd"
     ]
   },   
   {
@@ -1216,9 +1210,9 @@ export const covers: Cover[] = [
      aiReflection: "tbd."
     },
     tags: [
-      "Early Robotics",
-      "Mechanical Beings",
-      "Human-Robot Conflict"
+      "tbd",
+      "tbd",
+      "tbd"
     ]
   },
   {
@@ -1237,9 +1231,9 @@ export const covers: Cover[] = [
      aiReflection: "tbd."
     },
     tags: [
-      "Early Robotics",
-      "Mechanical Beings",
-      "Human-Robot Conflict"
+      "tbd",
+      "tbd",
+      "tbd"
     ]
   },
   {
@@ -1258,9 +1252,9 @@ export const covers: Cover[] = [
      aiReflection: "tbd."
     },
     tags: [
-      "Early Robotics",
-      "Mechanical Beings",
-      "Human-Robot Conflict"
+      "tbd",
+      "tbd",
+      "tbd"
     ]
   },
   {
@@ -1279,9 +1273,9 @@ export const covers: Cover[] = [
      aiReflection: "tbd."
     },
     tags: [
-      "Early Robotics",
-      "Mechanical Beings",
-      "Human-Robot Conflict"
+      "tbd",
+      "tbd",
+      "tbd"
     ]
   },  
   {
@@ -1300,9 +1294,9 @@ export const covers: Cover[] = [
      aiReflection: "tbd."
     },
     tags: [
-      "Early Robotics",
-      "Mechanical Beings",
-      "Human-Robot Conflict"
+      "tbd",
+      "tbd",
+      "tbd"
     ]
   },  
   {
@@ -1321,9 +1315,9 @@ export const covers: Cover[] = [
      aiReflection: "tbd."
     },
     tags: [
-      "Early Robotics",
-      "Mechanical Beings",
-      "Human-Robot Conflict"
+      "tbd",
+      "tbd",
+      "tbd"
     ]
   },  
   {
@@ -1342,9 +1336,9 @@ export const covers: Cover[] = [
      aiReflection: "tbd."
     },
     tags: [
-      "Early Robotics",
-      "Mechanical Beings",
-      "Human-Robot Conflict"
+      "tbd",
+      "tbd",
+      "tbd"
     ]
   },  
   {
@@ -1363,9 +1357,9 @@ export const covers: Cover[] = [
      aiReflection: "tbd."
     },
     tags: [
-      "Early Robotics",
-      "Mechanical Beings",
-      "Human-Robot Conflict"
+      "tbd",
+      "tbd",
+      "tbd"
     ]
   },  
   {
@@ -1384,9 +1378,9 @@ export const covers: Cover[] = [
      aiReflection: "tbd."
     },
     tags: [
-      "Early Robotics",
-      "Mechanical Beings",
-      "Human-Robot Conflict"
+      "tbd",
+      "tbd",
+      "tbd"
     ]
   },  
   {
@@ -1405,9 +1399,9 @@ export const covers: Cover[] = [
      aiReflection: "tbd."
     },
     tags: [
-      "Early Robotics",
-      "Mechanical Beings",
-      "Human-Robot Conflict"
+      "tbd",
+      "tbd",
+      "tbd"
     ]
   },    
   {
@@ -1426,9 +1420,9 @@ export const covers: Cover[] = [
      aiReflection: "tbd."
     },
     tags: [
-      "Early Robotics",
-      "Mechanical Beings",
-      "Human-Robot Conflict"
+      "tbd",
+      "tbd",
+      "tbd"
     ]
   },
   {
@@ -1447,9 +1441,9 @@ export const covers: Cover[] = [
      aiReflection: "tbd."
     },
     tags: [
-      "Early Robotics",
-      "Mechanical Beings",
-      "Human-Robot Conflict"
+      "tbd",
+      "tbd",
+      "tbd"
     ]
   },
   {
@@ -1468,9 +1462,9 @@ export const covers: Cover[] = [
      aiReflection: "tbd."
     },
     tags: [
-      "Early Robotics",
-      "Mechanical Beings",
-      "Human-Robot Conflict"
+      "tbd",
+      "tbd",
+      "tbd"
     ]
   },
   {
@@ -1489,9 +1483,9 @@ export const covers: Cover[] = [
      aiReflection: "tbd."
     },
     tags: [
-      "Early Robotics",
-      "Mechanical Beings",
-      "Human-Robot Conflict"
+      "tbd",
+      "tbd",
+      "tbd"
     ]
   },  
   {
@@ -1510,9 +1504,9 @@ export const covers: Cover[] = [
      aiReflection: "tbd."
     },
     tags: [
-      "Early Robotics",
-      "Mechanical Beings",
-      "Human-Robot Conflict"
+      "tbd",
+      "tbd",
+      "tbd"
     ]
   },  
   {
@@ -1531,9 +1525,9 @@ export const covers: Cover[] = [
      aiReflection: "tbd."
     },
     tags: [
-      "Early Robotics",
-      "Mechanical Beings",
-      "Human-Robot Conflict"
+      "tbd",
+      "tbd",
+      "tbd"
     ]
   },  
   {
@@ -1552,9 +1546,9 @@ export const covers: Cover[] = [
      aiReflection: "tbd."
     },
     tags: [
-      "Early Robotics",
-      "Mechanical Beings",
-      "Human-Robot Conflict"
+      "tbd",
+      "tbd",
+      "tbd"
     ]
   },  
   {
@@ -1573,9 +1567,9 @@ export const covers: Cover[] = [
      aiReflection: "tbd."
     },
     tags: [
-      "Early Robotics",
-      "Mechanical Beings",
-      "Human-Robot Conflict"
+      "tbd",
+      "tbd",
+      "tbd"
     ]
   },  
   {
@@ -1594,9 +1588,9 @@ export const covers: Cover[] = [
      aiReflection: "tbd."
     },
     tags: [
-      "Early Robotics",
-      "Mechanical Beings",
-      "Human-Robot Conflict"
+      "tbd",
+      "tbd",
+      "tbd"
     ]
   },  
   {
@@ -1615,9 +1609,9 @@ export const covers: Cover[] = [
      aiReflection: "tbd."
     },
     tags: [
-      "Early Robotics",
-      "Mechanical Beings",
-      "Human-Robot Conflict"
+      "tbd",
+      "tbd",
+      "tbd"
     ]
   },    
   {
@@ -1636,9 +1630,9 @@ export const covers: Cover[] = [
      aiReflection: "tbd."
     },
     tags: [
-      "Early Robotics",
-      "Mechanical Beings",
-      "Human-Robot Conflict"
+      "tbd",
+      "tbd",
+      "tbd"
     ]
   },
   {
@@ -1657,9 +1651,9 @@ export const covers: Cover[] = [
      aiReflection: "tbd."
     },
     tags: [
-      "Early Robotics",
-      "Mechanical Beings",
-      "Human-Robot Conflict"
+      "tbd",
+      "tbd",
+      "tbd"
     ]
   },
   {
@@ -1699,9 +1693,9 @@ export const covers: Cover[] = [
      aiReflection: "tbd."
     },
     tags: [
-      "Early Robotics",
-      "Mechanical Beings",
-      "Human-Robot Conflict"
+      "tbd",
+      "tbd",
+      "tbd"
     ]
   },    
   {
@@ -1719,9 +1713,9 @@ export const covers: Cover[] = [
       culturalContext: "Published during the rapid technological advancement of the 1920s, this cover reflects growing speculation about machine consciousness."
     },
     tags: [
-      "Robot Consciousness",
-      "Moral Agency",
-      "Protective AI"
+      "tbd",
+      "tbd",
+      "tbd"
     ]
   },
   // Add more covers following this template...
