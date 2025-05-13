@@ -25,7 +25,7 @@ export const covers: Cover[] = [
   {
     id: "2",
     title: "Mechanical Dominance",
-    year: 1928 (January),
+    year: 1928,
     magazineName: "Amazing Stories",
     imageUrl: "https://pulpbots.wordpress.com/wp-content/uploads/2025/05/amazing_stories_1928_01.jpg",
     description: "tbd",
@@ -46,7 +46,7 @@ export const covers: Cover[] = [
   {
     id: "3",
     title: "Mechanical Dominance",
-    year: 1928 (October),
+    year: 1928,
     magazineName: "Amazing Stories",
     imageUrl: "https://pulpbots.wordpress.com/wp-content/uploads/2025/05/amazing_stories_1928_10.jpg",
     description: "The image depicts a scene of chaos with multiple robots attacking human figures. The robots are large, menacing, and appear to be causing destruction. The presence of fire and the distressed human figures suggest a hostile scenario where the robots are the aggressors.",
@@ -67,7 +67,7 @@ export const covers: Cover[] = [
   {
     id: "4",
     title: "Mechanical Dominance",
-    year: 1930 (May),
+    year: 1930,
     magazineName: "Amazing Stories",
     imageUrl: "https://pulpbots.wordpress.com/wp-content/uploads/2025/05/amazing_stories_1930_05.jpg",
     description: "The image depicts a scene of chaos with multiple robots attacking human figures. The robots are large, menacing, and appear to be causing destruction. The presence of fire and the distressed human figures suggest a hostile scenario where the robots are the aggressors.",
@@ -88,7 +88,7 @@ export const covers: Cover[] = [
   {
     id: "5",
     title: "Mechanical Dominance",
-    year: 1932 (February),
+    year: 1932,
     magazineName: "Amazing Stories",
     imageUrl: "https://pulpbots.wordpress.com/wp-content/uploads/2025/05/amazing_stories_1932_02.jpg",
     description: "The image depicts a scene of chaos with multiple robots attacking human figures. The robots are large, menacing, and appear to be causing destruction. The presence of fire and the distressed human figures suggest a hostile scenario where the robots are the aggressors.",
@@ -109,7 +109,7 @@ export const covers: Cover[] = [
   {
     id: "6",
     title: "Mechanical Dominance",
-    year: 1932 (April),
+    year: 1932,
     magazineName: "Amazing Stories",
     imageUrl: "https://pulpbots.wordpress.com/wp-content/uploads/2025/05/amazing_stories_1932_04.jpg",
     description: "The image depicts a scene of chaos with multiple robots attacking human figures. The robots are large, menacing, and appear to be causing destruction. The presence of fire and the distressed human figures suggest a hostile scenario where the robots are the aggressors.",
@@ -130,7 +130,7 @@ export const covers: Cover[] = [
   {
     id: "7",
     title: "Mechanical Dominance",
-    year: 1932 (May),
+    year: 1932,
     magazineName: "Amazing Stories",
     imageUrl: "https://pulpbots.wordpress.com/wp-content/uploads/2025/05/amazing_stories_1932_05.jpg",
     description: "The image depicts a scene of chaos with multiple robots attacking human figures. The robots are large, menacing, and appear to be causing destruction. The presence of fire and the distressed human figures suggest a hostile scenario where the robots are the aggressors.",
@@ -151,7 +151,7 @@ export const covers: Cover[] = [
   {
     id: "8",
     title: "Mechanical Dominance",
-    year: 1934 (March),
+    year: 1934,
     magazineName: "Amazing Stories",
     imageUrl: "https://pulpbots.wordpress.com/wp-content/uploads/2025/05/amazing_stories_1934_03.jpg",
     description: "The image depicts a scene of chaos with multiple robots attacking human figures. The robots are large, menacing, and appear to be causing destruction. The presence of fire and the distressed human figures suggest a hostile scenario where the robots are the aggressors.",
@@ -172,7 +172,7 @@ export const covers: Cover[] = [
   {
     id: "9",
     title: "Mechanical Dominance",
-    year: 1934 (April),
+    year: 1934,
     magazineName: "Amazing Stories",
     imageUrl: "https://pulpbots.wordpress.com/wp-content/uploads/2025/05/amazing_stories_1937_04.jpg",
     description: "The image depicts a scene of chaos with multiple robots attacking human figures. The robots are large, menacing, and appear to be causing destruction. The presence of fire and the distressed human figures suggest a hostile scenario where the robots are the aggressors.",
@@ -193,7 +193,7 @@ export const covers: Cover[] = [
   {
     id: "10",
     title: "Mechanical Dominance",
-    year: 1938 (April),
+    year: 1938,
     magazineName: "Amazing Stories",
     imageUrl: "https://pulpbots.wordpress.com/wp-content/uploads/2025/05/amazing_stories_1938_04.jpg",
     description: "The image depicts a scene of chaos with multiple robots attacking human figures. The robots are large, menacing, and appear to be causing destruction. The presence of fire and the distressed human figures suggest a hostile scenario where the robots are the aggressors.",
@@ -214,7 +214,7 @@ export const covers: Cover[] = [
   {
     id: "11",
     title: "Mechanical Dominance",
-    year: 1927,
+    year: 1939,
     magazineName: "Amazing Stories",
     imageUrl: "https://pulpbots.wordpress.com/wp-content/uploads/2025/05/amazing_stories_1927_08.jpg",
     description: "The image depicts a scene of chaos with multiple robots attacking human figures. The robots are large, menacing, and appear to be causing destruction. The presence of fire and the distressed human figures suggest a hostile scenario where the robots are the aggressors.",
