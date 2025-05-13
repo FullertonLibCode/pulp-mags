@@ -7,10 +7,10 @@ export interface Cover {
   description: string;
   analysis: {
     Observations: string;
-    Visual Design Elements: string;
-    Visual Hierarchy & Human Presence: string;
-    Technological Representation: string;
-    Literary Visual Connections: string;
+    VisualDesignElements: string;
+    VisualHierarchyHumanPresence: string;
+    TechnologicalRepresentation: string;
+    LiteraryVisualConnections: string;
   };
   tags: string[];
 }
