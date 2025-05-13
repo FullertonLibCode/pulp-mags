@@ -39,7 +39,7 @@ export const covers: Cover[] = [
      aiReflection: "tbd."
     },
     tags: [
-      "tbd",
+      "Multiple Apendages",
       "tbd",
       "tbd"
     ]
@@ -102,8 +102,8 @@ export const covers: Cover[] = [
      aiReflection: "tbd."
     },
     tags: [
-      "tbd",
-      "tbd",
+      "Flying Machines",
+      "Multiple Apendages",
       "tbd"
     ]
   },  
@@ -123,7 +123,7 @@ export const covers: Cover[] = [
      aiReflection: "tbd."
     },
     tags: [
-      "tbd",
+      "Multiple Apendages",
       "tbd",
       "tbd"
     ]
@@ -144,7 +144,7 @@ export const covers: Cover[] = [
      aiReflection: "tbd."
     },
     tags: [
-      "tbd",
+      "Multiple Apendages",
       "tbd",
       "tbd"
     ]
@@ -165,7 +165,7 @@ export const covers: Cover[] = [
      aiReflection: "tbd."
     },
     tags: [
-      "tbd",
+      "Multiple Apendages",
       "tbd",
       "tbd"
     ]
@@ -186,7 +186,7 @@ export const covers: Cover[] = [
      aiReflection: "tbd."
     },
     tags: [
-       "tbd",
+      "Multiple Apendages",
       "tbd",
       "tbd"
     ]
@@ -207,7 +207,7 @@ export const covers: Cover[] = [
      aiReflection: "tbd."
     },
     tags: [
-      "tbd",
+      "Multiple Apendages",
       "tbd",
       "tbd"
     ]
@@ -607,7 +607,7 @@ export const covers: Cover[] = [
      aiReflection: "tbd."
     },
     tags: [
-      "tbd",
+      "Multiple Apendages",
       "tbd",
       "tbd"
     ]
@@ -754,7 +754,7 @@ export const covers: Cover[] = [
      aiReflection: "tbd."
     },
     tags: [
-      "tbd",
+      "Multiple Apendages",
       "tbd",
       "tbd"
     ]
@@ -775,7 +775,7 @@ export const covers: Cover[] = [
      aiReflection: "tbd."
     },
     tags: [
-      "tbd",
+      "Multiple Apendages",
       "tbd",
       "tbd"
     ]
@@ -838,7 +838,7 @@ export const covers: Cover[] = [
      aiReflection: "tbd."
     },
     tags: [
-      "tbd",
+      "Multiple Apendages",
       "tbd",
       "tbd"
     ]
@@ -943,7 +943,7 @@ export const covers: Cover[] = [
      aiReflection: "tbd."
     },
     tags: [
-      "tbd",
+      "Multiple Apendages",
       "tbd",
       "tbd"
     ]
@@ -1216,7 +1216,7 @@ export const covers: Cover[] = [
      aiReflection: "tbd."
     },
     tags: [
-      "tbd",
+      "Multiple Apendages",
       "tbd",
       "tbd"
     ]
@@ -1426,7 +1426,7 @@ export const covers: Cover[] = [
      aiReflection: "tbd."
     },
     tags: [
-      "tbd",
+      "Multiple Apendages",
       "tbd",
       "tbd"
     ]
@@ -1531,7 +1531,7 @@ export const covers: Cover[] = [
      aiReflection: "tbd."
     },
     tags: [
-      "tbd",
+      "Multiple Apendages",
       "tbd",
       "tbd"
     ]
@@ -1573,7 +1573,7 @@ export const covers: Cover[] = [
      aiReflection: "tbd."
     },
     tags: [
-      "tbd",
+      "Multiple Apendages",
       "tbd",
       "tbd"
     ]
@@ -1636,7 +1636,7 @@ export const covers: Cover[] = [
      aiReflection: "tbd."
     },
     tags: [
-      "tbd",
+      "Multiple Apendages",
       "tbd",
       "tbd"
     ]
@@ -1657,7 +1657,7 @@ export const covers: Cover[] = [
      aiReflection: "tbd."
     },
     tags: [
-      "tbd",
+      "Multiple Apendages",
       "tbd",
       "tbd"
     ]
@@ -1678,8 +1678,8 @@ export const covers: Cover[] = [
      aiReflection: "tbd."
     },
     tags: [
-      "Early Robotics",
-      "Mechanical Beings",
+      "Multiple Apendages",
+      "tbd",
       "Human-Robot Conflict"
     ]
   },
