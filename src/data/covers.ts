@@ -823,9 +823,9 @@ export const covers: Cover[] = [
   {
     id: "40",
     title: "Mechanical Dominance",
-    year: 1927,
-    magazineName: "Amazing Stories",
-    imageUrl: "https://pulpbots.wordpress.com/wp-content/uploads/2025/05/amazing_stories_1927_08.jpg",
+    year: 1935,
+    magazineName: "Astounding Stories",
+    imageUrl: "https://pulpbots.wordpress.com/wp-content/uploads/2025/05/astounding_stories_1935_07.jpg",
     description: "The image depicts a scene of chaos with multiple robots attacking human figures. The robots are large, menacing, and appear to be causing destruction. The presence of fire and the distressed human figures suggest a hostile scenario where the robots are the aggressors.",
     analysis: {
       Observations: "This cover stands out for its dynamic composition and the central figure's design, which suggests advanced technology and a possible role in conflict or defense. The use of fire in the background adds to the sense of chaos and danger, while the absence of human figures emphasizes the central robot's dominance. The cover's design and color palette create a sense of tension and drama, drawing the viewer into the narrative and themes explored in the story.",
@@ -844,9 +844,9 @@ export const covers: Cover[] = [
   {
     id: "41",
     title: "Mechanical Dominance",
-    year: 1927,
-    magazineName: "Amazing Stories",
-    imageUrl: "https://pulpbots.wordpress.com/wp-content/uploads/2025/05/amazing_stories_1927_08.jpg",
+    year: 1931,
+    magazineName: "Astounding Stories of Super Science",
+    imageUrl: "https://pulpbots.wordpress.com/wp-content/uploads/2025/05/astounding_stories_of_super_science_1931_01.jpg",
     description: "The image depicts a scene of chaos with multiple robots attacking human figures. The robots are large, menacing, and appear to be causing destruction. The presence of fire and the distressed human figures suggest a hostile scenario where the robots are the aggressors.",
     analysis: {
       Observations: "This cover stands out for its dynamic composition and the central figure's design, which suggests advanced technology and a possible role in conflict or defense. The use of fire in the background adds to the sense of chaos and danger, while the absence of human figures emphasizes the central robot's dominance. The cover's design and color palette create a sense of tension and drama, drawing the viewer into the narrative and themes explored in the story.",
@@ -865,9 +865,9 @@ export const covers: Cover[] = [
   {
     id: "42",
     title: "Mechanical Dominance",
-    year: 1927,
-    magazineName: "Amazing Stories",
-    imageUrl: "https://pulpbots.wordpress.com/wp-content/uploads/2025/05/amazing_stories_1927_08.jpg",
+    year: 1950,
+    magazineName: "Famous Fantastic Mysteries",
+    imageUrl: "https://pulpbots.wordpress.com/wp-content/uploads/2025/05/famous_fantastic_mysteries_1950_06.jpg",
     description: "The image depicts a scene of chaos with multiple robots attacking human figures. The robots are large, menacing, and appear to be causing destruction. The presence of fire and the distressed human figures suggest a hostile scenario where the robots are the aggressors.",
     analysis: {
       Observations: "This cover stands out for its dynamic composition and the central figure's design, which suggests advanced technology and a possible role in conflict or defense. The use of fire in the background adds to the sense of chaos and danger, while the absence of human figures emphasizes the central robot's dominance. The cover's design and color palette create a sense of tension and drama, drawing the viewer into the narrative and themes explored in the story.",
