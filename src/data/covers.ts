@@ -294,8 +294,7 @@ export const covers: Cover[] = [
       "Mechanical Beings",
       "Human-Robot Conflict"
     ]
-  },  
-  
+  },    
   {
     id: "15",
     title: "Mechanical Dominance",
@@ -306,10 +305,10 @@ export const covers: Cover[] = [
     analysis: {
       Observations: "This cover stands out for its dynamic composition and the central figure's design, which suggests advanced technology and a possible role in conflict or defense. The use of fire in the background adds to the sense of chaos and danger, while the absence of human figures emphasizes the central robot's dominance. The cover's design and color palette create a sense of tension and drama, drawing the viewer into the narrative and themes explored in the story.",
       VisualDesignElements: "The cover art, featuring ""The Mad Robot"" by William P. McAdams, employs a vibrant and dynamic color palette that draws the viewer's attention to the central conflict between the human and the robot. The dominant colors are red, yellow, and blue, which are used to create a sense of energy and tension. The composition is designed to focus the viewer's eye on the confrontation between the human and the robot. The human figure is positioned in the foreground, appearing to be in a defensive stance, while the robot is in the background, looming over the human. This arrangement creates a sense of depth and perspective, with the human figure appearing smaller and more vulnerable due to the robot's size and imposing presence. The use of foreground and background is exaggerated to create a sense of drama and motion. The human figure is depicted with dynamic lines and exaggerated muscles, suggesting movement and struggle. The robot, on the other hand, is shown with rigid lines and a more static pose, emphasizing its mechanical nature and the threat it poses to the human. The illustration also employs motion effects, such as the sparks and light effects which draw the viewer's attention to the action and create a sense of urgency. The perspective is used to create a sense of scale, with the robot appearing larger and more powerful than the human, reinforcing the theme of the robot's dominance. Overall, the visual design elements of the cover art work together to create a sense of tension and drama, drawing the viewer's attention to the central conflict between the human and the robot. The use of color, composition, style, and perspective all contribute to the overall impact of the image, making it a compelling and engaging piece of pulp-era science fiction cover art.",
-      VisualHierarchyHumanPresence: "While early sci-fi often imagined robots as towering mechanical beings, actual AI development took a very different path, focusing on software and neural networks rather than physical presence.",
+      VisualHierarchyHumanPresence: "Tbd",
       TechnologicalRepresentation: "The image features a central robot-like figure with a spherical body and a dome-shaped head, connected to a network of cables and wires. This figure is colored in shades of gray and silver, with hints of red and black accents. Surrounding this central figure are several smaller, spherical entities that appear to be drones or satellites, each with their own set of wires and cables connecting to the central figure. These drones are colored in similar tones to the central figure, with a predominance of gray and silver. There are no human figures present in the image.",
       LiteraryVisualConnections: "tbd.",
-     aiReflection: "tbd."
+      aiReflection: "tbd."
     },
     tags: [
       "Early Robotics",
