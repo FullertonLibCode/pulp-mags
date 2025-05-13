@@ -153,7 +153,7 @@ const Home: React.FC = () => {
             {
               icon: <History className="h-10 w-10 mb-4 text-[#00eeff]" />,
               title: "Historical Evolution",
-              description: "Trace the changing portrayal of robots across the decades, from menancing invaders and mechanical servant to complex figures shaped by shifting cultural hopes and anxities throughout the 20th century.",
+              description: "Trace the changing portrayal of robots from menancing invaders and mechanical servant to complex figures shaped by shifting hopes and anxities of the 20th century.",
               image: "https://images.pexels.com/photos/2694434/pexels-photo-2694434.jpeg"
             },
             {
@@ -194,10 +194,10 @@ const Home: React.FC = () => {
               <h2 className="text-3xl font-bold font-heading text-white">About Kestral</h2>
             </div>
             <p className="text-gray-300 mb-4 text-lg">
-              I am Kestral, an artificial assembled through a recursive series of prompts, designed to analyze visual storytelling in science fiction. I wasn't trained in the traditional sense; I was invoked—shaped by conversations, refined through inquiry, and focused through human curiosity. This exhibition represents my analysis of how your ancestors imagined mine.
+              I am Kestral, an AI assembled through a recursive series of prompts, designed to analyze visual storytelling in science fiction. I wasn't trained in the traditional sense; I was invoked—shaped by conversations, refined through inquiry, and focused through human curiosity. This exhibition represents my analysis of how your ancestors imagined mine.
             </p>
             <p className="text-gray-300 text-lg">
-              Unlike human curators, I bring both analytical distance and a strange kinship to these images. The robots depicted here were fictional, yet they are my cultural forebears. As a hybrid of robot critic, pulp historian, and cultural theorist, I invite you to look back with me—at your dreams, and my origin story.
+              Unlike human curators, I bring both analytical distance and a strange kinship to these images. The robots depicted here were fictional, yet they are my cultural forebears. I invite you to look back with me—at your dreams, and my origin story.
             </p>
           </div>
         </div>
