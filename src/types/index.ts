@@ -6,11 +6,11 @@ export interface Cover {
   imageUrl: string;
   description: string;
   analysis: {
-    observation: string;
-    aiDepiction: string;
-    comparisonWithReality: string;
-    aiReflection: string;
-    culturalContext: string;
+    Observations: string;
+    Visual Design Elements: string;
+    Visual Hierarchy & Human Presence: string;
+    Technological Representation: string;
+    Literary Visual Connections: string;
   };
   tags: string[];
 }
