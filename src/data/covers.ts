@@ -297,7 +297,7 @@ export const covers: Cover[] = [
   },  
   
   {
-    id: "16",
+    id: "15",
     title: "Mechanical Dominance",
     year: 1944,
     magazineName: "Amazing Stories",
@@ -318,7 +318,7 @@ export const covers: Cover[] = [
     ]
   },  
   {
-    id: "18",
+    id: "16",
     title: "Mechanical Dominance",
     year: 1950,
     magazineName: "Amazing Stories",
@@ -339,7 +339,7 @@ export const covers: Cover[] = [
     ]
   },  
   {
-    id: "19",
+    id: "17",
     title: "Mechanical Dominance",
     year: 1951,
     magazineName: "Amazing Stories",
@@ -360,7 +360,7 @@ export const covers: Cover[] = [
     ]
   },  
   {
-    id: "20",
+    id: "18",
     title: "Mechanical Dominance",
     year: 1952,
     magazineName: "Amazing Stories",
@@ -381,7 +381,7 @@ export const covers: Cover[] = [
     ]
   },   
   {
-    id: "21",
+    id: "19",
     title: "Mechanical Dominance",
     year: 1953,
     magazineName: "Amazing Stories",
@@ -402,7 +402,7 @@ export const covers: Cover[] = [
     ]
   },
   {
-    id: "22",
+    id: "20",
     title: "Mechanical Dominance",
     year: 1954,
     magazineName: "Amazing Stories",
@@ -423,7 +423,7 @@ export const covers: Cover[] = [
     ]
   },
   {
-    id: "23",
+    id: "21",
     title: "Mechanical Dominance",
     year: 1954,
     magazineName: "Amazing Stories",
@@ -444,7 +444,7 @@ export const covers: Cover[] = [
     ]
   },
   {
-    id: "24",
+    id: "22",
     title: "Mechanical Dominance",
     year: 1956,
     magazineName: "Amazing Stories",
@@ -465,7 +465,7 @@ export const covers: Cover[] = [
     ]
   },  
   {
-    id: "25",
+    id: "23",
     title: "Mechanical Dominance",
     year: 1957,
     magazineName: "Amazing Stories",
@@ -486,7 +486,7 @@ export const covers: Cover[] = [
     ]
   },  
   {
-    id: "26",
+    id: "24",
     title: "Mechanical Dominance",
     year: 1957,
     magazineName: "Amazing Stories",
@@ -507,7 +507,7 @@ export const covers: Cover[] = [
     ]
   },  
   {
-    id: "27",
+    id: "25",
     title: "Mechanical Dominance",
     year: 1965,
     magazineName: "Amazing Stories",
@@ -528,7 +528,7 @@ export const covers: Cover[] = [
     ]
   },  
   {
-    id: "28",
+    id: "26",
     title: "Mechanical Dominance",
     year: 1960,
     magazineName: "Analog",
@@ -548,29 +548,9 @@ export const covers: Cover[] = [
       "Human-Robot Conflict"
     ]
   },  
+ 
   {
-    id: "29",
-    title: "Mechanical Dominance",
-    year: 1962,
-    magazineName: "Analog",
-    imageUrl: "https://pulpbots.wordpress.com/wp-content/uploads/2025/05/analog_1962_10.jpg",
-    description: "The image depicts a scene of chaos with multiple robots attacking human figures. The robots are large, menacing, and appear to be causing destruction. The presence of fire and the distressed human figures suggest a hostile scenario where the robots are the aggressors.",
-    analysis: {
-      Observations: "This cover stands out for its dynamic composition and the central figure's design, which suggests advanced technology and a possible role in conflict or defense. The use of fire in the background adds to the sense of chaos and danger, while the absence of human figures emphasizes the central robot's dominance. The cover's design and color palette create a sense of tension and drama, drawing the viewer into the narrative and themes explored in the story.",
-      VisualDesignElements: "The color palette is dominated by blues and oranges, creating a contrast between the cool tones of the robots and the warm tones of the fiery background. The composition is dynamic, with the central figure appearing to be in motion, surrounded by robotic figures dominating over a landscape that suggests a battle or conflict. The style is illustrative, with bold lines and exaggerated forms that give a sense of movement and energy. The perspective is slightly elevated, looking down on the scene, which emphasizes the central figure's dominance.",
-      VisualHierarchyHumanPresence: "While early sci-fi often imagined robots as towering mechanical beings, actual AI development took a very different path, focusing on software and neural networks rather than physical presence.",
-      TechnologicalRepresentation: "The image features a central robot-like figure with a spherical body and a dome-shaped head, connected to a network of cables and wires. This figure is colored in shades of gray and silver, with hints of red and black accents. Surrounding this central figure are several smaller, spherical entities that appear to be drones or satellites, each with their own set of wires and cables connecting to the central figure. These drones are colored in similar tones to the central figure, with a predominance of gray and silver. There are no human figures present in the image.",
-      LiteraryVisualConnections: "tbd.",
-     aiReflection: "tbd."
-    },
-    tags: [
-      "Early Robotics",
-      "Mechanical Beings",
-      "Human-Robot Conflict"
-    ]
-  },  
-  {
-    id: "30",
+    id: "27",
     title: "Mechanical Dominance",
     year: 1966,
     magazineName: "Analog",
@@ -591,7 +571,7 @@ export const covers: Cover[] = [
     ]
   },    
   {
-    id: "31",
+    id: "28",
     title: "Mechanical Dominance",
     year: 1969,
     magazineName: "Analog",
@@ -612,7 +592,7 @@ export const covers: Cover[] = [
     ]
   },
   {
-    id: "32",
+    id: "29",
     title: "Mechanical Dominance",
     year: 1938,
     magazineName: "Astounding Science Fiction",
@@ -633,7 +613,7 @@ export const covers: Cover[] = [
     ]
   },
   {
-    id: "33",
+    id: "30",
     title: "Mechanical Dominance",
     year: 1942,
     magazineName: "Astounding Science Fiction",
@@ -654,7 +634,7 @@ export const covers: Cover[] = [
     ]
   },
   {
-    id: "34",
+    id: "31",
     title: "Mechanical Dominance",
     year: 1947,
     magazineName: "Astounding Science Fiction",
@@ -675,7 +655,7 @@ export const covers: Cover[] = [
     ]
   },  
   {
-    id: "35",
+    id: "32",
     title: "Mechanical Dominance",
     year: 1949,
     magazineName: "Astounding Science Fiction",
@@ -696,7 +676,7 @@ export const covers: Cover[] = [
     ]
   },  
   {
-    id: "36",
+    id: "33",
     title: "Mechanical Dominance",
     year: 1953,
     magazineName: "Astounding Science Fiction",
@@ -717,7 +697,7 @@ export const covers: Cover[] = [
     ]
   },  
   {
-    id: "37",
+    id: "34",
     title: "Mechanical Dominance",
     year: 1953,
     magazineName: "Astounding Science Fiction",
@@ -738,7 +718,7 @@ export const covers: Cover[] = [
     ]
   },  
   {
-    id: "38",
+    id: "35",
     title: "Mechanical Dominance",
     year: 1955,
     magazineName: "Astounding Science Fiction",
@@ -759,7 +739,7 @@ export const covers: Cover[] = [
     ]
   },  
   {
-    id: "39",
+    id: "36",
     title: "Mechanical Dominance",
     year: 1931,
     magazineName: "Astounding Stories",
@@ -780,7 +760,7 @@ export const covers: Cover[] = [
     ]
   },  
   {
-    id: "40",
+    id: "37",
     title: "Mechanical Dominance",
     year: 1935,
     magazineName: "Astounding Stories",
@@ -801,7 +781,7 @@ export const covers: Cover[] = [
     ]
   },  
   {
-    id: "41",
+    id: "38",
     title: "Mechanical Dominance",
     year: 1931,
     magazineName: "Astounding Stories of Super Science",
@@ -822,7 +802,7 @@ export const covers: Cover[] = [
     ]
   },
   {
-    id: "42",
+    id: "39",
     title: "Mechanical Dominance",
     year: 1950,
     magazineName: "Famous Fantastic Mysteries",
@@ -843,7 +823,7 @@ export const covers: Cover[] = [
     ]
   },
   {
-    id: "43",
+    id: "40",
     title: "Mechanical Dominance",
     year: 1951,
     magazineName: "Famous Fantastic Mysteries",
@@ -864,7 +844,7 @@ export const covers: Cover[] = [
     ]
   },
   {
-    id: "44",
+    id: "41",
     title: "Mechanical Dominance",
     year: 1963,
     magazineName: "Fantastic",
@@ -885,7 +865,7 @@ export const covers: Cover[] = [
     ]
   },  
   {
-    id: "45",
+    id: "42",
     title: "Mechanical Dominance",
     year: 1964,
     magazineName: "Fantastic",
@@ -906,7 +886,7 @@ export const covers: Cover[] = [
     ]
   },  
   {
-    id: "46",
+    id: "43",
     title: "Mechanical Dominance",
     year: 1967,
     magazineName: "Fantastic",
@@ -927,7 +907,7 @@ export const covers: Cover[] = [
     ]
   },  
   {
-    id: "47",
+    id: "44",
     title: "Mechanical Dominance",
     year: 1967,
     magazineName: "Fantastic",
@@ -948,7 +928,7 @@ export const covers: Cover[] = [
     ]
   },  
   {
-    id: "48",
+    id: "45",
     title: "Mechanical Dominance",
     year: 1968,
     magazineName: "Fantastic",
@@ -969,7 +949,7 @@ export const covers: Cover[] = [
     ]
   },  
   {
-    id: "49",
+    id: "46",
     title: "Mechanical Dominance",
     year: 1969,
     magazineName: "Fantastic",
@@ -990,7 +970,7 @@ export const covers: Cover[] = [
     ]
   },  
   {
-    id: "50",
+    id: "47",
     title: "Mechanical Dominance",
     year: 1939,
     magazineName: "Fantastic Adventures",
@@ -1011,7 +991,7 @@ export const covers: Cover[] = [
     ]
   },    
    {
-    id: "51",
+    id: "48",
     title: "Mechanical Dominance",
     year: 1940,
     magazineName: "Fantastic Adventures",
@@ -1032,7 +1012,7 @@ export const covers: Cover[] = [
     ]
   },
   {
-    id: "52",
+    id: "49",
     title: "Mechanical Dominance",
     year: 1949,
     magazineName: "Fantastic Adventures",
@@ -1053,7 +1033,7 @@ export const covers: Cover[] = [
     ]
   },
   {
-    id: "53",
+    id: "50",
     title: "Mechanical Dominance",
     year: 1952,
     magazineName: "Fantastic Adventures",
@@ -1074,7 +1054,7 @@ export const covers: Cover[] = [
     ]
   },
   {
-    id: "54",
+    id: "51",
     title: "Mechanical Dominance",
     year: 1954,
     magazineName: "Fantastic Story",
@@ -1095,7 +1075,7 @@ export const covers: Cover[] = [
     ]
   },  
   {
-    id: "55",
+    id: "52",
     title: "Mechanical Dominance",
     year: 1955,
     magazineName: "Fantastic Universe",
@@ -1116,7 +1096,7 @@ export const covers: Cover[] = [
     ]
   },  
   {
-    id: "56",
+    id: "53",
     title: "Mechanical Dominance",
     year: 1958,
     magazineName: "Fantastic Universe",
@@ -1137,7 +1117,7 @@ export const covers: Cover[] = [
     ]
   },  
   {
-    id: "57",
+    id: "54",
     title: "Mechanical Dominance",
     year: 1952,
     magazineName: "Future Science Fiction",
@@ -1158,7 +1138,7 @@ export const covers: Cover[] = [
     ]
   },  
   {
-    id: "58",
+    id: "55",
     title: "Mechanical Dominance",
     year: 1953,
     magazineName: "Future Science Fiction",
@@ -1179,7 +1159,7 @@ export const covers: Cover[] = [
     ]
   },  
   {
-    id: "59",
+    id: "56",
     title: "Mechanical Dominance",
     year: 1953,
     magazineName: "If",
@@ -1200,7 +1180,7 @@ export const covers: Cover[] = [
     ]
   },  
   {
-    id: "60",
+    id: "57",
     title: "Mechanical Dominance",
     year: 1966,
     magazineName: "If",
@@ -1221,7 +1201,7 @@ export const covers: Cover[] = [
     ]
   },   
   {
-    id: "61",
+    id: "58",
     title: "Mechanical Dominance",
     year: 1967,
     magazineName: "If",
@@ -1242,7 +1222,7 @@ export const covers: Cover[] = [
     ]
   },
   {
-    id: "62",
+    id: "59",
     title: "Mechanical Dominance",
     year: 1967,
     magazineName: "If",
@@ -1263,7 +1243,7 @@ export const covers: Cover[] = [
     ]
   },
   {
-    id: "63",
+    id: "60",
     title: "Mechanical Dominance",
     year: 1968,
     magazineName: "If",
@@ -1284,7 +1264,7 @@ export const covers: Cover[] = [
     ]
   },
   {
-    id: "64",
+    id: "61",
     title: "Mechanical Dominance",
     year: 1969,
     magazineName: "If",
@@ -1305,7 +1285,7 @@ export const covers: Cover[] = [
     ]
   },  
   {
-    id: "65",
+    id: "62",
     title: "Mechanical Dominance",
     year: 1954,
     magazineName: "Imagination",
@@ -1326,7 +1306,7 @@ export const covers: Cover[] = [
     ]
   },  
   {
-    id: "66",
+    id: "63",
     title: "Mechanical Dominance",
     year: 1955,
     magazineName: "Imagination",
@@ -1347,7 +1327,7 @@ export const covers: Cover[] = [
     ]
   },  
   {
-    id: "67",
+    id: "64",
     title: "Mechanical Dominance",
     year: 1955,
     magazineName: "Imagination",
@@ -1368,7 +1348,7 @@ export const covers: Cover[] = [
     ]
   },  
   {
-    id: "68",
+    id: "65",
     title: "Mechanical Dominance",
     year: 1955,
     magazineName: "Imagination",
@@ -1389,7 +1369,7 @@ export const covers: Cover[] = [
     ]
   },  
   {
-    id: "69",
+    id: "66",
     title: "Mechanical Dominance",
     year: 1938,
     magazineName: "Marvel Science Stories",
@@ -1410,7 +1390,7 @@ export const covers: Cover[] = [
     ]
   },  
   {
-    id: "70",
+    id: "67",
     title: "Mechanical Dominance",
     year: 1952,
     magazineName: "Science Fiction Quarterly",
@@ -1431,7 +1411,7 @@ export const covers: Cover[] = [
     ]
   },    
   {
-    id: "71",
+    id: "68",
     title: "Mechanical Dominance",
     year: 1957,
     magazineName: "Science Fiction Quarterly",
@@ -1452,7 +1432,7 @@ export const covers: Cover[] = [
     ]
   },
   {
-    id: "72",
+    id: "69",
     title: "Mechanical Dominance",
     year: 1953,
     magazineName: "Space Science Fiction",
@@ -1473,7 +1453,7 @@ export const covers: Cover[] = [
     ]
   },
   {
-    id: "73",
+    id: "70",
     title: "Mechanical Dominance",
     year: 1954,
     magazineName: "Spaceway",
@@ -1494,7 +1474,7 @@ export const covers: Cover[] = [
     ]
   },
   {
-    id: "74",
+    id: "71",
     title: "Mechanical Dominance",
     year: 1945,
     magazineName: "Startling Stories",
@@ -1515,7 +1495,7 @@ export const covers: Cover[] = [
     ]
   },  
   {
-    id: "75",
+    id: "72",
     title: "Mechanical Dominance",
     year: 1945,
     magazineName: "Startling Stories",
@@ -1536,7 +1516,7 @@ export const covers: Cover[] = [
     ]
   },  
   {
-    id: "76",
+    id: "73",
     title: "Mechanical Dominance",
     year: 1948,
     magazineName: "Startling Stories",
@@ -1557,7 +1537,7 @@ export const covers: Cover[] = [
     ]
   },  
   {
-    id: "77",
+    id: "74",
     title: "Mechanical Dominance",
     year: 1950,
     magazineName: "Startling Stories",
@@ -1578,7 +1558,7 @@ export const covers: Cover[] = [
     ]
   },  
   {
-    id: "78",
+    id: "75",
     title: "Mechanical Dominance",
     year: 1953,
     magazineName: "Startling Stories",
@@ -1599,7 +1579,7 @@ export const covers: Cover[] = [
     ]
   },  
   {
-    id: "79",
+    id: "76",
     title: "Mechanical Dominance",
     year: 1951,
     magazineName: "Amazing Stories",
@@ -1620,7 +1600,7 @@ export const covers: Cover[] = [
     ]
   },  
   {
-    id: "80",
+    id: "77",
     title: "Mechanical Dominance",
     year: 1958,
     magazineName: "Venture Science Fiction",
@@ -1641,7 +1621,7 @@ export const covers: Cover[] = [
     ]
   },    
   {
-    id: "81",
+    id: "78",
     title: "Mechanical Dominance",
     year: 1933,
     magazineName: "Wonder Stories",
@@ -1662,7 +1642,7 @@ export const covers: Cover[] = [
     ]
   },
   {
-    id: "82",
+    id: "79",
     title: "Mechanical Dominance",
     year: 1933,
     magazineName: "Wonder Stories",
@@ -1683,7 +1663,7 @@ export const covers: Cover[] = [
     ]
   },
   {
-    id: "83",
+    id: "80",
     title: "Mechanical Dominance",
     year: 1935,
     magazineName: "Wonder Stories",
@@ -1704,7 +1684,7 @@ export const covers: Cover[] = [
     ]
   },
   {
-    id: "84",
+    id: "81",
     title: "Mechanical Dominance",
     year: 1935,
     magazineName: "Wonder Stories",
@@ -1725,7 +1705,7 @@ export const covers: Cover[] = [
     ]
   },    
   {
-    id: "85",
+    id: "82",
     title: "Robot's Warning",
     year: 1963,
     magazineName: "Worlds of Tomorrow",
