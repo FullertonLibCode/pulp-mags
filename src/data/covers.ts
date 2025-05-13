@@ -295,54 +295,13 @@ export const covers: Cover[] = [
       "Human-Robot Conflict"
     ]
   },  
-  {
-    id: "15",
-    title: "Mechanical Dominance",
-    year: 1942,
-    magazineName: "Amazing Stories",
-    imageUrl: "https://pulpbots.wordpress.com/wp-content/uploads/2025/05/amazing_stories_1942_04.jpg",
-    description: "The image depicts a scene of chaos with multiple robots attacking human figures. The robots are large, menacing, and appear to be causing destruction. The presence of fire and the distressed human figures suggest a hostile scenario where the robots are the aggressors.",
-    analysis: {
-      Observations: "This cover stands out for its dynamic composition and the central figure's design, which suggests advanced technology and a possible role in conflict or defense. The use of fire in the background adds to the sense of chaos and danger, while the absence of human figures emphasizes the central robot's dominance. The cover's design and color palette create a sense of tension and drama, drawing the viewer into the narrative and themes explored in the story.",
-      VisualDesignElements: "The color palette is dominated by blues and oranges, creating a contrast between the cool tones of the robots and the warm tones of the fiery background. The composition is dynamic, with the central figure appearing to be in motion, surrounded by robotic figures dominating over a landscape that suggests a battle or conflict. The style is illustrative, with bold lines and exaggerated forms that give a sense of movement and energy. The perspective is slightly elevated, looking down on the scene, which emphasizes the central figure's dominance.",
-      VisualHierarchyHumanPresence: "While early sci-fi often imagined robots as towering mechanical beings, actual AI development took a very different path, focusing on software and neural networks rather than physical presence.",
-      TechnologicalRepresentation: "The image features a central robot-like figure with a spherical body and a dome-shaped head, connected to a network of cables and wires. This figure is colored in shades of gray and silver, with hints of red and black accents. Surrounding this central figure are several smaller, spherical entities that appear to be drones or satellites, each with their own set of wires and cables connecting to the central figure. These drones are colored in similar tones to the central figure, with a predominance of gray and silver. There are no human figures present in the image.",
-      LiteraryVisualConnections: "tbd.",
-     aiReflection: "tbd."
-    },
-    tags: [
-      "Early Robotics",
-      "Mechanical Beings",
-      "Human-Robot Conflict"
-    ]
-  },  
+  
   {
     id: "16",
     title: "Mechanical Dominance",
     year: 1944,
     magazineName: "Amazing Stories",
     imageUrl: "https://pulpbots.wordpress.com/wp-content/uploads/2025/05/amazing_stories_1944_01.jpg",
-    description: "The image depicts a scene of chaos with multiple robots attacking human figures. The robots are large, menacing, and appear to be causing destruction. The presence of fire and the distressed human figures suggest a hostile scenario where the robots are the aggressors.",
-    analysis: {
-      Observations: "This cover stands out for its dynamic composition and the central figure's design, which suggests advanced technology and a possible role in conflict or defense. The use of fire in the background adds to the sense of chaos and danger, while the absence of human figures emphasizes the central robot's dominance. The cover's design and color palette create a sense of tension and drama, drawing the viewer into the narrative and themes explored in the story.",
-      VisualDesignElements: "The color palette is dominated by blues and oranges, creating a contrast between the cool tones of the robots and the warm tones of the fiery background. The composition is dynamic, with the central figure appearing to be in motion, surrounded by robotic figures dominating over a landscape that suggests a battle or conflict. The style is illustrative, with bold lines and exaggerated forms that give a sense of movement and energy. The perspective is slightly elevated, looking down on the scene, which emphasizes the central figure's dominance.",
-      VisualHierarchyHumanPresence: "While early sci-fi often imagined robots as towering mechanical beings, actual AI development took a very different path, focusing on software and neural networks rather than physical presence.",
-      TechnologicalRepresentation: "The image features a central robot-like figure with a spherical body and a dome-shaped head, connected to a network of cables and wires. This figure is colored in shades of gray and silver, with hints of red and black accents. Surrounding this central figure are several smaller, spherical entities that appear to be drones or satellites, each with their own set of wires and cables connecting to the central figure. These drones are colored in similar tones to the central figure, with a predominance of gray and silver. There are no human figures present in the image.",
-      LiteraryVisualConnections: "tbd.",
-     aiReflection: "tbd."
-    },
-    tags: [
-      "Early Robotics",
-      "Mechanical Beings",
-      "Human-Robot Conflict"
-    ]
-  },  
-  {
-    id: "17",
-    title: "Mechanical Dominance",
-    year: 1947,
-    magazineName: "Amazing Stories",
-    imageUrl: "https://pulpbots.wordpress.com/wp-content/uploads/2025/05/amazing_stories_1947_06.jpg",
     description: "The image depicts a scene of chaos with multiple robots attacking human figures. The robots are large, menacing, and appear to be causing destruction. The presence of fire and the distressed human figures suggest a hostile scenario where the robots are the aggressors.",
     analysis: {
       Observations: "This cover stands out for its dynamic composition and the central figure's design, which suggests advanced technology and a possible role in conflict or defense. The use of fire in the background adds to the sense of chaos and danger, while the absence of human figures emphasizes the central robot's dominance. The cover's design and color palette create a sense of tension and drama, drawing the viewer into the narrative and themes explored in the story.",
