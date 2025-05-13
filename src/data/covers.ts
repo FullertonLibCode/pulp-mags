@@ -546,8 +546,10 @@ export const covers: Cover[] = [
       "tbd",
       "tbd",
       "tbd"
+    ]
   },  
   {
+  { 
     id: "27",
     title: "Mechanical Dominance",
     year: 1966,
@@ -566,6 +568,7 @@ export const covers: Cover[] = [
       "tbd",
       "tbd",
       "tbd"
+      ]
   },    
   {
     id: "28",
