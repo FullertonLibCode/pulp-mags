@@ -736,7 +736,7 @@ export const covers: Cover[] = [
       "tbd",
       "tbd",
       "tbd"
-      
+    ]
   },  
   {
     id: "36",
