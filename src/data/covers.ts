@@ -417,9 +417,10 @@ export const covers: Cover[] = [
      aiReflection: "tbd."
     },
     tags: [
-      "Early Robotics",
-      "Mechanical Beings",
-      "Human-Robot Conflict"
+      "tbd",
+      "tbd",
+      "tbd"
+
     ]
   },
   {
@@ -548,7 +549,6 @@ export const covers: Cover[] = [
       "tbd"
     ]
   },  
-  {
   { 
     id: "27",
     title: "Mechanical Dominance",
