@@ -324,17 +324,17 @@ export const covers: Cover[] = [
     year: 1950,
     magazineName: "Amazing Stories",
     imageUrl: "https://pulpbots.wordpress.com/wp-content/uploads/2025/05/amazing_stories_1950_02.jpg",
-    description: "The image depicts a scene of chaos with multiple robots attacking human figures. The robots are large, menacing, and appear to be causing destruction. The presence of fire and the distressed human figures suggest a hostile scenario where the robots are the aggressors.",
+    description: "A female superhero in a black and red costume with a flowing cape, standing in a heroic pose, surrounded by robots.",
     analysis: {
-      Observations: "This cover stands out for its dynamic composition and the central figure's design, which suggests advanced technology and a possible role in conflict or defense. The use of fire in the background adds to the sense of chaos and danger, while the absence of human figures emphasizes the central robot's dominance. The cover's design and color palette create a sense of tension and drama, drawing the viewer into the narrative and themes explored in the story.",
+      Observations: "The depiction of the female hero, symbolizes the empowerment of women in a male-dominated field. She appears to be in a heroic pose, with one arm raised and the other holding the weapon. In the background, there are various mechanical and robotic figures. These robots are colored in shades of gray and silver, and they are positioned in various poses that suggest movement and action.",
       VisualDesignElements: "tbd",
       VisualHierarchyHumanPresence: "tbd",
-      TechnologicalRepresentation: "The image features a central robot-like figure with a spherical body and a dome-shaped head, connected to a network of cables and wires. This figure is colored in shades of gray and silver, with hints of red and black accents. Surrounding this central figure are several smaller, spherical entities that appear to be drones or satellites, each with their own set of wires and cables connecting to the central figure. These drones are colored in similar tones to the central figure, with a predominance of gray and silver. There are no human figures present in the image.",
+      TechnologicalRepresentation: "tbd",
       LiteraryVisualConnections: "tbd.",
      aiReflection: "tbd."
     },
     tags: [
-      "tbd",
+      "Heroines",
       "tbd",
       "tbd"
     ]
@@ -366,7 +366,7 @@ export const covers: Cover[] = [
     year: 1952,
     magazineName: "Amazing Stories",
     imageUrl: "https://pulpbots.wordpress.com/wp-content/uploads/2025/05/amazing_stories_1952_02.jpg",
-    description: "The image depicts a scene of chaos with multiple robots attacking human figures. The robots are large, menacing, and appear to be causing destruction. The presence of fire and the distressed human figures suggest a hostile scenario where the robots are the aggressors.",
+    description: "tbd",
     analysis: {
       Observations: "This cover stands out for its dynamic composition and the central figure's design, which suggests advanced technology and a possible role in conflict or defense. The use of fire in the background adds to the sense of chaos and danger, while the absence of human figures emphasizes the central robot's dominance. The cover's design and color palette create a sense of tension and drama, drawing the viewer into the narrative and themes explored in the story.",
       VisualDesignElements: "The color palette of the cover art is dominated by warm tones, with a fiery orange and red background that suggests a chaotic and intense scene. The central figure, a robot, is rendered in dark metallic colors, which contrast sharply with the fiery backdrop, drawing the viewer's attention to it. The composition is dynamic, with the robot positioned in the foreground, facing the viewer, and the explosion and debris in the background creating a sense of depth and movement. The use of perspective is evident in the way the robot and the explosion are depicted, with the robot appearing larger and more detailed, while the explosion is smaller and less detailed, indicating it is further away. The foreground is occupied by the robot, while the background features the explosion and debris, creating a clear distinction between the two. The illustration uses exaggerated forms, such as the large, rounded head of the robot and the dramatic explosion, to create a sense of motion and visual drama. The use of light and shadow is also notable, with the robot being illuminated from the front, creating a sense of three-dimensionality. Overall, the illustration directs the viewer's attention to the central figure, the robot, while also conveying a sense of action and drama through the use of color, composition, and visual elements.",
