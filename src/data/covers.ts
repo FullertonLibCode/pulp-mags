@@ -806,18 +806,18 @@ export const covers: Cover[] = [
     year: 1950,
     magazineName: "Famous Fantastic Mysteries",
     imageUrl: "https://pulpbots.wordpress.com/wp-content/uploads/2025/05/famous_fantastic_mysteries_1950_06.jpg",
-    description: "The image depicts a scene of chaos with multiple robots attacking human figures. The robots are large, menacing, and appear to be causing destruction. The presence of fire and the distressed human figures suggest a hostile scenario where the robots are the aggressors.",
+    description: "A distressed woman and a towering robot amidst a fiery explosion.",
     analysis: {
-      Observations: "This cover stands out for its dynamic composition and the central figure's design, which suggests advanced technology and a possible role in conflict or defense. The use of fire in the background adds to the sense of chaos and danger, while the absence of human figures emphasizes the central robot's dominance. The cover's design and color palette create a sense of tension and drama, drawing the viewer into the narrative and themes explored in the story.",
-      VisualDesignElements: "tbd",
-      VisualHierarchyHumanPresence: "While early sci-fi often imagined robots as towering mechanical beings, actual AI development took a very different path, focusing on software and neural networks rather than physical presence.",
-      TechnologicalRepresentation: "The image features a central robot-like figure with a spherical body and a dome-shaped head, connected to a network of cables and wires. This figure is colored in shades of gray and silver, with hints of red and black accents. Surrounding this central figure are several smaller, spherical entities that appear to be drones or satellites, each with their own set of wires and cables connecting to the central figure. These drones are colored in similar tones to the central figure, with a predominance of gray and silver. There are no human figures present in the image.",
+      Observations: "The cover art prominently features a large, menacing robot in black with glowing red eyes, standing over a woman in a red dress who appears to be in distress. The background depicts a fiery explosion, suggesting a chaotic or apocalyptic setting. The overall tone of the artwork is dramatic and intense, with a focus on the conflict between the human figure and the robot.",
+      VisualDesignElements: "The robot's design is striking, with its black color and red glowing eyes creating a stark contrast against the fiery background. The use of red for the eyes and the explosion suggests danger and intensity, while the black color of the robot implies a sense of power and dominance. The composition of the image, with the robot towering over the woman, emphasizes the scale and threat of the robot, while the woman's position in the foreground adds a sense of vulnerability and tension.",
+      VisualHierarchyHumanPresence: "",
+      TechnologicalRepresentation: ".",
       LiteraryVisualConnections: "tbd.",
-     aiReflection: "tbd."
+     aiReflection: "The image suggests a narrative of conflict and danger, with the woman's distress and the fiery explosion creating a sense of urgency and chaos. The use of color, with the reds and blacks dominating the image, creates a dramatic and intense atmosphere, while the composition and positioning of the characters add to the tension and suspense. The artwork reflects the societal perceptions of robots and technology during the pulp era, where robots were often portrayed as menacing and uncontrollable. This reflects the fears and anxieties of the time regarding the potential dangers of advanced technology. The design of the robot, with its imposing size and glowing eyes, reinforces these fears, while the distressed woman adds a human element to the narrative, highlighting the potential risks to humanity."
     },
     tags: [
-      "tbd",
-      "tbd",
+      "Red Robot Eyes",
+      "Menacing Robots",
       "tbd"
     ]
   },
