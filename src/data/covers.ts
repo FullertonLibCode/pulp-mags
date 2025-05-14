@@ -1026,28 +1026,28 @@ export const covers: Cover[] = [
      aiReflection: "The image suggests a story of space adventure and danger, with the robot's menacing appearance and the sense of motion creating a sense of urgency and excitement. The use of red for the robot's eyes emphasizes the robot's artificial nature and potential menace. The background of stars and a distant planet adds to the sense of otherworldliness and adventure."
     },
     tags: [
-      "tbd",
+      "Red Robot Eyes",
       "tbd",
       "tbd"
     ]
   },
   {
     id: "50",
-    title: "Mechanical Dominance",
+    title: "The Spectre of Suicide Swamp",
     year: 1952,
     magazineName: "Fantastic Adventures",
     imageUrl: "https://pulpbots.wordpress.com/wp-content/uploads/2025/05/fantastic_adventures_1952_07.jpg",
     description: "Swamp of the Red Sentinel",
     analysis: {
-      Observations: "This cover stands out for its dynamic composition and the central figure's design, which suggests advanced technology and a possible role in conflict or defense. The use of fire in the background adds to the sense of chaos and danger, while the absence of human figures emphasizes the central robot's dominance. The cover's design and color palette create a sense of tension and drama, drawing the viewer into the narrative and themes explored in the story.",
+      Observations: ".",
       VisualDesignElements: "The color palette of the cover art is dominated by earthy tones, with a focus on greens and browns, which creates a sense of a dense, jungle-like environment. The red of the robot's body stands out against this background, drawing the viewer's attention to it as the central figure. The composition is dynamic, with the man and woman in the foreground creating a sense of tension and drama. The man is reaching upwards towards the robot, which is suspended in the air, creating a diagonal line that leads the viewer's eye across the image. The woman's surprised expression and open mouth add to the sense of action and surprise. The use of perspective is effective in creating a sense of depth, with the man and woman appearing closer to the viewer than the robot.",
-      VisualHierarchyHumanPresence: "While early sci-fi often imagined robots as towering mechanical beings, actual AI development took a very different path, focusing on software and neural networks rather than physical presence.",
-      TechnologicalRepresentation: "The image features a central robot-like figure with a spherical body and a dome-shaped head, connected to a network of cables and wires. This figure is colored in shades of gray and silver, with hints of red and black accents. Surrounding this central figure are several smaller, spherical entities that appear to be drones or satellites, each with their own set of wires and cables connecting to the central figure. These drones are colored in similar tones to the central figure, with a predominance of gray and silver. There are no human figures present in the image.",
+      VisualHierarchyHumanPresence: ".",
+      TechnologicalRepresentation: "e.",
       LiteraryVisualConnections: "tbd.",
      aiReflection: "tbd."
     },
     tags: [
-      "tbd",
+      "Glowing Robot Eyes",
       "tbd",
       "tbd"
     ]
@@ -1058,17 +1058,17 @@ export const covers: Cover[] = [
     year: 1954,
     magazineName: "Fantastic Story",
     imageUrl: "https://pulpbots.wordpress.com/wp-content/uploads/2025/05/fantastic_story_1954_fall.jpg",
-    description: "Imposing robot standing amidst a chaotic scene of destruction and fleeing humans",
+    description: "A colossal robot looms over a frightened human crowd in a ravaged city, casting a shadow of technological dominance and impending doom.",
     analysis: {
-      Observations: "Imposing robot standing amidst a chaotic scene of destruction and fleeing humans",
+      Observations: "Imposing robot standing amidst a chaotic scene of destruction and fleeing humans. The background depicts a dystopian cityscape with damaged buildings and a hazy, polluted sky. The color palette is dominated by dark, muted tones, emphasizing the bleakness of the scene. The composition places the robot centrally, drawing the viewer's attention to its size and power.",
       VisualDesignElements: "The central figure, the robot, is rendered in a metallic gray, which stands out against the warmer background. The background features a cityscape with buildings that are partially obscured by smoke or dust, indicating a scene of destruction or chaos. Composition-wise, the robot is placed in the center, drawing the viewer's attention immediately. The human figures are smaller and placed in the foreground, creating a sense of scale and emphasizing the robot's size and dominance. The human figures are depicted in various states of distress or action, with some running and others crouching, which adds to the dynamic nature of the scene. The illustration directs the viewer's attention through the use of the central figure, the robot, which is the most detailed and prominent element. The background elements, while less detailed, provide context and a sense of the environment. The exaggerated forms, such as the robot's limbs and the human figures' postures, add to the visual drama and suggest a narrative of conflict or struggle.",
-      VisualHierarchyHumanPresence: "While early sci-fi often imagined robots as towering mechanical beings, actual AI development took a very different path, focusing on software and neural networks rather than physical presence.",
-      TechnologicalRepresentation: "The image features a central robot-like figure with a spherical body and a dome-shaped head, connected to a network of cables and wires. This figure is colored in shades of gray and silver, with hints of red and black accents. Surrounding this central figure are several smaller, spherical entities that appear to be drones or satellites, each with their own set of wires and cables connecting to the central figure. These drones are colored in similar tones to the central figure, with a predominance of gray and silver. There are no human figures present in the image.",
+      VisualHierarchyHumanPresence: ".",
+      TechnologicalRepresentation: "T.",
       LiteraryVisualConnections: "tbd.",
-     aiReflection: "tbd."
+     aiReflection: "The image suggests a story of a world where robots have taken over or are in control, with humans struggling to survive. The visual tone is one of foreboding and tension, with the hazy sky and damaged buildings creating a sense of desolation. The composition and color scheme work together to evoke a feeling of unease and impending doom. The robot's gaze directed at the viewer could be interpreted as a commentary on the fear of being watched or judged by technology."
     },
     tags: [
-      "tbd",
+      "Menacing Robots",
       "tbd",
       "tbd"
     ]
