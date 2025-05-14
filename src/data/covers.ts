@@ -512,38 +512,38 @@ export const covers: Cover[] = [
     year: 1965,
     magazineName: "Amazing Stories",
     imageUrl: "https://pulpbots.wordpress.com/wp-content/uploads/2025/05/amazing_stories_1965_06.jpg",
-    description: "The image depicts a scene of chaos with multiple robots attacking human figures. The robots are large, menacing, and appear to be causing destruction. The presence of fire and the distressed human figures suggest a hostile scenario where the robots are the aggressors.",
+    description: "A robot holding hammers set against a stark, unadorned background that emphasizes the robot's imposing presence.",
     analysis: {
-      Observations: "This cover stands out for its dynamic composition and the central figure's design, which suggests advanced technology and a possible role in conflict or defense. The use of fire in the background adds to the sense of chaos and danger, while the absence of human figures emphasizes the central robot's dominance. The cover's design and color palette create a sense of tension and drama, drawing the viewer into the narrative and themes explored in the story.",
+      Observations: "The cover features a large, humanoid robot standing in the foreground, holding a hammer in each hand. The robot has a metallic body with a blue and silver color scheme, and its head is a complex assembly of gears and wires. The background is a plain, light color, which contrasts with the robot's metallic sheen.",
       VisualDesignElements: "The cover art features a central figure, a robot, holding two large hammers above its head. The robot is predominantly blue with silver and yellow accents, and it has a humanoid form with a head, torso, arms, and legs. The robot's eyes are red, and it has a visor-like feature over its eyes. The background is a plain, light color, which contrasts with the robot and makes it stand out. The color palette is quite limited, with the robot's blue and the background's light color creating a stark contrast. The composition of the image places the robot in the center, drawing the viewer's attention immediately to it. The use of the hammers and the robot's pose suggest action and strength. The background is plain and unadorned, which further emphasizes the robot as the focal point of the image. The perspective is slightly angled, giving the robot a three-dimensional appearance. The use of foreground and background is minimal, with the robot occupying most of the space on the cover. Overall, the illustration directs the viewer's attention to the robot and its pose, using color, composition, and perspective to create a sense of drama and action.",
       VisualHierarchyHumanPresence: "tbd",
-      TechnologicalRepresentation: "The image features a central robot-like figure with a spherical body and a dome-shaped head, connected to a network of cables and wires. This figure is colored in shades of gray and silver, with hints of red and black accents. Surrounding this central figure are several smaller, spherical entities that appear to be drones or satellites, each with their own set of wires and cables connecting to the central figure. These drones are colored in similar tones to the central figure, with a predominance of gray and silver. There are no human figures present in the image.",
+      TechnologicalRepresentation: "tbd",
       LiteraryVisualConnections: "tbd.",
-     aiReflection: "tbd."
+     aiReflection: "The image suggests a narrative where the robot's actions could have significant consequences for humanity. The stark background and the robot's mechanical appearance create a sense of isolation and detachment, emphasizing the robot's potential disconnection from human values. The color palette, with its cool tones, contributes to a feeling of detachment and the robot's otherness."
     },
     tags: [
       "Giant Robots",
-      "tbd",
+      "Robots as Threats",
       "tbd"
     ]
   },  
   {
     id: "26",
-    title: "Mechanical Dominance",
+    title: "The Self-Repairing Robot",
     year: 1960,
     magazineName: "Analog",
     imageUrl: "https://pulpbots.wordpress.com/wp-content/uploads/2025/05/analog_1960_10.jpg",
-    description: "The image depicts a scene of chaos with multiple robots attacking human figures. The robots are large, menacing, and appear to be causing destruction. The presence of fire and the distressed human figures suggest a hostile scenario where the robots are the aggressors.",
+    description: "A humanoid robot in a contemplative pose, surrounded by scientific instruments, suggesting a narrative of advanced technology and self-awareness.",
     analysis: {
-      Observations: "This cover stands out for its dynamic composition and the central figure's design, which suggests advanced technology and a possible role in conflict or defense. The use of fire in the background adds to the sense of chaos and danger, while the absence of human figures emphasizes the central robot's dominance. The cover's design and color palette create a sense of tension and drama, drawing the viewer into the narrative and themes explored in the story.",
+      Observations: "The image features a central illustration of a humanoid robot depicted in a seated position, with its head tilted slightly to the side, giving it a contemplative or curious expression. Surrounding the robot are various scientific and technological devices, including a microscope, test tubes, and a device that resembles a centrifuge.",
       VisualDesignElements: "The color palette of the cover art is primarily dark, with a black background that contrasts sharply with the bright blue elements, such as the robot and the glowing blue objects. The use of blue tones gives a sense of coolness and technological advancement, which is fitting for a science fiction theme. The composition is busy, with multiple elements competing for attention, but the central figure of the robot is the most prominent, drawing the eye with its size and the glowing blue object it holds. The background features a variety of shapes and forms, including the blue objects and the mechanical parts, which are rendered in a simplified, almost schematic style. This gives the impression of a futuristic, high-tech environment. The perspective is somewhat flat, with the objects and figures arranged in a way that suggests a two-dimensional space, which is typical of pulp-era science fiction illustrations. The use of foreground and background is clear, with the robot and the blue objects in the foreground and the mechanical parts and other figures in the background, creating a sense of depth. There are no exaggerated forms or motion effects, but the overall composition and the positioning of the figures suggest a dynamic scene",
       VisualHierarchyHumanPresence: "tbd",
-      TechnologicalRepresentation: "The image features a central robot-like figure with a spherical body and a dome-shaped head, connected to a network of cables and wires. This figure is colored in shades of gray and silver, with hints of red and black accents. Surrounding this central figure are several smaller, spherical entities that appear to be drones or satellites, each with their own set of wires and cables connecting to the central figure. These drones are colored in similar tones to the central figure, with a predominance of gray and silver. There are no human figures present in the image.",
+      TechnologicalRepresentation: "tbd",
       LiteraryVisualConnections: "tbd.",
-     aiReflection: "tbd."
+     aiReflection: "The image suggests a narrative of a robot that is capable of self-repair, hinting at themes of autonomy and the potential for robots to become self-sufficient entities. The presence of scientific instruments implies a world where technology is deeply integrated into daily life and where robots are not just tools but entities with potential consciousness and self-awareness. It adds to the sense of a high-tech environment, where robots are not just passive machines but active participants in scientific discovery. The overall tone is one of curiosity and wonder, inviting the viewer to ponder the implications of a robot capable of self-repair. The image raises questions about the nature of consciousness and identity in robots. If a robot can repair itself, does it have a sense of self? Does it have the capacity for self-awareness? The image also touches on the theme of power dynamics, as the robot appears to be in control of its own repair process, suggesting a level of autonomy that challenges the traditional human-robot relationship."
     },
     tags: [
-      "tbd",
+      "Self-Repairing Robots",
       "tbd",
       "tbd"
     ]
