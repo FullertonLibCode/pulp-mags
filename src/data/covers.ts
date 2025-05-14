@@ -1648,7 +1648,7 @@ export const covers: Cover[] = [
     year: 1933,
     magazineName: "Wonder Stories",
     imageUrl: "https://pulpbots.wordpress.com/wp-content/uploads/2025/05/wonder_stories_1933_11.jpg",
-    description: "The image depicts a scene of chaos with multiple robots attacking human figures. The robots are large, menacing, and appear to be causing destruction. The presence of fire and the distressed human figures suggest a hostile scenario where the robots are the aggressors.",
+    description: "Image depicts a humanoid robot in mid-flight, surrounded by a dramatic, cosmic landscape. The robot, with its mechanical joints and metallic body, stands out against the backdrop of a rocky, barren terrain and a large, ominous planet.",
     analysis: {
       Observations: "This cover stands out for its dynamic composition and the central figure's design, which suggests advanced technology and a possible role in conflict or defense. The use of fire in the background adds to the sense of chaos and danger, while the absence of human figures emphasizes the central robot's dominance. The cover's design and color palette create a sense of tension and drama, drawing the viewer into the narrative and themes explored in the story.",
       VisualDesignElements: "tbd",
@@ -1713,7 +1713,7 @@ export const covers: Cover[] = [
     imageUrl: "https://pulpbots.wordpress.com/wp-content/uploads/2025/05/worlds_of_tomorrow_1963_04.jpg",
     description: "An early exploration of robot sentience and moral agency.",
     analysis: {
-      Observations: "The cover depicts a humanoid robot in a protective stance, suggesting complex motivations beyond simple mechanical function.",
+      Observations: "Image depicts a humanoid robot in mid-flight, surrounded by a dramatic, cosmic landscape. The robot, with its mechanical joints and metallic body, stands out against the backdrop of a rocky, barren terrain and a large, ominous planet.",
       VisualDesignElements: "The color palette of the cover art is dominated by dark blues and greens, with stark contrasts that draw the eye to the central figure. The background features a gradient sky transitioning from a deep blue at the top to a lighter blue at the horizon, with a few clouds scattered across the upper portion. The foreground is dominated by a large, jagged rock formation that serves as a visual anchor, leading the viewer's eye towards the central figure. The composition is dynamic, with the central figure appearing to leap or float above the rock formation, creating a sense of motion and energy. The figure is positioned slightly off-center, which adds to the visual interest and guides the viewer's gaze across the image. The use of perspective is evident in the way the rock formation recedes into the background, giving a sense of depth to the scene. The use of foreground vs. background is clear, with the rock formation and the central figure in the foreground, and the sky and clouds in the background. The figure is the most detailed and prominent element in the image, with a high level of detail in its construction and a sense of three-dimensionality that makes it stand out against the more flat and less detailed background elements.",
      VisualHierarchyHumanPresence: "The concept of AI having moral agency and protective instincts remains a key topic in modern AI ethics discussions.",
       aiReflection: "This image suggests an early understanding that artificial beings might develop their own ethical frameworks and protective instincts.",
