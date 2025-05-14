@@ -680,17 +680,17 @@ export const covers: Cover[] = [
     year: 1953,
     magazineName: "Astounding Science Fiction",
     imageUrl: "https://pulpbots.wordpress.com/wp-content/uploads/2025/05/astounding_science_fiction_1953_03.jpg",
-    description: "Surprise Encounter: Robot and Creature",
+    description: "A surprised humanoid figure gazes at a robot holding a crystal ball, set against a tranquil landscape.",
     analysis: {
-      Observations: "This cover stands out for its dynamic composition and the central figure's design, which suggests advanced technology and a possible role in conflict or defense. The use of fire in the background adds to the sense of chaos and danger, while the absence of human figures emphasizes the central robot's dominance. The cover's design and color palette create a sense of tension and drama, drawing the viewer into the narrative and themes explored in the story.",
+      Observations: "tbd",
       VisualDesignElements: "The color palette of the cover art is primarily composed of muted tones with a focus on blues and greens, which creates a sense of otherworldliness and science fiction atmosphere. The dominant figure, the robot, is depicted in a metallic gray, which contrasts with the softer, more natural colors of the background. The background itself is a blend of green and blue hues, suggesting a landscape that could be extraterrestrial or futuristic. Composition-wise, the robot is centrally placed, drawing the viewer's attention immediately. The kangaroo-like creature is positioned to the left, adding a sense of movement and dynamism to the scene. The creature's exaggerated features, such as its large eyes and ears, contribute to the visual drama and emphasize its otherworldly nature. Foreground elements, such as the robot and the kangaroo, are more detailed and prominent, while the background is less detailed, which helps to focus the viewer's attention on the central figures. The use of light and shadow is subtle but effective in creating a sense of volume and texture, particularly on the robot's metallic surface. The illustration employs a sense of motion through the kangaroo's pose, which appears to be in mid-jump, and the robot's forward-facing stance, which suggests readiness or action. The overall style is illustrative and evokes the pulp era's science fiction aesthetic, characterized by bold lines, dramatic poses, and a sense of adventure.",
-      VisualHierarchyHumanPresence: "While early sci-fi often imagined robots as towering mechanical beings, actual AI development took a very different path, focusing on software and neural networks rather than physical presence.",
-      TechnologicalRepresentation: "The image features a central robot-like figure with a spherical body and a dome-shaped head, connected to a network of cables and wires. This figure is colored in shades of gray and silver, with hints of red and black accents. Surrounding this central figure are several smaller, spherical entities that appear to be drones or satellites, each with their own set of wires and cables connecting to the central figure. These drones are colored in similar tones to the central figure, with a predominance of gray and silver. There are no human figures present in the image.",
+      VisualHierarchyHumanPresence: "",
+      TechnologicalRepresentation: "tbd",
       LiteraryVisualConnections: "tbd.",
      aiReflection: "tbd."
     },
     tags: [
-      "tbd",
+      "Robots and Beasts",
       "tbd",
       "tbd"
     ]
@@ -701,14 +701,14 @@ export const covers: Cover[] = [
     year: 1953,
     magazineName: "Astounding Science Fiction",
     imageUrl: "https://pulpbots.wordpress.com/wp-content/uploads/2025/05/astounding_science_fiction_1953_10.jpg",
-    description: "Metallic Grip",
+    description: "A humanoid robot in a desolate, greenish-blue landscape holds a human figure in its left hand, suggesting a recent confrontation.",
     analysis: {
-      Observations: "This cover stands out for its dynamic composition and the central figure's design, which suggests advanced technology and a possible role in conflict or defense. The use of fire in the background adds to the sense of chaos and danger, while the absence of human figures emphasizes the central robot's dominance. The cover's design and color palette create a sense of tension and drama, drawing the viewer into the narrative and themes explored in the story.",
+      Observations: "The robot is holding a smaller, humanoid figure in its left hand, which appears to be a human male in distress or defeat. The background is a muted, greenish-blue gradient, suggesting a cold, possibly extraterrestrial environment.",
       VisualDesignElements: "The color palette of the cover art is primarily composed of muted tones, with a focus on greens and blues, which creates a sense of a futuristic or otherworldly setting. The dominant figure, the robot, is rendered in a metallic gray, which contrasts with the more organic colors of the human figure it is holding. The background is a gradient of green and blue, which gives the impression of a space or a futuristic environment. The composition of the image places the robot in the foreground, drawing the viewer's attention to it immediately. The human figure is positioned in the middle ground and more detailed figure is in the background, creating a sense of depth. The use of perspective is evident in the way the robot's body tapers towards the back, giving the impression of a three-dimensional form. The use of exaggerated forms, such as the robot's large head and the human figure's contorted pose, adds to the visual drama of the image. Overall, the illustration directs the viewer's attention to the central theme of the cover, which is the relationship between humans and robots in a science fiction setting. The use of color, composition, style, and perspective all work together to create a sense of tension and drama.",
-      VisualHierarchyHumanPresence: "While early sci-fi often imagined robots as towering mechanical beings, actual AI development took a very different path, focusing on software and neural networks rather than physical presence.",
-      TechnologicalRepresentation: "The image features a central robot-like figure with a spherical body and a dome-shaped head, connected to a network of cables and wires. This figure is colored in shades of gray and silver, with hints of red and black accents. Surrounding this central figure are several smaller, spherical entities that appear to be drones or satellites, each with their own set of wires and cables connecting to the central figure. These drones are colored in similar tones to the central figure, with a predominance of gray and silver. There are no human figures present in the image.",
+      VisualHierarchyHumanPresence: "",
+      TechnologicalRepresentation: "",
       LiteraryVisualConnections: "tbd.",
-     aiReflection: "tbd."
+     aiReflection: "The image suggests a narrative of conflict or rescue, with the robot's posture and the human figure's expression conveying tension. The greenish-blue background creates a sense of isolation and otherworldliness. The human figure's position and expression suggest a narrative of conflict or rescue, highlighting the potential for robots to have their own motivations and desires. The overall tone is one of suspense and intrigue, inviting the viewer to speculate about the story behind the image."
     },
     tags: [
       "tbd",
