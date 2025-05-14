@@ -764,12 +764,12 @@ export const covers: Cover[] = [
     year: 1935,
     magazineName: "Astounding Stories",
     imageUrl: "https://pulpbots.wordpress.com/wp-content/uploads/2025/05/astounding_stories_1935_07.jpg",
-    description: "The image depicts a scene of chaos with multiple robots attacking human figures. The robots are large, menacing, and appear to be causing destruction. The presence of fire and the distressed human figures suggest a hostile scenario where the robots are the aggressors.",
+    description: "A large, green, spherical robot with a glowing red eye, standing in a futuristic laboratory setting.",
     analysis: {
-      Observations: "This cover stands out for its dynamic composition and the central figure's design, which suggests advanced technology and a possible role in conflict or defense. The use of fire in the background adds to the sense of chaos and danger, while the absence of human figures emphasizes the central robot's dominance. The cover's design and color palette create a sense of tension and drama, drawing the viewer into the narrative and themes explored in the story.",
+      Observations: "The central focus is a large, green, spherical robot with a glowing red eye, standing in a futuristic laboratory setting. The robot is surrounded by various scientific equipment, including a large, purple, horn-like device that appears to be projecting a beam of light.",
       VisualDesignElements: "tbd",
-      VisualHierarchyHumanPresence: "While early sci-fi often imagined robots as towering mechanical beings, actual AI development took a very different path, focusing on software and neural networks rather than physical presence.",
-      TechnologicalRepresentation: "The image features a central robot-like figure with a spherical body and a dome-shaped head, connected to a network of cables and wires. This figure is colored in shades of gray and silver, with hints of red and black accents. Surrounding this central figure are several smaller, spherical entities that appear to be drones or satellites, each with their own set of wires and cables connecting to the central figure. These drones are colored in similar tones to the central figure, with a predominance of gray and silver. There are no human figures present in the image.",
+      VisualHierarchyHumanPresence: ".",
+      TechnologicalRepresentation: "",
       LiteraryVisualConnections: "tbd.",
      aiReflection: "tbd."
     },
@@ -785,17 +785,17 @@ export const covers: Cover[] = [
     year: 1931,
     magazineName: "Astounding Stories of Super Science",
     imageUrl: "https://pulpbots.wordpress.com/wp-content/uploads/2025/05/astounding_stories_of_super_science_1931_01.jpg",
-    description: "The image depicts a scene of chaos with multiple robots attacking human figures. The robots are large, menacing, and appear to be causing destruction. The presence of fire and the distressed human figures suggest a hostile scenario where the robots are the aggressors.",
+    description: "A menacing robot in a tense confrontation with humans.",
     analysis: {
-      Observations: "This cover stands out for its dynamic composition and the central figure's design, which suggests advanced technology and a possible role in conflict or defense. The use of fire in the background adds to the sense of chaos and danger, while the absence of human figures emphasizes the central robot's dominance. The cover's design and color palette create a sense of tension and drama, drawing the viewer into the narrative and themes explored in the story.",
+      Observations: "The central figure is a humanoid robot surrounded by human figures, one of whom appears to be in distress, while another seems to be confronting the robot. The background is a red-hued, chaotic scene with indistinct shapes and figures, suggesting a sense of urgency or danger. ",
       VisualDesignElements: "tbd.",
-      VisualHierarchyHumanPresence: "While early sci-fi often imagined robots as towering mechanical beings, actual AI development took a very different path, focusing on software and neural networks rather than physical presence.",
-      TechnologicalRepresentation: "The image features a central robot-like figure with a spherical body and a dome-shaped head, connected to a network of cables and wires. This figure is colored in shades of gray and silver, with hints of red and black accents. Surrounding this central figure are several smaller, spherical entities that appear to be drones or satellites, each with their own set of wires and cables connecting to the central figure. These drones are colored in similar tones to the central figure, with a predominance of gray and silver. There are no human figures present in the image.",
+      VisualHierarchyHumanPresence: "",
+      TechnologicalRepresentation: "",
       LiteraryVisualConnections: "tbd.",
-     aiReflection: "tbd."
+     aiReflection: "The image suggests a story of conflict between humans and robots, with the robot's aggressive stance and the humans' reactions indicating a narrative of danger and confrontation. The chaotic background and the red color palette create a sense of urgency and fear, while the dynamic poses of the figures suggest action and movement."
     },
     tags: [
-      "tbd",
+      "Menacing Robots",
       "tbd",
       "tbd"
     ]
