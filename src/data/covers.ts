@@ -970,16 +970,16 @@ export const covers: Cover[] = [
   },  
   {
     id: "47",
-    title: "Mechanical Dominance",
+    title: "Revolt of the Robots",
     year: 1939,
     magazineName: "Fantastic Adventures",
     imageUrl: "https://pulpbots.wordpress.com/wp-content/uploads/2025/05/fantastic_adventures_1939_05.jpg",
-    description: "The image depicts a scene of chaos with multiple robots attacking human figures. The robots are large, menacing, and appear to be causing destruction. The presence of fire and the distressed human figures suggest a hostile scenario where the robots are the aggressors.",
+    description: ".",
     analysis: {
-      Observations: "This cover stands out for its dynamic composition and the central figure's design, which suggests advanced technology and a possible role in conflict or defense. The use of fire in the background adds to the sense of chaos and danger, while the absence of human figures emphasizes the central robot's dominance. The cover's design and color palette create a sense of tension and drama, drawing the viewer into the narrative and themes explored in the story.",
+      Observations: ".",
       VisualDesignElements: "The cover art employs a vivid color palette dominated by dark tones, with striking red and yellow accents that draw the eye. The composition is dynamic, with the central figure, a man in a brown outfit, holding a large, mechanical robot. The man is positioned in the foreground, with his body angled towards the viewer, creating a sense of immediacy and action. The robot, with its metallic gray and silver hues, stands out against the darker background, emphasizing its mechanical nature and the tension between the man and the robot. The background features a dark, almost black, space that contrasts with the figures, making them stand out. The use of perspective is evident in the way the man and the robot are depicted, with the man appearing larger and more imposing, suggesting his dominance in the scene. The robot, while not as large, is detailed and intricate, with visible joints and mechanical parts that suggest complexity and advanced technology. Foreground elements include the woman's face, which is turned towards the man and the robot, adding to the narrative tension. Her expression is one of concern or surprise, which, along with her position, directs the viewer's attention towards the central conflict. The illustration uses exaggerated forms and motion effects, such as the man's muscular build and the robot's mechanical limbs, to convey a sense of drama and action.",
-      VisualHierarchyHumanPresence: "While early sci-fi often imagined robots as towering mechanical beings, actual AI development took a very different path, focusing on software and neural networks rather than physical presence.",
-      TechnologicalRepresentation: "The image features a central robot-like figure with a spherical body and a dome-shaped head, connected to a network of cables and wires. This figure is colored in shades of gray and silver, with hints of red and black accents. Surrounding this central figure are several smaller, spherical entities that appear to be drones or satellites, each with their own set of wires and cables connecting to the central figure. These drones are colored in similar tones to the central figure, with a predominance of gray and silver. There are no human figures present in the image.",
+      VisualHierarchyHumanPresence: "",
+      TechnologicalRepresentation: "",
       LiteraryVisualConnections: "tbd.",
      aiReflection: "tbd."
     },
