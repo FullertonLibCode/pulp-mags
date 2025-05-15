@@ -1178,9 +1178,9 @@ export const covers: Cover[] = [
     year: 1955,
     magazineName: "Imagination",
     imageUrl: "https://pulpbots.wordpress.com/wp-content/uploads/2025/05/imagination_1955_05.jpg",
-    description: "The rs.",
+    description: "A woman in a red skirt and green top stands poised, looking over her shoulder at a blue robot.",
     analysis: {
-      Observations: "The image features a woman in a red skirt and green blouse standing with her back to the viewer, looking over her shoulder. , looking over her shoulder with a concerned expression. To her right, there is a humanoid robot with a blue body and a face with glowing eyes. The robot is holding a small, spherical object in its hand. In the background, there is a man in a blue suit, sitting on a chair. The setting is a plain white background with no discernible environment. The composition is balanced with the woman and the robot being the main focal points. The eye is drawn to the woman's back and the robot's face due to their contrasting colors and the woman's dynamic posture. The man in the blue suit is smaller and less detailed, suggesting he is in the background. The use of color is minimal, with the red of the woman's skirt and the blue of the man's suit and the robot's body creating a limited color palette. The background is plain white, which highlights the subjects and creates a sense of isolation.",
+      Observations: "The image features a woman in a red skirt and green blouse standing with her back to the viewer, looking over her shoulder with a concerned expression. To her right, there is a humanoid robot with a blue body and a face with glowing eyes. The robot is holding a small, spherical object in its hand. In the background, there is a man in a blue suit, sitting on a chair. The setting is a plain white background with no discernible environment. The composition is balanced with the woman and the robot being the main focal points. The eye is drawn to the woman's back and the robot's face due to their contrasting colors and the woman's dynamic posture. The man in the blue suit is smaller and less detailed, suggesting he is in the background. The use of color is minimal, with the red of the woman's skirt and the blue of the man's suit and the robot's body creating a limited color palette. The background is plain white, which highlights the subjects and creates a sense of isolation.",
       VisualDesignElements: "The color palette of the cover art is primarily composed of bold, contrasting colors. The dominant colors are red, blue, and green, which are used to highlight the central figures and create a sense of drama and tension. The red skirt of the woman and the red background draw the viewer's attention, while the blue robot figure provides a stark contrast that emphasizes its mechanical nature. The green shirt of the woman adds a touch of vibrancy and complements the blue of the robot. The composition of the image is dynamic, with the woman and the robot positioned in a way that suggests movement and interaction. The foreground is dominated by the woman and the robot, with the background being minimal and nondescript, allowing the viewer to focus on the central figures. The use of foreground vs. background is clear, with the woman and the robot being the primary elements that stand out against the white background.",
      aiReflection: "This image captures the era's fascination with the potential for machines to mimic human traits and the ethical questions that arise from such advancements."
     },
@@ -1392,7 +1392,7 @@ export const covers: Cover[] = [
     id: "76",
     title: "Mechanical Dominance",
     year: 1951,
-    magazineName: "Amazing Stories",
+    magazineName: "Super Science Stories",
     imageUrl: "https://pulpbots.wordpress.com/wp-content/uploads/2025/05/super_science_stories_1951_01.jpg",
     description: "Thrs.",
     analysis: {
