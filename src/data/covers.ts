@@ -600,9 +600,6 @@ export const covers: Cover[] = [
     analysis: {
       Observations: "The cover art depicts a humanoid robot with a metallic body and a red heart-shaped emblem on its chest, set against a dark, starry sky. The robot's pose, with one hand raised as if reaching out, suggests a sense of longing or aspiration.",
       VisualDesignElements: "The color palette of the cover art is primarily dark, with a black background that contrasts sharply with the metallic gray of the robot. The red heart on the robot's chest adds a pop of color and draws the viewer's attention. The composition is centered around the robot, with its raised arm and upward gaze creating a sense of upward movement and focus. The perspective is slightly angled, giving the robot a three-dimensional appearance and making it stand out against the flat background. The use of light and shadow on the robot's body adds depth and texture, while the stars in the background create a sense of space and distance. The composition directs the viewer's attention to the robot, emphasizing its importance in the image. The foreground is dominated by the robot, while the background is minimalistic, ensuring that the viewer's focus remains on the central figure. The use of exaggerated forms, such as the robot's raised arm and the heart on its chest, adds visual drama and emphasizes the robot's mechanical nature.",
-      VisualHierarchyHumanPresence: "",
-      TechnologicalRepresentation: "",
-      LiteraryVisualConnections: "tbd.",
      aiReflection: "The image suggests a narrative of a robot contemplating its place in the universe, possibly reflecting on its own existence or the nature of its programming. The red heart emblem on the robot's chest could symbolize the humanization of technology, suggesting that even machines can have a capacity for emotion and connection. The dark, starry background creates a sense of isolation and wonder, while the robot's raised arms and upward gaze suggest a moment of introspection or revelation. The overall tone is one of contemplation and introspection, with a hint of the unknown. The image raises questions about the nature of consciousness and identity in robots. If the robot has a heart, does it have a soul? Can machines truly be considered alive?"
     },
     tags: [
@@ -621,9 +618,6 @@ export const covers: Cover[] = [
     analysis: {
       Observations: "tbd",
       VisualDesignElements: "The color palette of the cover art is primarily composed of muted tones with a focus on blues and greens, which creates a sense of otherworldliness and science fiction atmosphere. The dominant figure, the robot, is depicted in a metallic gray, which contrasts with the softer, more natural colors of the background. The background itself is a blend of green and blue hues, suggesting a landscape that could be extraterrestrial or futuristic. Composition-wise, the robot is centrally placed, drawing the viewer's attention immediately. The kangaroo-like creature is positioned to the left, adding a sense of movement and dynamism to the scene. The creature's exaggerated features, such as its large eyes and ears, contribute to the visual drama and emphasize its otherworldly nature. Foreground elements, such as the robot and the kangaroo, are more detailed and prominent, while the background is less detailed, which helps to focus the viewer's attention on the central figures. The use of light and shadow is subtle but effective in creating a sense of volume and texture, particularly on the robot's metallic surface. The illustration employs a sense of motion through the kangaroo's pose, which appears to be in mid-jump, and the robot's forward-facing stance, which suggests readiness or action. The overall style is illustrative and evokes the pulp era's science fiction aesthetic, characterized by bold lines, dramatic poses, and a sense of adventure.",
-      VisualHierarchyHumanPresence: "",
-      TechnologicalRepresentation: "tbd",
-      LiteraryVisualConnections: "tbd.",
      aiReflection: "tbd."
     },
     tags: [
@@ -642,9 +636,6 @@ export const covers: Cover[] = [
     analysis: {
       Observations: "The robot is holding a smaller, humanoid figure in its left hand, which appears to be a human male in distress or defeat. The background is a muted, greenish-blue gradient, suggesting a cold, possibly extraterrestrial environment.",
       VisualDesignElements: "The color palette of the cover art is primarily composed of muted tones, with a focus on greens and blues, which creates a sense of a futuristic or otherworldly setting. The dominant figure, the robot, is rendered in a metallic gray, which contrasts with the more organic colors of the human figure it is holding. The background is a gradient of green and blue, which gives the impression of a space or a futuristic environment. The composition of the image places the robot in the foreground, drawing the viewer's attention to it immediately. The human figure is positioned in the middle ground and more detailed figure is in the background, creating a sense of depth. The use of perspective is evident in the way the robot's body tapers towards the back, giving the impression of a three-dimensional form. The use of exaggerated forms, such as the robot's large head and the human figure's contorted pose, adds to the visual drama of the image. Overall, the illustration directs the viewer's attention to the central theme of the cover, which is the relationship between humans and robots in a science fiction setting. The use of color, composition, style, and perspective all work together to create a sense of tension and drama.",
-      VisualHierarchyHumanPresence: "",
-      TechnologicalRepresentation: " ",
-      LiteraryVisualConnections: "tbd.",
      aiReflection: "The image suggests a narrative of conflict or rescue, with the robot's posture and the human figure's expression conveying tension. The greenish-blue background creates a sense of isolation and otherworldliness. The human figure's position and expression suggest a narrative of conflict or rescue, highlighting the potential for robots to have their own motivations and desires. The overall tone is one of suspense and intrigue, inviting the viewer to speculate about the story behind the image."
     },
     tags: [
@@ -655,7 +646,7 @@ export const covers: Cover[] = [
   },  
   {
     id: "35",
-    title: "Mechanical Dominance",
+    title: "Follow Me",
     year: 1955,
     magazineName: "Astounding Science Fiction",
     imageUrl: "https://pulpbots.wordpress.com/wp-content/uploads/2025/05/astounding_science_fiction_1955_10.jpg",
@@ -663,9 +654,6 @@ export const covers: Cover[] = [
     analysis: {
       Observations: "The image features a robot standing in the foreground on a barren, red, desert-like landscape. The robot has a humanoid form with a metallic body and a spherical head. The metallic sheen of the robot contrasts with the red, sandy environment, emphasizing its artificial nature. The long shadow adds a sense of drama and mystery, suggesting that the robot is a significant presence in this desolate world. The sky is not visible, focusing the viewer's attention on the robot and the desolate environment. The color palette is dominated by shades of red and orange, creating a sense of isolation and otherworldliness.",
       VisualDesignElements: "The color palette of the cover art is dominated by shades of red and orange, creating a warm and otherworldly atmosphere that suggests a setting on Mars or another planet with a red-hued surface. The composition centers around the robot figure, which is placed in the middle ground, drawing the viewer's attention to it. The background features a barren landscape with minimal detail, which helps to isolate the robot and emphasize its presence. The use of perspective is straightforward, with the horizon line placed roughly in the lower third of the image, following the rule of thirds, which is a common technique in composition to create a balanced and aesthetically pleasing image. The robot figure is depicted with a simplified, almost geometric form. The use of shading and highlights on the robot suggests a metallic surface, and the joints and mechanical parts are clearly defined, indicating the robot's mechanical nature. The foreground features a few small, indistinct shapes that could be rocks or debris, which adds to the sense of a desolate environment. The background is mostly empty, with no significant features, which directs the viewer's focus to the robot and the text. The use of a single, prominent figure in a barren landscape suggests themes of isolation and exploration. The illustration effectively uses visual elements to create a sense of atmosphere and to draw the viewer's attention to the central figure, the robot.",
-      VisualHierarchyHumanPresence: "",
-      TechnologicalRepresentation: "",
-      LiteraryVisualConnections: "tbd.",
      aiReflection: "The image suggests a narrative of exploration or discovery, with the robot as a guide or protagonist. The desolate landscape and the absence of human figures create a sense of isolation and potential danger. The color palette and the shadow of the robot contribute to a somber and foreboding atmosphere, hinting at the challenges and uncertainties that lie ahead. The image raises questions about the nature of consciousness and identity in a robotic form. The text 'Follow Me...' is placed at the bottom of the image, suggesting a narrative or directive. If the robot is sentient, what does it mean for it to follow someone?"
     },
     tags: [
@@ -684,9 +672,6 @@ export const covers: Cover[] = [
     analysis: {
       Observations: ".",
       VisualDesignElements: "tbd",
-      VisualHierarchyHumanPresence: "",
-      TechnologicalRepresentation: ".",
-      LiteraryVisualConnections: "tbd.",
      aiReflection: "tbd."
     },
     tags: [
@@ -697,7 +682,7 @@ export const covers: Cover[] = [
   },  
   {
     id: "37",
-    title: "Mechanical Dominance",
+    title: "The Doom from Planet 4",
     year: 1935,
     magazineName: "Astounding Stories",
     imageUrl: "https://pulpbots.wordpress.com/wp-content/uploads/2025/05/astounding_stories_1935_07.jpg",
@@ -705,9 +690,6 @@ export const covers: Cover[] = [
     analysis: {
       Observations: "The central focus is a large, green, spherical robot with a glowing red eye, standing in a futuristic laboratory setting. The robot is surrounded by various scientific equipment, including a large, purple, horn-like device that appears to be projecting a beam of light.",
       VisualDesignElements: "tbd",
-      VisualHierarchyHumanPresence: ".",
-      TechnologicalRepresentation: "",
-      LiteraryVisualConnections: "tbd.",
      aiReflection: "tbd."
     },
     tags: [
@@ -726,9 +708,6 @@ export const covers: Cover[] = [
     analysis: {
       Observations: "The central figure is a humanoid robot surrounded by human figures, one of whom appears to be in distress, while another seems to be confronting the robot. The background is a red-hued, chaotic scene with indistinct shapes and figures, suggesting a sense of urgency or danger. ",
       VisualDesignElements: "tbd.",
-      VisualHierarchyHumanPresence: "",
-      TechnologicalRepresentation: "",
-      LiteraryVisualConnections: "tbd.",
      aiReflection: "The image suggests a story of conflict between humans and robots, with the robot's aggressive stance and the humans' reactions indicating a narrative of danger and confrontation. The chaotic background and the red color palette create a sense of urgency and fear, while the dynamic poses of the figures suggest action and movement."
     },
     tags: [
@@ -747,9 +726,6 @@ export const covers: Cover[] = [
     analysis: {
       Observations: "The cover art prominently features a large, menacing robot in black with glowing red eyes, standing over a woman in a red dress who appears to be in distress. The background depicts a fiery explosion, suggesting a chaotic or apocalyptic setting. The overall tone of the artwork is dramatic and intense, with a focus on the conflict between the human figure and the robot.",
       VisualDesignElements: "The robot's design is striking, with its black color and red glowing eyes creating a stark contrast against the fiery background. The use of red for the eyes and the explosion suggests danger and intensity, while the black color of the robot implies a sense of power and dominance. The composition of the image, with the robot towering over the woman, emphasizes the scale and threat of the robot, while the woman's position in the foreground adds a sense of vulnerability and tension.",
-      VisualHierarchyHumanPresence: "",
-      TechnologicalRepresentation: ".",
-      LiteraryVisualConnections: "tbd.",
      aiReflection: "The image suggests a narrative of conflict and danger, with the woman's distress and the fiery explosion creating a sense of urgency and chaos. The use of color, with the reds and blacks dominating the image, creates a dramatic and intense atmosphere, while the composition and positioning of the characters add to the tension and suspense. The artwork reflects the societal perceptions of robots and technology during the pulp era, where robots were often portrayed as menacing and uncontrollable. This reflects the fears and anxieties of the time regarding the potential dangers of advanced technology. The design of the robot, with its imposing size and glowing eyes, reinforces these fears, while the distressed woman adds a human element to the narrative, highlighting the potential risks to humanity."
     },
     tags: [
@@ -768,9 +744,6 @@ export const covers: Cover[] = [
     analysis: {
       Observations: "y.",
       VisualDesignElements: "The color palette of the cover art is dominated by cool tones, with a deep blue sky and a purple hue that gives the impression of a futuristic or otherworldly setting. The warm tones of the woman's skin and the metallic sheen of the robots provide contrast and draw the viewer's attention to the central figures. The composition is dynamic, with the woman lying on the ground in the foreground, creating a sense of depth and perspective. The robots are positioned in the background, with one appearing to hover above the other, which adds to the sense of motion and drama. The use of diagonal lines and the positioning of the figures create a sense of tension and movement, directing the viewer's eye across the cover. The exaggerated forms and motion effects, such as the flowing hair of the woman and the dynamic poses of the robots, add to the sense of action and adventure. Overall, the illustration is designed to be eye-catching and dramatic, with a clear focus on the central figures and a sense of action and adventure. The use of color, composition, and style all work together to create a sense of tension and excitement, drawing the viewer into the world of the story.",
-      VisualHierarchyHumanPresence: "",
-      TechnologicalRepresentation: "",
-      LiteraryVisualConnections: "tbd.",
      aiReflection: "tbd."
     },
     tags: [
@@ -789,9 +762,6 @@ export const covers: Cover[] = [
     analysis: {
       Observations: ".",
       VisualDesignElements: "The color palette of the cover art is dominated by dark blues and blacks, with the mechanical hands and the human face highlighted in brighter, more contrasting colors. This contrast draws the viewer's attention to the central action of the hands reaching towards the face. The composition is dynamic, with the hands and face positioned in the foreground, creating a sense of immediacy and tension. The background is less detailed, with a hint of a blue-green gradient that suggests a futuristic or otherworldly setting. The style is illustrative, with bold lines and a somewhat exaggerated perspective that emphasizes the mechanical hands and the human face. The use of foreground and background is clear, with the hands and face in sharp focus and the background elements blurred or less detailed. There are no motion effects, but the positioning of the hands suggests movement and interaction. The visual drama is created through the contrast between the mechanical and organic elements, as well as the implied action of the hands reaching towards the face.",
-      VisualHierarchyHumanPresence: ".",
-      TechnologicalRepresentation: ".",
-      LiteraryVisualConnections: "tbd.",
      aiReflection: "tbd."
     },
     tags: [
@@ -802,7 +772,7 @@ export const covers: Cover[] = [
   },  
   {
     id: "42",
-    title: "Mechanical Dominance",
+    title: "The Graveyard Heart",
     year: 1964,
     magazineName: "Fantastic",
     imageUrl: "https://pulpbots.wordpress.com/wp-content/uploads/2025/05/fantastic_1964_03.jpg",
@@ -810,9 +780,6 @@ export const covers: Cover[] = [
     analysis: {
       Observations: ".",
       VisualDesignElements: "The color palette of the cover art is dominated by cool tones, with a greenish-blue sky and a pale yellow sun. The robots are depicted in vibrant red, which stands out against the cooler background and draws the viewer's attention. The composition is balanced with the robots positioned in the foreground, and the graveyard and skeletal figures in the background. The perspective is slightly angled, giving a sense of depth and three-dimensionality to the scene. The illustration directs the viewer's attention through the use of contrasting colors and the positioning of the robots. The red robots are placed in the center and foreground, making them the focal point. The background elements, such as the graveyard and skeletal figures, are smaller and less detailed, which helps to keep the viewer's focus on the robots. The use of exaggerated forms, such as the large, rounded head of the robot on the right, adds visual drama and emphasizes the mechanical nature of the robots. The foreground vs. background is clearly defined, with the robots and the immediate surroundings in the foreground, and the graveyard and skeletal figures in the background. This creates a sense of depth and space in the image.",
-      VisualHierarchyHumanPresence: "e.",
-      TechnologicalRepresentation: ".",
-      LiteraryVisualConnections: "tbd.",
      aiReflection: "tbd."
     },
     tags: [
@@ -831,9 +798,6 @@ export const covers: Cover[] = [
     analysis: {
       Observations: "y.",
       VisualDesignElements: "tbd",
-      VisualHierarchyHumanPresence: ".",
-      TechnologicalRepresentation: ".",
-      LiteraryVisualConnections: "tbd.",
      aiReflection: "tbd."
     },
     tags: [
@@ -852,9 +816,6 @@ export const covers: Cover[] = [
     analysis: {
       Observations: "The image features a dramatic scene with a humanoid robot in the foreground, holding a weapon and appearing menacing. The robot is standing over a human figure who is lying on the ground, seemingly defeated or incapacitated.",
       VisualDesignElements: "The color palette of the cover art is dominated by warm tones, with a strong use of oranges and yellows, which creates a sense of urgency and danger. The background features a large, circular, orange-red shape that resembles a planet or a sun, which adds to the otherworldly and fantastical atmosphere of the scene. The composition is dynamic, with the central figure, a humanoid robot, standing in the foreground, facing the viewer. The robot's pose is aggressive, with its arms raised and its body slightly turned to the side, which draws the viewer's attention and creates a sense of tension. The human figure, who appears to be in distress, is positioned in the lower left corner of the cover, with its body twisted and limbs splayed out in an unnatural manner, which adds to the dramatic effect of the scene. The foreground is detailed, with the robot's mechanical parts and the human figure's clothing rendered with care, while the background is more abstract, with the circular shape and the surrounding space serving as a backdrop for the action. The use of foreground vs. background is clear, with the robot and the human figure in the foreground, and the circular shape and the surrounding space in the background. The exaggerated forms and motion effects are used to create a sense of action and drama, with the robot's raised arms and the human figure's twisted pose suggesting movement and conflict.",
-      VisualHierarchyHumanPresence: ".",
-      TechnologicalRepresentation: "e.",
-      LiteraryVisualConnections: "tbd.",
      aiReflection: "The image suggests a narrative of conflict and survival, with the human figure's defeated posture and the robot's aggressive stance indicating a struggle for dominance. The fiery background and the robot's weapon create a sense of urgency and danger, while the human figure's position on the ground evokes a feeling of vulnerability. The overall visual tone is one of tension and foreboding, with the artwork effectively conveying the perilous scenario depicted."
     },
     tags: [
@@ -873,9 +834,6 @@ export const covers: Cover[] = [
     analysis: {
       Observations: "A prominent robot with a humanoid form, seated and holding a tool, set against a dark, industrial backdrop.",
       VisualDesignElements: "The color palette of the cover art is primarily composed of dark blues and blacks, with the robot figure highlighted in metallic silver and red accents. The background is a dark, nebulous space, which contrasts with the brightly colored robot, drawing the viewer's attention to it. The composition is centered around the robot, with its head and upper body occupying the majority of the space, and its limbs extending into the foreground. The perspective is slightly angled, giving a three-dimensional feel to the robot's form. The use of foreground and background is clear, with the robot in the foreground and the nebulous space in the background. There are no exaggerated forms or motion effects, but the robot's pose suggests a sense of action or readiness. The overall style is illustrative and evokes a sense of science fiction from the mid-20th century.",
-      VisualHierarchyHumanPresence: "",
-      TechnologicalRepresentation: "",
-      LiteraryVisualConnections: "tbd.",
      aiReflection: "tbd."
     },
     tags: [
@@ -893,10 +851,7 @@ export const covers: Cover[] = [
     description: "A futuristic landscape with humanoid robots engaged in battle.",
     analysis: {
       Observations: "The cover art features a futuristic landscape with a large, spherical planet in the background and a smaller, moon-like body in the foreground. In the foreground, there are several humanoid robots engaged in what appears to be a battle or confrontation. The robots are depicted with weapons and are positioned in a way that suggests movement and action. The background landscape includes rocky terrain and a body of water, with a large explosion or fire occurring in the distance. The sky is a mix of orange and blue hues, suggesting either dawn or dusk.",
-      VisualDesignElements: "tbd",
-      VisualHierarchyHumanPresence: ".",
-      TechnologicalRepresentation: "The robot design is characterized by its humanoid form. The weapons held by the robots, such as guns and swords, indicate a potential conflict or battle scenario. The positioning of the robots, with some in the foreground and others in the background, creates a sense of depth and scale, emphasizing the robots' size and power.",
-      LiteraryVisualConnections: "tbd.",
+      VisualDesignElements: "",
      aiReflection: "The image suggests a narrative of conflict and confrontation between humans and robots, set in a futuristic landscape that is both familiar and alien. The use of a large, spherical planet and a moon-like body in the background creates a sense of isolation and confinement, while the explosion or fire in the distance adds to the sense of danger and urgency. The color palette, with its mix of orange and blue hues, suggests a time of day that is either dawn or dusk, adding to the sense of uncertainty and change. The overall visual tone is one of tension and anticipation, as the viewer is left to wonder about the outcome of the conflict and the fate of the characters."
     },
     tags: [
