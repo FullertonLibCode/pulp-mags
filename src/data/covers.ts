@@ -1498,11 +1498,11 @@ export const covers: Cover[] = [
   },    
   {
     id: "82",
-    title: "Robot's Warning",
+    title: "Robot's Descent",
     year: 1963,
     magazineName: "Worlds of Tomorrow",
     imageUrl: "https://pulpbots.wordpress.com/wp-content/uploads/2025/05/worlds_of_tomorrow_1963_04.jpg",
-    description: "Imagnet.",
+    description: "Robot descending by parachute toward cratered cliffs.",
     analysis: {
       Observations: "Image det.",
       VisualDesignElements: "The color palette of the cover art is dominated by dark blues and greens, with stark contrasts that draw the eye to the central figure. The background features a gradient sky transitioning from a deep blue at the top to a lighter blue at the horizon, with a few clouds scattered across the upper portion. The foreground is dominated by a large, jagged rock formation that serves as a visual anchor, leading the viewer's eye towards the central figure. The composition is dynamic, with the central figure appearing to leap or float above the rock formation, creating a sense of motion and energy. The figure is positioned slightly off-center, which adds to the visual interest and guides the viewer's gaze across the image. The use of perspective is evident in the way the rock formation recedes into the background, giving a sense of depth to the scene. The use of foreground vs. background is clear, with the rock formation and the central figure in the foreground, and the sky and clouds in the background. The figure is the most detailed and prominent element in the image, with a high level of detail in its construction and a sense of three-dimensionality that makes it stand out against the more flat and less detailed background elements.",
