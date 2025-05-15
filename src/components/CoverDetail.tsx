@@ -31,9 +31,6 @@ const CoverDetail: React.FC = () => {
   const sections = [
     { id: 'Observations', label: 'Summary & Analysis', icon: <BookOpen className="w-5 h-5" />, content: cover.analysis.Observations },
     { id: 'VisualDesignElements', label: 'Design Elements', icon: <BrainCircuit className="w-5 h-5" />, content: cover.analysis.VisualDesignElements },
-    { id: 'SettingTone', label: 'Setting and Tone', icon: <Globe className="w-5 h-5" />, content: cover.analysis.VisualHierarchyHumanPresence },
-    { id: 'TechnologicalRepresentation', label: 'Robot Portrayal', icon: <Globe className="w-5 h-5" />, content: cover.analysis.TechnologicalRepresentation },
-    { id: 'LiteraryVisualConnections', label: 'Literary Visual Connections', icon: <Clock className="w-5 h-5" />, content: cover.analysis.LiteraryVisualConnections },
     { id: 'aiReflection', label: 'Kestral\'s Reflection', icon: <BrainCircuit className="w-5 h-5" />, content: cover.analysis.aiReflection },    
   ];
   
