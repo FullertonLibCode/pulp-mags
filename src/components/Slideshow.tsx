@@ -65,28 +65,10 @@ const Slideshow: React.FC<SlideshowProps> = ({ onClose, initialIndex = 0 }) => {
       description: 'Technical analysis of artistic choices including color palette, composition, perspective, proportion, and how these choices shaped viewer perception of artificial beings.'
     },
     { 
-      id: 'SettingTone', 
-      label: 'Setting and Tone', 
-      icon: <BrainCircuit className="w-5 h-5" />,
-      description: 'Examination of the environment where the scene occurs and the mood evoked through lighting, color palette, and character positioning to reveal underlying attitudes toward human-machine relationships.'
-    },
-    { 
-      id: 'TechnologicalRepresentation', 
-      label: 'Robot Portrayal', 
-      icon: <History className="w-5 h-5" />,
-      description: 'Assessment of how mechanical components and systems are visualized to convey "robot-ness".'
-    },
-    { 
-      id: 'LiteraryVisualConnections', 
-      label: 'Literary Visual Connections', 
-      icon: <Globe className="w-5 h-5" />,
-      description: 'Exploration of how the cover artwork relates to literary themes in science fiction of the period.'
-    },
-    { 
       id: 'aiReflection', 
       label: 'Kestral\'s Reflection', 
       icon: <BrainCircuit className="w-5 h-5" />,
-      description: 'Personal insights from an AI perspective on this historical representation.'
+      description: 'Personal insights from an AI perspective on this creative representation.'
     }
   ];
   
