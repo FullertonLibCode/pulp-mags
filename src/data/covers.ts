@@ -1163,8 +1163,8 @@ export const covers: Cover[] = [
     description: "A woman in a red jumpsuit stands next to a blue robot and pink car.",
     analysis: {
       Observations: "This ced in the story.",
-      VisualDesignElements: "tbd"
-     aiReflection: "The image suggests a story of science and fantasy, with the robots and the woman possibly embarking on a journey or adventure. The light background and the pink car create a sense of optimism and wonder. The woman's pose and the robots' gaze give the image a sense of anticipation and curiosity."
+      VisualDesignElements: "tbd",
+     aiReflection: "The image suggests a story of science and fantasy, with the robots and the woman possibly embarking on a journey or adventure. The light background and the pink car create a sense of optimism and wonder. The woman's pose and the robots' gaze give the image a sense of anticipation and curiosity.",
     },
     tags: [
       "tbd",
@@ -1380,9 +1380,6 @@ export const covers: Cover[] = [
     analysis: {
       Observations: "This coin the story.",
       VisualDesignElements: "The color palette of the cover art is dominated by dark blues and greens, with stark contrasts that draw the viewer's attention to the central figure, which is the robot. The use of shadows and highlights creates a sense of depth and dimensionality, with the robot's metallic surfaces reflecting light and the surrounding environment appearing to recede into the background. The composition is balanced with the robot centrally placed, and the text elements are arranged to frame the image without overwhelming it. The style of the illustration is illustrative, with a focus on clear, bold lines and a limited color scheme that enhances the futuristic and otherworldly feel of the scene. The perspective is slightly angled, giving the viewer a three-dimensional view of the robot and its surroundings. The foreground features the robot and the immediate environment, while the background is less detailed, suggesting a vast, open space. The use of motion effects, such as the swirling green and blue patterns in the background, adds a sense of dynamism and energy to the scene. Overall, the illustration directs the viewer's attention to the central figure, the robot, and the sense of science fiction adventure and exploration that it represents.",
-      VisualHierarchyHumanPresence: "Whce.",
-      TechnologicalRepresentation: "The ie.",
-      LiteraryVisualConnections: "tbd.",
      aiReflection: "tbd."
     },
     tags: [
@@ -1419,9 +1416,6 @@ export const covers: Cover[] = [
     analysis: {
       Observations: "The image features a large, intricate robot with a human-like face in the foreground. The robot's eyes are glowing, and its mechanical structure is detailed, with visible gears and wires. The robot's intricate design and the stark contrast between its mechanical parts and the organic environment create a sense of tension and unease.",
       VisualDesignElements: "The color palette of the cover art is dominated by a bright yellow background, which contrasts sharply with the darker tones of the robot and the figures in the background. The yellow background is likely intended to draw the viewer's attention to the title and the central image of the robot. The composition of the image places the robot in the foreground, with its large, imposing face taking up a significant portion of the cover. This placement directs the viewer's attention to the robot and suggests that it is the main character or subject of the story. The figures in the background are smaller and less detailed, which further emphasizes the robot as the focal point. The use of perspective in the image is also notable, with the robot appearing larger and more three-dimensional than the figures in the background, which are depicted in a more two-dimensional style.",
-      VisualHierarchyHumanPresence: "While earle.",
-      TechnologicalRepresentation: "The imagge.",
-      LiteraryVisualConnections: "tbd.",
      aiReflection: "The robot's design is a blend of realism and fantasy, with a focus on mechanical detail that suggests a high level of technological sophistication. The glowing eyes add a sense of life and intelligence to the otherwise inanimate figure, creating a sense of unease and wonder. The use of color, with the yellow sky and the dark silhouette of the robot, creates a stark contrast that emphasizes the drama and tension of the scene. The overall tone of the image is dramatic and intense, with a sense of impending doom and the potential for survival."
     },
     tags: [
