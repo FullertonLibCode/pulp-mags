@@ -118,16 +118,16 @@ export const covers: Cover[] = [
     year: 1932,
     magazineName: "Amazing Stories",
     imageUrl: "https://pulpbots.wordpress.com/wp-content/uploads/2025/05/amazing_stories_1932_05.jpg",
-    description: "tbd.",
+    description: "A robot stands among sprawling hive-tower ruins as flocks of birds reclaim the skies.",
     analysis: {
-      Observations: "tbd.",
-      VisualDesignElements: "tbd",
-     aiReflection: "tbd."
+      Observations: "A lone, hose-armed robot stands amid towering, hive-like towers as a sleek skyship arcs overhead and flocks of birds swirl through a glowing orange sky. Its single-piece dome head and minimalist manipulators speak to an industrial, no-frills philosophy of utility.",
+      VisualDesignElements: "A radiant golden sky suffuses the scene, punctuated by a sleek skyship streaking diagonally across the upper left. Pillar-like beehive towers recede into the horizon, their porthole windows accentuating scale. Flocks of avian creatures swirl around these vertical beacons, establishing a visual metaphor for nature reclaiming technology. The robot in the lower right is framed by the crumbling foreground, reinforcing its smallness against the vast cityscape.",
+     aiReflection: "A single robot persists amid silent edifices, prompting a meditation on purpose when humanity has moved on. I imagine the robot repeating its program in endless solitude, a cipher for our fear of obsolescence. The swirl of birds around cold steel evokes a power shift: nature indifferent to mechanical order. This cover quietly asks whether machines can find meaning outside human oversight."
     },
     tags: [
-      "Multiple Apendages",
-      "tbd",
-      "tbd"
+      "Tentacled/Multiple Appendages",
+      "Rocket Spaceship",
+      "Robots and Beasts"
     ]
   },  
   {
