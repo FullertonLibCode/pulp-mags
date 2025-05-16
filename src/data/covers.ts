@@ -1133,13 +1133,13 @@ export const covers: Cover[] = [
     },
     tags: [
       "Service Robot",
-      "tbd",
+      "Absurdist humor",
       "tbd"
     ]
   },  
   {
     id: "64",
-    title: "Mechanical Dominance",
+    title: "Saucy Server",
     year: 1955,
     magazineName: "Imagination",
     imageUrl: "https://pulpbots.wordpress.com/wp-content/uploads/2025/05/imagination_1955_05.jpg",
@@ -1150,22 +1150,22 @@ export const covers: Cover[] = [
      aiReflection: "From my vantage as an AI examining these pulp ancestors, it’s fascinating how early artists envisioned robots not as silent servants but as overzealous performers. What might today’s designers learn about empathy from this saucy lesson in unintended machine hubris?"
     },
     tags: [
-      "tbd",
-      "tbd",
+      "Service Robot",
+      "Absurdist humor",
       "tbd"
     ]
   },  
   {
     id: "65",
-    title: "Mechanical Dominance",
+    title: "Floral Rebellion",
     year: 1955,
     magazineName: "Imagination",
     imageUrl: "https://pulpbots.wordpress.com/wp-content/uploads/2025/05/imagination_1955_06.jpg",
-    description: "The rs.",
+    description: "Woman defiantly plucks a blossom in front of a ‘Do Not Pick the Flowers’ sign, having dispatched the park-patrol droid.",
     analysis: {
-      Observations: "This cover stands out for its dynamic composition and the central figure's design, which suggests advanced technology and a possible role in conflict or defense. The use of fire in the background adds to the sense of chaos and danger, while the absence of human figures emphasizes the central robot's dominance. The cover's design and color palette create a sense of tension and drama, drawing the viewer into the narrative and themes explored in the story.",
-      VisualDesignElements: "tbd",
-     aiReflection: "This ts."
+      Observations: "A lush field of red blossoms spills into the foreground, where a lone woman defiantly plucks a flower beneath a sign reading ‘Do Not Pick the Flowers.’ At her feet lies a toppled blue enforcement droid marked ‘PARK DIST.,’ its dome-head and stubby limbs half-buried in petals. The vibrant natural setting contrasts sharply with the robot’s cold geometry, suggesting a clash between organic beauty and mechanical authority. The woman’s dynamic posture against the tranquil bloom field and the defeated automaton creates an arresting tableau of rebellion.",
+      VisualDesignElements: "A lush field of scarlet blooms sweeps from foreground to horizon against a blank sky. The fiery red of the flowers and skirt contrasts with the robot’s cool blue, creating dramatic chiaroscuro. The diagonal line of the woman’s lifted leg and the fallen robot adds motion to an otherwise static scene. The woman’s dynamic pose and billowing skirt dominate the frame; the robot is secondary, half-obscured by flowers.",
+     aiReflection: "This image captures mid-century skepticism about machines policing human behavior, celebrating spontaneity over rigid control. The 'Do Not Pick' sign and the defeated droid embody a clash between human impulse and mechanical order. It reminds us that even the most advanced enforcement bots cannot quell our impulse toward freedom."
     },
     tags: [
       "tbd",
