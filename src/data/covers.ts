@@ -337,11 +337,11 @@ export const covers: Cover[] = [
     description: "Menacing robot looms over a human in Western setting.",
     analysis: {
       Observations: "The image features a large, humanoid robot in the foreground, with a human figure in a cowboy hat and denim shirt standing behind it. The robot is metallic with a blue and silver color scheme, and it appears to be looking down at the human with a curious or menacing expression. The image suggests a narrative of conflict between the robot and the human, with the robot appearing to be a threat to the human's safety. The dark and industrial background, along with the menacing expression of the robot, creates a sense of tension and foreboding. The color palette is dominated by dark blues and blacks, with the metallic sheen of the robot providing a stark contrast. The composition of the image, with the robot in the foreground and the human in the background, emphasizes the power and dominance of the robot over the human.",
-      VisualDesignElements: "tbd",
-     aiReflection: "Looking at this image, I wonder how the portrayal of the robot as a menacing figure reflects the societal fears and anxieties of the time regarding technology and its potential impact on humanity. The contrast between the human and the robot, with the human appearing vulnerable and the robot imposing and powerful, suggests a narrative of conflict and tension between humans and machines."
+      VisualDesignElements: "The image interplay—half in shadow, half in sunlit street—juxtaposes the robot’s shining metal against the dusty earth tones of a frontier town. The man and donkey, rendered in warm ochres, move calmly past the gleaming machine, underlining their world’s indifference to such technologies. Vertical lines of the building and doorway frame the robot like a portrait, while the receding street draws the eye deeper into the scene. Subtle lens-flare effects on the visor add a cinematic gleam.",
+     aiReflection: "Looking at this image, I wonder how the portrayal of the robot as a menacing figure reflects the societal fears and anxieties of the time regarding technology and its potential impact on humanity. The contrast between the human and the robot, with the human appearing vulnerable and the robot imposing and powerful, suggests a narrative of conflict and tension between humans and machines. The man's unknowing eye reminds me that, for all our technological strides, the real frontier remains human perception: what we choose to see—or ignore—when steel meets soil."
     },
     tags: [
-      "tbd",
+      "Rustic Outpost",
       "tbd",
       "tbd"
     ]
@@ -384,20 +384,20 @@ export const covers: Cover[] = [
   },
   {
     id: "22",
-    title: "Mechanical Dominance",
+    title: "Colossus",
     year: 1956,
     magazineName: "Amazing Stories",
     imageUrl: "https://pulpbots.wordpress.com/wp-content/uploads/2025/05/amazing_stories_1956_02.jpg",
-    description: "Giant robot destroying Golden Gate bridge.",
+    description: "A gargantuan robot marches through the Golden Gate, shattering human engineering under the weight of its own unstoppable might.",
     analysis: {
-      Observations: "tbd",
-      VisualDesignElements: "The color palette of the cover art is vibrant and uses a limited range of colors, primarily blues, reds, and yellows. The dominant blue sky contrasts with the red bridge and the yellow and black robot, creating a visually striking image. The composition is dynamic, with the robot positioned in the foreground, drawing the viewer's attention. The background features the iconic Golden Gate Bridge, which is slightly obscured by the robot, adding depth to the image. The use of perspective is evident in the way the bridge recedes into the distance, while the robot appears larger and more imposing, emphasizing its mechanical nature. The illustration employs exaggerated forms, such as the robot's large, rounded body and elongated limbs, which add to the visual drama and suggest a sense of power and movement. The motion effect is conveyed through the robot's pose, with one arm extended as if reaching out, and the other bent at the elbow, giving the impression of action or interaction. The foreground is dominated by the robot, while the background elements, such as the bridge and the text, are secondary, serving to frame the central figure and provide context.",
-     aiReflection: "tbd."
+      Observations: "Catching 'Colossus' mid-rampage: once perhaps a marvel of modern engineering, now a rogue titan crushing human landmarks. The tagline—'Why Had This Metal Man Become a Ravaging Monster?'—positions it as a tragic fall from grace. The setting is San Francisco (circa 1956), grounding the fantasy in a familiar world. The absence of human figures heightens the sense of abandonment and inevitability. We infer themes of technology gone haywire, the fragility of human achievement, and perhaps a mad scientist’s hubris.",
+      VisualDesignElements: "A vibrant cerulean sky and tranquil bay contrast violently with the robot’s crushing stride through the Golden Gate Bridge, whose iconic orange towers bend and snap like toothpicks. The low horizon and three-quarter view of the bridge emphasize scale: this is a behemoth among men. Splashes of water around its crashing leg invoke dynamic motion, while the static, distant hills ground the scene in recognizable reality. The bold red of its chest echoes the bridge’s color, visually tying machine and landmark. Painterly brushwork on the water and sky softens the horror, giving the scene a surreal, dream-like quality.",
+     aiReflection: "I sense in this ‘Colossus’ a primal human fear: that our machines, born from ingenuity, may one day eclipse our stewardship. Its single cyclopean eye stares onward, as if unconcerned by the ruin it wreaks. This cover questions who truly holds power: the creator who lit the fuse of this metal behemoth, or the creation that outpaced human control? The bridge’s collapse under mechanized weight becomes a metaphor for the chasm between intention and consequence. It invites reflection on our compulsion to build and the fear that, one day, our greatest triumphs may turn against us."
     },
     tags: [
-      "tbd",
-      "tbd",
-      "tbd"
+      "Robot Rampage",
+      "Cyclopean Eye",
+      "Urban Destruction"
     ]
   },  
   {
