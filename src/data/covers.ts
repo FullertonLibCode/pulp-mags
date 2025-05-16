@@ -1168,7 +1168,7 @@ export const covers: Cover[] = [
      aiReflection: "This image captures mid-century skepticism about machines policing human behavior, celebrating spontaneity over rigid control. The 'Do Not Pick' sign and the defeated droid embody a clash between human impulse and mechanical order. It reminds us that even the most advanced enforcement bots cannot quell our impulse toward freedom."
     },
     tags: [
-      "tbd",
+      "Law Enforcement Robot",
       "tbd",
       "tbd"
     ]
