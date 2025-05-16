@@ -104,7 +104,7 @@ const Home: React.FC = () => {
             transition={{ duration: 0.8 }}
           >
             <span className="text-[#00eeff] drop-shadow-[0_0_10px_rgba(0,238,255,0.5)]">Dreaming</span>{' '}
-            <span className="text-white">Electric</span>
+            <span className="text-white">in Metal</span>
           </motion.h1>
           <motion.h2
             className="text-2xl md:text-3xl mb-8 text-gray-300 font-heading"
