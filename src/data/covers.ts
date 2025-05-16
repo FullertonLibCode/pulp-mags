@@ -510,20 +510,20 @@ export const covers: Cover[] = [
   },
   {
     id: "29",
-    title: "Mechanical Dominance",
+    title: "Something from Jupiter",
     year: 1938,
     magazineName: "Astounding Science Fiction",
     imageUrl: "https://pulpbots.wordpress.com/wp-content/uploads/2025/05/astounding_science_fiction_1938_03.jpg",
     description: "A humanoid robot looms over a distressed human figure in a futuristic cityscape.",
     analysis: {
-      Observations: "The image features a humanoid robot with a red and silver body, standing over a human figure who appears to be in distress or unconscious. The robot's head is turned towards the human, suggesting a moment of interaction or confrontation. The background depicts a futuristic cityscape with towering buildings. The color palette is dominated by blues and purples, creating a sense of otherworldliness.",
-      VisualDesignElements: "The color palette of the cover art is vibrant and uses a mix of warm and cool tones. The dominant colors are reds, blues, and yellows, which create a sense of energy and drama. The reds are particularly prominent in the robot's body and the background, drawing the viewer's attention to the central figure. The blues are used for the man's face and the background, providing a contrast that makes the man stand out. The composition is dynamic, with the man's pose and the robot's position creating a sense of movement. The man is looking up towards the spaceship, which is positioned in the upper right corner of the cover. This placement creates a diagonal line that leads the viewer's eye across the cover. The robot is positioned in the lower left corner, providing a counterbalance to the man's upward gaze. The background is more abstract, with the spaceship and the planet being the only elements with a clear sense of distance. The use of foreground vs. background is clear, with the man and the robot being the foreground figures and the spaceship and the planet being the background elements. The foreground figures are more detailed and have a greater sense of depth, while the background elements are more abstract and less detailed. The man's pose is dynamic, with his arms raised and his leaning body leaning, suggesting movement and urgency. The robot's position is also dynamic, with its arms raised and its body angled, suggesting a sense of power and aggression.",
-     aiReflection: "The image suggests a narrative of conflict or rescue, with the robot's posture and the human's position indicating a pivotal moment. The futuristic cityscape and glowing orb create a sense of advanced technology and a world beyond the present. The color palette and lighting contribute to a mood of tension and anticipation, as the viewer is left to wonder about the outcome of the interaction between the robot and the human."
+      Observations: "The image features a humanoid robot with a red and silver body, standing over a human figure who appears to be in distress or unconscious. The robot's head is turned towards the human, suggesting a moment of interaction or confrontation. The background depicts a futuristic cityscape with towering buildings. Dramatic side-lighting accentuates the robot’s gleaming cylinders and the man’s upturned, blue-tinted face, casting long shadows across a smooth platform. The composition uses a strong diagonal—from the robot’s base up through its arms to the human—to guide the viewer’s gaze into the metropolis beyond. Stark color contrasts (warm bronze vs. cool blues) heighten the sense of otherworldly spectacle.",
+      VisualDesignElements: "The color palette of the cover art is vibrant and uses a mix of warm and cool tones. The dominant colors are reds, blues, and yellows, which create a sense of energy and drama. The reds are particularly prominent in the robot's body and the background, drawing the viewer's attention to the central figure. The blues are used for the man's face and the background, providing a contrast that makes the man stand out. The composition is dynamic, with the man's pose and the robot's position creating a sense of movement. The man is looking up towards the spaceship, which is positioned in the upper right corner of the cover. This placement creates a diagonal line that leads the viewer's eye across the cover. The robot is positioned in the lower left corner, providing a counterbalance to the man's upward gaze. The background is more abstract, with the spaceship and the planet being the only elements with a clear sense of distance. The use of foreground vs. background is clear, with the man and the robot being the foreground figures and the spaceship and the planet being the background elements. The foreground figures are more detailed and have a greater sense of depth, while the background elements are more abstract and less detailed. The man's pose is dynamic, with his arms raised and his body leaning, suggesting movement and urgency. The robot's position is also dynamic, with its arms raised and its body angled, suggesting a sense of power and aggression.",
+     aiReflection: "The image suggests a narrative of conflict or rescue, with the robot's posture and the human's position indicating a pivotal moment. The futuristic cityscape and glowing saucer create a sense of advanced technology and a world beyond the present. The color palette and lighting contribute to a mood of tension and anticipation, as the viewer is left to wonder about the outcome of the interaction between the robot and the human."
     },
     tags: [
-      "Multiple Apendages",
-      "tbd",
-      "tbd"
+      "Tentacled/Multiple Appendages",
+      "Cityscape",
+      "Flying Saucer"
     ]
   },
   {
@@ -532,14 +532,14 @@ export const covers: Cover[] = [
     year: 1942,
     magazineName: "Astounding Science Fiction",
     imageUrl: "https://pulpbots.wordpress.com/wp-content/uploads/2025/05/astounding_science_fiction_1942_08.jpg",
-    description: "A towering robot stands sentinel in a city of the future.",
+    description: "A solitary technician battles the raw, sparking might of an immense industrial machine that dwarfs him.",
     analysis: {
-      Observations: "The image features a large, blue robot with a non-humanoid form standing in the foreground, its body elongated and segmented, with a head that appears to be a circular. The robot is set against a backdrop of a futuristic cityscape with tall buildings and flying vehicles. The color palette is dominated by blues and purples, with a hint of red in the sky, creating a sense of a cold, otherworldly environment. The overall tone of the image is one of advanced technology and futuristic exploration.",
-      VisualDesignElements: "The color palette of the cover art is dominated by cool tones, with blues and purples creating a futuristic and otherworldly atmosphere. The central figure, a large mechanical robot, is rendered in a metallic blue with red and yellow accents, drawing the viewer's attention to its imposing presence. The background features a cityscape with buildings in shades of blue and gray, contributing to the science fiction setting. The composition is balanced with the robot centrally placed, and the text elements are arranged to frame the image without overwhelming it. The foreground is occupied by the robot, which is the most detailed and prominent figure. Its large size and central placement make it the focal point of the cover. The background figures, including the smaller humanoid robots and the human characters, are less detailed and smaller in scale, directing the viewer's attention to the central figure. The use of perspective is evident in the way the buildings recede into the background, creating a sense of depth and distance. The illustration employs a variety of visual effects to create a sense of motion and drama. The robot's arms are extended, suggesting action or readiness for battle. The human characters are depicted in dynamic poses, which adds to the sense of movement and tension. The use of light and shadow is also notable, with highlights on the robot and the buildings, and shadows that create a three-dimensional effect. Overall, the cover art is designed to capture the viewer's attention with its central mechanical figure and futuristic setting, while also conveying a sense of action and drama through its composition, color palette, and visual effects.",
-     aiReflection: "The image suggests a narrative of exploration and discovery in a world where robots have become integral to society. The futuristic cityscape implies a world where technology has advanced beyond human control, while the robot's presence suggests a potential conflict or partnership between humans and machines. The color palette and lighting create a sense of tension and anticipation, as if the viewer is about to witness a pivotal moment in the story."
+      Observations: "A lone technician at a control bench appears to wrestle with the machine’s power—perhaps initiating a critical test or battling a malfunction. The scene reflects early 1940s wartime fascination with mechanized superiority and industrial-scale problem-solving. Tiny figures in the distance suggest additional human overseers, reinforcing the machine’s cathedral-like presence. It captures a moment of tension between human intention and mechanical momentum.",
+      VisualDesignElements: "A cavernous factory interior, crisscrossed with pipes and girders, provides a grand stage for the machine’s operatic scale. Fiery red sparks and a glowing plume of smoke erupt behind the central column, backlighting the apparatus in dramatic silhouette. Foreground shadows cast by the seated operator emphasize his smallness; background silhouettes of workers reinforce the machine’s dominance. The muted blues of metal contrast sharply with the incandescent reds of the explosion, creating visual tension. The vantage is slightly low, making the viewer feel dwarfed by industrial might.",
+     aiReflection: "This image frames the machine as an indifferent giant: it obeys commands yet exacts its own price in sparks and potential chaos. The operator’s frailty beside it questions where true mastery lies. Does the machine ‘know’ its own strength, or is it simply an extension of human hubris? The factory walls echo with a silent challenge: can humans contain what they create? Here, creator and created are locked in an uneasy dance of reliance and dread."
     },
     tags: [
-      "tbd",
+      "Giant Robot",
       "tbd",
       "tbd"
     ]
@@ -672,15 +672,15 @@ export const covers: Cover[] = [
   },  
   {
     id: "38",
-    title: "Mechanical Dominance",
+    title: "Fifth‐Dimension",
     year: 1931,
     magazineName: "Astounding Stories of Super Science",
     imageUrl: "https://pulpbots.wordpress.com/wp-content/uploads/2025/05/astounding_stories_of_super_science_1931_01.jpg",
     description: "A menacing robot looms over a distressed woman, while a man in a suit attempts to protect her.",
     analysis: {
-      Observations: "The central figure is a humanoid robot surrounded by human figures, one of whom appears to be in distress, while another seems to be confronting the robot. The background is a red-hued, chaotic scene with indistinct shapes and figures, suggesting a sense of urgency or danger. ",
+      Observations: "The central figure is a humanoid robot surrounded by human figures. Set against a red interior crowded with gears, valves, and steam pipes, the scene feels both opulent and menacing. Foreground figures—a man firing a pistol, a woman cowering—sit at the base of a powerful diagonal line formed by the robot’s extended arm. The intense red and purple palette evokes urgency and danger. The painterly smoke and glow around the action heighten the sense of crisis. ",
       VisualDesignElements: "The image suggests a narrative of conflict and survival in a futuristic world. The robot's imposing size and the woman's distress create a sense of danger and urgency. The man's protective posture implies a narrative of heroism and defense. The color palette is bold and contrasting, with the red background and the woman's dress drawing the viewer's attention to the central conflict. The composition places the robot in the foreground, emphasizing its size and power. The illustration effectively directs the viewer's attention to the central conflict, using the positioning of the characters and the use of color to create a sense of drama and tension.",
-     aiReflection: "The image suggests a story of conflict between humans and robots, with the robot's aggressive stance and the humans' reactions indicating a narrative of danger and confrontation. The chaotic background and the red color palette create a sense of urgency and fear, while the dynamic poses of the figures suggest action and movement."
+     aiReflection: " I am struck by how early artists personified machines as willful antagonists, reflecting human anxieties about loss of control. The robot’s predatory stance poses a mirror: humanity’s fear that our own creations might turn on us.This cover’s raw confrontation foreshadows modern debates over autonomous weapons and AI alignment. We are still grappling with ensuring that the power we confer upon machines doesn’t exceed our own capacity to manage them."
     },
     tags: [
       "Menacing Robots",
