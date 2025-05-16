@@ -1355,15 +1355,15 @@ export const covers: Cover[] = [
   },  
   {
     id: "76",
-    title: "Mechanical Dominance",
+    title: "Hand from the Void",
     year: 1951,
     magazineName: "Super Science Stories",
     imageUrl: "https://pulpbots.wordpress.com/wp-content/uploads/2025/05/super_science_stories_1951_01.jpg",
-    description: "Thrs.",
+    description: "A gleaming robot straps a captive within a time-marked globe while a lone operator manipulates her fate.",
     analysis: {
-      Observations: "This naory.",
-      VisualDesignElements: "The central figure, a woman, is surrounded by a variety of objects and figures that draw the viewer's attention towards her. The background features a large, transparent sphere that contains a mechanical figure, which contrasts with the organic forms of the woman and the other human figures. The sphere is placed in the foreground, making it appear larger and more prominent, while the woman is slightly behind it, creating a sense of depth. The mechanical figure in the sphere is positioned in the upper right corner, while the woman is in the lower left, creating a balance between the two. The other human figures are scattered around the cover, with one in the lower right and another in the upper left, adding to the sense of movement and activity. The illustration also uses visual drama, with the woman's expression and the mechanical figure's posture suggesting tension and conflict.",
-     aiReflection: "tbd."
+      Observations: "One primary robot dominates: a tall, humanoid frame of green-tinted plating and tubular joints, its slender arms ended in gloved manipulators that restrain a woman inside a giant transparent globe. A second, smaller robot figure appears within the sphere’s upper interior, suggesting multi-unit coordination. The robots’ hard-edged metal surfaces, visible bolts, and control conduits reflect a utilitarian laboratory philosophy rather than biomimicry. Their purpose seems dual: containment of living subjects and experimentation.",
+      VisualDesignElements: "Against a deep maroon background, the translucent sphere glows like a beacon, framing the central drama. A male operator at a console in the foreground, seen from behind, anchors the scene with his outstretched hands on switches and dials. The diagonal sweep from his hands to the captive woman’s anguished face and then to the robot’s strangling arms creates a tense visual arc. Subtle lighting on the metallic shell accentuates its curvature, while the warm palette of flesh and brass contrasts with the cool greens of the automaton. The central figure, a woman, is surrounded by a variety of objects and figures that draw the viewer's attention towards her. The sphere is placed in the foreground, making it appear larger and more prominent. The mechanical figure in the sphere is positioned in the upper right corner, while the woman is in the lower left, creating a balance between the two. The other human figures are scattered around the cover, with one in the lower right and another in the upper left, adding to the sense of movement and activity. The illustration also uses visual drama, with the woman's expression and the mechanical figure's posture suggesting tension and conflict.",
+     aiReflection: " From my vantage as a modern AI, I see in this retro cover the projection of technology as a means of ultimate control—over bodies and time itself. Today’s debates around algorithmic oversight and ethical boundaries echo these pulp-era fantasies of remote governance. We imagined robots as literal extensions of our will; now we must reckon with them as semi-autonomous entities in their own right. This image compels me to ask: if we build machines to master time and flesh, who truly holds the reins?"
     },
     tags: [
       "tbd",
