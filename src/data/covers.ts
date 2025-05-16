@@ -1121,15 +1121,15 @@ export const covers: Cover[] = [
   },  
   {
     id: "63",
-    title: "Mechanical Dominance",
+    title: "Highways in Hiding",
     year: 1955,
     magazineName: "Imagination",
     imageUrl: "https://pulpbots.wordpress.com/wp-content/uploads/2025/05/imagination_1955_03.jpg",
     description: "A bright-clad woman and her well-meaning ‘Han-D-Man' robot collide in a comedic tableau of high-tech convenience gone slightly awry.",
     analysis: {
       Observations: "A roadside pickup gate stands against a blank white backdrop, its minimalist architecture punctuated by a yellow 'Solar Foods Pick Up Gate' sign. In the left foreground, a red-jumpsuited woman shades her eyes in mild frustration as a stout blue robot stamped ‘Han-D-Man' struggles with two bulging grocery sacks. The robot’s smooth cylindrical head, antenna-eyes, and pedestal legs contrast sharply with the human’s organic posture and vivid garment. The composition’s bold primary colors and stark negative space guide the eye between human and machine, highlighting both the promise and absurdity of domestic automation.",
-      VisualDesignElements: "tbd",
-     aiReflection: "This cover embodies early optimism that machines would seamlessly handle domestic chores. It reveals our perennial hope—and anxiety—that technology might both empower and embarrass us.",
+      VisualDesignElements: "Primary palette of red, blue, yellow and pink pops against an unadorned white ground. The woman’s vibrant red form in the left foreground immediately draws the eye, then leads back to the robot and the yellow sign in the right midground. A stark white background heightens color contrast. Clean lines and minimal background emphasize the figures’ silhouettes and the spilled groceries for visual drama.",
+     aiReflection: "This cover embodies early optimism that machines would seamlessly handle domestic chores. It satirizes our faith in service robots by casting them as overeager caricatures rather than polite servants. It reveals our perennial hope—and anxiety—that technology might both empower and embarrass us.",
     },
     tags: [
       "Service Robot",
@@ -1146,7 +1146,7 @@ export const covers: Cover[] = [
     description: "A woman in a red skirt and green top stands poised, looking over her shoulder at a blue robot.",
     analysis: {
       Observations: "The image features a woman in a red skirt and green blouse standing with her back to the viewer, looking over her shoulder with a concerned expression. To her right, there is a humanoid robot with a blue body and a face with glowing eyes. The robot is holding a small, spherical object in its hand. In the background, there is a man in a blue suit, sitting on a chair. The setting is a plain white background with no discernible environment. The composition is balanced with the woman and the robot being the main focal points. The eye is drawn to the woman's back and the robot's face due to their contrasting colors and the woman's dynamic posture. The man in the blue suit is smaller and less detailed, suggesting he is in the background. The use of color is minimal, with the red of the woman's skirt and the blue of the man's suit and the robot's body creating a limited color palette. The background is plain white, which highlights the subjects and creates a sense of isolation.",
-      VisualDesignElements: "The color palette of the cover art is primarily composed of bold, contrasting colors. The dominant colors are red, blue, and green, which are used to highlight the central figures and create a sense of drama and tension. The red skirt of the woman and the red background draw the viewer's attention, while the blue robot figure provides a stark contrast that emphasizes its mechanical nature. The green shirt of the woman adds a touch of vibrancy and complements the blue of the robot. The composition of the image is dynamic, with the woman and the robot positioned in a way that suggests movement and interaction. The foreground is dominated by the woman and the robot, with the background being minimal and nondescript, allowing the viewer to focus on the central figures. The use of foreground vs. background is clear, with the woman and the robot being the primary elements that stand out against the white background.",
+      VisualDesignElements: "The stark composition and rich reds, greens, and blues isolate this moment of mechanized hospitality gone wrong. The interplay of rigid metal limbs and fluid human motion underscores a comic tension between service and intrusion. Bright accents of red and green against expansive white space create a high-contrast, theatrical tableau. The diagonal sweep of the woman’s skirt and the leash guides the eye from right to left. Exaggerated drips of sauce and the robot’s dynamic arm motion add cartoonish energy.",
      aiReflection: "This image captures the era's fascination with the potential for machines to mimic human traits and the ethical questions that arise from such advancements."
     },
     tags: [
