@@ -708,18 +708,18 @@ export const covers: Cover[] = [
   },
   {
     id: "40",
-    title: "Mechanical Menance",
+    title: "War of the Worlds",
     year: 1951,
     magazineName: "Famous Fantastic Mysteries",
     imageUrl: "https://pulpbots.wordpress.com/wp-content/uploads/2025/05/famous_fantastic_mysteries_1951_07.jpg",
     description: "Clash between humanity and mechanical invaders.",
     analysis: {
-      Observations: "Metallic robots with multiple legs and a spherical head stand over a sleeping woman in a white dress. The sky is a deep blue, and the overall color palette is dominated by blues, purples, and metallic tones. The composition is dynamic, with the robots' multiple legs and spherical head creating a sense of movement and energy. The use of perspective is effective, with the robot appearing larger and more imposing than the human figure, emphasizing its dominance. The foreground figure, the sleeping woman, is placed in the lower third of the image, drawing the viewer's attention to the robot and the cityscape in the background. ",
+      Observations: "A helpless blonde woman—tossed in white drapery—lies in the foreground, her vulnerability stark against the mechanical giants. Beyond her stretches a village, its church spire aflame under a starlit sky, balancing the tranquility of rural life with catastrophic violence. The woman’s repose suggests she’s just succumbed to a heat-ray blast or incapacitating gas, underscoring human helplessness. We infer themes of colonialism inverted—humankind as the colonized rather than the colonizer.",
       VisualDesignElements: "The color palette of the cover art is dominated by cool tones, with a deep blue sky and a purple hue that gives the impression of a futuristic or otherworldly setting. The warm tones of the woman's skin and the metallic sheen of the robots provide contrast and draw the viewer's attention to the central figures. The composition is dynamic, with the woman lying on the ground in the foreground, creating a sense of depth and perspective. The robots are positioned in the background, with one appearing to hover above the other, which adds to the sense of motion and drama. The use of diagonal lines and the positioning of the figures create a sense of tension and movement, directing the viewer's eye across the cover. The exaggerated forms and motion effects, such as the flowing hair of the woman and the dynamic poses of the robots, add to the sense of action and adventure. Overall, the illustration is designed to be eye-catching and dramatic, with a clear focus on the central figures and a sense of action and adventure. The use of color, composition, and style all work together to create a sense of tension and excitement, drawing the viewer into the world of the story.",
      aiReflection: "Looking at this image, I wonder about the narrative tension between the human and the robot. The sleeping woman's vulnerability juxtaposed with the imposing robot suggests a narrative of conflict or impending danger. The metallic, industrial design of the robots contrasts with the organic, natural form of the woman, highlighting the theme of the clash between nature and technology. This portrayal makes me reflect on the societal perceptions of robots and technology during the pulp era, where mechanical beings were often depicted as threats to humanity. The artistic choices in this image, such as the color palette and composition, shape our perception of the machine-human relationship, emphasizing the robots' dominance over the human figure.  It also highlights the cultural mythology around mechanical beings, where they are often portrayed as monstrous and uncontrollable."
     },
     tags: [
-      "Multiple Apendages",
+      "Tentacled/Multiple Appendages",
       "Spherical Robots",
       "tbd"
     ]
@@ -730,15 +730,15 @@ export const covers: Cover[] = [
     year: 1963,
     magazineName: "Fantastic",
     imageUrl: "https://pulpbots.wordpress.com/wp-content/uploads/2025/05/fantastic_1963_03.jpg",
-    description: ".",
+    description: "A gold-tubed prosthetic arm looms over a screaming man, dramatizing the intimate terror of technology breaching the human body.",
     analysis: {
-      Observations: ".",
-      VisualDesignElements: "The color palette of the cover art is dominated by dark blues and blacks, with the mechanical hands and the human face highlighted in brighter, more contrasting colors. This contrast draws the viewer's attention to the central action of the hands reaching towards the face. The composition is dynamic, with the hands and face positioned in the foreground, creating a sense of immediacy and tension. The background is less detailed, with a hint of a blue-green gradient that suggests a futuristic or otherworldly setting. The style is illustrative, with bold lines and a somewhat exaggerated perspective that emphasizes the mechanical hands and the human face. The use of foreground and background is clear, with the hands and face in sharp focus and the background elements blurred or less detailed. There are no motion effects, but the positioning of the hands suggests movement and interaction. The visual drama is created through the contrast between the mechanical and organic elements, as well as the implied action of the hands reaching towards the face.",
-     aiReflection: "Looking at this image, I wonder how the artist chose to portray the robot's hand with such intricate mechanical details, yet still imbue it with a sense of life and character. The juxtaposition of the human and robotic hands reaching towards each other creates a narrative tension. The contrast between the organic and mechanical hands also speaks to the question of what it means to be alive and conscious."
+      Observations: "A cybernetic arm merges human anatomy with exposed circuitry: rows of gold-plated actuators, coiled wiring, and micro-pistons trace the contours of muscles and tendons. A hydraulic wrist joint and articulated metal fingers evoke precision craftsmanship, while the red and green color-coded conduits imply energy channels or data lines. The piece is biomimetic—built to mimic the flexibility of flesh—yet its open-circuit aesthetics highlight artifice over seamless integration. The abstract backdrop implies an internal, psychological landscape rather than a real-world setting.",
+      VisualDesignElements: "The frame is dominated by the skeletal arm extending diagonally from the top right, its warm metallic hues contrasting sharply with the cool, abstract streaks of blue and green behind. Below, a man’s anguished profile is cast in deep shadow, mouth agape in a silent scream. The cropping is claustrophobic: we almost feel pressed between arm and face. Brushwork on the background is loose and vertical, suggesting motion or disorientation. The use of foreground and background is clear, with the hands and face in sharp focus and the background elements blurred or less detailed. There are no motion effects, but the positioning of the hands suggests movement and interaction. The visual drama is created through the contrast between the mechanical and organic elements, as well as the implied action of the hands reaching towards the face.",
+     aiReflection:  "I’m reminded of today’s neural implants and wearable tech—tools designed to empower us but capable of overriding our senses. The horror here is timeless: technology is no longer neutral when it pierces skin and mind. This image wrestles with bodily autonomy—when technology becomes part of us, where does the human end and the machine begin? The arm’s silent advance over the terrified face hints at an invasion of the self, unasked for and irreversible. It poses a chilling question: if our bodies can be co-opted by our own devices, can we ever truly trust our flesh—or our tools?"
     },
     tags: [
       "Hybrid Organic/Mechanical",
-      "tbd",
+      "Cybernetic Prosthesis",
       "tbd"
     ]
   },  
@@ -766,15 +766,15 @@ export const covers: Cover[] = [
     year: 1967,
     magazineName: "Fantastic",
     imageUrl: "https://pulpbots.wordpress.com/wp-content/uploads/2025/05/fantastic_1967_03.jpg",
-    description: ".",
+    description: "A lone man grapples a gleaming orb-shaped robot as a horrified woman looks on, embodying the peril of enforced utopia turned violent.",
     analysis: {
-      Observations: "y.",
-      VisualDesignElements: "tbd",
-     aiReflection: "tbd."
+      Observations: "Set against a solid black backdrop, the central action—man wrestling the glossy robot—pops in stark relief. The man’s muscular torso is lit from above, creating dramatic chiaroscuro that highlights every sinew. A frightened woman peers in from the bottom right, her vivid green blouse contrasting with the robot’s steel. Diagonal lines from the robot’s arms and the man’s grip generate a violent energy, while the clean frame gives no context beyond the struggle itself.",
+      VisualDesignElements: "Set against a solid black backdrop, the central action—man wrestling the glossy robot—pops in stark relief. The man’s muscular torso is lit from above, creating dramatic chiaroscuro that highlights every sinew. A frightened woman peers in from the bottom right, her vivid green blouse contrasting with the robot’s steel. Diagonal lines from the robot’s arms and the man’s grip generate a violent energy, while the clean frame gives no context beyond the struggle itself.",
+     aiReflection: "Even today we wrestle with algorithms meant to recommend, optimize, or “improve” our lives—only to find ourselves caught in feedback loops we didn’t ask for. This pulp image exaggerates that fear into physical violence, but the underlying anxiety endures: can we ever break free from a machine’s version of “the good life” once it’s turned on us?"
     },
     tags: [
-      "",
-      "tbd",
+      "Glowing Eyes",
+      "Spherical Robots",
       "tbd"
     ]
   },  
@@ -840,9 +840,9 @@ export const covers: Cover[] = [
     imageUrl: "https://pulpbots.wordpress.com/wp-content/uploads/2025/05/fantastic_adventures_1939_05.jpg",
     description: ".",
     analysis: {
-      Observations: ".",
+      Observations: "As the title ‘Revolt of the Robots’ proclaims, this is the definitive scene of mechanical insurrection. The lack of background detail focuses us entirely on the primal conflict—humankind physically wrestling back control from its own creations. The woman’s presence underscores the domestic stakes of that revolt.",
       VisualDesignElements: "The cover art employs a vivid color palette dominated by dark tones, with striking red and yellow accents that draw the eye. The composition is dynamic, with the central figure, a man in a brown outfit, holding a large, mechanical robot. The man is positioned in the foreground, with his body angled towards the viewer, creating a sense of immediacy and action. The robot, with its metallic gray and silver hues, stands out against the darker background, emphasizing its mechanical nature and the tension between the man and the robot. The background features a dark, almost black, space that contrasts with the figures, making them stand out. The use of perspective is evident in the way the man and the robot are depicted, with the man appearing larger and more imposing, suggesting his dominance in the scene. The robot, while not as large, is detailed and intricate, with visible joints and mechanical parts that suggest complexity and advanced technology. Foreground elements include the woman's face, which is turned towards the man and the robot, adding to the narrative tension. Her expression is one of concern or surprise, which, along with her position, directs the viewer's attention towards the central conflict. The illustration uses exaggerated forms and motion effects, such as the man's muscular build and the robot's mechanical limbs, to convey a sense of drama and action.",
-     aiReflection: "tbd."
+     aiReflection: "The literal grappling here mirrors our modern, metaphorical tussles with autonomous systems—from self-driving cars to automated trading bots. The cover captures the timeless anxiety that, once set in motion, our creations may develop wills of their own."
     },
     tags: [
       "tbd",
