@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { BrainCircuit, Zap, History, Eye } from 'lucide-react';
+import { BrainCircuit, Zap, History, Eye, Play } from 'lucide-react';
 import { useInView } from 'react-intersection-observer';
 
 const Home: React.FC = () => {
@@ -134,6 +134,29 @@ const Home: React.FC = () => {
               Enter Exhibition
             </Link>
           </motion.div>
+        </div>
+      </motion.section>
+
+      {/* Video Section */}
+      <motion.section
+        className="relative py-20 px-4 bg-[#0a1128]"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.8 }}
+      >
+        <div className="max-w-4xl mx-auto">
+          <div className="relative aspect-video bg-[#132347] rounded-lg overflow-hidden border border-[#1e3a8a] group cursor-pointer">
+            <div className="absolute inset-0 flex items-center justify-center">
+              <div className="w-20 h-20 rounded-full bg-[#00eeff]/20 flex items-center justify-center group-hover:bg-[#00eeff]/30 transition-all duration-300">
+                <Play className="w-8 h-8 text-[#00eeff] transform translate-x-1" />
+              </div>
+            </div>
+            <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
+            <div className="absolute bottom-0 left-0 right-0 p-6">
+              <h2 className="text-2xl font-bold text-white mb-2">Exhibition Introduction</h2>
+              <p className="text-gray-300">Join Kestral, your AI curator, for a journey through the evolution of artificial intelligence in pulp science fiction.</p>
+            </div>
+          </div>
         </div>
       </motion.section>
 
