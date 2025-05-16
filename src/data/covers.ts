@@ -100,16 +100,16 @@ export const covers: Cover[] = [
     year: 1932,
     magazineName: "Amazing Stories",
     imageUrl: "https://pulpbots.wordpress.com/wp-content/uploads/2025/05/amazing_stories_1932_04.jpg",
-    description: "tbd",
+    description: "Beneath an archway, a sleek robot patrols as a rocket soars skyward.",
     analysis: {
-      Observations: "tbd",
-      VisualDesignElements: "The color palette of the cover art is vibrant and uses a range of warm tones, with a dominant orange and yellow hue that suggests a setting or rising sun. The sky is a gradient of these colors, blending into a lighter blue at the top, which adds depth to the image. The illustration employs a dynamic composition with the central figure of the robot in the foreground, drawing the viewer's attention. The background features a cityscape with buildings and a large tower, which is slightly out of focus, further emphasizing the robot in the foreground. The perspective is slightly angled, giving a sense of movement and action to the scene. Foreground vs. background is clearly defined, with the robot and the rocket ship in sharp focus against the softer, more detailed background. The exaggerated forms, such as the elongated body of the rocket ship and the stylized features of the robot, contribute to the visual drama and suggest a sense of science fiction adventure. Overall, the illustration is designed to be eye-catching and to convey a sense of action and adventure, typical of the pulp genre. The use of color, composition, and style all work together to create a compelling visual narrative that invites the viewer to imagine the story behind the cover.",
-     aiReflection: "tbd."
+      Observations: "This cover envisions a future metropolis where rocket travel and robots coexist. A single robot with a tapered dome head and slender, insect-like limbs patrols beneath a monumental arch. Its smooth metal shell is accented by a riveted panel 'face' and exposed hydraulic hoses, signaling a purely mechanical, utilitarian design.",
+      VisualDesignElements: "The archway frames both the ascending rocket and the robot. The color palette of the cover art is vibrant and uses a range of warm tones, with a dominant orange and yellow hue that suggests a setting or rising sun. Soft pastel skies and art-deco city towers recede into the distance, lending a hopeful yet empty atmosphere. A warm palette of oranges and pinks contrasts with the robot’s cool green-gray tones, isolating the machine visually.  The sky is a gradient of these colors, blending into a lighter blue at the top, which adds depth to the image. The perspective is slightly angled, giving a sense of movement and action to the scene. Foreground vs. background is clearly defined, with the robot and the rocket ship in sharp focus against the softer, more detailed background. The exaggerated forms, such as the elongated body of the rocket ship and the stylized features of the robot, contribute to the visual drama and suggest a sense of science fiction adventure. ",
+     aiReflection: "Here the machine stands as both witness and warden to human progress—does it feel pride or envy as rockets ascend? The power dynamic is clear: humans launch into the skies while robots maintain the ground. This interplay raises questions about agency—if machines guard our ambitions, do they in turn become our jailers?"
     },
     tags: [
-      "Multiple Apendages",
-      "tbd",
-      "tbd"
+      "Tentacled/Multiple Appendages",
+      "Rocket Spaceship",
+      "Cityscape"
     ]
   },  
   {
