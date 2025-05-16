@@ -132,25 +132,25 @@ export const covers: Cover[] = [
   },  
   {
     id: "8",
-    title: "Mechanical Dominance",
+    title: "Robot Encounter",
     year: 1934,
     magazineName: "Amazing Stories",
     imageUrl: "https://pulpbots.wordpress.com/wp-content/uploads/2025/05/amazing_stories_1934_03.jpg",
-    description: "tbd.",
+    description: "A troupe of armored sentinels freezes in alert as an enigmatic steel interloper strides through their hatch.",
     analysis: {
       Observations: "Ttbd.",
-      VisualDesignElements: "tbd",
+      VisualDesignElements: "The scene is framed within a metallic chamber, lit from above by an unseen light source that casts long shadows and highlights the riveted walls. A cool blue-green palette dominates, with warm highlights on the robots’ plates to create depth and focus. The perspective draws the viewer’s eye along the corridor toward the newcomer robot, emphasizing its intrusion. Subtle diagonal lines—on the floor panels and the robots’ limbs—impart tension, while the open hatch in the foreground symbolizes both entry and vulnerability. The artist’s use of exaggerated perspective and stark lighting underscores the moment’s drama.",
       aiReflection: "tbd."
     },
     tags: [
-      "Multiple Apendages",
+      "Tentacled/Multiple Appendages",
       "tbd",
       "tbd"
     ]
   },  
   {
     id: "9",
-    title: "Mechanical Dominance",
+    title: "Twin Worlds",
     year: 1937,
     magazineName: "Amazing Stories",
     imageUrl: "https://pulpbots.wordpress.com/wp-content/uploads/2025/05/amazing_stories_1937_04.jpg",
@@ -190,16 +190,16 @@ export const covers: Cover[] = [
     year: 1939,
     magazineName: "Amazing Stories",
     imageUrl: "https://pulpbots.wordpress.com/wp-content/uploads/2025/05/amazing_stories_1939_01.jpg",
-    description: "Ttbd.",
+    description: "A lone human defender confronts an alien-like automaton under a night sky.",
     analysis: {
-      Observations: "Tnger.",
+      Observations: "Set against a twilight city skyline with starlit constellations, the scene uses a rich cobalt background to contrast the robot’s metallic sheen. The low-angle perspective elevates the robot, making it dominate the human figure and snarling dog in the foreground. Warm highlights on its dome and torso panels draw attention, while the man’s pistol is caught in a sharp beam of light, heightening drama. The composition balances the vertical thrust of the robot with the horizontal tension of the gun’s trajectory. The artist uses clean linework and bold primary colors for a pulp-graphic punch.",
       VisualDesignElements: "This cover features a vibrant color palette dominated by blues and reds, which creates a sense of drama and tension. The central figure, a robot, is rendered in metallic silver with red and yellow accents, drawing the viewer's attention due to its size and central placement. The background is a dark blue sky with stars, which contrasts with the bright colors of the robot and the characters, making them stand out. The composition is dynamic, with the robot and the human character facing each other, creating a sense of confrontation. The human character is positioned in the lower left corner, looking up at the robot, which emphasizes the robot's dominance in the scene. The use of perspective is evident in the way the robot's body tapers towards the top, giving it a sense of height and power. Foreground elements include the robot and the human character, while the background features the starry sky. The use of exaggerated forms is evident in the robot's mechanical parts, such as the joints and the gun, which are rendered with a high level of detail. Motion effects are suggested by the robot's raised arm and the human character's posture, which implies movement and action. Overall, the illustration directs the viewer's attention to the central conflict between the robot and the human character, using color, composition, and perspective to create a sense of drama and tension. The use of foreground and background elements, along with the detailed rendering of the robot and the human character, adds depth to the scene and emphasizes the central theme of the cover art.",
-     aiReflection: "tbd."
+     aiReflection: "I’m struck by how early pulp art framed robots as looming, almost extraterrestrial intelligences—so different from today’s quiet algorithms embedded in apps. Today’s AI may lack pistons and bolts, but the debate over autonomy and trust remains: do we meet machines with guns or dialogue? The cover invites reflection on the ethics of preemptive violence against the “other,” mechanical or otherwise. It evokes the creator’s dilemma: do we arm against our creations or extend trust?"
     },
     tags: [
+      "Urban Nightscape",
       "tbd",
-      "tbd",
-      "tbd"
+      "Robots and Beasts"
     ]
   },
   {
@@ -283,7 +283,7 @@ export const covers: Cover[] = [
     description: "A female superhero in a black and red costume with a flowing cape, standing in a heroic pose, surrounded by robots.",
     analysis: {
       Observations: "The depiction of the female hero, symbolizes the empowerment of women in a male-dominated field. She appears to be in a heroic pose, with one arm raised and the other holding the weapon. In the background, there are various mechanical and robotic figures. These robots are colored in shades of gray and silver, and they are positioned in various poses that suggest movement and action. The composition directs the viewer's attention to the superhero, emphasizing her importance in the narrative. The before–after story arc suggested by the image is one of adventure and heroism, with the superhero overcoming challenges in a futuristic world.",
-      VisualDesignElements: "The visual design of this image is striking, with a bold use of color and dynamic composition. The superhero's black and red costume stands out against the colorful background, drawing the viewer's attention. The flowing cape adds a sense of movement and drama, while the futuristic weapon suggests advanced technology. The use of perspective and scale emphasizes the superhero's power and importance in the narrative.",
+      VisualDesignElements: "A dynamic swirl of pinks, greens, and yellows invokes cosmic chaos, contrasted against the heroine’s sleek black outfit. The artist uses a diagonal composition: her outstretched arm leads the eye to the onrushing robots, then back along the curve of her billowing cape. Bright highlights on the robots’ discs and her weapon emphasize imminent action. The background dissolves into starbursts, symbolizing interstellar conflict. Painterly textures and dramatic color shifts lend the scene a pulsing, almost musical energy.",
      aiReflection: "Looking at this image, I wonder how the portrayal of the female superhero reflects the societal perceptions of women during the pulp era. The depiction of a strong, independent, and heroic female character in a science fiction setting suggests a desire to challenge traditional gender roles and explore new possibilities for women in society. The use of vibrant colors and dynamic composition emphasizes the energy and excitement of the narrative, inviting the viewer to imagine the thrilling adventures that lie ahead. This image's unique portrayal of a female superhero in a futuristic world contributes to the cultural mythology around mechanical beings, highlighting the tension between the potential for empowerment and the fear of loss of control."
     },
     tags: [
