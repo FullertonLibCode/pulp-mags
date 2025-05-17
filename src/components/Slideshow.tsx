@@ -11,7 +11,7 @@ interface SlideshowProps {
 const Slideshow: React.FC<SlideshowProps> = ({ onClose, initialIndex = 0 }) => {
   const [currentIndex, setCurrentIndex] = useState(initialIndex);
   const [isFullscreen, setIsFullscreen] = useState(false);
-  const [activeSection, setActiveSection] = useState<string>('observation');
+  const [activeSection, setActiveSection] = useState<string>('Observations');
   
   const nextSlide = () => {
     setCurrentIndex((prev) => (prev + 1) % covers.length);
@@ -71,6 +71,14 @@ const Slideshow: React.FC<SlideshowProps> = ({ onClose, initialIndex = 0 }) => {
       description: 'Personal insights from an AI perspective on this creative representation.'
     }
   ];
+
+  const getAnalysisContent = (sectionId: string) => {
+    const content = currentCover.analysis[sectionId as keyof typeof currentCover.analysis];
+    if (!content) {
+      return currentCover.analysis.Observations || "Analysis coming soon...";
+    }
+    return content;
+  };
   
   return (
     <div className="fixed inset-0 bg-[#0a1128] z-50 flex items-center justify-center">
@@ -167,7 +175,7 @@ const Slideshow: React.FC<SlideshowProps> = ({ onClose, initialIndex = 0 }) => {
                     <p className="text-sm text-gray-400 mb-4">{section.description}</p>
                     <div className="prose prose-invert max-w-none">
                       <p className="text-gray-200 leading-relaxed">
-                        {currentCover.analysis[section.id as keyof typeof currentCover.analysis]}
+                        {getAnalysisContent(section.id)}
                       </p>
                     </div>
                   </motion.div>
