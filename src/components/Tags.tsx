@@ -56,7 +56,7 @@ const Tags: React.FC = () => {
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5, delay: 0.2 }}
       >
-        Explore the exhibition through thematic tags that categorize how artificial intelligence has been imagined, feared, and celebrated throughout the pulp science fiction era.
+        Explore the exhibition through thematic tags that show how robots has been imagined, feared, and celebrated throughout the pulp science fiction era.
       </motion.p>
       
       <motion.div
