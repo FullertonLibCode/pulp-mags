@@ -54,9 +54,9 @@ const Slideshow: React.FC<SlideshowProps> = ({ onClose, initialIndex = 0 }) => {
   const sections = [
     { 
       id: 'Observations', 
-      label: 'Summary & Analysis', 
+      label: 'Observations', 
       icon: <Eye className="w-5 h-5" />,
-      description: 'Identification of notable features, patterns, or unique elements that distinguish this cover within robot pulp art.'
+      description: 'Image overview.'
     },
     { 
       id: 'VisualDesignElements', 
