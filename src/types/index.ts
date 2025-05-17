@@ -8,9 +8,7 @@ export interface Cover {
   analysis: {
     Observations: string;
     VisualDesignElements: string;
-    VisualHierarchyHumanPresence: string;
-    TechnologicalRepresentation: string;
-    LiteraryVisualConnections: string;
+    aiReflection: string;
   };
   tags: string[];
 }
