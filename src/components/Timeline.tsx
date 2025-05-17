@@ -4,6 +4,9 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 
 const Timeline: React.FC = () => {
+  // Sort covers by year in ascending order
+  const sortedCovers = [...timelineCovers].sort((a, b) => a.year - b.year);
+
   return (
     <div className="max-w-5xl mx-auto">
       <motion.h1 
@@ -27,7 +30,7 @@ const Timeline: React.FC = () => {
       <div className="relative">
         <div className="absolute left-0 sm:left-1/2 transform sm:-translate-x-1/2 h-full w-1 bg-gradient-to-b from-[#1e3a8a] via-[#00eeff] to-[#1e3a8a]"></div>
         
-        {timelineCovers.map((cover, index) => (
+        {sortedCovers.map((cover, index) => (
           <motion.div 
             key={cover.id}
             className={`relative flex flex-col sm:flex-row items-center mb-16 ${
