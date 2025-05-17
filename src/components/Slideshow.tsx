@@ -56,13 +56,13 @@ const Slideshow: React.FC<SlideshowProps> = ({ onClose, initialIndex = 0 }) => {
       id: 'Observations', 
       label: 'Summary & Analysis', 
       icon: <Eye className="w-5 h-5" />,
-      description: 'Identification of notable features, patterns, or unique elements that distinguish this cover within the broader collection of robot pulp art.'
+      description: 'Identification of notable features, patterns, or unique elements that distinguish this cover within robot pulp art.'
     },
     { 
       id: 'VisualDesignElements', 
       label: 'Design Elements', 
       icon: <BrainCircuit className="w-5 h-5" />,
-      description: 'Technical analysis of artistic choices including color palette, composition, perspective, proportion, and how these choices shaped viewer perception of artificial beings.'
+      description: 'Technical analysis of artistic choices including color palette, composition, perspective, and proportion.'
     },
     { 
       id: 'aiReflection', 
