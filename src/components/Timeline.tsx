@@ -12,7 +12,7 @@ const Timeline: React.FC = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
       >
-        Evolution of AI in Pulp Fiction
+        Visual Evolution of Robots in Pulp Fiction
       </motion.h1>
       
       <motion.p
@@ -21,7 +21,7 @@ const Timeline: React.FC = () => {
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5, delay: 0.2 }}
       >
-        Trace the evolution of how robots and artificial intelligence were portrayed through the decades, reflecting changing cultural attitudes and technological developments.
+        Trace the visual evolution of how robots were portrayed through the decades, reflecting changing cultural attitudes and technological developments.
       </motion.p>
       
       <div className="relative">
