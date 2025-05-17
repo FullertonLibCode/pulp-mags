@@ -94,13 +94,13 @@ const Gallery: React.FC = () => {
                 }}
                 className="block w-full bg-[#132347] rounded-xl overflow-hidden hover:pulp-border transition-all duration-300 group-hover:shadow-[0_0_30px_rgba(0,238,255,0.2)]"
               >
-                <div className="relative h-80 overflow-hidden">
+                <div className="relative pt-[133%] overflow-hidden">
                   <div className="absolute inset-0 bg-gradient-to-t from-[#0a1128] via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                   <div className="absolute inset-0 vintage-texture mix-blend-overlay" />
                   <img 
                     src={cover.imageUrl} 
                     alt={cover.title} 
-                    className="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-110"
+                    className="absolute inset-0 w-full h-full object-contain transition-transform duration-500 group-hover:scale-110"
                   />
                 </div>
                 <div className="p-6">

@@ -43,13 +43,15 @@ const Timeline: React.FC = () => {
             <div className="sm:w-1/2 flex justify-center sm:justify-end sm:pr-8">
               <Link 
                 to={`/cover/${cover.id}`}
-                className="block bg-[#132347] rounded-lg overflow-hidden border border-[#1e3a8a] hover:border-[#00eeff] transition-all duration-200 w-64 h-64 lg:w-80 lg:h-80"
+                className="block bg-[#132347] rounded-lg overflow-hidden border border-[#1e3a8a] hover:border-[#00eeff] transition-all duration-200 w-64 lg:w-80"
               >
-                <img 
-                  src={cover.imageUrl} 
-                  alt={cover.title} 
-                  className="w-full h-full object-cover"
-                />
+                <div className="relative pt-[133%] overflow-hidden">
+                  <img 
+                    src={cover.imageUrl} 
+                    alt={cover.title} 
+                    className="absolute inset-0 w-full h-full object-contain"
+                  />
+                </div>
               </Link>
             </div>
             
