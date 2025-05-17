@@ -81,10 +81,10 @@ const Insights: React.FC = () => {
         >
           <div className="flex items-center mb-6">
             <Lightbulb className="w-8 h-8 text-[#00eeff] mr-3" />
-            <h2 className="text-2xl font-bold">Visual Language of AI</h2>
+            <h2 className="text-2xl font-bold">Visual Language of Robots</h2>
           </div>
           <p className="text-gray-300 leading-relaxed mb-6">
-            The visual representation of artificial intelligence in these covers reveals recurring motifs and symbols that helped shape public perception of AI. Geometric patterns, metallic surfaces, and glowing elements became a universal language for depicting machine consciousness.
+            The visual representation of robots in these covers reveals recurring motifs and symbols that helped shape public perception of AI. Geometric patterns, metallic surfaces, and glowing elements became a universal language for depicting machine consciousness.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
             <div className="bg-[#0a1128] p-6 rounded-lg">
