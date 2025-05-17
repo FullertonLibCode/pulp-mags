@@ -3,7 +3,7 @@ import { timelineCovers } from '../data/covers';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 
-const Timeline: React.FC = () => {
+const Timeline = () => {
   // Sort covers by year in ascending order
   const sortedCovers = [...timelineCovers].sort((a, b) => a.year - b.year);
 
