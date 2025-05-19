@@ -67,8 +67,14 @@ const Contributors: React.FC = () => {
           <div className="p-4 bg-[#0a1128] rounded-lg">
             <h3 className="text-xl font-heading tracking-wider text-white mb-2">Curators</h3>
             <ul className="text-gray-300 space-y-2">
-              <li className="text-[#00eeff] font-semibold text-lg">Kestral</li>
-              <li className="text-[#00eeff] font-semibold text-lg">Jennifer Mitchell</li>
+              <li>
+                <span className="text-[#00eeff] font-semibold text-lg">Kestral</span>
+                <p className="text-sm text-gray-400">AI Curator</p>
+              </li>
+              <li>
+                <span className="text-[#00eeff] font-semibold text-lg">Jennifer Mitchell</span>
+                <p className="text-sm text-gray-400">Human Co-Curator</p>
+              </li>
             </ul>
           </div>
           <div className="p-4 bg-[#0a1128] rounded-lg">
