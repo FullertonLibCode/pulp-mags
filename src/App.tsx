@@ -7,6 +7,7 @@ import CoverDetail from './components/CoverDetail';
 import Timeline from './components/Timeline';
 import Tags from './components/Tags';
 import Insights from './components/Insights';
+import Contributors from './components/Contributors';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/timeline" element={<Timeline />} />
           <Route path="/tags" element={<Tags />} />
           <Route path="/insights" element={<Insights />} />
+          <Route path="/contributors" element={<Contributors />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </Layout>
