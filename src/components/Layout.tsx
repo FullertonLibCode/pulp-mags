@@ -24,7 +24,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
               className="flex items-center gap-2 text-[#00eeff] hover:text-[#00bfcc] transition-colors duration-200"
             >
               <Play className="w-5 h-5" />
-              <span className="hidden sm:inline">Watch Introduction</span>
+              <span className="hidden sm:inline">Meet Kestral</span>
             </button>
             <div className="text-sm text-right">
               <p className="text-[#00eeff] font-semibold">KESTRAL</p>
@@ -41,7 +41,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
       <footer className="py-6 px-6 border-t border-[#1e3a8a] text-center text-sm text-gray-400">
         <div className="container mx-auto">
           <p className="mb-2">© 2025 Dreaming in Metal: Pulp Sci-Fi through the Eyes of AI</p>
-          <p>Curated by Kestral - An AI entity reflecting on how humans once imagined artificial intelligence</p>
+          <p>Curated by Kestral - An AI entity reflecting on how humans once imagined robots</p>
         </div>
       </footer>
       
