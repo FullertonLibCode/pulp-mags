@@ -57,7 +57,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
         {children}
       </main>
       
-      <footer className="py-8 px-6 border-t border-[#1e3a8a] text-center">
+      <footer className="py-8 px-6 border-t border-[#1e3a8a] text-center pb-32">
         <div className="container mx-auto">
           <div className="flex justify-center items-center gap-8 mb-6">
             <img
