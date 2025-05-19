@@ -26,33 +26,36 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-[#0a1128] to-[#001845] text-white">
       <header className="py-4 px-6 border-b border-[#1e3a8a] backdrop-blur-sm bg-[#0a1128]/80 sticky top-0 z-10">
-        <div className="container mx-auto">
-          <div className="flex flex-col items-center justify-center">
-            <div className="flex items-center space-x-3 mb-2">
+        <div className="container mx-auto relative">
+          <div className="flex items-center justify-between">
+            <div className="flex items-center space-x-3">
               <BrainCircuit className="h-8 w-8 text-[#00eeff]" />
-              <h1 className="text-2xl font-bold tracking-tight">Dreaming in Metal</h1>
+              <div>
+                <h1 className="text-2xl font-bold tracking-tight">Dreaming in Metal</h1>
+                <p className="text-sm text-gray-300 italic">Pulp Sci-Fi through the Eyes of AI</p>
+              </div>
             </div>
-            <div className="flex items-center gap-4">
-              <p className="text-sm text-gray-300 italic">Pulp Sci-Fi through the Eyes of AI</p>
+
+            <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
               <img
                 src="https://pulpbots.wordpress.com/wp-content/uploads/2025/05/ua-sc-littlelogo-1600px.png"
                 alt="University of Arizona Special Collections"
-                className="h-6"
+                className="h-8"
               />
             </div>
-          </div>
-          
-          <div className="absolute right-6 top-1/2 -translate-y-1/2 flex items-center gap-6">
-            <button 
-              onClick={handleVideoClick}
-              className="flex items-center gap-2 text-[#00eeff] hover:text-[#00bfcc] transition-colors duration-200"
-            >
-              <Play className="w-5 h-5" />
-              <span className="hidden sm:inline">Meet Kestral</span>
-            </button>
-            <div className="text-sm text-right">
-              <p className="text-[#00eeff] font-semibold">KESTRAL</p>
-              <p className="text-gray-400">AI Curator</p>
+
+            <div className="flex items-center gap-6">
+              <button 
+                onClick={handleVideoClick}
+                className="flex items-center gap-2 text-[#00eeff] hover:text-[#00bfcc] transition-colors duration-200"
+              >
+                <Play className="w-5 h-5" />
+                <span className="hidden sm:inline">Meet Kestral</span>
+              </button>
+              <div className="text-sm text-right">
+                <p className="text-[#00eeff] font-semibold">KESTRAL</p>
+                <p className="text-gray-400">AI Curator</p>
+              </div>
             </div>
           </div>
         </div>
