@@ -586,11 +586,11 @@ export const covers: Cover[] = [
      aiReflection: "Looking at this image, I wonder about the narrative intent behind portraying the robot as a solitary figure in a desolate landscape. The contrast between the robot's mechanical form and the organic dog-like creature suggests a commentary on the relationship between technology and nature. The use of color and composition directs the viewer's attention to the robot, emphasizing its significance in the story. The narrative may explore themes of loneliness, the search for meaning, or the consequences of creating autonomous beings. The presence of the dog-like creature may suggest a form of companionship or dependency, challenging the idea that robots are solely functional machines."
     },
     tags: [
-    "Humanoid Robot(s)",
-    "Animal(s)",
-    "Ambiguous Natural Environment",
-    "Lone Robot",
-    "Isolated Scene"
+      "Humanoid Robot(s)",
+      "Animal(s)",
+      "Ambiguous Natural Environment",
+      "Lone Robot",
+      "Isolated Scene"
     ]
   },  
   {
@@ -860,7 +860,7 @@ export const covers: Cover[] = [
       "Humanoid Robot(s)",
       "Robot(s) Grasping Human(s)",
       "Lone Robot",
-      "Abstract Environment"
+      "Abstract Environment",
       "Isolated Scene"
     ]
   },  
