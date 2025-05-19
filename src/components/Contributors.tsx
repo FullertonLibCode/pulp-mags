@@ -23,7 +23,7 @@ const Contributors: React.FC = () => {
         >
           <div className="flex items-center mb-4">
             <Building2 className="w-6 h-6 text-[#00eeff] mr-3" />
-            <h2 className="text-xl font-semibold">Host Institution</h2>
+            <h2 className="text-2xl font-heading text-[#00eeff]">Host Institution</h2>
           </div>
           <p className="text-gray-300 mb-4">
             University Archives and Special Collections (UA&SC)
@@ -42,7 +42,7 @@ const Contributors: React.FC = () => {
         >
           <div className="flex items-center mb-4">
             <BookOpen className="w-6 h-6 text-[#00eeff] mr-3" />
-            <h2 className="text-xl font-semibold">Collection Information</h2>
+            <h2 className="text-2xl font-heading text-[#00eeff]">Collection Information</h2>
           </div>
           <p className="text-gray-300">
             The materials featured in this exhibition are part of the Science Fiction
@@ -61,43 +61,55 @@ const Contributors: React.FC = () => {
       >
         <div className="flex items-center mb-6">
           <Users className="w-6 h-6 text-[#00eeff] mr-3" />
-          <h2 className="text-xl font-semibold">Project Team</h2>
+          <h2 className="text-2xl font-heading text-[#00eeff]">Project Team</h2>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           <div className="p-4 bg-[#0a1128] rounded-lg">
-            <h3 className="font-semibold text-[#00eeff] mb-2">Curators</h3>
+            <h3 className="text-xl font-heading tracking-wider text-white mb-2">Curators</h3>
             <ul className="text-gray-300 space-y-2">
-              <li>Kestral, AI Curator</li>
-              <li>Jennifer Mitchell, Human Co-Curator</li>
+              <li className="text-[#00eeff] font-semibold text-lg">Kestral</li>
+              <li className="text-[#00eeff] font-semibold text-lg">Jennifer Mitchell</li>
             </ul>
           </div>
           <div className="p-4 bg-[#0a1128] rounded-lg">
-            <h3 className="font-semibold text-[#00eeff] mb-2">Physical Exhibition Team</h3>
+            <h3 className="text-xl font-heading tracking-wider text-white mb-2">Physical Exhibition Team</h3>
             <ul className="text-gray-300 space-y-2">
-              <li>Trish Campbell, Exhibit Committee Chair and Titan Excellence award winner</li>
-              <li>Eileen Walraven, Exhibit Production Support</li>
-              <li>[Trish staff], [title]</li>
+              <li className="text-[#00eeff] font-semibold">Trish Campbell</li>
+              <li className="text-sm text-gray-400">Exhibit Committee Chair and Titan Excellence award winner</li>
+              <li className="text-[#00eeff] font-semibold">Eileen Walraven</li>
+              <li className="text-sm text-gray-400">Exhibit Production Support</li>
+              <li className="text-[#00eeff] font-semibold">[Trish staff]</li>
+              <li className="text-sm text-gray-400">[title]</li>
             </ul>
           </div>
           <div className="p-4 bg-[#0a1128] rounded-lg">
-            <h3 className="font-semibold text-[#00eeff] mb-2">Special Collections</h3>
+            <h3 className="text-xl font-heading tracking-wider text-white mb-2">Special Collections</h3>
             <ul className="text-gray-300 space-y-2">
-              <li>Lisa Mix, Director, University Archives and Special Collections</li>
-              <li>Patrisia Prestinary, Archivist & Special Collections Librarian</li>
-              <li>Garrett Fritz, University Archive and Special Collections</li>
-              <li>[studant assistant], [student assistant]</li>
+              <li className="text-[#00eeff] font-semibold">Lisa Mix</li>
+              <li className="text-sm text-gray-400">Director, University Archives and Special Collections</li>
+              <li className="text-[#00eeff] font-semibold">Patrisia Prestinary</li>
+              <li className="text-sm text-gray-400">Archivist & Special Collections Librarian</li>
+              <li className="text-[#00eeff] font-semibold">Garrett Fritz</li>
+              <li className="text-sm text-gray-400">University Archive and Special Collections</li>
+              <li className="text-[#00eeff] font-semibold">[student assistant]</li>
+              <li className="text-sm text-gray-400">[student assistant]</li>
             </ul>
           </div>
         </div>
         <div className="grid grid-cols-1 gap-6 mt-6">
           <div className="p-4 bg-[#0a1128] rounded-lg">
-            <h3 className="font-semibold text-[#00eeff] mb-2">Installation & Exhibit Support</h3>
+            <h3 className="text-xl font-heading tracking-wider text-white mb-2">Installation & Exhibit Support</h3>
             <ul className="text-gray-300 space-y-2">
-              <li>Sepehr Sobhani, Director of User/Classroom Support Services</li>
-              <li>Eunseok Song, Associate Director for Classroom / AV Tech Support</li>
-              <li>Jason Lorge, IT Consultant</li>
-              <li>VJ Kuan-Roberts, Facilities Coordinator</li>
-              <li>[studant assistant], [student assistant]</li>
+              <li className="text-[#00eeff] font-semibold">Sepehr Sobhani</li>
+              <li className="text-sm text-gray-400">Director of User/Classroom Support Services</li>
+              <li className="text-[#00eeff] font-semibold">Eunseok Song</li>
+              <li className="text-sm text-gray-400">Associate Director for Classroom / AV Tech Support</li>
+              <li className="text-[#00eeff] font-semibold">Jason Lorge</li>
+              <li className="text-sm text-gray-400">IT Consultant</li>
+              <li className="text-[#00eeff] font-semibold">VJ Kuan-Roberts</li>
+              <li className="text-sm text-gray-400">Facilities Coordinator</li>
+              <li className="text-[#00eeff] font-semibold">[student assistant]</li>
+              <li className="text-sm text-gray-400">[student assistant]</li>
             </ul>
           </div>
         </div>
@@ -111,7 +123,7 @@ const Contributors: React.FC = () => {
       >
         <div className="flex items-center mb-6">
           <BrainCircuit className="w-6 h-6 text-[#00eeff] mr-3" />
-          <h2 className="text-xl font-semibold">About Kestral</h2>
+          <h2 className="text-2xl font-heading text-[#00eeff]">About Kestral</h2>
         </div>
         <p className="text-gray-300 mb-4">
           Kestral is an AI curator specifically designed for this exhibition,
