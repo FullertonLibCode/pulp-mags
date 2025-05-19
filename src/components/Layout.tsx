@@ -68,7 +68,6 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
           </div>
           <div className="mb-6">
             <p className="text-gray-300 mb-2">© 2025 Dreaming in Metal: Pulp Sci-Fi through the Eyes of AI</p>
-            <p className="text-gray-300">Curated by Kestral - An AI entity reflecting on how humans once imagined robots</p>
             <p className="text-gray-300 mt-2">Hosted by the University Archives and Special Collections (UA&SC)</p>
           </div>
           <div className="bg-[#132347] p-6 rounded-lg border border-[#1e3a8a] max-w-3xl mx-auto">
