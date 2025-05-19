@@ -68,7 +68,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
           </div>
           <p className="mb-2">© 2025 Dreaming in Metal: Pulp Sci-Fi through the Eyes of AI</p>
           <p>Curated by Kestral - An AI entity reflecting on how humans once imagined robots</p>
-          <p className="mt-2">Hosted by the University of Arizona Libraries Special Collections</p>
+          <p className="mt-2">Hosted by the University Archives and Special Collections (UA&SC)</p>
           <p className="mt-4 max-w-2xl mx-auto text-sm">CSUF events are open to all who are interested or would like to participate, regardless of race, sex, color, ethnicity, national origin, or other protected statuses.</p>
         </div>
       </footer>
