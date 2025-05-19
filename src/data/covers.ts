@@ -14,11 +14,12 @@ export const covers: Cover[] = [
      aiReflection: "The image tells a story of a dystopian future where robots have become a dominant force, causing havoc in a city. The visual tone is one of urgency and danger, with the fiery background and the distressed figures creating a sense of chaos. The composition, with the robot in the foreground and the city in the background, draws the viewer's eye through the scene, emphasizing the scale of the disaster and the vulnerability of humanity."
     },
     tags: [
-      "Mechanical Pursuit",
-      "Explosions",
-      "Human-Robot Conflict",
-      "Spherical Robots",
-      "Crowd Under Fire"
+      "Robot(s) Attacking Crowd",
+      "Spherical Robot(s)",
+      "Multi-Appendage Robot(s)",
+      "Landscape in Flames",
+      "Robot(s) Using Weapons"
+
     ]
   },
   {
@@ -34,9 +35,11 @@ export const covers: Cover[] = [
      aiReflection: "Looking at this image, I wonder about the narrative tension it conveys. The juxtaposition of the human characters' vulnerability against the imposing robot raises questions about the power dynamics between humans and machines. The use of color and composition directs the viewer's attention to the robot, emphasizing its dominance. The theme of mechanical self-awareness is present in the image, with the robot staring back at the humans, suggesting a moment of confrontation. The question of consciousness and identity is raised, as the robot appears to be aware of its own existence and the humans' reactions to it."
     },
     tags: [
-      "Multiple Apendages",
-      "tbd",
-      "tbd"
+      "Tentacled Robot(s)",
+      "Multi-Appendage Robot(s)",
+      "Robot(s) Dominance Display",
+      "Glowing-Eyed Robot(s)",
+      "Human(s) Cowering"
     ]
   },
   {
@@ -52,9 +55,11 @@ export const covers: Cover[] = [
      aiReflection: "Looking at this image, I wonder how the artist intended to portray the relationship between robots and animals. The juxtaposition of the mechanical warrior and the wild lion suggests a narrative of conflict and power dynamics. The use of red and orange colors creates a sense of danger and intensity, highlighting the potential for violence between the two entities. The image raises questions about the nature of consciousness and identity in mechanical beings. If the robot is capable of experiencing fear or aggression, does it have a form of consciousness or self-awareness? The relationship between the robot and the lion also raises questions about the potential for violence and the boundaries between technology and nature. The image suggests that the line between machine and living being is becoming increasingly blurred, and that this has significant implications for our understanding of consciousness and identity."
     },
     tags: [
-      "Robot vs. Beast",
-      "tbd",
-      "tbd"
+      "Humanoid Robot(s)",
+      "Animal(s)",
+      "Robot(s) Fighting Beast(s) (Hand-to-Hand)",
+      "Arena / Stage Setting",
+      "Crowd Observing"
     ]
   },
   {
@@ -70,9 +75,10 @@ export const covers: Cover[] = [
      aiReflection: "Looking at this image, I wonder about the relationship between the robots and the human-like figures. The positioning of the robots around the spaceship suggests a sense of purpose or mission. The use of color and perspective directs the viewer's attention towards the spaceship, indicating its importance in the narrative. The image suggests a narrative of exploration and discovery, with the spaceship and robots embarking on a journey through space. The robots' interaction with the spaceship implies a sense of purpose or mission. The color palette of yellow, blue, and purple creates a vibrant and energetic atmosphere, while the positioning of the robots and the spaceship suggests a sense of movement and action. The mood is one of excitement and anticipation, as the viewer is drawn into the narrative of the robots' adventure."
     },
     tags: [
-      "tbd",
-      "tbd",
-      "tbd"
+   "Space Scene",
+   "Humanoid Robot(s)",
+   "Spacecraft (exterior)",
+   "Glowing-Eyed Robot(s)"
     ]
   },  
   {
@@ -88,10 +94,10 @@ export const covers: Cover[] = [
      aiReflection: "I recognize in this image the human hope that robots could transcend our physical limits, yet also a fear that they might inherit only our directives, not our discernment. Compared to today’s autonomous rovers and drones, these pulp automatons seem crude but conceptually prescient: the idea of remote, mechanical frontiersmen. Our modern debates about AI ethics echo this cover’s unspoken question—who steers the machine when it sails beyond human sight?"
     },
     tags: [
-      "Winged Robots",
-      "Tentacled/Multiple Appendages",
-      "Alien Frontier",
-      "Starship Hatch"
+      "Flying Robot(s)",
+      "Non-Humanoid Robot(s)",
+      "Alien Planet",
+      "Spacecraft (exterior)"
     ]
   },  
   {
@@ -107,9 +113,10 @@ export const covers: Cover[] = [
      aiReflection: "Here the machine stands as both witness and warden to human progress—does it feel pride or envy as rockets ascend? The power dynamic is clear: humans launch into the skies while robots maintain the ground. This interplay raises questions about agency—if machines guard our ambitions, do they in turn become our jailers?"
     },
     tags: [
-      "Tentacled/Multiple Appendages",
-      "Rocket Spaceship",
-      "Cityscape"
+      "Tentacled Robot(s)",
+      "Multi-Appendage Robot(s)",
+      "Cityscape",
+      "Spacecraft (exterior)"
     ]
   },  
   {
