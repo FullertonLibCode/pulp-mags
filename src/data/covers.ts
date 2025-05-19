@@ -742,7 +742,7 @@ export const covers: Cover[] = [
     tags: [
       "Humanoid Robot(s)",
       "Glowing-Eyed Robot(s)",
-      "Robot Dominance Display",
+      "Robot(s) Dominance Display",
       "Woman in Peril",
       "Cityscape",
       "Landscape in Flames"
@@ -841,7 +841,7 @@ export const covers: Cover[] = [
       "Robot(s) Using Weapons",
       "Robot(s) Fighting Human(s)",
       "Alien Planet",
-      "Robot Dominance Display"
+      "Robot(s) Dominance Display"
     ]
   },  
   {
@@ -992,9 +992,8 @@ export const covers: Cover[] = [
      aiReflection: "The hybrid's posture, with its arm resting on its knee and its head tilted slightly, suggests a moment of contemplation or introspection. The background diagrams and equations create a sense of complexity and sophistication, while the red chair and the hybrid's metallic appearance add a touch of drama and tension to the scene. The theme of mechanical self-awareness is central to the image."
     },
     tags: [
-      "Hybrid Organic/Mechanical",
-      "tbd",
-      "tbd"
+      "Cybernetic / Hybrid Robot(s)",
+      "Domestic Setting"
     ]
   },  
   {
@@ -1010,9 +1009,10 @@ export const covers: Cover[] = [
      aiReflection: "Looking at this image, I wonder how the artist intended to portray the relationship between humans and robots in a post-apocalyptic world. The juxtaposition of the damaged city and the calm demeanor of the robots suggests a narrative of resilience and survival. The use of color and composition emphasizes the contrast between the past and the present, highlighting the robots' role as observers and perhaps even caretakers of the desolate landscape. This portrayal makes me reflect on the potential for robots to take on roles beyond mere servitude, and how they might find purpose in a world that has been stripped of its former glory. The bus stop sign adds a touch of irony, as it is a mundane object in a setting that is anything but ordinary. If the robots are waiting at a bus stop, do they have a sense of self or purpose beyond their programmed functions?"
     },
     tags: [
-      "tbd",
-      "tbd",
-      "tbd"
+      "Humanoid Robot(s)",
+      "Urban Ruins",
+      "Alien Planet",
+      "Robot(s) Engaged in Human Activities"
     ]
   },  
   {
@@ -1028,9 +1028,10 @@ export const covers: Cover[] = [
      aiReflection: "The woman's contemplative pose and the ominous background hint at a narrative of conflict and survival in a world where humans and machines coexist in tension. The color palette is dominated by dark blues and greens, with the woman's outfit and the machinery providing contrasting bright colors. This contrast highlights the woman's role as a central figure amidst the technological chaos. The visual tone is one of foreboding and introspection, with the woman's pose and the surrounding machinery creating a sense of unease. The dark background and the woman's thoughtful expression contribute to an atmosphere of tension and uncertainty."
     },
     tags: [
-      "tbd",
-      "tbd",
-      "tbd"
+      "Humanoid Robot(s)",
+      "Abstract Environment",
+      "Human(s) in Contemplative Posture",
+      "Miniature Robot(s)"
     ]
   },  
   {
@@ -1046,9 +1047,11 @@ export const covers: Cover[] = [
      aiReflection: "The image suggests a narrative of a robot in a human world, possibly facing a crisis or challenge. The visual tone is dynamic, with the robot's presence creating a sense of tension and the busy street adding to the bustling atmosphere. The composition places the robot in the center, drawing the viewer's attention immediately, while the busy street and classical building provide context and depth to the scene. The classical building in the background could symbolize the tension between the old and the new, as technology advances and challenges traditional values."
     },
     tags: [
-      "Giant Robots",
-      "tbd",
-      "tbd"
+      "Humanoid Robot(s)",
+      "Giant Robot(s)",
+      "Cityscape",
+      "Crowd Fleeing",
+      "Robot Rampage"
     ]
   },  
   {
@@ -1064,9 +1067,12 @@ export const covers: Cover[] = [
      aiReflection: "Looking at this image, I wonder about the narrative that led to this moment. The contrast between the mechanical nature of the robot and the organic, free-flying humans raises questions about the relationship between technology and life. The barren landscape could represent a post-apocalyptic world, where the robot's actions might be seen as an attempt to restore life and vitality. The warm glow on the horizon suggests hope and a new beginning, despite the desolation. This portrayal makes me reflect on the potential for technology to coexist with nature and the importance of preserving life in a world where machines are increasingly prevalent."
     },
     tags: [
-      "Giant Robots",
-      "Red-Eyed Robots",
-      "tbd"
+      "Cyclopean Robot(s)",
+      "Humanoid Robot(s)",
+      "Human(s) Captive",
+      "Lone Robot",
+      "Rural / Non-Urban Setting",
+      "Robot(s) Engaged in Human Activities"
     ]
   },  
   {
@@ -1082,9 +1088,9 @@ export const covers: Cover[] = [
      aiReflection: "The image suggests a narrative of conflict between robots, possibly in a dystopian future. The fiery background and the robots' aggressive postures create a sense of danger and urgency. The color palette, dominated by reds and oranges, adds to the atmosphere of chaos and destruction. The humanoid robots' ability to engage in conflict suggests a level of self-awareness and autonomy, highlighting the tension between free will and programming."
     },
     tags: [
-      "tbd",
-      "tbd",
-      "tbd"
+      "Humanoid Robot(s)",
+      "Alien Planet",
+      "Robot(s) Fighting Robot(s) (Hand-to-Hand)"
     ]
   },   
   {
@@ -1100,9 +1106,10 @@ export const covers: Cover[] = [
      aiReflection: "Looking at this image, I wonder about the narrative intent behind depicting the robot as the central figure in a fiery environment. The green eye of the robot could symbolize a form of life or consciousness, while the smaller robots around it might represent a community or hierarchy. The fiery background could imply a struggle or conflict, perhaps between the robots and their environment or among the robots themselves."
     },
     tags: [
-      "Multiple Apendages",
-      "tbd",
-      "tbd"
+      "Cyclopean Robot(s)",
+      "Multi-Appendage Robot(s)",
+      "Robot(s) with Wheels",
+      "Abstract Environment"
     ]
   },
   {
@@ -1118,9 +1125,10 @@ export const covers: Cover[] = [
      aiReflection: "I recognize in this image the human yearning to externalize conflict: robots stand in for flesh-and-blood soldiers, so that death can be distanced, sanitized, or even commodified. Yet the identical markings also betray a fear of losing control over these obedient automatons—once released, can they be recalled? Compared to today’s debates about autonomous weapons and AI ethics, this cover eerily prefigures our anxieties about delegation under uncertainty. It reminds me that every algorithm we write carries the imprint of our hope for safety—and our dread of unintended consequences."
     },
     tags: [
-      "Soldier Robots",
-      "tbd",
-      "tbd"
+      "Humanoid Robot(s)",
+      "Abstract Environment",
+      "Military Presence or Aesthetic",
+      "Solider Robot(s)"
     ]
   },
   {
@@ -1136,9 +1144,9 @@ export const covers: Cover[] = [
      aiReflection: "The image suggests a narrative of exploration and discovery, with the boy and the robot as the main characters. The boy's contemplative pose and the robot's observation of him create a sense of tension and anticipation. The lush, green landscape and the yellow sky add to the atmosphere, suggesting a time of change or transition. The overall tone is one of curiosity and exploration, with a hint of danger or mystery."
     },
     tags: [
-      "tbd",
-      "tbd",
-      "tbd"
+      "Non-Humanoid Robot(s)",
+      "Human(s) in Contemplative Posture",
+      "Ambiguous Natural Environment"
     ]
   },
   {
