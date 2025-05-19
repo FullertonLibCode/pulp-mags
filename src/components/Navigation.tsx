@@ -1,5 +1,5 @@
 import React from 'react';
-import { Home, Grid, Clock, Tag } from 'lucide-react';
+import { Home, Grid, Clock, Tag, Users } from 'lucide-react';
 import { NavLink } from './UI/NavLink';
 
 const Navigation: React.FC = () => {
@@ -11,6 +11,7 @@ const Navigation: React.FC = () => {
           <NavLink to="/gallery" icon={<Grid />} label="Gallery" />
           <NavLink to="/timeline" icon={<Clock />} label="Timeline" />
           <NavLink to="/tags" icon={<Tag />} label="Tags" />
+          <NavLink to="/contributors" icon={<Users />} label="Contributors" />
         </div>
       </div>
     </nav>
