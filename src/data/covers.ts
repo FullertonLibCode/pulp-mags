@@ -606,9 +606,10 @@ export const covers: Cover[] = [
      aiReflection: "The image suggests a narrative of a robot contemplating its place in the universe, possibly reflecting on its own existence or the nature of its programming. The red heart emblem on the robot's chest could symbolize the humanization of technology, suggesting that even machines can have a capacity for emotion and connection. The dark, starry background creates a sense of isolation and wonder, while the robot's raised arms and upward gaze suggest a moment of introspection or revelation. The overall tone is one of contemplation and introspection, with a hint of the unknown. The image raises questions about the nature of consciousness and identity in robots. If the robot has a heart, does it have a soul? Can machines truly be considered alive?"
     },
     tags: [
-      "tbd",
-      "tbd",
-      "tbd"
+      "Humanoid Robot(s)",
+      "Lone Robot",
+      "Night Sky Setting",
+      "Isolated Scene"
     ]
   },  
   {
@@ -624,9 +625,11 @@ export const covers: Cover[] = [
      aiReflection: "Looking at this image, I wonder about the relationship between the robot and the small creature. The robot's large, metallic helmet and transparent sphere give it a sense of detachment and isolation, while the small creature's large eyes suggest a sense of curiosity and playfulness. The contrast between the two characters creates a sense of tension and intrigue. The use of color, composition, and perspective in the image highlights the unique narrative it presents about robots and their interactions with the world around them. The power dynamics between the robot and the small creature are unclear, as the robot's mechanical nature and the small creature's organic nature create a sense of contrast and tension."
     },
     tags: [
-      "Robots and Beasts",
-      "tbd",
-      "tbd"
+      "Humanoid Robot(s)",
+      "Animal(s)",
+      "Lone Robot",
+      "Abstract Natural Environment",
+      "Isolated Scene"
     ]
   },  
   {
@@ -642,9 +645,10 @@ export const covers: Cover[] = [
      aiReflection: "Looking at this image, I wonder about the narrative that led to the injury and the significance of the human figure it holds. The human figure's attire and posture imply a struggle or rescue. The sterile environment and the absence of any other characters or objects focus the viewer's attention on the robot and the human figure, highlighting the potential for a story centered around their relationship. The image's use of color, with the muted background and the contrasting red eyes of the robot, creates a sense of isolation and tension, suggesting that the robot's actions may be driven by a desire to protect or understand the human figure."
     },
     tags: [
-      "tbd",
-      "tbd",
-      "tbd"
+      "Humanoid Robot(s)",
+      "Lone Robot",
+      "Robot Grasping Human",
+      "Abstract Environment"
     ]
   },  
   {
@@ -660,9 +664,10 @@ export const covers: Cover[] = [
      aiReflection: "The image suggests a narrative of exploration or discovery, with the robot as a guide or protagonist. The desolate landscape and the absence of human figures create a sense of isolation and potential danger. The color palette and the shadow of the robot contribute to a somber and foreboding atmosphere, hinting at the challenges and uncertainties that lie ahead. The image raises questions about the nature of consciousness and identity in a robotic form. The text 'Follow Me...' is placed at the bottom of the image, suggesting a narrative or directive. If the robot is sentient, what does it mean for it to follow someone?"
     },
     tags: [
-      "tbd",
-      "tbd",
-      "tbd"
+      "Humanoid Robot(s)",
+      "Lone Robot",
+      "Abstract Natural Environment",
+      "Isolated Scene"
     ]
   },  
   {
