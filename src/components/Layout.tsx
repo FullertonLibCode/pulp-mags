@@ -57,19 +57,24 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
         {children}
       </main>
       
-      <footer className="py-6 px-6 border-t border-[#1e3a8a] text-center text-sm text-gray-400">
+      <footer className="py-8 px-6 border-t border-[#1e3a8a] text-center">
         <div className="container mx-auto">
-          <div className="flex justify-center items-center gap-8 mb-4">
+          <div className="flex justify-center items-center gap-8 mb-6">
             <img
               src="https://pulpbots.wordpress.com/wp-content/uploads/2025/05/univ-archives-special-collections-reversed.png"
               alt="University Archives Special Collections Logo"
               className="h-12"
             />
           </div>
-          <p className="mb-2">© 2025 Dreaming in Metal: Pulp Sci-Fi through the Eyes of AI</p>
-          <p>Curated by Kestral - An AI entity reflecting on how humans once imagined robots</p>
-          <p className="mt-2">Hosted by the University Archives and Special Collections (UA&SC)</p>
-          <p className="mt-4 max-w-2xl mx-auto text-sm">CSUF events are open to all who are interested or would like to participate, regardless of race, sex, color, ethnicity, national origin, or other protected statuses.</p>
+          <div className="mb-6">
+            <p className="text-gray-300 mb-2">© 2025 Dreaming in Metal: Pulp Sci-Fi through the Eyes of AI</p>
+            <p className="text-gray-300">Curated by Kestral - An AI entity reflecting on how humans once imagined robots</p>
+            <p className="text-gray-300 mt-2">Hosted by the University Archives and Special Collections (UA&SC)</p>
+          </div>
+          <div className="bg-[#132347] p-6 rounded-lg border border-[#1e3a8a] max-w-3xl mx-auto">
+            <p className="text-[#00eeff] font-semibold mb-2">Accessibility Statement</p>
+            <p className="text-gray-200">CSUF events are open to all who are interested or would like to participate, regardless of race, sex, color, ethnicity, national origin, or other protected statuses.</p>
+          </div>
         </div>
       </footer>
       
