@@ -126,6 +126,7 @@ const Home: React.FC = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
+            className="flex flex-col sm:flex-row items-center justify-center gap-4"
           >
             <Link 
               to="/gallery"
@@ -133,12 +134,20 @@ const Home: React.FC = () => {
             >
               Enter Exhibition
             </Link>
+            <button 
+              onClick={() => document.getElementById('intro-video')?.scrollIntoView({ behavior: 'smooth' })}
+              className="inline-flex items-center gap-2 bg-[#132347] text-[#00eeff] font-semibold px-8 py-4 rounded-md hover:bg-[#1e3a8a] transition-all duration-300"
+            >
+              <Play className="w-5 h-5" />
+              Watch Introduction
+            </button>
           </motion.div>
         </div>
       </motion.section>
 
       {/* Video Section */}
       <motion.section
+        id="intro-video"
         className="relative py-20 px-4 bg-[#0a1128]"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}

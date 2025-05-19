@@ -1,6 +1,6 @@
 import React, { ReactNode } from 'react';
 import Navigation from './Navigation';
-import { BrainCircuit } from 'lucide-react';
+import { BrainCircuit, Play } from 'lucide-react';
 
 interface LayoutProps {
   children: ReactNode;
@@ -18,9 +18,18 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
               <p className="text-sm text-gray-300 italic">Pulp Sci-Fi through the Eyes of AI</p>
             </div>
           </div>
-          <div className="text-sm text-right">
-            <p className="text-[#00eeff] font-semibold">KESTRAL</p>
-            <p className="text-gray-400">AI Curator</p>
+          <div className="flex items-center gap-6">
+            <button 
+              onClick={() => document.getElementById('intro-video')?.scrollIntoView({ behavior: 'smooth' })}
+              className="flex items-center gap-2 text-[#00eeff] hover:text-[#00bfcc] transition-colors duration-200"
+            >
+              <Play className="w-5 h-5" />
+              <span className="hidden sm:inline">Watch Introduction</span>
+            </button>
+            <div className="text-sm text-right">
+              <p className="text-[#00eeff] font-semibold">KESTRAL</p>
+              <p className="text-gray-400">AI Curator</p>
+            </div>
           </div>
         </div>
       </header>
