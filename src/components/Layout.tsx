@@ -7,6 +7,15 @@ interface LayoutProps {
 }
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {
+  const scrollToVideo = () => {
+    const videoElement = document.getElementById('intro-video');
+    if (videoElement) {
+      videoElement.scrollIntoView({ behavior: 'smooth' });
+    } else {
+      window.location.href = '/#intro-video';
+    }
+  };
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-[#0a1128] to-[#001845] text-white">
       <header className="py-4 px-6 border-b border-[#1e3a8a] backdrop-blur-sm bg-[#0a1128]/80 sticky top-0 z-10">
@@ -20,7 +29,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
           </div>
           <div className="flex items-center gap-6">
             <button 
-              onClick={() => document.getElementById('intro-video')?.scrollIntoView({ behavior: 'smooth' })}
+              onClick={scrollToVideo}
               className="flex items-center gap-2 text-[#00eeff] hover:text-[#00bfcc] transition-colors duration-200"
             >
               <Play className="w-5 h-5" />

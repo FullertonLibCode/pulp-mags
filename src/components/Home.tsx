@@ -139,7 +139,7 @@ const Home: React.FC = () => {
               className="inline-flex items-center gap-2 bg-[#132347] text-[#00eeff] font-semibold px-8 py-4 rounded-md hover:bg-[#1e3a8a] transition-all duration-300"
             >
               <Play className="w-5 h-5" />
-              Meet Kestral, AI Curator
+              Meet Kestral
             </button>
           </motion.div>
         </div>
@@ -154,35 +154,6 @@ const Home: React.FC = () => {
         transition={{ duration: 0.8 }}
       >
         <div className="max-w-4xl mx-auto">
-          <motion.div 
-            className="relative mb-8 overflow-hidden"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-          >
-            <div className="absolute inset-0 bg-gradient-to-r from-[#00eeff] via-transparent to-[#00eeff] opacity-20 animate-pulse-slow"></div>
-            <div className="relative bg-[#132347] border-2 border-[#00eeff] rounded-lg p-8 flex items-center justify-between">
-              <div className="flex items-center gap-4">
-                <div className="w-12 h-12 rounded-full bg-[#00eeff] flex items-center justify-center">
-                  <Play className="w-6 h-6 text-[#0a1128]" />
-                </div>
-                <div>
-                  <h2 className="text-2xl md:text-3xl font-bold font-heading bg-clip-text text-transparent bg-gradient-to-r from-[#00eeff] to-white">
-                    Meet Your AI Curator
-                  </h2>
-                  <p className="text-gray-400">A unique perspective on humanity's robotic dreams</p>
-                </div>
-              </div>
-              <motion.div
-                className="hidden md:block"
-                animate={{ scale: [1, 1.1, 1] }}
-                transition={{ duration: 2, repeat: Infinity }}
-              >
-                <BrainCircuit className="w-12 h-12 text-[#00eeff]" />
-              </motion.div>
-            </div>
-          </motion.div>
-          
           <div className="relative aspect-video bg-[#132347] rounded-lg overflow-hidden border border-[#1e3a8a] group cursor-pointer hover:border-[#00eeff] transition-all duration-300">
             <div className="absolute inset-0 flex items-center justify-center">
               <motion.div 
