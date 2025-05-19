@@ -139,7 +139,7 @@ const Home: React.FC = () => {
               className="inline-flex items-center gap-2 bg-[#132347] text-[#00eeff] font-semibold px-8 py-4 rounded-md hover:bg-[#1e3a8a] transition-all duration-300"
             >
               <Play className="w-5 h-5" />
-              Meet the Kestral, AI Curator
+              Meet Kestral, AI Curator
             </button>
           </motion.div>
         </div>
