@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, MapPin, BrainCircuit, Clock, Eye, Tag } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 interface ExhibitionGuideProps {
   isOpen: boolean;
@@ -9,13 +9,25 @@ interface ExhibitionGuideProps {
 }
 
 const ExhibitionGuide: React.FC<ExhibitionGuideProps> = ({ isOpen, onClose }) => {
+  const location = useLocation();
+
+  const handleVideoClick = () => {
+    onClose();
+    if (location.pathname === '/') {
+      setTimeout(() => {
+        document.getElementById('intro-video')?.scrollIntoView({ behavior: 'smooth' });
+      }, 100);
+    }
+  };
+
   const steps = [
     {
       icon: <BrainCircuit className="w-6 h-6" />,
       title: "Meet Kestral",
       description: "Start by watching the introduction video to meet Kestral, your AI curator who will guide you through the exhibition.",
-      link: "#intro-video",
-      linkText: "Watch Introduction"
+      link: location.pathname === '/' ? '#intro-video' : '/?video=true',
+      linkText: "Watch Introduction",
+      onClick: handleVideoClick
     },
     {
       icon: <MapPin className="w-6 h-6" />,
@@ -95,7 +107,7 @@ const ExhibitionGuide: React.FC<ExhibitionGuideProps> = ({ isOpen, onClose }) =>
                       <p className="text-gray-300 mb-2">{step.description}</p>
                       <Link
                         to={step.link}
-                        onClick={onClose}
+                        onClick={step.onClick || onClose}
                         className="inline-flex items-center text-[#00eeff] hover:text-[#00bfcc] transition-colors"
                       >
                         {step.linkText} →
