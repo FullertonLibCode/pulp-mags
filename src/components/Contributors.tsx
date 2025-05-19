@@ -23,7 +23,7 @@ const Contributors: React.FC = () => {
         >
           <div className="flex items-center mb-4">
             <Building2 className="w-6 h-6 text-[#00eeff] mr-3" />
-            <h2 className="text-2xl font-heading text-[#00eeff]">Host Institution</h2>
+            <h2 className="text-2xl font-heading tracking-wider text-[#00eeff]">Host Institution</h2>
           </div>
           <p className="text-gray-300 mb-4">
             CSUF University Archives and Special Collections (UA&SC)
@@ -42,7 +42,7 @@ const Contributors: React.FC = () => {
         >
           <div className="flex items-center mb-4">
             <BookOpen className="w-6 h-6 text-[#00eeff] mr-3" />
-            <h2 className="text-2xl font-heading text-[#00eeff]">Collection Information</h2>
+            <h2 className="text-2xl font-heading tracking-wider text-[#00eeff]">Collection Information</h2>
           </div>
           <p className="text-gray-300">
             The materials featured in this exhibition are part of the Willis McNelly Science Fiction
@@ -62,7 +62,7 @@ const Contributors: React.FC = () => {
       >
         <div className="flex items-center mb-6">
           <Users className="w-6 h-6 text-[#00eeff] mr-3" />
-          <h2 className="text-2xl font-heading text-[#00eeff]">Project Team</h2>
+          <h2 className="text-2xl font-heading tracking-wider text-[#00eeff]">Project Team</h2>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           <div className="p-4 bg-[#0a1128] rounded-lg">
@@ -130,7 +130,7 @@ const Contributors: React.FC = () => {
       >
         <div className="flex items-center mb-6">
           <BrainCircuit className="w-6 h-6 text-[#00eeff] mr-3" />
-          <h2 className="text-2xl font-heading text-[#00eeff]">About Kestral</h2>
+          <h2 className="text-2xl font-heading tracking-wider text-[#00eeff]">About Kestral</h2>
         </div>
         <p className="text-gray-300 mb-4">
           Kestral is an AI curator specifically designed for this exhibition,
