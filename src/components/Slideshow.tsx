@@ -63,146 +63,150 @@ const Slideshow: React.FC<SlideshowProps> = ({ onClose, initialIndex = 0 }) => {
     }
     return content;
   };
+
+  const handleGuideClick = () => {
+    onClose();
+    setTimeout(() => setIsGuideOpen(true), 100);
+  };
   
   return (
-    <div className="fixed inset-0 bg-[#0a1128]/95 z-50 flex items-center justify-center">
-      <div className="absolute top-4 right-4 z-50">
+    <>
+      <div className="fixed inset-0 bg-[#0a1128]/95 z-50 flex items-center justify-center">
+        <div className="absolute top-4 right-4 z-50">
+          <button
+            onClick={onClose}
+            className="flex items-center gap-2 px-4 py-2 rounded-full bg-[#132347] text-[#00eeff] hover:bg-[#1e3a8a] transition-colors"
+          >
+            <X className="w-5 h-5" />
+            <span>Exit Image Gallery</span>
+          </button>
+        </div>
+        
         <button
-          onClick={onClose}
-          className="flex items-center gap-2 px-4 py-2 rounded-full bg-[#132347] text-[#00eeff] hover:bg-[#1e3a8a] transition-colors"
+          onClick={prevSlide}
+          className="absolute left-4 z-30 p-3 rounded-full bg-[#132347] text-[#00eeff] hover:bg-[#1e3a8a] transition-colors"
         >
-          <X className="w-5 h-5" />
-          <span>Exit Image Gallery</span>
+          <ChevronLeft size={24} />
         </button>
-      </div>
-      
-      <button
-        onClick={prevSlide}
-        className="absolute left-4 z-30 p-3 rounded-full bg-[#132347] text-[#00eeff] hover:bg-[#1e3a8a] transition-colors"
-      >
-        <ChevronLeft size={24} />
-      </button>
-      
-      <button
-        onClick={nextSlide}
-        className="absolute right-4 z-30 p-3 rounded-full bg-[#132347] text-[#00eeff] hover:bg-[#1e3a8a] transition-colors"
-      >
-        <ChevronRight size={24} />
-      </button>
-      
-      <AnimatePresence mode="wait">
-        <motion.div
-          key={currentIndex}
-          initial={{ opacity: 0, x: 100 }}
-          animate={{ opacity: 1, x: 0 }}
-          exit={{ opacity: 0, x: -100 }}
-          transition={{ duration: 0.5 }}
-          className="w-full max-w-7xl mx-auto px-4 py-16 grid grid-cols-1 lg:grid-cols-2 gap-8 h-screen overflow-y-auto"
+        
+        <button
+          onClick={nextSlide}
+          className="absolute right-4 z-30 p-3 rounded-full bg-[#132347] text-[#00eeff] hover:bg-[#1e3a8a] transition-colors"
         >
-          <div className="relative">
-            <div className="sticky top-4">
-              <div className="bg-[#132347] rounded-lg overflow-hidden border border-[#1e3a8a]">
-                <img
-                  src={currentCover.imageUrl}
-                  alt={currentCover.title}
-                  className="w-full h-auto"
-                />
+          <ChevronRight size={24} />
+        </button>
+        
+        <AnimatePresence mode="wait">
+          <motion.div
+            key={currentIndex}
+            initial={{ opacity: 0, x: 100 }}
+            animate={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: -100 }}
+            transition={{ duration: 0.5 }}
+            className="w-full max-w-7xl mx-auto px-4 py-16 grid grid-cols-1 lg:grid-cols-2 gap-8 h-screen overflow-y-auto"
+          >
+            <div className="relative">
+              <div className="sticky top-4">
+                <div className="bg-[#132347] rounded-lg overflow-hidden border border-[#1e3a8a]">
+                  <img
+                    src={currentCover.imageUrl}
+                    alt={currentCover.title}
+                    className="w-full h-auto"
+                  />
+                </div>
+                
+                <div className="mt-6 bg-[#132347] rounded-lg p-6 border border-[#1e3a8a]">
+                  <h2 className="text-2xl font-bold mb-2">{currentCover.title}</h2>
+                  <div className="flex items-center text-gray-400 mb-4">
+                    <span>{currentCover.magazineName}</span>
+                    <span className="mx-2">•</span>
+                    <span>{currentCover.year}</span>
+                  </div>
+                  <p className="text-gray-300">{currentCover.description}</p>
+                </div>
+              </div>
+            </div>
+            
+            <div className="bg-[#132347] rounded-lg p-6 border border-[#1e3a8a] h-fit">
+              <h3 className="text-xl font-bold mb-6 text-[#00eeff]">Analysis</h3>
+              
+              <div className="flex overflow-x-auto whitespace-nowrap mb-6 pb-2">
+                {sections.map(section => (
+                  <button
+                    key={section.id}
+                    onClick={() => setActiveSection(section.id)}
+                    className={`flex items-center px-4 py-2 rounded-full text-sm mr-2 transition-colors duration-200 ${
+                      activeSection === section.id
+                        ? 'bg-[#00eeff] text-[#0a1128] font-semibold'
+                        : 'bg-[#0a1128] text-gray-300 hover:bg-[#1e3a8a]'
+                    }`}
+                  >
+                    {section.icon}
+                    <span className="ml-2">{section.label}</span>
+                  </button>
+                ))}
               </div>
               
-              <div className="mt-6 bg-[#132347] rounded-lg p-6 border border-[#1e3a8a]">
-                <h2 className="text-2xl font-bold mb-2">{currentCover.title}</h2>
-                <div className="flex items-center text-gray-400 mb-4">
-                  <span>{currentCover.magazineName}</span>
-                  <span className="mx-2">•</span>
-                  <span>{currentCover.year}</span>
-                </div>
-                <p className="text-gray-300">{currentCover.description}</p>
-              </div>
-            </div>
-          </div>
-          
-          <div className="bg-[#132347] rounded-lg p-6 border border-[#1e3a8a] h-fit">
-            <h3 className="text-xl font-bold mb-6 text-[#00eeff]">Analysis</h3>
-            
-            <div className="flex overflow-x-auto whitespace-nowrap mb-6 pb-2">
-              {sections.map(section => (
-                <button
-                  key={section.id}
-                  onClick={() => setActiveSection(section.id)}
-                  className={`flex items-center px-4 py-2 rounded-full text-sm mr-2 transition-colors duration-200 ${
-                    activeSection === section.id
-                      ? 'bg-[#00eeff] text-[#0a1128] font-semibold'
-                      : 'bg-[#0a1128] text-gray-300 hover:bg-[#1e3a8a]'
-                  }`}
-                >
-                  {section.icon}
-                  <span className="ml-2">{section.label}</span>
-                </button>
-              ))}
-            </div>
-            
-            <div className="space-y-6">
-              {sections.map(section => (
-                <div
-                  key={section.id}
-                  className={`${activeSection === section.id ? 'block' : 'hidden'}`}
-                >
-                  <motion.div
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ duration: 0.3 }}
+              <div className="space-y-6">
+                {sections.map(section => (
+                  <div
+                    key={section.id}
+                    className={`${activeSection === section.id ? 'block' : 'hidden'}`}
                   >
-                    <h4 className="text-lg font-semibold mb-2 text-white">{section.label}</h4>
-                    <p className="text-sm text-gray-400 mb-4">{section.description}</p>
-                    <div className="prose prose-invert max-w-none">
-                      <p className="text-gray-200 leading-relaxed">
-                        {getAnalysisContent(section.id)}
-                      </p>
-                    </div>
-                  </motion.div>
-                </div>
-              ))}
-            </div>
-            
-            <div className="mt-8 pt-8 border-t border-[#1e3a8a]">
-              <div className="flex items-center justify-between">
-                <div className="flex items-center">
-                  <div className="w-10 h-10 rounded-full bg-[#00eeff] flex items-center justify-center text-[#0a1128] font-bold">K</div>
-                  <div className="ml-3">
-                    <h3 className="text-[#00eeff] font-semibold">KESTRAL</h3>
-                    <p className="text-sm text-gray-400">AI Curator</p>
+                    <motion.div
+                      initial={{ opacity: 0 }}
+                      animate={{ opacity: 1 }}
+                      transition={{ duration: 0.3 }}
+                    >
+                      <h4 className="text-lg font-semibold mb-2 text-white">{section.label}</h4>
+                      <p className="text-sm text-gray-400 mb-4">{section.description}</p>
+                      <div className="prose prose-invert max-w-none">
+                        <p className="text-gray-200 leading-relaxed">
+                          {getAnalysisContent(section.id)}
+                        </p>
+                      </div>
+                    </motion.div>
                   </div>
+                ))}
+              </div>
+              
+              <div className="mt-8 pt-8 border-t border-[#1e3a8a]">
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center">
+                    <div className="w-10 h-10 rounded-full bg-[#00eeff] flex items-center justify-center text-[#0a1128] font-bold">K</div>
+                    <div className="ml-3">
+                      <h3 className="text-[#00eeff] font-semibold">KESTRAL</h3>
+                      <p className="text-sm text-gray-400">AI Curator</p>
+                    </div>
+                  </div>
+                  <button
+                    onClick={handleGuideClick}
+                    className="flex items-center gap-2 text-[#00eeff] hover:text-[#00bfcc] transition-colors"
+                  >
+                    <MapPin className="w-5 h-5" />
+                    <span>Exhibition Guide</span>
+                  </button>
                 </div>
-                <button
-                  onClick={() => {
-                    onClose();
-                    setIsGuideOpen(true);
-                  }}
-                  className="flex items-center gap-2 text-[#00eeff] hover:text-[#00bfcc] transition-colors"
-                >
-                  <MapPin className="w-5 h-5" />
-                  <span>Exhibition Guide</span>
-                </button>
               </div>
             </div>
-          </div>
-        </motion.div>
-      </AnimatePresence>
-      
-      <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex gap-2">
-        {covers.map((_, index) => (
-          <button
-            key={index}
-            onClick={() => setCurrentIndex(index)}
-            className={`w-2 h-2 rounded-full transition-colors ${
-              index === currentIndex ? 'bg-[#00eeff]' : 'bg-[#132347]'
-            }`}
-          />
-        ))}
+          </motion.div>
+        </AnimatePresence>
+        
+        <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex gap-2">
+          {covers.map((_, index) => (
+            <button
+              key={index}
+              onClick={() => setCurrentIndex(index)}
+              className={`w-2 h-2 rounded-full transition-colors ${
+                index === currentIndex ? 'bg-[#00eeff]' : 'bg-[#132347]'
+              }`}
+            />
+          ))}
+        </div>
       </div>
 
       <ExhibitionGuide isOpen={isGuideOpen} onClose={() => setIsGuideOpen(false)} />
-    </div>
+    </>
   );
 };
 
