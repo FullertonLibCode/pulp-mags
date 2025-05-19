@@ -264,9 +264,11 @@ export const covers: Cover[] = [
      aiReflection: "Looking at this image, I wonder how the artist chose to portray the robot's leap and the woman's stance, emphasizing the action and tension in the scene. The green color of the robot contrasts sharply with the warm colors of the sky, drawing attention to its mechanical nature. The woman's red outfit stands out against the more muted colors of the people and the environment, suggesting her role as a central character in the story. The leap of the robot and the fighting stance of the woman create a dynamic sense of movement, while the onlookers add to the feeling of a pivotal moment in the narrative. This portrayal makes me reflect on the cultural mythology around robots and technology during the pulp era, where they were often depicted as powerful and sometimes menacing machines."
     },
     tags: [
-      "tbd",
-      "tbd",
-      "tbd"
+      "Humanoid Robot(s)",
+      "Robot Grasping Human",
+      "Human(s) Confronting Robot",
+      "Human(s) Using Weapons",
+      "Spacecraft (exterior)"
     ]
   },    
   {
