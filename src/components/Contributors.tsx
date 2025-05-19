@@ -67,25 +67,25 @@ const Contributors: React.FC = () => {
           <div className="p-4 bg-[#0a1128] rounded-lg">
             <h3 className="font-semibold text-[#00eeff] mb-2">Curators</h3>
             <ul className="text-gray-300 space-y-2">
-              <li>Dr. Sarah Martinez</li>
-              <li>Prof. James Chen</li>
-              <li>Dr. Emily Rodriguez</li>
+              <li>Kestral, AI Curator</li>
+              <li>Jennifer Mitchell, Human Co-Curator</li>
             </ul>
           </div>
           <div className="p-4 bg-[#0a1128] rounded-lg">
-            <h3 className="font-semibold text-[#00eeff] mb-2">Digital Development</h3>
+            <h3 className="font-semibold text-[#00eeff] mb-2">Exhibition Development</h3>
             <ul className="text-gray-300 space-y-2">
-              <li>Michael Thompson</li>
-              <li>Dr. Lisa Wong</li>
-              <li>Alex Rivera</li>
+              <li>Trish Campbell, Exhibit Committee Chair and Titan Excellence award winner</li>
+              <li>Eileen Walraven, Exhibit Production Support</li>
+              <li>[Trish staff], [title]</li>
             </ul>
           </div>
           <div className="p-4 bg-[#0a1128] rounded-lg">
             <h3 className="font-semibold text-[#00eeff] mb-2">Special Collections</h3>
             <ul className="text-gray-300 space-y-2">
-              <li>Katherine Brown</li>
-              <li>Robert Martinez</li>
-              <li>Dr. David Lee</li>
+              <li>Lisa Mix, Director, University Archives and Special Collections</li>
+              <li>Patrisia Prestinary, Archivist & Special Collections Librarian</li>
+              <li>Garrett Fritz, University Archive and Special Collections</li>
+              <li>[studant assistant], [student assistant]</li>
             </ul>
           </div>
         </div>
