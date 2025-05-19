@@ -6,7 +6,8 @@ import { useInView } from 'react-intersection-observer';
 
 const Home: React.FC = () => {
   const { scrollY } = useScroll();
-  const opacity = useTransform(scrollY, [0, 200], [1, 0.5]);
+  const opacity = useTransform(scrollY, [0, 400], [1, 0.8]);
+  const blur = useTransform(scrollY, [0, 400], [0, 6]);
 
   const [ref, inView] = useInView({
     triggerOnce: true,
@@ -15,14 +16,16 @@ const Home: React.FC = () => {
 
   return (
     <div className="relative">
-      {/* Hero Section with Dream-like Background */}
       <motion.section 
         className="relative min-h-screen flex items-center justify-center overflow-hidden"
-        style={{ opacity }}
+        style={{ 
+          opacity,
+          backdropFilter: `blur(${blur}px)`,
+        }}
       >
         {/* Dream-like Background Elements */}
         <div className="absolute inset-0">
-          <div className="absolute inset-0 bg-gradient-to-b from-[#0a1128] via-[#132347] to-[#0a1128]" />
+          <div className="absolute inset-0 bg-gradient-to-b from-[#0a1128]/70 via-[#132347]/60 to-[#0a1128]/70" />
           
           {/* Organic Floating Elements */}
           {[...Array(20)].map((_, i) => (
@@ -136,7 +139,7 @@ const Home: React.FC = () => {
             </Link>
             <button 
               onClick={() => document.getElementById('intro-video')?.scrollIntoView({ behavior: 'smooth' })}
-              className="inline-flex items-center gap-2 bg-[#132347] text-[#00eeff] font-semibold px-8 py-4 rounded-md hover:bg-[#1e3a8a] transition-all duration-300"
+              className="inline-flex items-center gap-2 bg-transparent text-[#00eeff] font-semibold px-8 py-4 rounded-md hover:bg-[#00eeff]/10 transition-all duration-300 border-2 border-[#00eeff] hover:shadow-[0_0_20px_rgba(0,238,255,0.3)]"
             >
               <Play className="w-5 h-5" />
               Meet Kestral
