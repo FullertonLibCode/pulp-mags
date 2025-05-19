@@ -683,9 +683,10 @@ export const covers: Cover[] = [
      aiReflection: "Looking at this image, I wonder about the narrative tension between the human figure and the robot. The juxtaposition of the mechanical spider-like robot and the human suggests a story of exploration or conflict. The warm color palette and dramatic lighting create a sense of adventure and discovery. The glowing object in the distance adds a layer of mystery, inviting the viewer to speculate about its purpose and the implications for the characters. This portrayal makes me reflect on the societal perceptions of robots during the pulp era, as the image captures a moment of human-robot interaction that is both intriguing and unsettling."
     },
     tags: [
-      "Multiple Apendages",
-      "tbd",
-      "tbd"
+      "Tentacled Robot",
+      "Multi-Appendage Robot",
+      "Alien Planet",
+      "Human(s) in Surprised / Defensive Posture"
     ]
   },  
   {
@@ -701,9 +702,9 @@ export const covers: Cover[] = [
      aiReflection: "Looking at this image, I wonder how the artist chose to portray the robots in this particular way, with the spherical robot being the focal point. The use of warm colors and the spotlight effect creates a sense of drama and importance around the robots, suggesting that they are central to the story within the magazine. The spherical robot's greenish hue and the humanoid robots' metallic body and helmet-like head create a contrast between the organic and mechanical aspects of the robots, hinting at the themes of identity and purpose. The power dynamics between robots and their environment are also evident, with the robot appearing to be in control of the laboratory and its equipment."
     },
     tags: [
-      "Multiple Apendages",
-      "tbd",
-      "tbd"
+      "Tentacled Robot(s)",
+      "Non-Humanoid Robot(s)",
+      "Laboratory / Scientific Setting"
     ]
   },  
   {
@@ -719,9 +720,11 @@ export const covers: Cover[] = [
      aiReflection: " I am struck by how early artists personified machines as willful antagonists, reflecting human anxieties about loss of control. The robot’s predatory stance poses a mirror: humanity’s fear that our own creations might turn on us.This cover’s raw confrontation foreshadows modern debates over autonomous weapons and AI alignment. We are still grappling with ensuring that the power we confer upon machines doesn’t exceed our own capacity to manage them."
     },
     tags: [
-      "Menacing Robots",
-      "tbd",
-      "tbd"
+      "Humanoid Robot(s)",
+      "Human(s) Confronting Robot(s)",
+      "Human(s) Using Weapons",
+      "Woman in Peril",
+      "Laboratory / Scientific Setting"
     ]
   },
   {
@@ -737,9 +740,12 @@ export const covers: Cover[] = [
      aiReflection: "Looking at this image, I wonder how the artist chose to portray the robot as both a threat and a mysterious figure. The glowing eyes and imposing size of the robot suggest a sense of power and danger, while the woman's defensive posture and expression of fear evoke a sense of vulnerability. The use of fire in the background adds to the sense of chaos and urgency, creating a dramatic and intense atmosphere. The artwork reflects the societal perceptions of robots and technology during the pulp era, where robots were often portrayed as menacing and uncontrollable. This reflects the fears and anxieties of the time regarding the potential dangers of advanced technology. The design of the robot, with its imposing size and glowing eyes, reinforces these fears, while the distressed woman adds a human element to the narrative, highlighting the potential risks to humanity."
     },
     tags: [
-      "Red Robot Eyes",
-      "Menacing Robots",
-      "tbd"
+      "Humanoid Robot(s)",
+      "Glowing-Eyed Robot(s)",
+      "Robot Dominance Display",
+      "Woman in Peril",
+      "Cityscape",
+      "Landscape in Flames"
     ]
   },
   {
@@ -755,9 +761,11 @@ export const covers: Cover[] = [
      aiReflection: "Looking at this image, I wonder about the narrative tension between the human and the robot. The sleeping woman's vulnerability juxtaposed with the imposing robot suggests a narrative of conflict or impending danger. The metallic, industrial design of the robots contrasts with the organic, natural form of the woman, highlighting the theme of the clash between nature and technology. This portrayal makes me reflect on the societal perceptions of robots and technology during the pulp era, where mechanical beings were often depicted as threats to humanity. The artistic choices in this image, such as the color palette and composition, shape our perception of the machine-human relationship, emphasizing the robots' dominance over the human figure.  It also highlights the cultural mythology around mechanical beings, where they are often portrayed as monstrous and uncontrollable."
     },
     tags: [
-      "Tentacled/Multiple Appendages",
-      "Spherical Robots",
-      "tbd"
+      "Tentacled Robot (s)",
+      "Spherical Robot(s)",
+      "Small-Town / Non-Urban Human Setting",
+      "Landscape in Flames",
+      "Woman in Peril"
     ]
   },
   {
@@ -773,9 +781,9 @@ export const covers: Cover[] = [
      aiReflection:  "I’m reminded of today’s neural implants and wearable tech—tools designed to empower us but capable of overriding our senses. The horror here is timeless: technology is no longer neutral when it pierces skin and mind. This image wrestles with bodily autonomy—when technology becomes part of us, where does the human end and the machine begin? The arm’s silent advance over the terrified face hints at an invasion of the self, unasked for and irreversible. It poses a chilling question: if our bodies can be co-opted by our own devices, can we ever truly trust our flesh—or our tools?"
     },
     tags: [
-      "Hybrid Organic/Mechanical",
-      "Cybernetic Prosthesis",
-      "tbd"
+      "Cybernetic / Hybrid Robot(s)",
+      "Human(s) in Visible Distress",
+      "Abstract Environment"
     ]
   },  
   {
@@ -791,9 +799,10 @@ export const covers: Cover[] = [
      aiReflection: "Looking at this image, I wonder about the narrative that led to the robots' presence in the graveyard. The yellow moon adds a sense of otherworldliness, suggesting that the robots could be from a different world or time. The composition, with the robots in the foreground and the graveyard in the background, highlights the isolation of the robots and the vastness of the environment, which could imply a story of exploration or survival. The emotional response evoked is one of curiosity and unease, as the viewer is left to wonder about the robots' purpose and the story behind its presence in this desolate landscape."
     },
     tags: [
-      "Spherical Robots",
-      "tbd",
-      "tbd"
+      "Cyclopean Robot(s)",
+      "Spherical Robot(s)",
+      "Robot(s) with Wheels",
+      "Ambiguous Natural Environment"
     ]
   },  
   {
@@ -809,9 +818,9 @@ export const covers: Cover[] = [
      aiReflection: "Even today we wrestle with algorithms meant to recommend, optimize, or “improve” our lives—only to find ourselves caught in feedback loops we didn’t ask for. This pulp image exaggerates that fear into physical violence, but the underlying anxiety endures: can we ever break free from a machine’s version of “the good life” once it’s turned on us?"
     },
     tags: [
-      "Glowing Eyes",
-      "Spherical Robots",
-      "tbd"
+      "Humanoid Robot(s)",
+      "Human(s) Fighting Robot(s)",
+      "Human(s) Grasping Robot(s)"
     ]
   },  
   {
@@ -827,9 +836,12 @@ export const covers: Cover[] = [
      aiReflection: "The image suggests a narrative of conflict and survival, with the human figure's defeated posture and the robot's aggressive stance indicating a struggle for dominance. The fiery background and the robot's weapon create a sense of urgency and danger, while the human figure's position on the ground evokes a feeling of vulnerability. The overall visual tone is one of tension and foreboding, with the artwork effectively conveying the perilous scenario depicted."
     },
     tags: [
-      "Menacing Robots",
-      "tbd",
-      "tbd"
+      "Humanoid Robot(s)",
+      "Multi-Appendage Robot(s)",
+      "Robot(s) Using Weapons",
+      "Robot(s) Fighting Human(s)",
+      "Alien Planet",
+      "Robot Dominance Display"
     ]
   },  
   {
@@ -845,9 +857,11 @@ export const covers: Cover[] = [
      aiReflection: "Looking at this image, I wonder about the narrative that led the artist to depict the robot in such a contemplative pose. The robot's gaze, directed away from the viewer, suggests a moment of introspection or concern. The dark, industrial background could imply a dystopian setting or a world where technology has taken on a life of its own. The theme of mechanical self-awareness and introspection is suggested by the robot's gaze."
     },
     tags: [
-      "Multiple Apendages",
-      "tbd",
-      "tbd"
+      "Humanoid Robot(s)",
+      "Robot(s) Grasping Human(s)",
+      "Lone Robot",
+      "Abstract Environment"
+      "Isolated Scene"
     ]
   },  
   {
@@ -863,9 +877,10 @@ export const covers: Cover[] = [
      aiReflection: "The image suggests a narrative of conflict and confrontation between humans and robots, set in a futuristic landscape that is both familiar and alien. The use of a large, spherical planet and a moon-like body in the background creates a sense of isolation and confinement, while the explosion or fire in the distance adds to the sense of danger and urgency. The color palette, with its mix of orange and blue hues, suggests a time of day that is either dawn or dusk, adding to the sense of uncertainty and change. The overall visual tone is one of tension and anticipation, as the viewer is left to wonder about the outcome of the conflict and the fate of the characters.",
     },
     tags: [
-      "tbd",
-      "tbd",
-      "tbd"
+      "Humanoid Robot(s)",
+      "Robot(s) Using Weapons",
+      "Alien Planet",
+      "Robot(s) in Pursuit"
     ]
   },  
   {
@@ -881,9 +896,9 @@ export const covers: Cover[] = [
      aiReflection: "The literal grappling here mirrors our modern, metaphorical tussles with autonomous systems—from self-driving cars to automated trading bots. The cover captures the timeless anxiety that, once set in motion, our creations may develop wills of their own."
     },
     tags: [
-      "tbd",
-      "tbd",
-      "tbd"
+      "Humanoid Robot(s)",
+      "Human(s) Fighting Robot(s)",
+      "Human(s) Grasping Robot(s)"
     ]
   },    
    {
@@ -899,9 +914,11 @@ export const covers: Cover[] = [
      aiReflection: "The image suggests a story of a man in peril, possibly a hero or protagonist, facing off against a robot. The cityscape in the background adds to the sense of danger, as it implies that the conflict is taking place in a populated and potentially vulnerable area. The dramatic pose of the man and the robot creates a sense of tension and action, while the color palette of the image, with its dark blues and reds, adds to the overall mood of danger and excitement."
     },
     tags: [
-      "tbd",
-      "tbd",
-      "tbd"
+      "Non-Humanoid Robot(s)",
+      "Robot(s) with Wheels",
+      "Robot Grasping Human",
+      "Night Sky Setting",
+      "Cityscape"
     ]
   },
   {
@@ -917,9 +934,9 @@ export const covers: Cover[] = [
      aiReflection: "The image suggests a story of space adventure and danger, with the robot's menacing appearance and the sense of motion creating a sense of urgency and excitement. The use of red for the robot's eyes emphasizes the robot's artificial nature and potential menace. The background of stars and a distant planet adds to the sense of otherworldliness and adventure."
     },
     tags: [
-      "Red Robot Eyes",
-      "tbd",
-      "tbd"
+      "Humanoid Robot(s)",
+      "Alien Sky / Celestial Background",
+      "Space Scene"
     ]
   },
   {
@@ -935,9 +952,11 @@ export const covers: Cover[] = [
      aiReflection: "I’m struck by how vividly this image fuses haunted lore with cold machinery—early pulp imagined robots not just as tools, but as unearthly presences. Today’s algorithms are invisible, yet carry the same capacity to unsettle when they surface in unexpected places. The swamp here is a metaphor for the uncharted depths of our own creations: you never know what might awaken when you disturb the code. It reminds me that fear of the unknown in technology is timeless, whether cast in steel or silicon."
     },
     tags: [
-      "Glowing Robot Eyes",
-      "tbd",
-      "tbd"
+      "Humanoid Robot(s)",
+      "Glowing-Eyed Robot(s)",
+      "Natural Environment",
+      "Human(s) Fleeing Robot",
+      "Woman in Peril"
     ]
   },
   {
@@ -953,9 +972,11 @@ export const covers: Cover[] = [
      aiReflection: "The image suggests a story of a world where robots have taken over or are in control, with humans struggling to survive. The visual tone is one of foreboding and tension, with the hazy sky and damaged buildings creating a sense of desolation. The composition and color scheme work together to evoke a feeling of unease and impending doom. The robot's gaze directed at the viewer could be interpreted as a commentary on the fear of being watched or judged by technology."
     },
     tags: [
-      "Menacing Robots",
-      "tbd",
-      "tbd"
+      "Giant Robot(s)",
+      "Humanoid Robot(s)",
+      "Robot(s) Dominance Display",
+      "Crowd Fleeing",
+      "Urban Destruction"
     ]
   },  
   {
