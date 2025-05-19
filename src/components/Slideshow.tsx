@@ -26,12 +26,12 @@ const Slideshow: React.FC<SlideshowProps> = ({ onClose, initialIndex = 0 }) => {
     const handleKeyPress = (e: KeyboardEvent) => {
       if (e.key === 'ArrowRight') nextSlide();
       if (e.key === 'ArrowLeft') prevSlide();
-      if (e.key === 'Escape') onClose();
+      if (e.key === 'Escape' && !isGuideOpen) onClose();
     };
     
     window.addEventListener('keydown', handleKeyPress);
     return () => window.removeEventListener('keydown', handleKeyPress);
-  }, [onClose]);
+  }, [onClose, isGuideOpen]);
   
   const currentCover = covers[currentIndex];
 
@@ -65,8 +65,7 @@ const Slideshow: React.FC<SlideshowProps> = ({ onClose, initialIndex = 0 }) => {
   };
 
   const handleGuideClick = () => {
-    onClose();
-    setTimeout(() => setIsGuideOpen(true), 100);
+    setIsGuideOpen(true);
   };
   
   return (
@@ -205,7 +204,13 @@ const Slideshow: React.FC<SlideshowProps> = ({ onClose, initialIndex = 0 }) => {
         </div>
       </div>
 
-      <ExhibitionGuide isOpen={isGuideOpen} onClose={() => setIsGuideOpen(false)} />
+      <ExhibitionGuide 
+        isOpen={isGuideOpen} 
+        onClose={() => {
+          setIsGuideOpen(false);
+          onClose();
+        }} 
+      />
     </>
   );
 };
