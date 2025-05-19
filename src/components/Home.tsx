@@ -163,7 +163,7 @@ const Home: React.FC = () => {
             <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
             <div className="absolute bottom-0 left-0 right-0 p-6">
               <h2 className="text-2xl font-bold text-white mb-2">Meet Kestral, AI Curator</h2>
-              <p className="text-gray-300"><p>Join Kestral, your AI curator, on a journey through the imaginative worlds of pulp science fiction, exploring how robots were portrayed in classic tales of the future.</p>
+              <p className="text-gray-300">Join Kestral, your AI curator, on a journey through the imaginative worlds of pulp science fiction, exploring how robots were portrayed in classic tales of the future.</p>
             </div>
           </div>
         </div>
