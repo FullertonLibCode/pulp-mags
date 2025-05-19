@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { BrainCircuit, Zap, History, Eye, Play, BrainCircuit as Circuit, Cpu } from 'lucide-react';
+import { BrainCircuit, Zap, History, Eye, Play, BrainCircuit as Circuit, Cpu, MapPin } from 'lucide-react';
 import { useInView } from 'react-intersection-observer';
+import ExhibitionGuide from './ExhibitionGuide';
 
 const Home: React.FC = () => {
+  const [isGuideOpen, setIsGuideOpen] = useState(false);
   const { scrollY } = useScroll();
   const opacity = useTransform(scrollY, [0, 400], [1, 0.8]);
   const blur = useTransform(scrollY, [0, 400], [0, 6]);
@@ -105,7 +107,6 @@ const Home: React.FC = () => {
           ))}
         </div>
         
-        {/* Content */}
         <div className="relative z-10 text-center px-4">
           <motion.h1 
             className="text-6xl md:text-7xl font-bold mb-4 font-heading"
@@ -138,21 +139,21 @@ const Home: React.FC = () => {
             transition={{ duration: 0.8, delay: 0.6 }}
             className="flex flex-col sm:flex-row items-center justify-center gap-4"
           >
+            <button
+              onClick={() => setIsGuideOpen(true)}
+              className="inline-flex items-center gap-2 bg-[#00eeff] text-[#0a1128] font-semibold px-8 py-4 rounded-md hover:bg-[#00bfcc] transition-all duration-300 hover:shadow-[0_0_20px_rgba(0,238,255,0.5)]"
+              aria-label="Open Exhibition Guide"
+            >
+              <MapPin className="w-5 h-5" aria-hidden="true" />
+              Start Here
+            </button>
             <Link 
               to="/gallery"
-              className="inline-block bg-[#00eeff] text-[#0a1128] font-semibold px-8 py-4 rounded-md hover:bg-[#00bfcc] transition-all duration-300 hover:shadow-[0_0_20px_rgba(0,238,255,0.5)]"
+              className="inline-block bg-transparent text-[#00eeff] font-semibold px-8 py-4 rounded-md hover:bg-[#00eeff]/10 transition-all duration-300 border-2 border-[#00eeff]"
               aria-label="Enter Exhibition Gallery"
             >
               Enter Exhibition
             </Link>
-            <button 
-              onClick={() => document.getElementById('intro-video')?.scrollIntoView({ behavior: 'smooth' })}
-              className="inline-flex items-center gap-2 bg-transparent text-[#00eeff] font-semibold px-8 py-4 rounded-md hover:bg-[#00eeff]/10 transition-all duration-300 border-2 border-[#00eeff] hover:shadow-[0_0_20px_rgba(0,238,255,0.3)]"
-              aria-label="Watch introduction video about Kestral"
-            >
-              <Play className="w-5 h-5" aria-hidden="true" />
-              Meet Kestral
-            </button>
           </motion.div>
         </div>
       </motion.section>
@@ -248,6 +249,8 @@ const Home: React.FC = () => {
           ))}
         </div>
       </motion.section>
+
+      <ExhibitionGuide isOpen={isGuideOpen} onClose={() => setIsGuideOpen(false)} />
     </div>
   );
 };
