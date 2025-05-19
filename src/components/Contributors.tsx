@@ -26,7 +26,7 @@ const Contributors: React.FC = () => {
             <h2 className="text-xl font-semibold">Host Institution</h2>
           </div>
           <p className="text-gray-300 mb-4">
-            University of Arizona Libraries Special Collections
+            California State University Fullerton, Pollack Library Archives & Special Collections
           </p>
           <p className="text-gray-300">
             This exhibition draws from the extensive pulp science fiction magazine collection
