@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { covers } from '../data/covers';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronLeft, ChevronRight, X, BrainCircuit, Eye, History, Globe, BookOpen, MapPin } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import ExhibitionGuide from './ExhibitionGuide';
 
 interface SlideshowProps {
   onClose: () => void;
@@ -12,6 +12,7 @@ interface SlideshowProps {
 const Slideshow: React.FC<SlideshowProps> = ({ onClose, initialIndex = 0 }) => {
   const [currentIndex, setCurrentIndex] = useState(initialIndex);
   const [activeSection, setActiveSection] = useState<string>('Observations');
+  const [isGuideOpen, setIsGuideOpen] = useState(false);
   
   const nextSlide = () => {
     setCurrentIndex((prev) => (prev + 1) % covers.length);
@@ -172,14 +173,16 @@ const Slideshow: React.FC<SlideshowProps> = ({ onClose, initialIndex = 0 }) => {
                     <p className="text-sm text-gray-400">AI Curator & Analyst</p>
                   </div>
                 </div>
-                <Link
-                  to="/"
-                  onClick={onClose}
+                <button
+                  onClick={() => {
+                    onClose();
+                    setIsGuideOpen(true);
+                  }}
                   className="flex items-center gap-2 text-[#00eeff] hover:text-[#00bfcc] transition-colors"
                 >
                   <MapPin className="w-5 h-5" />
                   <span>Exhibition Guide</span>
-                </Link>
+                </button>
               </div>
             </div>
           </div>
@@ -197,6 +200,8 @@ const Slideshow: React.FC<SlideshowProps> = ({ onClose, initialIndex = 0 }) => {
           />
         ))}
       </div>
+
+      <ExhibitionGuide isOpen={isGuideOpen} onClose={() => setIsGuideOpen(false)} />
     </div>
   );
 };
