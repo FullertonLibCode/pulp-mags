@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { BrainCircuit, Zap, History, Eye, Play, Circuit, Cpu, Microchip } from 'lucide-react';
+import { BrainCircuit, Zap, History, Eye, Play, BrainCircuit as Circuit, Cpu, Microwave as Microchip } from 'lucide-react';
 import { useInView } from 'react-intersection-observer';
 
 const Home: React.FC = () => {
