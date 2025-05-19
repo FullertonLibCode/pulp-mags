@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { BrainCircuit, Zap, History, Eye, Play, BrainCircuit as Circuit, Cpu, Microwave as Microchip } from 'lucide-react';
+import { BrainCircuit, Zap, History, Eye, Play, BrainCircuit as Circuit, Cpu } from 'lucide-react';
 import { useInView } from 'react-intersection-observer';
 
 const Home: React.FC = () => {
@@ -50,7 +50,7 @@ const Home: React.FC = () => {
                   Math.random() * window.innerHeight,
                 ],
                 scale: [0.5, 1.5, 0.5],
-                opacity: [0.1, 0.3, 0.1],
+                opacity: [0.3, 0.6, 0.3],
                 rotate: [0, 180, 360],
               }}
               transition={{
@@ -58,6 +58,9 @@ const Home: React.FC = () => {
                 repeat: Infinity,
                 repeatType: "reverse",
                 ease: "easeInOut",
+              }}
+              style={{
+                filter: 'drop-shadow(0 0 8px rgba(0, 238, 255, 0.6))',
               }}
             >
               {i % 3 === 0 ? (
@@ -79,15 +82,16 @@ const Home: React.FC = () => {
               style={{
                 background: `radial-gradient(circle at center, ${
                   ['#00eeff', '#3b82f6', '#1e40af'][Math.floor(Math.random() * 3)]
-                }33, transparent)`,
+                }66, transparent)`,
                 width: `${Math.random() * 400 + 200}px`,
                 height: `${Math.random() * 400 + 200}px`,
                 left: `${Math.random() * 100}%`,
                 top: `${Math.random() * 100}%`,
+                filter: 'blur(20px)',
               }}
               animate={{
                 scale: [1, 1.5, 1],
-                opacity: [0.1, 0.3, 0.1],
+                opacity: [0.3, 0.5, 0.3],
                 x: [0, Math.random() * 100 - 50, 0],
                 y: [0, Math.random() * 100 - 50, 0],
               }}
