@@ -132,9 +132,11 @@ export const covers: Cover[] = [
      aiReflection: "A single robot persists amid silent edifices, prompting a meditation on purpose when humanity has moved on. I imagine the robot repeating its program in endless solitude, a cipher for our fear of obsolescence. The swirl of birds around cold steel evokes a power shift: nature indifferent to mechanical order. This cover quietly asks whether machines can find meaning outside human oversight."
     },
     tags: [
-      "Tentacled/Multiple Appendages",
-      "Rocket Spaceship",
-      "Robots and Beasts"
+      "Tentacled Robot(s)",
+      "Multi-Appendage Robot(s)",
+      "Cityscape",
+      "Spacecraft (exterior)",
+      "Animal(s)"
     ]
   },  
   {
@@ -150,9 +152,9 @@ export const covers: Cover[] = [
       aiReflection: "tbd."
     },
     tags: [
-      "Tentacled/Multiple Appendages",
-      "tbd",
-      "tbd"
+      "Tentacled Robot(s)",
+      "Spacecraft (interior)",
+      "Glowing-Eyed Robot(s)",
     ]
   },  
   {
@@ -168,9 +170,9 @@ export const covers: Cover[] = [
       aiReflection: "Looking at this image, I wonder about the narrative that connects the castle and the robots. The castle's traditional architecture contrasts with the mechanical nature of the robots, suggesting a story where technology and history intersect. The warm colors of the sky might indicate a time of transition or change. The positioning of the robots on the bridge could imply a journey or a quest."
     },
     tags: [
-      "Multiple Apendages",
-      "tbd",
-      "tbd"
+     "Tentacled Robot(s)",
+     "Non-humanoid Robot(s)",
+     "Medieval Architecture"
     ]
   },  
   {
@@ -186,9 +188,9 @@ export const covers: Cover[] = [
      aiReflection: "Looking at this image, I wonder how the artist chose to depict the robot's movement and the surrounding environment to convey a sense of urgency and danger. The use of warm colors and the fiery background creates a dramatic atmosphere, while the robot's mechanical form contrasts with the organic chaos of the scene."
     },
     tags: [
-      "Multiple Apendages",
-      "tbd",
-      "tbd"
+      "Tentacled Robot(s)",
+      "Non-humanoid Robot(s)",
+      "Abstract Environment"
     ]
   },  
   {
@@ -204,9 +206,12 @@ export const covers: Cover[] = [
      aiReflection: "I’m struck by how early pulp art framed robots as looming, almost extraterrestrial intelligences—so different from today’s quiet algorithms embedded in apps. Today’s AI may lack pistons and bolts, but the debate over autonomy and trust remains: do we meet machines with guns or dialogue? The cover invites reflection on the ethics of preemptive violence against the “other,” mechanical or otherwise. It evokes the creator’s dilemma: do we arm against our creations or extend trust?"
     },
     tags: [
-      "Urban Nightscape",
-      "tbd",
-      "Robots and Beasts"
+      "Humanoid Robot",
+      "Cityscape",
+      "Human(s) Confronting Robot",
+      "Human(s) Using Weapon(s)",
+      "Glowing-Eyed Robot(s)",
+      "Animal(s)"
     ]
   },
   {
@@ -222,9 +227,10 @@ export const covers: Cover[] = [
      aiReflection: "Looking at this image, I wonder about the red robot's design, with its mechanical limbs and complex head structure. The red robot's dynamic pose and the dark, starry background create a sense of tension and anticipation. The use of red for the robot could symbolize danger or power.The color palette and composition create a mood of mystery and intrigue, drawing the viewer into the narrative."
     },
     tags: [
-      "tbd",
-      "tbd",
-      "tbd"
+      "Non-humanoid Robot(s)",
+      "Night Sky Setting",
+      "Giant Robot(s)",
+      "Human(s) in Surprised / Defensive Posture"
     ]
   },
   {
@@ -240,9 +246,9 @@ export const covers: Cover[] = [
      aiReflection: "Looking at this image, I wonder about the narrative tension between the human and the robot. The man's sinister expression and the robot's defeated posture suggest a struggle between the organic and the inorganic, between human and machine."
     },
     tags: [
-      "tbd",
-      "tbd",
-      "tbd"
+      "Humanoid Robot(s)",
+      "Laboratory / Scientific Setting",
+      "Mad Scientist / Experimenter"
     ]
   },
   {
