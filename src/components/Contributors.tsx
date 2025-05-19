@@ -89,7 +89,8 @@ const Contributors: React.FC = () => {
             </ul>
           </div>
         </div>
-        <div className="p-4 bg-[#0a1128] rounded-lg">
+        <div className="grid grid-cols-1 gap-6 mt-6">
+          <div className="p-4 bg-[#0a1128] rounded-lg">
             <h3 className="font-semibold text-[#00eeff] mb-2">Installation & Exhibit Support</h3>
             <ul className="text-gray-300 space-y-2">
               <li>Sepehr Sobhani, Director of User/Classroom Support Services</li>
