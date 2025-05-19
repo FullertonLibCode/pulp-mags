@@ -170,7 +170,7 @@ const Slideshow: React.FC<SlideshowProps> = ({ onClose, initialIndex = 0 }) => {
                   <div className="w-10 h-10 rounded-full bg-[#00eeff] flex items-center justify-center text-[#0a1128] font-bold">K</div>
                   <div className="ml-3">
                     <h3 className="text-[#00eeff] font-semibold">KESTRAL</h3>
-                    <p className="text-sm text-gray-400">AI Curator & Analyst</p>
+                    <p className="text-sm text-gray-400">AI Curator</p>
                   </div>
                 </div>
                 <button
