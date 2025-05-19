@@ -1,6 +1,3 @@
-Here's the fixed version with all closing brackets added:
-
-```javascript
 import React from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { Link } from 'react-router-dom';
@@ -256,4 +253,3 @@ const Home: React.FC = () => {
 };
 
 export default Home;
-```
