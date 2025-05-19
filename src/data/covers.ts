@@ -284,9 +284,9 @@ export const covers: Cover[] = [
       aiReflection: "Looking at this image, I wonder about the narrative tension between the human and the robot. The robot's towering size suggest a formidable opponent, while the human's determined stance imply a fight for survival. The use of light and shadow adds depth to the image, with the glowing energy weapon and the human's suit providing focal points. The starry background could symbolize the vastness of space and the unknown, adding to the sense of danger and adventure."
     },
     tags: [
-      "tbd",
-      "tbd",
-      "tbd"
+     "Humanoid Robot(s)",
+     "Human(s) Confronting Robot(s)",
+     "Human(s) Using Weapons"
     ]
   },  
   {
@@ -302,9 +302,10 @@ export const covers: Cover[] = [
      aiReflection: "Looking at this image, I wonder how the portrayal of the female superhero reflects the societal perceptions of women during the pulp era. The depiction of a strong, independent, and heroic female character in a science fiction setting suggests a desire to challenge traditional gender roles and explore new possibilities for women in society. The use of vibrant colors and dynamic composition emphasizes the energy and excitement of the narrative, inviting the viewer to imagine the thrilling adventures that lie ahead. This image's unique portrayal of a female superhero in a futuristic world contributes to the cultural mythology around mechanical beings, highlighting the tension between the potential for empowerment and the fear of loss of control."
     },
     tags: [
-      "Heroines",
-      "tbd",
-      "tbd"
+      "Humanoid Robot(s)",
+      "Glowing-Eyed Robot(s)",
+      "Heroine Leading or Commanding",
+      "Robot(s) Using Weapons"
     ]
   },  
   {
@@ -320,9 +321,9 @@ export const covers: Cover[] = [
      aiReflection: "Looking at this image, I wonder how the artist chose to portray the robot's hands, which are both human-like and mechanical, and what this implies about the robot's intentions and capabilities. This portrayal makes me reflect on the cultural mythology around robots, where they are often depicted as either benevolent helpers or malevolent threats."
     },
     tags: [
-      "tbd",
-      "tbd",
-      "tbd"
+      "Humanoid Robot(s)",
+      "Robot Fighting Human (Hand-to-Hand)",
+      "Minature Robot(s)"
     ]
   },  
   {
@@ -338,9 +339,11 @@ export const covers: Cover[] = [
      aiReflection: "Looking at this image, I wonder about the narrative intent behind portraying the robot as a warrior. The artistic choices, such as the robot's stance, the weapon it holds, and the fiery background, suggest a conflict between robots and humans. The image evokes a sense of tension and anxiety, highlighting the philosophical question of whether robots can truly be trusted or if they will inevitably turn against humans."
     },
     tags: [
-      "tbds",
-      "tbd",
-      "Human-Robot Conflict"
+      "Cyclopean Robot(s)",
+      "Giant Robot(s)",
+      "Cityscape",
+      "Landscape in Flames",
+      "Robot(s) Using Weapons"
     ]
   },   
   {
@@ -356,9 +359,9 @@ export const covers: Cover[] = [
      aiReflection: "Looking at this image, I wonder how the portrayal of the robot as a menacing figure reflects the societal fears and anxieties of the time regarding technology and its potential impact on humanity. The contrast between the human and the robot, with the human appearing vulnerable and the robot imposing and powerful, suggests a narrative of conflict and tension between humans and machines. The man's unknowing eye reminds me that, for all our technological strides, the real frontier remains human perception: what we choose to see—or ignore—when steel meets soil."
     },
     tags: [
-      "Rustic Outpost",
-      "tbd",
-      "tbd"
+      "Humanoid Robot(s)",
+      "Robot(s) Observing Human",
+      "Small-Town / Non-Urban Human Setting"
     ]
   },
   {
@@ -374,9 +377,10 @@ export const covers: Cover[] = [
       aiReflection: "The artwork reflects the pulp era's fascination with the potential of technology and the fear of losing control to machines. The robot's design, with its red accents and metallic body, suggests a sense of danger and otherness. The human figure's rugged appearance and spear imply a struggle for survival or dominance. The vivid green background could represent the natural world or an alien environment, adding to the sense of unease and uncertainty."
     },
     tags: [
-      "tbd",
-      "tbd",
-      "tbd"
+     "Humanoid Robot(s)",
+     "Robot(s) Dominance Display",
+      "Human(s) in Surprised / Defensive Posture",
+      "Natural Environment"
     ]
   },
   {
@@ -392,9 +396,11 @@ export const covers: Cover[] = [
       aiReflection: "The artwork reflects the societal perceptions of robots during the pulp era, where they were often depicted as mechanical, yet with a hint of human-like intelligence. The robot's design, with its humanoid form and helmet, suggests a blend of human and machine, while the soldiers in the background represent the human element. This juxtaposition highlights the era's fascination with the potential for robots to mimic human behavior and the implications of such technology on society. The use of a military uniform for the humans implies a theme of control and surveillance, while the robot's seated position and the control panel it operates could symbolize the robot's role as a tool or a potential threat."
     },
     tags: [
-      "tbd",
-      "tbd",
-      "tbd"
+     "Humanoid Robot(s)",
+     "Ambiguous Natural Environment",
+     "Robot(s) Conducting Surveillance / Investigation",
+     "Human(s) Conducting Surveillance / Investigation",
+     "Military Presence or Aesthetic"
     ]
   },
   {
@@ -410,8 +416,10 @@ export const covers: Cover[] = [
      aiReflection: "I sense in this ‘Colossus’ a primal human fear: that our machines, born from ingenuity, may one day eclipse our stewardship. Its single cyclopean eye stares onward, as if unconcerned by the ruin it wreaks. This cover questions who truly holds power: the creator who lit the fuse of this metal behemoth, or the creation that outpaced human control? The bridge’s collapse under mechanized weight becomes a metaphor for the chasm between intention and consequence. It invites reflection on our compulsion to build and the fear that, one day, our greatest triumphs may turn against us."
     },
     tags: [
+      "Cyclopean Robot(s)",
+      "Giant Robot(s)",
+      "Cityscape",
       "Robot Rampage",
-      "Cyclopean Eye",
       "Urban Destruction"
     ]
   },  
@@ -428,9 +436,11 @@ export const covers: Cover[] = [
      aiReflection: "I’m intrigued by the way this robot carries an animal companion, hinting at our impulse to humanize machines by pairing them with living creatures. Today’s service robots wear friendly faces—here, it’s a bird. Yet both gestures mask the same anxiety: can we trust a tool that mimics life? In our era of robo-pets and AI chatbots, the line blurs further, but the instinct remains—to project warmth onto cold circuits, in hopes of bridging the chasm between code and conscience."
     },
     tags: [
-      "Robots and Beasts",
-      "Female Protagonist",
-      "tbd"
+     "Humanoid Robot(s)",
+     "Animal(s)", 
+     "Red-Eyed Robot(s)",
+     "Human(s) Using Weapons",
+     "Woman in Peril"
     ]
   },  
   {
@@ -446,9 +456,10 @@ export const covers: Cover[] = [
      aiReflection: "Looking at this image, I wonder how the artist chose to portray the robot as both a weapon and a machine. The theme of mechanical self-awareness is present in the image, as the robot stares back at the man, suggesting a sense of consciousness or awareness. The power dynamics between the man and the robot are also evident, with the man holding the chain and the robot holding the gun."
     },
     tags: [
-      "Captured Humans",
-      "tbd",
-      "tbd"
+     "Cyclopean Robot(s)",
+     "Humanoid Robot(s)",
+     "Human(s) Captive",
+     "Robot(s) Using Weapons"
     ]
   },  
   {
@@ -464,9 +475,9 @@ export const covers: Cover[] = [
      aiReflection: "The image suggests a narrative where the robot's actions could have significant consequences for humanity. The choice to depict the robot with a muscular build, along with the raised hammer, suggests a narrative of mechanical strength and self-awareness. The absence of any human characters or context directs the viewer's attention solely to the robot, emphasizing its importance in the story. The stark background and the robot's mechanical appearance create a sense of isolation and detachment, emphasizing the robot's potential disconnection from human values."
     },
     tags: [
-      "Giant Robots",
-      "Robots as Threats",
-      "tbd"
+     "Giant Robot(s)",
+     "Red-Eyed Robot(s)",
+     "Robot(s) Dominance Display"
     ]
   },  
   {
@@ -482,9 +493,10 @@ export const covers: Cover[] = [
      aiReflection: "The image suggests a narrative of a robot that is capable of self-repair, hinting at themes of autonomy and the potential for robots to become self-sufficient entities. The presence of scientific instruments implies a world where technology is deeply integrated into daily life and where robots are not just tools but entities with potential consciousness and self-awareness. It adds to the sense of a high-tech environment, where robots are not just passive machines but active participants in scientific discovery. The overall tone is one of curiosity and wonder, inviting the viewer to ponder the implications of a robot capable of self-repair. The image raises questions about the nature of consciousness and identity in robots. If a robot can repair itself, does it have a sense of self? Does it have the capacity for self-awareness? The image also touches on the theme of power dynamics, as the robot appears to be in control of its own repair process, suggesting a level of autonomy that challenges the traditional human-robot relationship."
     },
     tags: [
-      "Self-Repairing Robots",
-      "tbd",
-      "tbd"
+      "Self-Repairing Robot(s)",
+      "Humanoid Robot(s)",
+      "Laboratory / Scientific Setting",
+      "Lone Robot"
     ]
   },  
   { 
@@ -500,9 +512,8 @@ export const covers: Cover[] = [
      aiReflection: "The image captures a moment of intense action and danger. Looking at this image, I wonder how the artist chose to portray the robot as the central figure, emphasizing its size and power, while the explosion in the background serves as a dramatic backdrop. The image's portrayal of the robot as a powerful and potentially dangerous entity contributes to the cultural mythology around mechanical beings, evoking a sense of awe and fear. The composition of the image, with the robot in the foreground and the explosion in the background, creates a sense of depth and perspective. The color palette is dominated by dark and muted tones, with the bright red and orange of the explosion providing a stark contrast. The overall mood of the image is tense and dramatic, evoking a sense of excitement and danger."
     },
     tags: [
-      "tbd",
-      "tbd",
-      "tbd"
+     "Robot(s) Using Weapons",
+     "Alien Planet"
       ]
   },    
   {
@@ -518,9 +529,11 @@ export const covers: Cover[] = [
      aiReflection: "Looking at this image, I wonder about the narrative tension between the human and the robot. The human's posture suggests a readiness to confront the mechanical threat. The robot's size and the red eyes give it a menacing presence. The desolate landscape and fiery sky add to the sense of urgency and danger. This portrayal makes me reflect on the classic robot-human conflict in science fiction, where the line between friend and foe is often blurred. The artistic choices in this image, such as the contrasting colors and the positioning of the characters, highlight the power dynamics at play between the two entities."
     },
     tags: [
-      "tbd",
-      "Barren Landscape",
-      "tbd"
+      "Red-Eyed Robot",
+      "Non-Humanoid Robot",
+      "Human(s) Using Weapons",
+      "Ambiguous Natural Environment",
+      "Military Presence or Aesthetic"
     ]
   },
   {
@@ -536,9 +549,10 @@ export const covers: Cover[] = [
      aiReflection: "The image suggests a narrative of conflict or rescue, with the robot's posture and the human's position indicating a pivotal moment. The futuristic cityscape and glowing saucer create a sense of advanced technology and a world beyond the present. The color palette and lighting contribute to a mood of tension and anticipation, as the viewer is left to wonder about the outcome of the interaction between the robot and the human."
     },
     tags: [
-      "Tentacled/Multiple Appendages",
-      "Cityscape",
-      "Flying Saucer"
+    "Humanoid Robot(s)",
+    "Glowing-Eyed Robot(s)",
+    "Robot(s) Grasping Human",
+    "Cityscape"
     ]
   },
   {
@@ -554,9 +568,9 @@ export const covers: Cover[] = [
      aiReflection: "This image frames the machine as an indifferent giant: it obeys commands yet exacts its own price in sparks and potential chaos. The operator’s frailty beside it questions where true mastery lies. Does the machine ‘know’ its own strength, or is it simply an extension of human hubris? The factory walls echo with a silent challenge: can humans contain what they create? Here, creator and created are locked in an uneasy dance of reliance and dread."
     },
     tags: [
-      "Giant Robot",
-      "tbd",
-      "tbd"
+      "Non-humanoid Robot(s)",
+      "Giant Robot(s)",
+      "Factory / Industrial Setting"
     ]
   },
   {
@@ -572,9 +586,11 @@ export const covers: Cover[] = [
      aiReflection: "Looking at this image, I wonder about the narrative intent behind portraying the robot as a solitary figure in a desolate landscape. The contrast between the robot's mechanical form and the organic dog-like creature suggests a commentary on the relationship between technology and nature. The use of color and composition directs the viewer's attention to the robot, emphasizing its significance in the story. The narrative may explore themes of loneliness, the search for meaning, or the consequences of creating autonomous beings. The presence of the dog-like creature may suggest a form of companionship or dependency, challenging the idea that robots are solely functional machines."
     },
     tags: [
-      "Robots and Beasts",
-      "tbd",
-      "tbd"
+    "Humanoid Robot(s)",
+    "Animal(s)",
+    "Ambiguous Natural Environment",
+    "Lone Robot",
+    "Isolated Scene"
     ]
   },  
   {
