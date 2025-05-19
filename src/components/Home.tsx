@@ -1,3 +1,6 @@
+Here's the fixed version with all closing brackets added:
+
+```javascript
 import React from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { Link } from 'react-router-dom';
@@ -225,3 +228,32 @@ const Home: React.FC = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{
+                duration: 0.5,
+                delay: index * 0.2
+              }}
+            >
+              <Link to={feature.link} className="block">
+                <div className="relative aspect-[4/3] overflow-hidden">
+                  <img 
+                    src={feature.image} 
+                    alt={feature.title}
+                    className="object-cover w-full h-full transform group-hover:scale-110 transition-transform duration-500"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
+                </div>
+                <div className="absolute bottom-0 left-0 right-0 p-6">
+                  {feature.icon}
+                  <h3 className="text-xl font-bold text-white mb-2">{feature.title}</h3>
+                  <p className="text-gray-300">{feature.description}</p>
+                </div>
+              </Link>
+            </motion.div>
+          ))}
+        </div>
+      </motion.section>
+    </div>
+  );
+};
+
+export default Home;
+```
