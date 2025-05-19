@@ -1,5 +1,7 @@
-import React, { ReactNode } from 'react';
+import React, { ReactNode, useState } from 'react';
+import { useLocation } from 'react-router-dom';
 import Navigation from './Navigation';
+import VideoModal from './VideoModal';
 import { BrainCircuit, Play } from 'lucide-react';
 
 interface LayoutProps {
@@ -7,12 +9,17 @@ interface LayoutProps {
 }
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {
-  const scrollToVideo = () => {
-    const videoElement = document.getElementById('intro-video');
-    if (videoElement) {
-      videoElement.scrollIntoView({ behavior: 'smooth' });
+  const [isVideoModalOpen, setIsVideoModalOpen] = useState(false);
+  const location = useLocation();
+  
+  const handleVideoClick = () => {
+    if (location.pathname === '/') {
+      const videoElement = document.getElementById('intro-video');
+      if (videoElement) {
+        videoElement.scrollIntoView({ behavior: 'smooth' });
+      }
     } else {
-      window.location.href = '/#intro-video';
+      setIsVideoModalOpen(true);
     }
   };
 
@@ -29,7 +36,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
           </div>
           <div className="flex items-center gap-6">
             <button 
-              onClick={scrollToVideo}
+              onClick={handleVideoClick}
               className="flex items-center gap-2 text-[#00eeff] hover:text-[#00bfcc] transition-colors duration-200"
             >
               <Play className="w-5 h-5" />
@@ -55,6 +62,11 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
       </footer>
       
       <Navigation />
+      
+      <VideoModal
+        isOpen={isVideoModalOpen}
+        onClose={() => setIsVideoModalOpen(false)}
+      />
     </div>
   );
 };
