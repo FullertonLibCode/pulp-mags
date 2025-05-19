@@ -26,7 +26,7 @@ const Contributors: React.FC = () => {
             <h2 className="text-2xl font-heading text-[#00eeff]">Host Institution</h2>
           </div>
           <p className="text-gray-300 mb-4">
-            University Archives and Special Collections (UA&SC)
+            CSUF University Archives and Special Collections (UA&SC)
           </p>
           <p className="text-gray-300">
             This exhibition draws from the extensive pulp science fiction magazine collection
@@ -45,10 +45,11 @@ const Contributors: React.FC = () => {
             <h2 className="text-2xl font-heading text-[#00eeff]">Collection Information</h2>
           </div>
           <p className="text-gray-300">
-            The materials featured in this exhibition are part of the Science Fiction
-            Collection at the University Archives and Special Collections (UA&SC),
-            which includes one of the largest collections of science fiction magazines
-            in North America.
+            The materials featured in this exhibition are part of the Willis McNelly Science Fiction
+            Collection at the University Archives and Special Collections (UA&SC), which includes
+            original manuscripts from influential authors like Frank Herbert and Philip K. Dick, historical pulp magazines, 
+            and fan-created works including Star Trek fanzines that document how science fiction ideas have resonated with 
+            readers across generations.
           </p>
         </motion.div>
       </div>
@@ -83,8 +84,8 @@ const Contributors: React.FC = () => {
               <li className="text-[#00eeff] font-semibold">Trish Campbell</li>
               <li className="text-sm text-gray-400">Exhibit Committee Chair and Titan Excellence award winner</li>
               <li className="text-[#00eeff] font-semibold">Eileen Walraven</li>
-              <li className="text-sm text-gray-400">Exhibit Production Support</li>
-              <li className="text-[#00eeff] font-semibold">[Trish staff]</li>
+              <li className="text-sm text-gray-400">Exhibit Production Coordinator</li>
+              <li className="text-[#00eeff] font-semibold">[student assistant]</li>
               <li className="text-sm text-gray-400">[title]</li>
             </ul>
           </div>
