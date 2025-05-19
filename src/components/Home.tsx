@@ -152,7 +152,7 @@ const Home: React.FC = () => {
               className="inline-block bg-transparent text-[#00eeff] font-semibold px-8 py-4 rounded-md hover:bg-[#00eeff]/10 transition-all duration-300 border-2 border-[#00eeff]"
               aria-label="Enter Exhibition Gallery"
             >
-              Enter Exhibition
+              Explore the Gallery
             </Link>
           </motion.div>
         </div>
