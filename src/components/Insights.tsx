@@ -92,16 +92,17 @@ const Insights: React.FC = () => {
             <h2 className="text-2xl font-bold">Visual Language of Robots</h2>
           </div>
           <p className="text-gray-300 leading-relaxed mb-6">
-            A shared visual grammar emerges across the decades—metallic sheen for intelligence, red eyes for threat, symmetry for reason, broken symmetry for madness. The robots become language: a way to speak about power, ethics, and what it means to create something that might one day ask, why? Symbols repeat: tentacles, control panels, domes, tubes, coils. These motifs do more than decorate—they encode the dreams of a technological age in an era still grasping for understanding. Geometric patterns, metallic surfaces, and glowing elements became a universal language for depicting machine consciousness.
+            Beyond narrative and emotion, robots speak through form. Their design is never neutral. Every joint, eye, or glowing panel participates in a visual grammar—conveying power, vulnerability, wisdom, threat, or even humor. Pulp artists used exaggerated features and inventive symbolism to convey not just what robots are, but what they mean. 
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
             <div className="bg-[#0a1128] p-6 rounded-lg">
               <h3 className="text-[#00eeff] font-semibold mb-3">Physical Attributes</h3>
               <ul className="text-gray-300 space-y-2">
-                <li>• Metallic surfaces</li>
-                <li>• Geometric forms</li>
-                <li>• Symmetrical design</li>
-                <li>• Scale manipulation</li>
+                <li>• Exaggerated size: Towering robots often symbolize overwhelming force or lost control.</li>
+                <li>• Sleek, minimalist bodies: Signal advanced or alien intelligence.</li>
+                <li>• Tentacles and appendages: Suggest non-human logic, adaptability, or menace.</li>
+                <li>• Miniaturization: Tiny robots often evoke precision, stealth, or unexpected danger.</li>
+                <li>• Facial design: Fixed expressions, glowing eyes, or mask-like features communicate emotional distance or hidden intelligence.</li>
               </ul>
             </div>
             <div className="bg-[#0a1128] p-6 rounded-lg">
