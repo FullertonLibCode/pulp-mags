@@ -145,15 +145,22 @@ const Insights: React.FC = () => {
               </ul>
             </div>
             <div className="bg-[#0a1128] p-6 rounded-lg">
-              <h3 className="text-[#00eeff] font-semibold mb-3">Action or Movement</h3>
+              <h3 className="text-[#00eeff] font-semibold mb-3">Color and Light</h3>
               <ul className="text-gray-300 space-y-2">
-                <li>• Aggressive advance: Marching, looming, or attacking—communicates dominance.</li>
-                <li>• Protective gesture: Shielding, rescuing, or supporting a human.</li>
-                <li>• Manual labor: Welding, assembling, or performing repairs—conveys function over threat.</li>
-                <li>• Expressive stillness: A paused figure suggests internal thought or unease.</li>
-                <li>• Playful or mundane acts: Painting, waiting, walking a dog—adds humor, irony, or humanity.</li>
-                <li>• Destructive force: Blasting, crushing, or collapsing part of the environment.</li>
-                <li>• Interrupted movement: Robot turning, glitching, or looking back—creates narrative tension.</li>
+                <li>• Primary color bursts: Red, yellow, and blue used to intensify urgency and spectacle.</li>
+                <li>• High contrast lighting: Creates mood through spotlighting, silhouettes, or dramatic shadows.</li>
+                <li>• Glows and beams: Emphasize energy, intelligence, or unseen technology.</li>
+                <li>• Unnatural hues: Skies, metals, and skin rendered in surreal tones to signal the alien or futuristic.</li>
+              </ul>
+            </div>
+          </div>
+           <div className="bg-[#0a1128] p-6 rounded-lg">
+              <h3 className="text-[#00eeff] font-semibold mb-3">Movement and Action</h3>
+              <ul className="text-gray-300 space-y-2">
+                <li>• Figures mid-fall or escape: Heightens suspense by showing the moment before consequence.</li>
+                <li>• Robots caught mid-action: Emphasizes the machine’s autonomy or interruption.</li>
+                <li>• Billowing smoke, fire, or debris: Conveys explosion or post-apocalyptic collapse.</li>
+                <li>• Trailing lines or blur effects: Suggest speed or technological energy (even before digital tools).</li>
               </ul>
             </div>
           </div>
