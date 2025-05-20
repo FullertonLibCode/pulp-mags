@@ -224,7 +224,7 @@ const Home: React.FC = () => {
               icon: <Eye className="h-10 w-10 mb-4 text-[#00eeff]" />,
               title: "Visual Analysis",
               description: "Explore the design elements of each cover and uncover deeper themes in the visual storytelling of pulp science fiction covers.",
-              link: "/gallery?filter=visual-analysis"
+              link: "/gallery"
             }
           ].map((feature, index) => (
             <motion.div
