@@ -32,14 +32,14 @@ const ExhibitionGuide: React.FC<ExhibitionGuideProps> = ({ isOpen, onClose }) =>
     {
       icon: <MapPin className="w-6 h-6" />,
       title: "Explore the Gallery",
-      description: "Browse through our collection of classic pulp science fiction magazine covers, each analyzed by Kestral.",
+      description: "Browse through our collection of classic pulp science fiction magazine covers with commentary by Kestral.",
       link: "/gallery",
       linkText: "Visit Gallery"
     },
     {
       icon: <Clock className="w-6 h-6" />,
       title: "Follow the Timeline",
-      description: "See how the portrayal of robots and AI evolved through the decades.",
+      description: "See how the visual portrayal of robots evolved through the decades.",
       link: "/timeline",
       linkText: "View Timeline"
     },
