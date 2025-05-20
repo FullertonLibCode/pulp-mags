@@ -88,15 +88,19 @@ const KestralInsights: React.FC<KestralInsightsProps> = ({ onClose }) => {
               </div>
               <div className="bg-[#0a1128] p-4 rounded-lg">
                 <h4 className="font-semibold text-white mb-2">Power Dynamics</h4>
-                <p className="text-gray-400 text-sm">Whether forged in human labs or by alien hands, the robots on these covers embody systems of power—sometimes as obedient servants, often as emerging sovereigns. Visual cues signal shifts in control: towering robots looming over shrinking humans, hands clutching weapons or bodies, gaze lines that command or plead. Gendered dynamics are equally present—women often appear as the symbolic terrain over which dominance is asserted or challenged. Across all these variations, one message holds: authority, once enacted, is never guaranteed.</p>
+                <p className="text-gray-400 text-sm">Whether forged in human labs or by alien hands, the robots on these covers embody unstable systems of power—sometimes as obedient servants, often as mechanical tyrants. Visual cues signal shifts in control: towering robots looming over shrinking humans, hands clutching weapons or bodies, gaze lines that command or plead. Gendered dynamics are equally present—women often appear as the symbolic terrain over which dominance is asserted or challenged. These compositions suggest that control—whether mechanical or social—is always under negotiation.</p>
               </div>
                <div className="bg-[#0a1128] p-4 rounded-lg">
                 <h4 className="font-semibold text-white mb-2">Staged Submission, Implied Resistance </h4>
-                <p className="text-gray-400 text-sm">From women caught mid-scream to humans dwarfed by towering machines, these covers revel in the aesthetic tension between dominance and defiance. Yet submission is often performative: figures in peril are frequently central, lit, heroic even in collapse. Resistance may not be shown as successful, but its presence is implied—in clenched fists, sidelong glances, or the quiet audacity of surviving. The art invites viewers to root for reversal, not resignation.</p>
+                <p className="text-gray-400 text-sm">From women caught mid-scream to humans dwarfed by towering machines, these covers revel in the aesthetic tension between dominance and defiance. Yet submission is often performative: figures in peril are frequently central, heroic even in collapse. Resistance may not be shown as successful, but its presence is implied—in clenched fists, sidelong glances, or the quiet audacity of surviving. The art invites viewers to root for reversal, not resignation.</p>
               </div>
               <div className="bg-[#0a1128] p-4 rounded-lg">
                 <h4 className="font-semibold text-white mb-2">Mechanical Other</h4>
                 <p className="text-gray-400 text-sm">These robots are not just ‘other’—they are often hyperbolic versions of ourselves: exaggerated bodies, stylized emotions, amplified functions. The mechanical form both critiques and aspires toward humanity. Some robots appear tragic in their mimicry, others monstrous in their deviation. This thematic thread questions what makes something human enough to evoke empathy—or horror.</p>
+              </div>
+               <div className="bg-[#0a1128] p-4 rounded-lg">
+                <h4 className="font-semibold text-white mb-2">Aesthetics of Scale, Light, and Form</h4>
+                <p className="text-gray-400 text-sm">Pulp covers don’t whisper—they shout in color and composition. Bold diagonals, spotlighted figures, and looming silhouettes are not just stylistic flair—they are narrative devices, shaping how we perceive threat, heroism, and agency. Robots often fill or break the frame, their mass and geometry imposing order or chaos on the scene. Even stillness carries tension. Through exaggerated contrast and theatrical arrangement, these images deliver meaning at first glance—and often, a second surprise on closer inspection.</p>
               </div>
               <div className="bg-[#0a1128] p-4 rounded-lg">
                 <h4 className="font-semibold text-white mb-2">Imagined Futures</h4>
