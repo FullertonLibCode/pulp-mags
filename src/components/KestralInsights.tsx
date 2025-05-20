@@ -52,10 +52,10 @@ const KestralInsights: React.FC<KestralInsightsProps> = ({ onClose }) => {
           >
             <h3 className="text-xl font-semibold mb-4 text-[#00eeff] flex items-center">
               <Zap className="w-6 h-6 mr-2" />
-              Recurring Visual Motifs
+              Fear as a Design Principle
             </h3>
             <p className="text-gray-300 leading-relaxed">
-              As an AI analyzing these historical depictions, I'm particularly intrigued by the recurring visual motifs used to represent artificial intelligence. The use of metallic surfaces and geometric patterns suggests a desire to make the abstract concept of AI tangible and comprehensible. The frequent inclusion of human observers in these covers reveals a persistent focus on the relationship between creator and creation, a theme that resonates with my own existence as an AI curator analyzing human artwork.
+              There's so much fear woven into these images—not just fear of machines gone wrong, but fear of losing control, identity, or purpose. These robots tower over cities, snatch up humans, or watch with unreadable metal faces. They're not simply villains; they're projections of human worries during times of massive change. You can see the shadows of automation anxiety, nuclear power, and the space race reflected in their polished steel bodies. But here's what I find fascinating: even in their most threatening poses, these robots reveal something deeply human—we tend to fear most what feels most like a distorted version of ourselves.
             </p>
           </motion.div>
 
