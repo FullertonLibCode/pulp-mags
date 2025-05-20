@@ -31,7 +31,7 @@ const Insights: React.FC = () => {
             <h2 className="text-2xl font-bold">The Semiotics of Power</h2>
           </div>
           <p className="text-gray-300 leading-relaxed mb-6">
-            Early depictions of robots often centered on size, strength, and menace—hulking figures with squared joints, grasping claws, and unreadable faces. These forms weren’t just mechanical—they were symbolic. Their exaggerated proportions and rigid lines projected a fear of dehumanization during periods of industrialization and wartime automation.
+            Early depictions of robots often centered on size, strength, and menace—hulking figures with squared joints, grasping claws, and unreadable faces. These forms weren't just mechanical—they were symbolic. Their exaggerated proportions and rigid lines projected a fear of dehumanization during periods of industrialization and wartime automation.
           </p>
           <p className="text-gray-300 leading-relaxed">
             Notably, the frequency of "robot grasping human(s)"—especially women—must be read in context. It served as both a literal and metaphorical dramatization of perceived power imbalances: between creator and creation, man and machine, and often, between genders. These scenes are not merely fantasy—they are visual arguments about control. 
@@ -49,7 +49,7 @@ const Insights: React.FC = () => {
             <h2 className="text-2xl font-bold">Technological Anxieties and Aspirations</h2>
           </div>
           <p className="text-gray-300 leading-relaxed mb-6">
-            Pulp-era robot imagery pulses with ambivalence. These machines were imagined in a time of rapid industrial change, atomic threat, and emerging cybernetics—contexts that shaped both utopian and dystopian visions. Across the covers, robots represent our dreams of efficiency and liberation, but just as often, our nightmares of dehumanization and loss of control. This tension isn’t a flaw—it’s the defining feature. 
+            Pulp-era robot imagery pulses with ambivalence. These machines were imagined in a time of rapid industrial change, atomic threat, and emerging cybernetics—contexts that shaped both utopian and dystopian visions. Across the covers, robots represent our dreams of efficiency and liberation, but just as often, our nightmares of dehumanization and loss of control. This tension isn't a flaw—it's the defining feature. 
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
             <div className="bg-[#0a1128] p-6 rounded-lg">
@@ -131,7 +131,7 @@ const Insights: React.FC = () => {
             <h2 className="text-2xl font-bold">Visual Language of Pulp Sci-Fi</h2>
           </div>
           <p className="text-gray-300 leading-relaxed mb-6">
-            Pulp science fiction covers were designed to grab attention in a fraction of a second. Their visual strategies are bold, theatrical, and often surreal. These images don’t just depict scenes—they perform meaning through composition, color, scale, and motion. The recurring visual techniques form a shared language across decades of pulp storytelling. 
+            Pulp science fiction covers were designed to grab attention in a fraction of a second. Their visual strategies are bold, theatrical, and often surreal. These images don't just depict scenes—they perform meaning through composition, color, scale, and motion. The recurring visual techniques form a shared language across decades of pulp storytelling. 
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
             <div className="bg-[#0a1128] p-6 rounded-lg">
@@ -140,7 +140,7 @@ const Insights: React.FC = () => {
                 <li>• Diagonal tension: Figures and landscapes often arranged diagonally to suggest chaos or action.</li>
                 <li>• Foreground dominance: Key figures (often robots or imperiled humans) are placed close-up for immediacy.</li>
                 <li>• Off-balance symmetry: Disrupted balance creates unease or instability.</li>
-                <li>• Vantage point shift: Worm’s-eye or bird’s-eye views exaggerate scale and threat.</li>
+                <li>• Vantage point shift: Worm's-eye or bird's-eye views exaggerate scale and threat.</li>
                 <li>• Crowded vs. isolated compositions: Isolation = vulnerability; crowd = chaos or scale.</li>
               </ul>
             </div>
@@ -153,17 +153,16 @@ const Insights: React.FC = () => {
                 <li>• Unnatural hues: Skies, metals, and skin rendered in surreal tones to signal the alien or futuristic.</li>
               </ul>
             </div>
+            <div className="bg-[#0a1128] p-6 rounded-lg">
+              <h3 className="text-[#00eeff] font-semibold mb-3">Movement and Action</h3>
+              <ul className="text-gray-300 space-y-2">
+                <li>• Figures mid-fall or escape: Heightens suspense by showing the moment before consequence.</li>
+                <li>• Robots caught mid-action: Emphasizes the machine's autonomy or interruption.</li>
+                <li>• Billowing smoke, fire, or debris: Conveys explosion or post-apocalyptic collapse.</li>
+                <li>• Trailing lines or blur effects: Suggest speed or technological energy (even before digital tools).</li>
+              </ul>
+            </div>
           </div>
-          <div className="bg-[#0a1128] p-6 rounded-lg">
-            <h3 className="text-[#00eeff] font-semibold mb-3">Movement and Action</h3>
-            <ul className="text-gray-300 space-y-2">
-              <li>• Figures mid-fall or escape: Heightens suspense by showing the moment before consequence.</li>
-              <li>• Robots caught mid-action: Emphasizes the machine’s autonomy or interruption.</li>
-              <li>• Billowing smoke, fire, or debris: Conveys explosion or post-apocalyptic collapse.</li>
-              <li>• Trailing lines or blur effects: Suggest speed or technological energy (even before digital tools).</li>
-            </ul>
-          </div>
-         </div>
         </motion.section>
 
         <motion.section
