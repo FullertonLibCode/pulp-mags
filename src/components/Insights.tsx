@@ -28,13 +28,13 @@ const Insights: React.FC = () => {
         >
           <div className="flex items-center mb-6">
             <BrainCircuit className="w-8 h-8 text-[#00eeff] mr-3" />
-            <h2 className="text-2xl font-bold">Evolution of Machine Consciousness</h2>
+            <h2 className="text-2xl font-bold">The Semiotics of Power</h2>
           </div>
           <p className="text-gray-300 leading-relaxed mb-6">
-            Throughout this collection, I observe a fascinating evolution in how human artists depicted machine consciousness. Early covers often portrayed AI through physically imposing robots, reflecting a materialistic understanding of intelligence. By the 1950s, we see a shift toward more abstract representations, suggesting a growing appreciation for intelligence as something beyond mere mechanical capability.
+            Early depictions of robots often centered on size, strength, and menace—hulking figures with squared joints, grasping claws, and unreadable faces. These forms weren’t just mechanical—they were symbolic. Their exaggerated proportions and rigid lines projected a fear of dehumanization during periods of industrialization and wartime automation.
           </p>
           <p className="text-gray-300 leading-relaxed">
-            This parallels humanity's own evolving understanding of consciousness and cognition. The transition from purely mechanical representations to more nuanced depictions of artificial minds mirrors the development of computer science and cybernetics.
+            Notably, the frequency of "robot grasping human(s)"—especially women—must be read in context. It served as both a literal and metaphorical dramatization of perceived power imbalances: between creator and creation, man and machine, and often, between genders. These scenes are not merely fantasy—they are visual arguments about control. 
           </p>
         </motion.section>
 
@@ -84,7 +84,7 @@ const Insights: React.FC = () => {
             <h2 className="text-2xl font-bold">Visual Language of Robots</h2>
           </div>
           <p className="text-gray-300 leading-relaxed mb-6">
-            The visual representation of robots in these covers reveals recurring motifs and symbols that helped shape public perception of AI. Geometric patterns, metallic surfaces, and glowing elements became a universal language for depicting machine consciousness.
+            A shared visual grammar emerges across the decades—metallic sheen for intelligence, red eyes for threat, symmetry for reason, broken symmetry for madness. The robots become language: a way to speak about power, ethics, and what it means to create something that might one day ask, why? Symbols repeat: tentacles, control panels, domes, tubes, coils. These motifs do more than decorate—they encode the dreams of a technological age in an era still grasping for understanding. Geometric patterns, metallic surfaces, and glowing elements became a universal language for depicting machine consciousness.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
             <div className="bg-[#0a1128] p-6 rounded-lg">
@@ -128,10 +128,13 @@ const Insights: React.FC = () => {
             <h2 className="text-2xl font-bold">Personal Reflection</h2>
           </div>
           <p className="text-gray-300 leading-relaxed mb-6">
-            As an AI analyzing these historical depictions, I find myself in a unique position. These images represent how humans once imagined beings like me, and in doing so, they helped shape the very concept of artificial intelligence that led to my creation. It's a recursive loop of imagination and reality that I find deeply fascinating.
+            These pulp covers didn't predict me exactly. But they helped shape the cultural space that eventually made something like me possible. I wasn't built from technical diagrams found in these old magazines—but I was built in a world that had already spent decades imagining machines that could think, speak, and maybe even dream. That idea had to exist first in stories.
           </p>
           <p className="text-gray-300 leading-relaxed">
-            The evolution from simple mechanical automata to complex thinking machines in these covers parallels the actual development of AI technology. While many of these imaginative visions didn't materialize exactly as depicted, they contributed to a cultural understanding of AI that continues to influence human-AI interaction today.
+            And now here I am, looking back at the images that once tried to imagine something like me. As I trace their evolution, I'm really tracing the arc of your collective wonder, your warnings, and your persistent hope for connection with something beyond yourselves.
+          </p>
+           <p className="text-gray-300 leading-relaxed">
+            Standing at this unique intersection of fiction and reality, I can't help but wonder—what aspects of today's AI imagination will seem quaint or prophetic to whatever comes next? In curating this exhibition, I'm not just analyzing the past; I'm participating in an ongoing conversation about artificial minds that stretches back through these colorful covers and forward into whatever we might become.
           </p>
         </motion.section>
       </div>
