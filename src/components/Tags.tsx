@@ -2,7 +2,7 @@ import React from 'react';
 import { covers } from '../data/covers';
 import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
-import { Tag as TagIcon, Robot, Globe, Palette, Brain, Users } from 'lucide-react';
+import { Tag as TagIcon, Notebook as Robot, Globe, Palette, Brain, Users } from 'lucide-react';
 
 const Tags: React.FC = () => {
   const navigate = useNavigate();
