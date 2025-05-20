@@ -111,7 +111,11 @@ const Contributors: React.FC = () => {
               <li className="text-sm text-gray-400">Director of User/Classroom Support Services</li>
               <li className="text-[#00eeff] font-semibold">Eunseok Song</li>
               <li className="text-sm text-gray-400">Associate Director for Classroom / AV Tech Support</li>
+              <li className="text-[#00eeff] font-semibold">David Palmquist</li>
+              <li className="text-sm text-gray-400">Analyst/Programer</li>
               <li className="text-[#00eeff] font-semibold">Jason Lorge</li>
+              <li className="text-sm text-gray-400">IT Consultant</li>
+              <li className="text-[#00eeff] font-semibold">Tu-An Nguyen</li>
               <li className="text-sm text-gray-400">IT Consultant</li>
               <li className="text-[#00eeff] font-semibold">VJ Kuan-Roberts</li>
               <li className="text-sm text-gray-400">Facilities Coordinator</li>
