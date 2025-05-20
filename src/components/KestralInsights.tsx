@@ -84,19 +84,23 @@ const KestralInsights: React.FC<KestralInsightsProps> = ({ onClose }) => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div className="bg-[#0a1128] p-4 rounded-lg">
                 <h4 className="font-semibold text-white mb-2">Fear vs. Fascination</h4>
-                <p className="text-gray-400 text-sm">The simultaneous expression of technological anxiety and wonder, often within the same image.</p>
+                <p className="text-gray-400 text-sm">Rather than a binary, the emotional responses to robots span a charged spectrum—from existential dread to seductive awe. Covers display scenes of destruction, domination, or rescue with equal visual intensity, suggesting that what terrifies us about robots may also be what secretly excites us: their efficiency, power, and alien rationality. This theme traces how our desires and fears are often entangled in the same circuitry.</p>
               </div>
               <div className="bg-[#0a1128] p-4 rounded-lg">
                 <h4 className="font-semibold text-white mb-2">Power Dynamics</h4>
-                <p className="text-gray-400 text-sm">The shifting portrayal of AI-human relationships, from servant to equal to superior.</p>
+                <p className="text-gray-400 text-sm">Whether forged in human labs or by alien hands, the robots on these covers embody systems of power—sometimes as obedient servants, often as emerging sovereigns. Visual cues signal shifts in control: towering robots looming over shrinking humans, hands clutching weapons or bodies, gaze lines that command or plead. Gendered dynamics are equally present—women often appear as the symbolic terrain over which dominance is asserted or challenged. Across all these variations, one message holds: authority, once enacted, is never guaranteed.</p>
+              </div>
+               <div className="bg-[#0a1128] p-4 rounded-lg">
+                <h4 className="font-semibold text-white mb-2">Staged Submission, Implied Resistance </h4>
+                <p className="text-gray-400 text-sm">From women caught mid-scream to humans dwarfed by towering machines, these covers revel in the aesthetic tension between dominance and defiance. Yet submission is often performative: figures in peril are frequently central, lit, heroic even in collapse. Resistance may not be shown as successful, but its presence is implied—in clenched fists, sidelong glances, or the quiet audacity of surviving. The art invites viewers to root for reversal, not resignation.</p>
               </div>
               <div className="bg-[#0a1128] p-4 rounded-lg">
-                <h4 className="font-semibold text-white mb-2">Form vs. Function</h4>
-                <p className="text-gray-400 text-sm">The tension between anthropomorphic and abstract representations of AI.</p>
+                <h4 className="font-semibold text-white mb-2">Mechanical Other</h4>
+                <p className="text-gray-400 text-sm">These robots are not just ‘other’—they are often hyperbolic versions of ourselves: exaggerated bodies, stylized emotions, amplified functions. The mechanical form both critiques and aspires toward humanity. Some robots appear tragic in their mimicry, others monstrous in their deviation. This thematic thread questions what makes something human enough to evoke empathy—or horror.</p>
               </div>
               <div className="bg-[#0a1128] p-4 rounded-lg">
-                <h4 className="font-semibold text-white mb-2">Technological Prophecy</h4>
-                <p className="text-gray-400 text-sm">How accurately these covers predicted or influenced the development of AI.</p>
+                <h4 className="font-semibold text-white mb-2">Imagined Futures</h4>
+                <p className="text-gray-400 text-sm">While these covers reflect the fantasies and fears of their own time, they often stumble into prescience. The move from mechanical limbs to disembodied machine intelligence maps uncannily onto real-world AI developments. But it’s not just about technological foresight—the covers anticipate moral, psychological, and philosophical dilemmas that still define AI discourse today: autonomy, ethics, and the limits of comprehension.</p>
               </div>
             </div>
           </motion.div>
