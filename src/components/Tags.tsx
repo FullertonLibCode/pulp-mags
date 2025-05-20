@@ -19,7 +19,7 @@ const Tags: React.FC = () => {
   const tagCategories = {
     'Robot Types': {
       icon: <Robot className="w-6 h-6 text-[#00eeff] mr-3" />,
-      tags: ['Humanoid Robot', 'Non-Humanoid Robot', 'Giant Robot', 'Tentacled Robot', 'Cyclopean Robot', 'Hybrid Robot']
+      tags: ['Humanoid Robot(s)', 'Non-Humanoid Robot(s)', 'Giant Robot(s)', 'Tentacled Robot(s)', 'Cyclopean Robot(s)', 'Service Robot(s)','Cybernetic / Hybrid Robot(s)', 'Miniature Robot(s)', 'Self-Repairing Robot(s)', 'Solider Robot(s)', 'Law Enforcement Robot(s)']
     },
     'Settings & Environments': {
       icon: <Globe className="w-6 h-6 text-[#00eeff] mr-3" />,
