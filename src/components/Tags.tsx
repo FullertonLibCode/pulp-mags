@@ -35,8 +35,7 @@ const Tags: React.FC = () => {
   };
   
   const handleTagClick = (tag: string) => {
-    navigate('/gallery'); // Navigate to gallery and then apply the filter
-    // We'd need to lift state up to make this properly filter the gallery
+    navigate(`/gallery?tag=${encodeURIComponent(tag)}`);
   };
   
   return (
@@ -56,7 +55,7 @@ const Tags: React.FC = () => {
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5, delay: 0.2 }}
       >
-        Explore the exhibition through thematic tags that show how robots has been imagined, feared, and celebrated throughout the pulp science fiction era.
+        Explore the exhibition through thematic tags that show how robots have been imagined, feared, and celebrated throughout the pulp science fiction era.
       </motion.p>
       
       <motion.div
@@ -96,33 +95,48 @@ const Tags: React.FC = () => {
         <div className="bg-[#132347] p-6 rounded-lg border border-[#1e3a8a]">
           <h3 className="text-xl font-semibold mb-4 text-[#00eeff]">AI Archetypes</h3>
           <ul className="space-y-3">
-            <li className="text-gray-300">• Machine Consciousness</li>
-            <li className="text-gray-300">• Robot Servant</li>
-            <li className="text-gray-300">• Metal Colossus</li>
-            <li className="text-gray-300">• Artificial Identity</li>
-            <li className="text-gray-300">• Silicon Sentience</li>
+            {['Machine Consciousness', 'Robot Servant', 'Metal Colossus', 'Artificial Identity', 'Silicon Sentience'].map(tag => (
+              <li key={tag}>
+                <button
+                  onClick={() => handleTagClick(tag)}
+                  className="text-gray-300 hover:text-[#00eeff] transition-colors duration-200 flex items-center"
+                >
+                  • {tag}
+                </button>
+              </li>
+            ))}
           </ul>
         </div>
         
         <div className="bg-[#132347] p-6 rounded-lg border border-[#1e3a8a]">
           <h3 className="text-xl font-semibold mb-4 text-[#00eeff]">Human Reactions</h3>
           <ul className="space-y-3">
-            <li className="text-gray-300">• Technofear</li>
-            <li className="text-gray-300">• Chrome Utopia</li>
-            <li className="text-gray-300">• Extinction Anxiety</li>
-            <li className="text-gray-300">• Technological Domesticity</li>
-            <li className="text-gray-300">• Cold War Anxiety</li>
+            {['Technofear', 'Chrome Utopia', 'Extinction Anxiety', 'Technological Domesticity', 'Cold War Anxiety'].map(tag => (
+              <li key={tag}>
+                <button
+                  onClick={() => handleTagClick(tag)}
+                  className="text-gray-300 hover:text-[#00eeff] transition-colors duration-200 flex items-center"
+                >
+                  • {tag}
+                </button>
+              </li>
+            ))}
           </ul>
         </div>
         
         <div className="bg-[#132347] p-6 rounded-lg border border-[#1e3a8a]">
           <h3 className="text-xl font-semibold mb-4 text-[#00eeff]">AI Evolution</h3>
           <ul className="space-y-3">
-            <li className="text-gray-300">• Machine Inheritance</li>
-            <li className="text-gray-300">• Post-Human</li>
-            <li className="text-gray-300">• Technological Evolution</li>
-            <li className="text-gray-300">• Role Reversal</li>
-            <li className="text-gray-300">• Human Mimicry</li>
+            {['Machine Inheritance', 'Post-Human', 'Technological Evolution', 'Role Reversal', 'Human Mimicry'].map(tag => (
+              <li key={tag}>
+                <button
+                  onClick={() => handleTagClick(tag)}
+                  className="text-gray-300 hover:text-[#00eeff] transition-colors duration-200 flex items-center"
+                >
+                  • {tag}
+                </button>
+              </li>
+            ))}
           </ul>
         </div>
       </motion.div>

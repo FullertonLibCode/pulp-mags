@@ -1,18 +1,41 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { covers } from '../data/covers';
 import { motion } from 'framer-motion';
-import { Link } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import Slideshow from './Slideshow';
-import { Sliders as SlideshowIcon, Lightbulb, ArrowRightLeft } from 'lucide-react';
+import { Sliders as SlideshowIcon, Lightbulb } from 'lucide-react';
 import KestralInsights from './KestralInsights';
 
 const Gallery: React.FC = () => {
+  const location = useLocation();
+  const navigate = useNavigate();
   const [activeFilter, setActiveFilter] = useState<string>('all');
   const [showSlideshow, setShowSlideshow] = useState(false);
   const [showInsights, setShowInsights] = useState(false);
   const [currentSlideIndex, setCurrentSlideIndex] = useState(0);
+  
+  // Get all unique tags
   const allTags = Array.from(new Set(covers.flatMap(cover => cover.tags)));
   
+  // Parse tag from URL on component mount
+  useEffect(() => {
+    const params = new URLSearchParams(location.search);
+    const tagParam = params.get('tag');
+    if (tagParam) {
+      setActiveFilter(tagParam);
+    }
+  }, [location]);
+
+  // Update URL when filter changes
+  const handleFilterChange = (tag: string) => {
+    setActiveFilter(tag);
+    if (tag === 'all') {
+      navigate('/gallery');
+    } else {
+      navigate(`/gallery?tag=${encodeURIComponent(tag)}`);
+    }
+  };
+    
   const filteredCovers = activeFilter === 'all' 
     ? covers 
     : covers.filter(cover => cover.tags.includes(activeFilter));
@@ -32,7 +55,7 @@ const Gallery: React.FC = () => {
         <div className="mb-12 overflow-x-auto whitespace-nowrap pb-3 relative">
           <div className="flex items-center space-x-2">
             <button
-              onClick={() => setActiveFilter('all')}
+              onClick={() => handleFilterChange('all')}
               className={`px-6 py-3 rounded-full text-sm transition-all duration-300 ${
                 activeFilter === 'all' 
                   ? 'pulp-border bg-[#00eeff] text-[#0a1128] font-semibold' 
@@ -44,7 +67,7 @@ const Gallery: React.FC = () => {
             {allTags.map(tag => (
               <button
                 key={tag}
-                onClick={() => setActiveFilter(tag)}
+                onClick={() => handleFilterChange(tag)}
                 className={`px-6 py-3 rounded-full text-sm transition-all duration-300 ${
                   activeFilter === tag 
                     ? 'pulp-border bg-[#00eeff] text-[#0a1128] font-semibold' 
@@ -110,19 +133,18 @@ const Gallery: React.FC = () => {
                   <p className="text-gray-400 mb-3 font-mono">{cover.magazineName}, {cover.year}</p>
                   <p className="text-gray-300 mb-4 line-clamp-2">{cover.description}</p>
                   <div className="flex flex-wrap gap-2">
-                    {cover.tags.slice(0, 3).map(tag => (
-                      <span 
-                        key={tag} 
-                        className="bg-[#0a1128] text-xs px-3 py-1.5 rounded-full text-gray-300 transition-colors duration-300 group-hover:bg-[#1e3a8a]"
+                    {cover.tags.map(tag => (
+                      <button 
+                        key={tag}
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          handleFilterChange(tag);
+                        }}
+                        className="bg-[#0a1128] text-xs px-3 py-1.5 rounded-full text-gray-300 transition-colors duration-300 hover:bg-[#1e3a8a] hover:text-white"
                       >
                         {tag}
-                      </span>
+                      </button>
                     ))}
-                    {cover.tags.length > 3 && (
-                      <span className="bg-[#0a1128] text-xs px-3 py-1.5 rounded-full text-gray-300 group-hover:bg-[#1e3a8a] transition-colors duration-300">
-                        +{cover.tags.length - 3} more
-                      </span>
-                    )}
                   </div>
                 </div>
               </button>
@@ -139,7 +161,7 @@ const Gallery: React.FC = () => {
           >
             <p className="text-gray-400 text-lg mb-4">No covers found with the selected tag.</p>
             <button
-              onClick={() => setActiveFilter('all')}
+              onClick={() => handleFilterChange('all')}
               className="px-6 py-3 bg-[#00eeff] text-[#0a1128] rounded-full font-semibold pulp-border transition-all duration-300"
             >
               Show all covers
