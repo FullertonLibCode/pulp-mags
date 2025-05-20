@@ -136,7 +136,7 @@ export const covers: Cover[] = [
   },  
   {
     id: "8",
-    title: "Robot Encounter",
+    title: "Triplanetary",
     year: 1934,
     magazineName: "Amazing Stories",
     imageUrl: "https://pulpbots.wordpress.com/wp-content/uploads/2025/05/amazing_stories_1934_03.jpg",
@@ -172,7 +172,7 @@ export const covers: Cover[] = [
   },  
   {
     id: "10",
-    title: "Mechanical Dominance",
+    title: "Fiery Robot Charge",
     year: 1938,
     magazineName: "Amazing Stories",
     imageUrl: "https://pulpbots.wordpress.com/wp-content/uploads/2025/05/amazing_stories_1938_04.jpg",
@@ -211,7 +211,7 @@ export const covers: Cover[] = [
   },
   {
     id: "12",
-    title: "Mechanical Dominance",
+    title: "World Without Women",
     year: 1939,
     magazineName: "Amazing Stories",
     imageUrl: "https://pulpbots.wordpress.com/wp-content/uploads/2025/05/amazing_stories_1939_04.jpg",
@@ -230,7 +230,7 @@ export const covers: Cover[] = [
   },
   {
     id: "13",
-    title: "Mechanical Dominance",
+    title: "Vengeance",
     year: 1940,
     magazineName: "Amazing Stories",
     imageUrl: "https://pulpbots.wordpress.com/wp-content/uploads/2025/05/amazing_stories_1940_02.jpg",
@@ -248,7 +248,7 @@ export const covers: Cover[] = [
   },
   {
     id: "14",
-    title: "Mechanical Dominance",
+    title: "Raiders Our of Space",
     year: 1940,
     magazineName: "Amazing Stories",
     imageUrl: "https://pulpbots.wordpress.com/wp-content/uploads/2025/05/amazing_stories_1940_10.jpg",
@@ -343,7 +343,7 @@ export const covers: Cover[] = [
   },   
   {
     id: "19",
-    title: "Mechanical Dominance",
+    title: "Metallic Stance",
     year: 1953,
     magazineName: "Amazing Stories",
     imageUrl: "https://pulpbots.wordpress.com/wp-content/uploads/2025/05/amazing_stories_1953_08-09.jpg",
@@ -380,7 +380,7 @@ export const covers: Cover[] = [
   },
   {
     id: "21",
-    title: "Mechanical Dominance",
+    title: "Little Tin Soldier",
     year: 1954,
     magazineName: "Amazing Stories",
     imageUrl: "https://pulpbots.wordpress.com/wp-content/uploads/2025/05/amazing_stories_1954_05.jpg",
@@ -400,7 +400,7 @@ export const covers: Cover[] = [
   },
   {
     id: "22",
-    title: "Colossus",
+    title: "Call Him Colossus",
     year: 1956,
     magazineName: "Amazing Stories",
     imageUrl: "https://pulpbots.wordpress.com/wp-content/uploads/2025/05/amazing_stories_1956_02.jpg",
@@ -420,7 +420,7 @@ export const covers: Cover[] = [
   },  
   {
     id: "23",
-    title: "The Edge of the Knife",
+    title: "Winged Planet",
     year: 1957,
     magazineName: "Amazing Stories",
     imageUrl: "https://pulpbots.wordpress.com/wp-content/uploads/2025/05/amazing_stories_1957_05.jpg",
@@ -440,7 +440,7 @@ export const covers: Cover[] = [
   },  
   {
     id: "24",
-    title: "Mechanical Dominance",
+    title: "Human and Machine: A Moment of Discovery",
     year: 1957,
     magazineName: "Amazing Stories",
     imageUrl: "https://pulpbots.wordpress.com/wp-content/uploads/2025/05/amazing_stories_1957_06.jpg",
@@ -459,7 +459,7 @@ export const covers: Cover[] = [
   },  
   {
     id: "25",
-    title: "Mechanical Dominance",
+    title: "The Walking Talking I-Don’t-Care Man",
     year: 1965,
     magazineName: "Amazing Stories",
     imageUrl: "https://pulpbots.wordpress.com/wp-content/uploads/2025/05/amazing_stories_1965_06.jpg",
@@ -496,7 +496,7 @@ export const covers: Cover[] = [
   },  
   { 
     id: "27",
-    title: "Mechanical Dominance",
+    title: "Moon Prospector",
     year: 1966,
     magazineName: "Analog",
     imageUrl: "https://pulpbots.wordpress.com/wp-content/uploads/2025/05/analog_1966_04.jpg",
@@ -513,7 +513,7 @@ export const covers: Cover[] = [
   },    
   {
     id: "28",
-    title: "War of the Machines",
+    title: "Gottlos",
     year: 1969,
     magazineName: "Analog",
     imageUrl: "https://pulpbots.wordpress.com/wp-content/uploads/2025/05/analog_1969_11.jpg",
@@ -552,7 +552,7 @@ export const covers: Cover[] = [
   },
   {
     id: "30",
-    title: "Mechanical Dominance",
+    title: "Waldo",
     year: 1942,
     magazineName: "Astounding Science Fiction",
     imageUrl: "https://pulpbots.wordpress.com/wp-content/uploads/2025/05/astounding_science_fiction_1942_08.jpg",
@@ -570,7 +570,7 @@ export const covers: Cover[] = [
   },
   {
     id: "31",
-    title: "Mechanical Dominance",
+    title: "Aesop",
     year: 1947,
     magazineName: "Astounding Science Fiction",
     imageUrl: "https://pulpbots.wordpress.com/wp-content/uploads/2025/05/astounding_science_fiction_1947_12.jpg",
@@ -590,7 +590,7 @@ export const covers: Cover[] = [
   },  
   {
     id: "32",
-    title: "Mechanical Dominance",
+    title: "Mechanical Heart",
     year: 1949,
     magazineName: "Astounding Science Fiction",
     imageUrl: "https://pulpbots.wordpress.com/wp-content/uploads/2025/05/astounding_science_fiction_1949_03.jpg",
@@ -609,7 +609,7 @@ export const covers: Cover[] = [
   },  
   {
     id: "33",
-    title: "Mechanical Dominance",
+    title: "Thou Good and Faithful",
     year: 1953,
     magazineName: "Astounding Science Fiction",
     imageUrl: "https://pulpbots.wordpress.com/wp-content/uploads/2025/05/astounding_science_fiction_1953_03.jpg",
@@ -629,7 +629,7 @@ export const covers: Cover[] = [
   },  
   {
     id: "34",
-    title: "Mechanical Dominance",
+    title: "The Gulf Between",
     year: 1953,
     magazineName: "Astounding Science Fiction",
     imageUrl: "https://pulpbots.wordpress.com/wp-content/uploads/2025/05/astounding_science_fiction_1953_10.jpg",
@@ -667,7 +667,7 @@ export const covers: Cover[] = [
   },  
   {
     id: "36",
-    title: "Mechanical Dominance",
+    title: "The Doom from Planet 4",
     year: 1931,
     magazineName: "Astounding Stories",
     imageUrl: "https://pulpbots.wordpress.com/wp-content/uploads/2025/05/astounding_stories_1931_07.jpg",
