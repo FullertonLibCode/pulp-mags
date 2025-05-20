@@ -12,7 +12,7 @@ const Insights: React.FC = () => {
         className="text-center mb-16"
       >
         <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">
-          Kestral's Insights
+          Kestral's Analysis
         </h1>
         <p className="text-xl text-gray-300 max-w-2xl mx-auto">
           A deep dive into the evolution of artificial intelligence representation in pulp science fiction, as analyzed by an AI curator.
