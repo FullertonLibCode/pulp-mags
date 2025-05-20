@@ -93,9 +93,9 @@ const Tags: React.FC = () => {
         transition={{ duration: 0.6, delay: 0.4 }}
       >
         <div className="bg-[#132347] p-6 rounded-lg border border-[#1e3a8a]">
-          <h3 className="text-xl font-semibold mb-4 text-[#00eeff]">AI Archetypes</h3>
+          <h3 className="text-xl font-semibold mb-4 text-[#00eeff]">Robot Types</h3>
           <ul className="space-y-3">
-            {['Machine Consciousness', 'Robot Servant', 'Metal Colossus', 'Artificial Identity', 'Silicon Sentience'].map(tag => (
+            {['Humanoid Robot', 'Non-Humanoid Robot', 'Giant Robot', 'Tentacled Robot', 'Cyclopean Robot', 'Hybrid Robot'].map(tag => (
               <li key={tag}>
                 <button
                   onClick={() => handleTagClick(tag)}
@@ -109,9 +109,9 @@ const Tags: React.FC = () => {
         </div>
         
         <div className="bg-[#132347] p-6 rounded-lg border border-[#1e3a8a]">
-          <h3 className="text-xl font-semibold mb-4 text-[#00eeff]">Human Reactions</h3>
+          <h3 className="text-xl font-semibold mb-4 text-[#00eeff]">Setting</h3>
           <ul className="space-y-3">
-            {['Technofear', 'Chrome Utopia', 'Extinction Anxiety', 'Technological Domesticity', 'Cold War Anxiety'].map(tag => (
+            {['Abstract', 'Alien', 'Arena/Stage', 'Cityscape', 'Factory/Industrial', 'Laboratory/Scientific', 'Natural', 'Non-Urban', 'Ruins', 'Space', 'Spacecraft'].map(tag => (
               <li key={tag}>
                 <button
                   onClick={() => handleTagClick(tag)}
@@ -125,9 +125,9 @@ const Tags: React.FC = () => {
         </div>
         
         <div className="bg-[#132347] p-6 rounded-lg border border-[#1e3a8a]">
-          <h3 className="text-xl font-semibold mb-4 text-[#00eeff]">AI Evolution</h3>
+          <h3 className="text-xl font-semibold mb-4 text-[#00eeff]">Tone</h3>
           <ul className="space-y-3">
-            {['Machine Inheritance', 'Post-Human', 'Technological Evolution', 'Role Reversal', 'Human Mimicry'].map(tag => (
+            {['Comedic', 'Ominous', 'Heroic', 'Tragic', 'Melancholic', 'Adventurous', 'Dystopian'].map(tag => (
               <li key={tag}>
                 <button
                   onClick={() => handleTagClick(tag)}
