@@ -154,16 +154,16 @@ const Insights: React.FC = () => {
               </ul>
             </div>
           </div>
-           <div className="bg-[#0a1128] p-6 rounded-lg">
-              <h3 className="text-[#00eeff] font-semibold mb-3">Movement and Action</h3>
-              <ul className="text-gray-300 space-y-2">
-                <li>• Figures mid-fall or escape: Heightens suspense by showing the moment before consequence.</li>
-                <li>• Robots caught mid-action: Emphasizes the machine’s autonomy or interruption.</li>
-                <li>• Billowing smoke, fire, or debris: Conveys explosion or post-apocalyptic collapse.</li>
-                <li>• Trailing lines or blur effects: Suggest speed or technological energy (even before digital tools).</li>
-              </ul>
-            </div>
+          <div className="bg-[#0a1128] p-6 rounded-lg">
+            <h3 className="text-[#00eeff] font-semibold mb-3">Movement and Action</h3>
+            <ul className="text-gray-300 space-y-2">
+              <li>• Figures mid-fall or escape: Heightens suspense by showing the moment before consequence.</li>
+              <li>• Robots caught mid-action: Emphasizes the machine’s autonomy or interruption.</li>
+              <li>• Billowing smoke, fire, or debris: Conveys explosion or post-apocalyptic collapse.</li>
+              <li>• Trailing lines or blur effects: Suggest speed or technological energy (even before digital tools).</li>
+            </ul>
           </div>
+         </div>
         </motion.section>
 
         <motion.section
