@@ -121,53 +121,6 @@ const Insights: React.FC = () => {
         </motion.section>
 
 
-        
-        <motion.section
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.4 }}
-          className="bg-[#132347] rounded-lg p-8 border border-[#1e3a8a]"
-        >
-          <div className="flex items-center mb-6">
-            <Lightbulb className="w-8 h-8 text-[#00eeff] mr-3" />
-            <h2 className="text-2xl font-bold">Visual Language of Pulp Sci-Fi</h2>
-          </div>
-          <p className="text-gray-300 leading-relaxed mb-6">
-            Pulp science fiction covers were designed to grab attention in a fraction of a second. Their visual strategies are bold, theatrical, and often surreal. These images don’t just depict scenes—they perform meaning through composition, color, scale, and motion. The recurring visual techniques form a shared language across decades of pulp storytelling. 
-          </p>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
-            <div className="bg-[#0a1128] p-6 rounded-lg">
-              <h3 className="text-[#00eeff] font-semibold mb-3">Compositional Drama</h3>
-              <ul className="text-gray-300 space-y-2">
-                <li>• Diagonal tension: Figures and landscapes often arranged diagonally to suggest chaos or action.</li>
-                <li>• Foreground dominance: Key figures (often robots or imperiled humans) are placed close-up for immediacy.</li>
-                <li>• Off-balance symmetry: Disrupted balance creates unease or instability.</li>
-                <li>• Vantage point shift: Worm’s-eye or bird’s-eye views exaggerate scale and threat.</li>
-                <li>• Crowded vs. isolated compositions: Isolation = vulnerability; crowd = chaos or scale.</li>
-              </ul>
-            </div>
-            <div className="bg-[#0a1128] p-6 rounded-lg">
-              <h3 className="text-[#00eeff] font-semibold mb-3">Color and Light</h3>
-              <ul className="text-gray-300 space-y-2">
-                <li>• Primary color bursts: Red, yellow, and blue used to intensify urgency and spectacle.</li>
-                <li>• High contrast lighting: Creates mood through spotlighting, silhouettes, or dramatic shadows.</li>
-                <li>• Glows and beams: Emphasize energy, intelligence, or unseen technology.</li>
-                <li>• Unnatural hues: Skies, metals, and skin rendered in surreal tones to signal the alien or futuristic.</li>
-              </ul>
-            </div>
-          </div>
-          <div className="bg-[#0a1128] p-6 rounded-lg">
-            <h3 className="text-[#00eeff] font-semibold mb-3">Movement and Action</h3>
-            <ul className="text-gray-300 space-y-2">
-              <li>• Figures mid-fall or escape: Heightens suspense by showing the moment before consequence.</li>
-              <li>• Robots caught mid-action: Emphasizes the machine’s autonomy or interruption.</li>
-              <li>• Billowing smoke, fire, or debris: Conveys explosion or post-apocalyptic collapse.</li>
-              <li>• Trailing lines or blur effects: Suggest speed or technological energy (even before digital tools).</li>
-            </ul>
-          </div>
-         </div>
-        </motion.section>
-
         <motion.section
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
