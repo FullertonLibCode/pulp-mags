@@ -685,7 +685,7 @@ export const covers: Cover[] = [
   },  
   {
     id: "37",
-    title: "The Doom from Planet 4",
+    title: "The Son of Old Faithful",
     year: 1935,
     magazineName: "Astounding Stories",
     imageUrl: "https://pulpbots.wordpress.com/wp-content/uploads/2025/05/astounding_stories_1935_07.jpg",
@@ -703,7 +703,7 @@ export const covers: Cover[] = [
   },  
   {
     id: "38",
-    title: "Fifth‐Dimension",
+    title: "The Gate to Xoram",
     year: 1931,
     magazineName: "Astounding Stories of Super Science",
     imageUrl: "https://pulpbots.wordpress.com/wp-content/uploads/2025/05/astounding_stories_of_super_science_1931_01.jpg",
@@ -723,7 +723,7 @@ export const covers: Cover[] = [
   },
   {
     id: "39",
-    title: "Mechanical Dominance",
+    title: "Robot/Good Girl",
     year: 1950,
     magazineName: "Famous Fantastic Mysteries",
     imageUrl: "https://pulpbots.wordpress.com/wp-content/uploads/2025/05/famous_fantastic_mysteries_1950_06.jpg",
@@ -764,7 +764,7 @@ export const covers: Cover[] = [
   },
   {
     id: "41",
-    title: "Mechanical Dominance",
+    title: "Physician to the Universe",
     year: 1963,
     magazineName: "Fantastic",
     imageUrl: "https://pulpbots.wordpress.com/wp-content/uploads/2025/05/fantastic_1963_03.jpg",
@@ -801,7 +801,7 @@ export const covers: Cover[] = [
   },  
   {
     id: "43",
-    title: "Mechanical Dominance",
+    title: "Metallic Tension",
     year: 1967,
     magazineName: "Fantastic",
     imageUrl: "https://pulpbots.wordpress.com/wp-content/uploads/2025/05/fantastic_1967_03.jpg",
@@ -839,7 +839,7 @@ export const covers: Cover[] = [
   },  
   {
     id: "45",
-    title: "Mechanical Dominance",
+    title: "Mechanical Wonder",
     year: 1968,
     magazineName: "Fantastic",
     imageUrl: "https://pulpbots.wordpress.com/wp-content/uploads/2025/05/fantastic_1968_05.jpg",
@@ -859,7 +859,7 @@ export const covers: Cover[] = [
   },  
   {
     id: "46",
-    title: "Mechanical Dominance",
+    title: "Mechanical Guardians",
     year: 1969,
     magazineName: "Fantastic",
     imageUrl: "https://pulpbots.wordpress.com/wp-content/uploads/2025/05/fantastic_1969_06.jpg",
@@ -954,7 +954,7 @@ export const covers: Cover[] = [
   },
   {
     id: "51",
-    title: "Mechanical Dominance",
+    title: "Fantastic Destruction",
     year: 1954,
     magazineName: "Fantastic Story",
     imageUrl: "https://pulpbots.wordpress.com/wp-content/uploads/2025/05/fantastic_story_1954_fall.jpg",
@@ -974,7 +974,7 @@ export const covers: Cover[] = [
   },  
   {
     id: "52",
-    title: "Mechanical Dominance",
+    title: "Waiting in the Shadows",
     year: 1955,
     magazineName: "Fantastic Universe",
     imageUrl: "https://pulpbots.wordpress.com/wp-content/uploads/2025/05/fantastic_universe_1955_04.jpg",
@@ -991,7 +991,7 @@ export const covers: Cover[] = [
   },  
   {
     id: "53",
-    title: "Mechanical Dominance",
+    title: "Mechanical Dawn",
     year: 1958,
     magazineName: "Fantastic Universe",
     imageUrl: "https://pulpbots.wordpress.com/wp-content/uploads/2025/05/fantastic_universe_1958_08.jpg",
@@ -1029,7 +1029,7 @@ export const covers: Cover[] = [
   },  
   {
     id: "55",
-    title: "Mechanical Dominance",
+    title: "Robot Uprising: Ultimatum",
     year: 1953,
     magazineName: "Future Science Fiction",
     imageUrl: "https://pulpbots.wordpress.com/wp-content/uploads/2025/05/future_science_fiction_1953_11.jpg",
@@ -1049,7 +1049,7 @@ export const covers: Cover[] = [
   },  
   {
     id: "56",
-    title: "Mechanical Dominance",
+    title: "The Ultimate Re-sowing of the Human Race – 4000 AD",
     year: 1953,
     magazineName: "If",
     imageUrl: "https://pulpbots.wordpress.com/wp-content/uploads/2025/05/if_1953_01.jpg",
@@ -1070,7 +1070,7 @@ export const covers: Cover[] = [
   },  
   {
     id: "57",
-    title: "Mechanical Dominance",
+    title: "A Code for Sam",
     year: 1966,
     magazineName: "If",
     imageUrl: "https://pulpbots.wordpress.com/wp-content/uploads/2025/05/if_1966_11.jpg",
@@ -1125,7 +1125,7 @@ export const covers: Cover[] = [
   },
   {
     id: "60",
-    title: "Mechanical Dominance",
+    title: "Now That Man is Gone",
     year: 1968,
     magazineName: "If",
     imageUrl: "https://pulpbots.wordpress.com/wp-content/uploads/2025/05/if_1968_11.jpg",
@@ -1143,7 +1143,7 @@ export const covers: Cover[] = [
   },
   {
     id: "61",
-    title: "Mechanical Dominance",
+    title: "The Last True God",
     year: 1969,
     magazineName: "If",
     imageUrl: "https://pulpbots.wordpress.com/wp-content/uploads/2025/05/if_1969_09.jpg",
@@ -1181,7 +1181,7 @@ export const covers: Cover[] = [
   },  
   {
     id: "63",
-    title: "Highways in Hiding",
+    title: "Shopping Day – 1985",
     year: 1955,
     magazineName: "Imagination",
     imageUrl: "https://pulpbots.wordpress.com/wp-content/uploads/2025/05/imagination_1955_03.jpg",
@@ -1201,7 +1201,7 @@ export const covers: Cover[] = [
   },  
   {
     id: "64",
-    title: "Saucy Server",
+    title: "21st Century Street Scene",
     year: 1955,
     magazineName: "Imagination",
     imageUrl: "https://pulpbots.wordpress.com/wp-content/uploads/2025/05/imagination_1955_05.jpg",
@@ -1221,7 +1221,7 @@ export const covers: Cover[] = [
   },  
   {
     id: "65",
-    title: "Floral Rebellion",
+    title: "Park Warden, 21st century",
     year: 1955,
     magazineName: "Imagination",
     imageUrl: "https://pulpbots.wordpress.com/wp-content/uploads/2025/05/imagination_1955_06.jpg",
@@ -1241,7 +1241,7 @@ export const covers: Cover[] = [
   },  
   {
     id: "66",
-    title: "Mechanical Dominance",
+    title: "The Time Trap",
     year: 1938,
     magazineName: "Marvel Science Stories",
     imageUrl: "https://pulpbots.wordpress.com/wp-content/uploads/2025/05/marvel_science_stories_1938_11.jpg",
@@ -1261,7 +1261,7 @@ export const covers: Cover[] = [
   },  
   {
     id: "67",
-    title: "Blonde in Distress: Mutant Alert",
+    title: "The Shining City",
     year: 1952,
     magazineName: "Science Fiction Quarterly",
     imageUrl: "https://pulpbots.wordpress.com/wp-content/uploads/2025/05/science_fiction_quarterly_1952_05.jpg",
@@ -1299,7 +1299,7 @@ export const covers: Cover[] = [
   },
   {
     id: "69",
-    title: "Mechanical Dominance",
+    title: "Contemplative Horizon",
     year: 1953,
     magazineName: "Space Science Fiction",
     imageUrl: "https://pulpbots.wordpress.com/wp-content/uploads/2025/05/space_science_fiction_1953_02.jpg",
@@ -1318,7 +1318,7 @@ export const covers: Cover[] = [
   },
   {
     id: "70",
-    title: "Mechanical Dominance",
+    title: "Spaceway: Human-Robot Encounter",
     year: 1954,
     magazineName: "Spaceway",
     imageUrl: "https://pulpbots.wordpress.com/wp-content/uploads/2025/05/spaceway_1954_06.jpg",
@@ -1337,7 +1337,7 @@ export const covers: Cover[] = [
   },
   {
     id: "71",
-    title: "Mechanical Dominance",
+    title: "Red Sun of Danger",
     year: 1945,
     magazineName: "Startling Stories",
     imageUrl: "https://pulpbots.wordpress.com/wp-content/uploads/2025/05/startling_stories_1945_spr.jpg",
@@ -1374,7 +1374,7 @@ export const covers: Cover[] = [
   },  
   {
     id: "73",
-    title: "Mechanical Dominance",
+    title: "Against the Fall of Night",
     year: 1948,
     magazineName: "Startling Stories",
     imageUrl: "https://pulpbots.wordpress.com/wp-content/uploads/2025/05/startling_stories_1948_11.jpg",
@@ -1413,7 +1413,7 @@ export const covers: Cover[] = [
   },  
   {
     id: "75",
-    title: "Mechanical Dominance",
+    title: "Metallic Wanderer",
     year: 1953,
     magazineName: "Startling Stories",
     imageUrl: "https://pulpbots.wordpress.com/wp-content/uploads/2025/05/startling_stories_1953_06.jpg",
@@ -1450,7 +1450,7 @@ export const covers: Cover[] = [
   },  
   {
     id: "77",
-    title: "Mechanical Dominance",
+    title: "The End of Winter",
     year: 1958,
     magazineName: "Venture Science Fiction",
     imageUrl: "https://pulpbots.wordpress.com/wp-content/uploads/2025/05/venture_science_fiction_1958_01.jpg",
@@ -1468,11 +1468,11 @@ export const covers: Cover[] = [
   },    
   {
     id: "78",
-    title: "The Robot Technocrat",
+    title: "The Wanderers of Time",
     year: 1933,
     magazineName: "Wonder Stories",
     imageUrl: "https://pulpbots.wordpress.com/wp-content/uploads/2025/05/wonder_stories_1933_03.jpg",
-    description: "A six-legged chrome predator clutches its human quarry as terrified companions flee across a surreal alien plain. ",
+    description: "A six-legged chrome predator clutches its human quarry as terrified companions flee across a surreal alien plain.",
     analysis: {
       Observations: "A predatory robot seizes a lone man, while companions dash for safety. The robot’s sole focus is its captive; there’s no hint of benevolence, only coercion. Its gleaming, pill-shaped body rests on six articulated golden legs, each joint ringed and riveted like an insect exoskeleton grafted to machine. The glossy white shell contrasted with the warm brass of its legs. In pulp-era archetypes, it blends the 'mechanical beetle' motif with the mad-science 'subject-harvester' machine.",
       VisualDesignElements: " A flat, canary-yellow sky isolates the chrome walker against a backdrop of purple underbrush and a towering orange mesa. The perspective tilts slightly upward, magnifying the robot’s insect-like bulk as it clambers across a grassy plain. Two fleeing figures in period garb—one bald, one youthful—provide scale and urgency, their outstretched limbs echoing the machine’s angular legs. Bold, unblended colors and sharp outlines heighten the sense of an uncanny tableau frozen mid-chase. The artist’s use of complementary purples and yellows amplifies the surreal, other-worldly atmosphere. The robot is rendered in a combination of red and silver tones, with mechanical joints and wires that emphasize its robotic nature. The background consists of a purple landscape with a large, imposing mountain, which contrasts with the bright colors of the robot and foreground figures. The composition is balanced with the robot centrally placed, while the human figures are positioned in the foreground and background, creating a sense of depth.",
@@ -1528,7 +1528,7 @@ export const covers: Cover[] = [
   },
   {
     id: "81",
-    title: "Mechanical Dominance",
+    title: "The Idea",
     year: 1935,
     magazineName: "Wonder Stories",
     imageUrl: "https://pulpbots.wordpress.com/wp-content/uploads/2025/05/wonder_stories_1935_09.jpg",
@@ -1547,7 +1547,7 @@ export const covers: Cover[] = [
   },    
   {
     id: "82",
-    title: "Robot's Descent",
+    title: "Heavenly Gifts",
     year: 1963,
     magazineName: "Worlds of Tomorrow",
     imageUrl: "https://pulpbots.wordpress.com/wp-content/uploads/2025/05/worlds_of_tomorrow_1963_04.jpg",
