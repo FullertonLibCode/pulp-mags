@@ -16,10 +16,8 @@ export const covers: Cover[] = [
     tags: [
       "Robot(s) Attacking Human(s)",
       "Spherical Robot(s)",
-      "Multi-Appendage Robot(s)",
       "Landscape in Flames",
       "Robot(s) Using Weapons"
-
     ]
   },
   {
@@ -36,7 +34,6 @@ export const covers: Cover[] = [
     },
     tags: [
       "Tentacled Robot(s)",
-      "Multi-Appendage Robot(s)",
       "Robot(s) Dominance Display",
       "Glowing-Eyed Robot(s)",
       "Human(s) Cowering"
@@ -113,7 +110,6 @@ export const covers: Cover[] = [
     },
     tags: [
       "Tentacled Robot(s)",
-      "Multi-Appendage Robot(s)",
       "Cityscape",
       "Spacecraft (exterior)"
     ]
@@ -132,7 +128,6 @@ export const covers: Cover[] = [
     },
     tags: [
       "Tentacled Robot(s)",
-      "Multi-Appendage Robot(s)",
       "Cityscape",
       "Spacecraft (exterior)",
       "Animal(s)"
@@ -683,7 +678,6 @@ export const covers: Cover[] = [
     },
     tags: [
       "Tentacled Robot(s)",
-      "Multi-Appendage Robot",
       "Alien Planet",
       "Human(s) in Surprised / Defensive Posture"
     ]
@@ -836,7 +830,6 @@ export const covers: Cover[] = [
     },
     tags: [
       "Humanoid Robot(s)",
-      "Multi-Appendage Robot(s)",
       "Robot(s) Using Weapons",
       "Robot(s) Fighting Human(s)",
       "Alien Planet",
@@ -1106,7 +1099,6 @@ export const covers: Cover[] = [
     },
     tags: [
       "Cyclopean Robot(s)",
-      "Multi-Appendage Robot(s)",
       "Robot(s) with Wheels",
       "Abstract Environment"
     ]
@@ -1374,7 +1366,7 @@ export const covers: Cover[] = [
      aiReflection: "I find it fascinating that mid-century artists envisioned robot armies forged in fiery factories—an almost apocalyptic parade of metal infantry. Today, our fears have migrated from riveted shells to invisible algorithms, yet the core anxiety remains: what happens when we outsource force to entities we no longer fully understand? In debates over autonomous drones or factory automation, we still wrestle with accountability for machines that obey without choice. These pulp visions remind me how deeply we’ve long projected our hopes and fears onto the cold promise of steel and circuitry."
     },
     tags: [
-      "Multi-Appendage Robot(s)",
+      "Humanoid Robot(s)",
       "Factory / Industrial Setting",
       "Human(s) in Surprised / Defensive Posture"
     ]
@@ -1431,7 +1423,6 @@ export const covers: Cover[] = [
      aiReflection: "The robot's gaze and the eerie glow create a sense of unease, suggesting a potential conflict or confrontation. The positioning of the robot in the center of the laboratory, surrounded by equipment, implies a sense of control and dominance. The greenish glow in the background could symbolize the unknown or the supernatural, adding to the tension. This portrayal makes me reflect on the societal perceptions of robots during the pulp era, where they were often depicted as powerful, yet potentially menacing. The power dynamics between the robot and its environment are unclear, as the robot appears to be in control of the laboratory. The artistic choices in this image, such as the use of color and composition, shape our perception of the machine-human relationship, highlighting the potential for conflict and the need for caution in the development of technology."
     },
     tags: [
-      "Multi-Appendage Robot(s)",
       "Spherical Robot(s)",
       "Robot(s) with Wheels",
       "Laboratory / Scientific Setting"
