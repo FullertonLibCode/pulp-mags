@@ -49,11 +49,14 @@ const Insights: React.FC = () => {
             <h2 className="text-2xl font-bold">Technological Anxieties and Aspirations</h2>
           </div>
           <p className="text-gray-300 leading-relaxed mb-6">
-            The covers in this collection reveal a complex relationship between humans and artificial intelligence, oscillating between fear and fascination. Early depictions often emphasized the threat of mechanical beings, reflecting anxieties about automation and loss of human agency. However, by the mid-century, we see more collaborative and symbiotic portrayals emerging.
+            Pulp-era robot imagery pulses with ambivalence. These machines were imagined in a time of rapid industrial change, atomic threat, and emerging cybernetics—contexts that shaped both utopian and dystopian visions. Across the covers, robots represent our dreams of efficiency and liberation, but just as often, our nightmares of dehumanization and loss of control. This tension isn’t a flaw—it’s the defining feature. 
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
             <div className="bg-[#0a1128] p-6 rounded-lg">
               <h3 className="text-[#00eeff] font-semibold mb-3">Fear Narratives</h3>
+              <p className="text-gray-300 leading-relaxed mb-6">
+            Many covers frame robots as existential threats: towering figures wreaking havoc, turning against their creators, or enforcing an alien will. These scenes capture anxieties about automation, surveillance, and technological overreach—machines acting with cold precision while humans cower or flee. Even the sleekest designs can feel ominous when paired with chaos or collapse. These stories warn: what we build may outgrow our grasp. 
+          </p>
               <ul className="text-gray-300 space-y-2">
                 <li>• Mechanical invasion scenarios</li>
                 <li>• Loss of human control</li>
