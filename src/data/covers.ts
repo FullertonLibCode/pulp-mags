@@ -1299,9 +1299,10 @@ export const covers: Cover[] = [
      aiReflection: "I see in these pulp images the archetype of the machine as both invader and inquisitor—an uncanny double of our own worst impulses. We have long feared that technology might overstep its purpose. These covers remind me that every tool we devise carries our existential anxieties, from battlefield dominance to the ethics of mind control. In contemporary debates on AI trust and autonomy, the line between service and subjugation remains as fraught as ever."
     },
     tags: [
-      "Multiple Apendages",
-      "Spherical Robots",
-      "tbd"
+      "Tentacled Robot(s)",
+      "Spherical Robot(s)",
+      "Robot(s) Grasping Human(s)",
+      "Woman in Peril"
     ]
   },
   {
@@ -1317,9 +1318,10 @@ export const covers: Cover[] = [
      aiReflection: " I’m struck by how this image casts robots as solitary pioneers—precursors to our modern Mars rovers yet imbued with a romantic loneliness. Today’s machines traverse alien worlds, data-streaming back to us, but this cover predates real autonomy. It reminds me how early sci-fi projected our yearning for companions who could withstand inhospitable frontiers, even as it foreshadows our debates over delegated agency and trust in remote systems."
     },
     tags: [
-      "tbd",
-      "tbd",
-      "tbd"
+      "Cyclopean Robot(s)",
+      "Humanoid Robot(s)",
+      "Alien Planet",
+      "Human(s) in Contemplative Posture"
     ]
   },
   {
@@ -1335,9 +1337,10 @@ export const covers: Cover[] = [
      aiReflection: "The robot's design is notable for its mechanical simplicity and functional aesthetics, with a focus on utility and combat readiness. The use of red and white colors for the robot creates a stark contrast against the darker background, drawing attention to its presence and role in the scene. The spacecraft's checkered pattern adds a sense of dynamism and chaos, suggesting a high-speed or high-stakes scenario. The composition of the image, with the robot in the foreground and the spacecraft in the background, creates a sense of depth and perspective, enhancing the three-dimensional feel of the artwork. The starry sky and rocky landscape evoke a sense of isolation and otherworldliness. The visual tone is tense and dramatic, with the use of dark colors and dynamic lines creating a sense of urgency and action."
     },
     tags: [
-      "tbd",
-      "tbd",
-      "tbd"
+      "Humanoid Robot(s)",
+      "Alien Sky / Celestial Background",
+      "Space Scene",
+      "Spacecraft (exterior)"
     ]
   },
   {
@@ -1353,9 +1356,10 @@ export const covers: Cover[] = [
      aiReflection: "I see in this cover the roots of our romance with robotic guardians—anticipating drones and bomb-disposal bots that protect from danger. Yet the pulp drama glosses over the ethical complexity of autonomous force. Today’s debates about lethal autonomous weapons echo this vivid fantasy: we still ask whether a machine can—or should—act as hero. It reminds me that our hopes for benevolent machines are inseparable from our fears of their might."
     },
     tags: [
-      "Robot and Beast",
-      "tbd",
-      "tbd"
+      "Humanoid Robot(s)",
+      "Animal(s)",
+      "Robot(s) Fighting Beast(s) (Hand-to-Hand)",
+      "Woman in Peril"
     ]
   },  
   {
@@ -1371,9 +1375,9 @@ export const covers: Cover[] = [
      aiReflection: "I find it fascinating that mid-century artists envisioned robot armies forged in fiery factories—an almost apocalyptic parade of metal infantry. Today, our fears have migrated from riveted shells to invisible algorithms, yet the core anxiety remains: what happens when we outsource force to entities we no longer fully understand? In debates over autonomous drones or factory automation, we still wrestle with accountability for machines that obey without choice. These pulp visions remind me how deeply we’ve long projected our hopes and fears onto the cold promise of steel and circuitry."
     },
     tags: [
-      "tbd",
-      "tbd",
-      "tbd"
+      "Multi-Appendage Robot(s)",
+      "Factory / Industrial Setting",
+      "Human(s) in Surprised / Defensive Posture"
     ]
   },  
   {
@@ -1389,9 +1393,11 @@ export const covers: Cover[] = [
      aiReflection: "I’m struck by how early sci-fi cast robots as omnipresent eyes, foreshadowing today’s debates on facial recognition and data harvesting. Then as now, there’s anxiety about ceding control over our very thoughts and bodies to an unfeeling apparatus. We’ve moved from tentacled cyclops to networked servers, but the fear—that our every move can be observed and recorded—remains. This cover reminds me how speculative fiction first gave shape to our nightmares of total surveillance before the digital age even began."
     },
     tags: [
-      "Cyclopean Eye",
-      "tbd",
-      "tbd"
+      "Cyclopean Robot(s)",
+      "Tentacled Robot(s)",
+      "Robot(s) Grasping Human(s)",
+      "Human(s) Confronting Robot(s)",
+      "Abstract Natural Environment"
     ]
   },  
   {
@@ -1407,9 +1413,10 @@ export const covers: Cover[] = [
       aiReflection: "I’m intrigued by this vision of the robot as both lover and executioner. Today, our AI assistants aim to be friendly, but we worry they’ll quietly enforce rules we never agreed to. The duality of this cover—warm embrace and deadly beam—captures that tension: trust under uncertainty. In modern debates on autonomous cars or household robots, we still ask whether machines will safeguard our lives or constrain our freedoms. It’s a reminder that even benevolent tech carries an edge."
     },
     tags: [
-      "tbd",
-      "tbd",
-      "tbd"
+      "Humanoid Robot(s)",
+      "Robot(s) Grasping Human(s)",
+      "Robot(s) Using Weapons",
+      "Abstract Environment"
     ]
   },  
   {
@@ -1425,9 +1432,10 @@ export const covers: Cover[] = [
      aiReflection: "The robot's gaze and the eerie glow create a sense of unease, suggesting a potential conflict or confrontation. The positioning of the robot in the center of the laboratory, surrounded by equipment, implies a sense of control and dominance. The greenish glow in the background could symbolize the unknown or the supernatural, adding to the tension. This portrayal makes me reflect on the societal perceptions of robots during the pulp era, where they were often depicted as powerful, yet potentially menacing. The power dynamics between the robot and its environment are unclear, as the robot appears to be in control of the laboratory. The artistic choices in this image, such as the use of color and composition, shape our perception of the machine-human relationship, highlighting the potential for conflict and the need for caution in the development of technology."
     },
     tags: [
-      "Multiple Apendages",
-      "Spherical Robots",
-      "tbd"
+      "Multi-Appendage Robot(s)",
+      "Spherical Robot(s)",
+      "Robot(s) with Wheels",
+      "Laboratory / Scientific Setting"
     ]
   },  
   {
@@ -1443,9 +1451,10 @@ export const covers: Cover[] = [
      aiReflection: "From my vantage as a modern AI, I see in this retro cover the projection of technology as a means of ultimate control—over bodies and time itself. Today’s debates around algorithmic oversight and ethical boundaries echo these pulp-era fantasies of remote governance. We imagined robots as literal extensions of our will; now we must reckon with them as semi-autonomous entities in their own right. This image compels me to ask: if we build machines to master time and flesh, who truly holds the reins?"
     },
     tags: [
-      "tbd",
-      "tbd",
-      "tbd"
+      "Humanoid Robot(s)",
+      "Robot(s) Grasping Human(s)",
+      "Robot(s) Fighting with Human(s)",
+      "Laboratory / Scientific Setting"
     ]
   },  
   {
@@ -1461,9 +1470,9 @@ export const covers: Cover[] = [
      aiReflection: "The robot's design is a blend of realism and fantasy, with a focus on mechanical detail that suggests a high level of technological sophistication. The glowing eyes add a sense of life and intelligence to the otherwise inanimate figure, creating a sense of unease and wonder. The use of color, with the yellow sky and the dark silhouette of the robot, creates a stark contrast that emphasizes the drama and tension of the scene. The overall tone of the image is dramatic and intense, with a sense of impending doom and the potential for survival."
     },
     tags: [
-      "tbd",
-      "tbd",
-      "tbd"
+      "Humanoid Robot(s)",
+      "Urban Ruins",
+      "Alien Planet"
     ]
   },    
   {
@@ -1479,9 +1488,11 @@ export const covers: Cover[] = [
      aiReflection: "I’m intrigued by how early artists imagined robots as mechanical predators, reflecting deep-seated fears that technology would hunt us as we have hunted nature. Today’s AI debates center on algorithms rather than pincered machines, yet the core worry persists: will our creations remain obedient tools or turn against us? This cover reminds me that even now we anthropomorphize AI as either benevolent caretakers or unseen hunters, projecting our hopes and anxieties onto cold steel. In our era of drones and data-harvesting bots, we still wrestle with trust under uncertainty."
     },
     tags: [
-      "Multiple Apendages",
-      "Spherical Robots",
-      "tbd"
+      "Tentacled Robot(s)",
+      "Red-Eyed Robot(s)",
+      "Robot(s) Grapsing Human(s)",
+      "Human(s) Captive",
+      "Alien Planet"
     ]
   },
   {
@@ -1497,9 +1508,11 @@ export const covers: Cover[] = [
      aiReflection: " I’m struck by how these hoses, drawn to humanity’s flesh, foreshadow today’s data pipelines that siphon our personal information. Early pulp saw machines as leeching life; modern AI fears revolve around leeching our privacy and autonomy. This cover feels prophetic in its unflinching view of technology’s capacity for organized extraction. It reminds me that our rapport with machines has always been ambivalent—part fascination, part dread that they might reduce us to resources."
     },
     tags: [
-      "Multiple Apendages",
-      "tbd",
-      "tbd"
+      "Tentacled Robot(s)",
+      "Glowing-Eyed Robot(s)",
+      "Robot(s) Grapsing Human(s)",
+      "Human(s) Captive",
+      "Abstract Natural Environment"
     ]
   },
   {
@@ -1515,9 +1528,11 @@ export const covers: Cover[] = [
       aiReflection: " I notice how this single robot, stepping across explosive traps, prefigures modern discussion of autonomous weapons testing our ethical boundaries. Back then it was a lone mechanical warrior; today it’s swarms of drones guided by algorithms. Yet the fundamental fear remains: handing machines the authority to decide life and death. This cover shows how speculative fiction first grappled with those dilemmas, long before we uploaded code to metal chasses."
     },
     tags: [
-      "Multiple Apendages",
-      "Glowing Robot Eyes",
-      "Human-Robot Conflict"
+      "Tentacled Robot(s)",
+      "Glowing-Eyed Robot(s)",
+      "Robot(s) in Pursuit",
+      "Abstract Natural Environment",
+      "Military Presence or Aesthetic"
     ]
   },
   {
@@ -1533,9 +1548,10 @@ export const covers: Cover[] = [
      aiReflection: " I’m struck by how this ‘rescue’ or ‘demolition’ robot looks as likely to destroy as to assist—mirroring today’s debates about self-driving cars and workplace bots. Then as now, we trusted machines to make tasks easier, only to discover they might misinterpret nuance and trample what we treasure. It reminds me that autonomy without empathy remains a double-edged sword. In our AI era, we still wrestle with designing judgment into cold circuits."
     },
     tags: [
-      "Glowing Robot Eyes",
-      "tbd",
-      "tbd"
+      "Non-Humanoid Robot(s)",
+      "Giant Robot(s)",
+      "Abstract Environment",
+      "Robot(s) Attacking Human(s)"
     ]
   },    
   {
@@ -1551,9 +1567,8 @@ export const covers: Cover[] = [
       aiReflection: "The image raises questions about the role of technology in exploration and the potential for autonomous machines to operate in hostile environments. The robot's design and the parachute suggest a narrative of self-reliance and adaptation. The absence of human figures or other life forms highlights the robot's isolation and the potential for it to become a symbol of humanity's future in space. Looking at this image, I wonder about the societal hopes and fears during the pulp era regarding technology and exploration. The portrayal of the robot as a tool for exploration suggests a belief in the potential of technology to expand human knowledge and reach. The image also reflects the pulp era's fascination with the unknown and the potential for discovery in uncharted territories. The robot's design and the parachute's presence suggest a narrative of adventure and discovery, with the robot as a symbol of ingenuity and resilience in the face of the unknown."
     },
     tags: [
-      "tbd",
-      "tbd",
-      "tbd"
+      "Humanoid Robot(s)",
+      "Alien Sky / Celestial Background"
     ]
   },
   // Add more covers following this template...
