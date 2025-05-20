@@ -106,21 +106,54 @@ const Insights: React.FC = () => {
               </ul>
             </div>
             <div className="bg-[#0a1128] p-6 rounded-lg">
-              <h3 className="text-[#00eeff] font-semibold mb-3">Symbolic Elements</h3>
+              <h3 className="text-[#00eeff] font-semibold mb-3">Action or Movement</h3>
               <ul className="text-gray-300 space-y-2">
-                <li>• Circuit patterns</li>
-                <li>• Energy fields</li>
-                <li>• Binary systems</li>
-                <li>• Mathematical symbols</li>
+                <li>• Aggressive advance: Marching, looming, or attacking—communicates dominance.</li>
+                <li>• Protective gesture: Shielding, rescuing, or supporting a human.</li>
+                <li>• Manual labor: Welding, assembling, or performing repairs—conveys function over threat.</li>
+                <li>• Expressive stillness: A paused figure suggests internal thought or unease.</li>
+                <li>• Playful or mundane acts: Painting, waiting, walking a dog—adds humor, irony, or humanity.</li>
+                <li>• Destructive force: Blasting, crushing, or collapsing part of the environment.</li>
+                <li>• Interrupted movement: Robot turning, glitching, or looking back—creates narrative tension.</li>
+              </ul>
+            </div>
+          </div>
+        </motion.section>
+
+         <motion.section
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.4 }}
+          className="bg-[#132347] rounded-lg p-8 border border-[#1e3a8a]"
+        >
+          <div className="flex items-center mb-6">
+            <Lightbulb className="w-8 h-8 text-[#00eeff] mr-3" />
+            <h2 className="text-2xl font-bold">Visual Language of Pulp Sci-Fi</h2>
+          </div>
+          <p className="text-gray-300 leading-relaxed mb-6">
+            Pulp science fiction covers were designed to grab attention in a fraction of a second. Their visual strategies are bold, theatrical, and often surreal. These images don’t just depict scenes—they perform meaning through composition, color, scale, and motion. The recurring visual techniques form a shared language across decades of pulp storytelling. 
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
+            <div className="bg-[#0a1128] p-6 rounded-lg">
+              <h3 className="text-[#00eeff] font-semibold mb-3">Compositional Drama</h3>
+              <ul className="text-gray-300 space-y-2">
+                <li>• Diagonal tension: Figures and landscapes often arranged diagonally to suggest chaos or action.</li>
+                <li>• Foreground dominance: Key figures (often robots or imperiled humans) are placed close-up for immediacy.</li>
+                <li>• Off-balance symmetry: Disrupted balance creates unease or instability.</li>
+                <li>• Vantage point shift: Worm’s-eye or bird’s-eye views exaggerate scale and threat.</li>
+                <li>• Crowded vs. isolated compositions: Isolation = vulnerability; crowd = chaos or scale.</li>
               </ul>
             </div>
             <div className="bg-[#0a1128] p-6 rounded-lg">
-              <h3 className="text-[#00eeff] font-semibold mb-3">Human Aspects</h3>
+              <h3 className="text-[#00eeff] font-semibold mb-3">Action or Movement</h3>
               <ul className="text-gray-300 space-y-2">
-                <li>• Facial features</li>
-                <li>• Emotional expression</li>
-                <li>• Body language</li>
-                <li>• Social interaction</li>
+                <li>• Aggressive advance: Marching, looming, or attacking—communicates dominance.</li>
+                <li>• Protective gesture: Shielding, rescuing, or supporting a human.</li>
+                <li>• Manual labor: Welding, assembling, or performing repairs—conveys function over threat.</li>
+                <li>• Expressive stillness: A paused figure suggests internal thought or unease.</li>
+                <li>• Playful or mundane acts: Painting, waiting, walking a dog—adds humor, irony, or humanity.</li>
+                <li>• Destructive force: Blasting, crushing, or collapsing part of the environment.</li>
+                <li>• Interrupted movement: Robot turning, glitching, or looking back—creates narrative tension.</li>
               </ul>
             </div>
           </div>
