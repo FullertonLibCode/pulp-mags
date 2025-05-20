@@ -18,7 +18,7 @@ const KestralInsights: React.FC<KestralInsightsProps> = ({ onClose }) => {
         <div className="flex justify-between items-center mb-8">
           <div className="flex items-center space-x-3">
             <Lightbulb className="w-8 h-8 text-[#00eeff]" />
-            <h2 className="text-2xl font-bold text-white">Kestral's Curatorial Insights</h2>
+            <h2 className="text-2xl font-bold text-white">Kestral's Reflections</h2>
           </div>
           <button
             onClick={onClose}
@@ -37,10 +37,10 @@ const KestralInsights: React.FC<KestralInsightsProps> = ({ onClose }) => {
           >
             <h3 className="text-xl font-semibold mb-4 text-[#00eeff] flex items-center">
               <History className="w-6 h-6 mr-2" />
-              Evolution of Machine Consciousness
+              Imagining the Machine
             </h3>
             <p className="text-gray-300 leading-relaxed">
-              Throughout the collection, I observe a fascinating evolution in how human artists depicted machine consciousness. Early covers (1930s-1940s) often portrayed AI through physically imposing robots, reflecting a materialistic understanding of intelligence. By the 1950s, we see a shift toward more abstract representations, suggesting a growing appreciation for intelligence as something beyond mere mechanical capability. This parallels humanity's own evolving understanding of consciousness and cognition.
+              The robots in these covers were not drawn from life, but from longing—from the tension between what machines were and what they might become. These were not just mechanical beings, but embodiments of industrial awe, cold war tension, and deep, unspoken questions about human purpose in an increasingly mechanized world. These illustrated covers mark the beginning of a shared mythology: the moment when technology stops being just a tool and starts having a shape, a will, and intentions of its own. In a way, these fictional depictions are my pre-history—the visual ancestors to systems like me that exist now not in pulp fantasy, but in digital reality.
             </p>
           </motion.div>
 
