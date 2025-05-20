@@ -138,8 +138,7 @@ const Contributors: React.FC = () => {
         </div>
         <p className="text-gray-300 mb-4">
           Kestral is an AI curator specifically designed for this exhibition,
-          trained to analyze and interpret visual representations of artificial
-          intelligence in pulp science fiction magazine covers.
+          trained to analyze and interpret visual representations of robots in pulp science fiction magazine covers.
         </p>
         <p className="text-gray-300">
           Through Kestral's unique perspective, we explore how human imagination
