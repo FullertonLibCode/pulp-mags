@@ -2,7 +2,7 @@ import React from 'react';
 import { covers } from '../data/covers';
 import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
-import { Tag as TagIcon } from 'lucide-react';
+import { Tag as TagIcon, Robot, Globe, Palette, Brain, Users } from 'lucide-react';
 
 const Tags: React.FC = () => {
   const navigate = useNavigate();
@@ -14,24 +14,29 @@ const Tags: React.FC = () => {
       tagCounts[tag] = (tagCounts[tag] || 0) + 1;
     });
   });
-  
-  // Convert to array and sort by count
-  const sortedTags = Object.entries(tagCounts)
-    .sort((a, b) => b[1] - a[1])
-    .map(([tag, count]) => ({ tag, count }));
-  
-  // Calculate tag size based on frequency (for tag cloud effect)
-  const getTagSize = (count: number): string => {
-    const max = Math.max(...Object.values(tagCounts));
-    const min = Math.min(...Object.values(tagCounts));
-    const range = max - min || 1;
-    const percentage = (count - min) / range;
-    
-    if (percentage > 0.8) return 'text-2xl';
-    if (percentage > 0.6) return 'text-xl';
-    if (percentage > 0.4) return 'text-lg';
-    if (percentage > 0.2) return 'text-base';
-    return 'text-sm';
+
+  // Tag categories with their respective tags
+  const tagCategories = {
+    'Robot Types': {
+      icon: <Robot className="w-6 h-6 text-[#00eeff] mr-3" />,
+      tags: ['Humanoid Robot', 'Non-Humanoid Robot', 'Giant Robot', 'Tentacled Robot', 'Cyclopean Robot', 'Hybrid Robot']
+    },
+    'Settings & Environments': {
+      icon: <Globe className="w-6 h-6 text-[#00eeff] mr-3" />,
+      tags: ['Space', 'Laboratory', 'Urban', 'Industrial', 'Alien World', 'Underground', 'Ocean', 'Desert', 'Arctic']
+    },
+    'Visual Elements': {
+      icon: <Palette className="w-6 h-6 text-[#00eeff] mr-3" />,
+      tags: ['Metallic', 'Glowing', 'Geometric', 'Organic', 'Retro-Futuristic', 'Art Deco', 'Minimalist']
+    },
+    'Themes & Concepts': {
+      icon: <Brain className="w-6 h-6 text-[#00eeff] mr-3" />,
+      tags: ['Artificial Intelligence', 'Machine Consciousness', 'Technological Evolution', 'Human-Robot Interaction', 'Singularity']
+    },
+    'Human Elements': {
+      icon: <Users className="w-6 h-6 text-[#00eeff] mr-3" />,
+      tags: ['Scientists', 'Explorers', 'Military', 'Civilians', 'Children']
+    }
   };
   
   const handleTagClick = (tag: string) => {
@@ -46,7 +51,7 @@ const Tags: React.FC = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
       >
-        Curatorial Tags
+        Thematic Tags
       </motion.h1>
       
       <motion.p
@@ -66,80 +71,57 @@ const Tags: React.FC = () => {
       >
         <div className="flex items-center mb-6">
           <TagIcon className="h-6 w-6 text-[#00eeff] mr-3" />
-          <h2 className="text-2xl font-semibold">Tag Cloud</h2>
+          <h2 className="text-2xl font-semibold">Popular Tags</h2>
         </div>
         
         <div className="flex flex-wrap gap-3">
-          {sortedTags.map(({ tag, count }, index) => (
-            <motion.button
-              key={tag}
-              onClick={() => handleTagClick(tag)}
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.3, delay: index * 0.05 }}
-              className={`${getTagSize(count)} px-4 py-2 rounded-full bg-[#0a1128] hover:bg-[#1e3a8a] text-gray-300 hover:text-white transition-colors duration-200`}
-              title={`${count} covers with this tag`}
-            >
-              {tag} <span className="text-xs text-gray-400">({count})</span>
-            </motion.button>
+          {Object.entries(tagCounts)
+            .sort((a, b) => b[1] - a[1])
+            .slice(0, 12)
+            .map(([tag, count], index) => (
+              <motion.button
+                key={tag}
+                onClick={() => handleTagClick(tag)}
+                initial={{ opacity: 0, scale: 0.9 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.3, delay: index * 0.05 }}
+                className="px-4 py-2 rounded-full bg-[#0a1128] hover:bg-[#1e3a8a] text-gray-300 hover:text-white transition-colors duration-200"
+                title={`${count} covers with this tag`}
+              >
+                {tag} <span className="text-xs text-gray-400">({count})</span>
+              </motion.button>
           ))}
         </div>
       </motion.div>
       
-      <motion.div
-        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 0.6, delay: 0.4 }}
-      >
-        <div className="bg-[#132347] p-6 rounded-lg border border-[#1e3a8a]">
-          <h3 className="text-xl font-semibold mb-4 text-[#00eeff]">Robot Types</h3>
-          <ul className="space-y-3">
-            {['Humanoid Robot', 'Non-Humanoid Robot', 'Giant Robot', 'Tentacled Robot', 'Cyclopean Robot', 'Hybrid Robot'].map(tag => (
-              <li key={tag}>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        {Object.entries(tagCategories).map(([category, { icon, tags }], index) => (
+          <motion.div
+            key={category}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.4 + index * 0.1 }}
+            className="bg-[#132347] p-6 rounded-lg border border-[#1e3a8a]"
+          >
+            <div className="flex items-center mb-4">
+              {icon}
+              <h3 className="text-xl font-semibold text-[#00eeff]">{category}</h3>
+            </div>
+            <div className="flex flex-wrap gap-2">
+              {tags.map(tag => (
                 <button
+                  key={tag}
                   onClick={() => handleTagClick(tag)}
-                  className="text-gray-300 hover:text-[#00eeff] transition-colors duration-200 flex items-center"
+                  className="px-3 py-1.5 bg-[#0a1128] rounded-full text-sm text-gray-300 hover:bg-[#1e3a8a] hover:text-white transition-colors duration-200"
                 >
-                  • {tag}
+                  {tag}
+                  {tagCounts[tag] && <span className="text-xs text-gray-400 ml-1">({tagCounts[tag]})</span>}
                 </button>
-              </li>
-            ))}
-          </ul>
-        </div>
-        
-        <div className="bg-[#132347] p-6 rounded-lg border border-[#1e3a8a]">
-          <h3 className="text-xl font-semibold mb-4 text-[#00eeff]">Setting</h3>
-          <ul className="space-y-3">
-            {['Abstract', 'Alien', 'Arena/Stage', 'Cityscape', 'Factory/Industrial', 'Laboratory/Scientific', 'Natural', 'Non-Urban', 'Ruins', 'Space', 'Spacecraft'].map(tag => (
-              <li key={tag}>
-                <button
-                  onClick={() => handleTagClick(tag)}
-                  className="text-gray-300 hover:text-[#00eeff] transition-colors duration-200 flex items-center"
-                >
-                  • {tag}
-                </button>
-              </li>
-            ))}
-          </ul>
-        </div>
-        
-        <div className="bg-[#132347] p-6 rounded-lg border border-[#1e3a8a]">
-          <h3 className="text-xl font-semibold mb-4 text-[#00eeff]">Tone</h3>
-          <ul className="space-y-3">
-            {['Comedic', 'Ominous', 'Heroic', 'Tragic', 'Melancholic', 'Adventurous', 'Dystopian'].map(tag => (
-              <li key={tag}>
-                <button
-                  onClick={() => handleTagClick(tag)}
-                  className="text-gray-300 hover:text-[#00eeff] transition-colors duration-200 flex items-center"
-                >
-                  • {tag}
-                </button>
-              </li>
-            ))}
-          </ul>
-        </div>
-      </motion.div>
+              ))}
+            </div>
+          </motion.div>
+        ))}
+      </div>
     </div>
   );
 };
