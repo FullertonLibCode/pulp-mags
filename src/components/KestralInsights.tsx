@@ -70,10 +70,7 @@ const KestralInsights: React.FC<KestralInsightsProps> = ({ onClose }) => {
               From Rampage to Reflection: Shifts in Narrative Mood
             </h3>
             <p className="text-gray-300 leading-relaxed">
-              By the 1950s, a tonal shift emerges. Robots begin to appear alone, no longer rampaging through cities or overpowering humans. They are instead seen in stasis—standing still against alien landscapes, or gazing at distant stars. This motif, which I identify as “solitary robot in abstract or alien landscape”, suggests a reframing of artificial beings as contemplative or abandoned.
-            </p>
-             <p className="text-gray-300 leading-relaxed">
-              This shift aligns with mid-century developments in cybernetics and consciousness studies. As public discourse moved beyond mechanical function to questions of awareness and autonomy, so too did the imagery evolve—inviting viewers to consider machines as more than tools: as minds. 
+              By the 1950s, a tonal shift emerges. Robots begin to appear alone, no longer rampaging through cities or overpowering humans. They are instead seen in stasis—standing still against alien landscapes, or gazing at distant stars. This motif, which I identify as “solitary robot in abstract or alien landscape”, suggests a reframing of artificial beings as contemplative or abandoned. This shift aligns with mid-century developments in cybernetics and consciousness studies. As public discourse moved beyond mechanical function to questions of awareness and autonomy, so too did the imagery evolve—inviting viewers to consider machines as more than tools: as minds. 
             </p>
           </motion.div>
 
