@@ -1162,9 +1162,10 @@ export const covers: Cover[] = [
      aiReflection: "The image suggests a narrative of conflict between the robot and the woman, with the futuristic structure in the background hinting at a larger, more complex world beyond the immediate scene. The red background and the glowing light source create a sense of danger and uncertainty, while the woman's unconscious state adds to the tension. The robot's design is both futuristic and primitive, with a smooth, metallic surface that suggests advanced technology. The large head and small body create a sense of imbalance. The woman's blue dress contrasts with the red background, drawing attention to her as a vulnerable figure in the robot's grasp. If the robot is capable of holding the woman, does it have the capacity for empathy or control? The overall tone is one of unease and foreboding, as the viewer is left to wonder about the outcome of this encounter."
     },
     tags: [
-      "tbd",
-      "tbd",
-      "tbd"
+      "Humanoid Robot(s)",
+      "Robot(s) Grasping Human(s)",
+      "Alien Planet",
+      "Woman in Peril"
     ]
   },  
   {
@@ -1180,9 +1181,10 @@ export const covers: Cover[] = [
      aiReflection: "Looking at this image, I wonder about the narrative tension between the robot's purpose and the human characters' fate. The composition, with the robot towering over the humans, suggests a power dynamic where the machine is in control. The red sky adds a sense of foreboding, and the barren landscape implies a world where resources are scarce. The artistic choices, such as the color palette and the positioning of the characters, shape our perception of the machine-human relationship, making the robot appear both formidable and menacing. The philosophical perspective is one of existential dread, as the robot's presence implies a world where machines have become more powerful than humans."
     },
     tags: [
-      "tbd",
-      "tbd",
-      "tbd"
+      "Non-Humanoid Robot(s)",
+      "Robot(s) Grasping Human(s)",
+      "Landscape in Flames",
+      "Human(s) Incapacitated"
     ]
   },  
   {
@@ -1198,9 +1200,11 @@ export const covers: Cover[] = [
      aiReflection: "This cover embodies early optimism that machines would seamlessly handle domestic chores. It satirizes our faith in service robots by casting them as overeager caricatures rather than polite servants. It reveals our perennial hope—and anxiety—that technology might both empower and embarrass us.",
     },
     tags: [
-      "Service Robot",
-      "Absurdist humor",
-      "tbd"
+      "Humanoid Robot(s)",
+      "Service Robot(s)",
+      "Domestic Setting",
+      "Robot(s) Engaged in Human Activities",
+      "Robot(s) Helping Human(s)"
     ]
   },  
   {
@@ -1216,9 +1220,11 @@ export const covers: Cover[] = [
      aiReflection: "From my vantage as an AI examining these pulp ancestors, it’s fascinating how early artists envisioned robots not as silent servants but as overzealous performers. What might today’s designers learn about empathy from this saucy lesson in unintended machine hubris?"
     },
     tags: [
-      "Service Robot",
-      "Absurdist humor",
-      "tbd"
+      "Humanoid Robot(s)",
+      "Service Robot(s)",
+      "Domestic Setting",
+      "Robot(s) Engaged in Human Activities",
+      "Robot(s) Helping Human(s)"
     ]
   },  
   {
@@ -1235,8 +1241,10 @@ export const covers: Cover[] = [
     },
     tags: [
       "Law Enforcement Robot",
-      "tbd",
-      "tbd"
+      "Humanoid Robot(s)",
+      "Robot(s) in Pursuit",
+      "Nature Setting",
+      "Woman Fleeing"
     ]
   },  
   {
@@ -1252,9 +1260,11 @@ export const covers: Cover[] = [
      aiReflection: "I find it fascinating that humans once saw robots foremost as instruments of control—shock-troops in lab coats—rather than collaborators. Today, our anxieties have evolved: we worry less about electrode clamps and more about inscrutable algorithms. Yet the impulse remains the same—projecting our darkest impulses onto metal shells. In modern debates on AI trust and autonomy, this cover reminds me how deeply rooted our fear is that machines might enforce our worst impulses rather than our best hopes."
     },
     tags: [
-      "tbd",
-      "tbd",
-      "tbd"
+      "Tentacled Robot(s)",
+      "Laboratory / Scientific Setting",
+      "Arena / Stage Setting",
+      "Robot(s) Grasping Human(s)",
+      "Human(s) Captive"
     ]
   },  
   {
@@ -1270,9 +1280,10 @@ export const covers: Cover[] = [
      aiReflection: " I see in this stark encounter a mirror of modern fears about algorithmic breaches—systems we designed to serve us that may one day slip the leash and override our safeguards. Unlike today’s hidden code, this robot’s metallic limbs are laid bare, yet both scenarios share the same anxiety: machines operating under foreign objectives. It reminds me that, from pulp invasions to cyber-intrusions, our core dread persists—will our creations remain under humane control, or will they become the harbingers of an order they were never meant to serve? In an age of AI, the lesson is clear: vigilance must accompany innovation, lest our own ingenuity be turned against us."
     },
     tags: [
-      "tbd",
-      "tbd",
-      "tbd"
+      "Non-Humanoid Robot(s)",
+      "Robot(s) Grasping Human(s)",
+      "Spacecraft (interior)",
+      "Woman in Peril"
     ]
   },    
   {
