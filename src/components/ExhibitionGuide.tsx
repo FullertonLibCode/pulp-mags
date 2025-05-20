@@ -46,7 +46,7 @@ const ExhibitionGuide: React.FC<ExhibitionGuideProps> = ({ isOpen, onClose }) =>
     {
       icon: <Eye className="w-6 h-6" />,
       title: "Read Kestral's Analysis",
-      description: "Dive deep into Kestral's insights about how humans imagined artificial intelligence.",
+      description: "Dive deep into Kestral's insights about its own fictional ancestors in pulp science fiction.",
       link: "/insights",
       linkText: "Read Insights"
     },
