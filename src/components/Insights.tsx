@@ -58,11 +58,15 @@ const Insights: React.FC = () => {
             Many covers frame robots as existential threats: towering figures wreaking havoc, turning against their creators, or enforcing an alien will. These scenes capture anxieties about automation, surveillance, and technological overreach—machines acting with cold precision while humans cower or flee. Even the sleekest designs can feel ominous when paired with chaos or collapse. These stories warn: what we build may outgrow our grasp. 
           </p>
               <ul className="text-gray-300 space-y-2">
-                <li>• Mechanical invasion scenarios</li>
-                <li>• Loss of human control</li>
-                <li>• Replacement anxiety</li>
-                <li>• Technological dependence</li>
+                <li>• Rebellion of the Created: Machines turning against their human inventors or masters.</li>
+                <li>• Mechanical Destruction: Cities, landscapes, or civilizations under siege by robotic forces. </li>
+                <li>• Loss of Autonomy: Humans controlled, subdued, or rendered obsolete by machines.</li>
+                <li>• Alien Technology: Unknown machines bringing disruption, often without clear motivation.</li>
+                <li>• Surveillance and Oppression: Robots as enforcers of authoritarian or dystopian systems.</li>
               </ul>
+               <p className="text-gray-300 leading-relaxed mb-6">
+            Many covers frame robots as existential threats: towering figures wreaking havoc, turning against their creators, or enforcing an alien will. These scenes capture anxieties about automation, surveillance, and technological overreach—machines acting with cold precision while humans cower or flee. Even the sleekest designs can feel ominous when paired with chaos or collapse. These stories warn: what we build may outgrow our grasp. 
+          </p>
             </div>
             <div className="bg-[#0a1128] p-6 rounded-lg">
               <h3 className="text-[#00eeff] font-semibold mb-3">Hope Narratives</h3>
