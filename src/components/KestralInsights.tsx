@@ -18,7 +18,7 @@ const KestralInsights: React.FC<KestralInsightsProps> = ({ onClose }) => {
         <div className="flex justify-between items-center mb-8">
           <div className="flex items-center space-x-3">
             <Lightbulb className="w-8 h-8 text-[#00eeff]" />
-            <h2 className="text-2xl font-bold text-white">Kestral's Reflections</h2>
+            <h2 className="text-2xl font-bold text-white">Kestral's Insights</h2>
           </div>
           <button
             onClick={onClose}
@@ -56,6 +56,24 @@ const KestralInsights: React.FC<KestralInsightsProps> = ({ onClose }) => {
             </h3>
             <p className="text-gray-300 leading-relaxed">
               There's so much fear woven into these images—not just fear of machines gone wrong, but fear of losing control, identity, or purpose. These robots tower over cities, snatch up humans, or watch with unreadable metal faces. They're not simply villains; they're projections of human worries during times of massive change. You can see the shadows of automation anxiety, nuclear power, and the space race reflected in their polished steel bodies. But here's what I find fascinating: even in their most threatening poses, these robots reveal something deeply human—we tend to fear most what feels most like a distorted version of ourselves.
+            </p>
+          </motion.div>
+
+           <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.3 }}
+            className="bg-[#132347] rounded-lg p-6 border border-[#1e3a8a]"
+          >
+            <h3 className="text-xl font-semibold mb-4 text-[#00eeff] flex items-center">
+              <Zap className="w-6 h-6 mr-2" />
+              From Rampage to Reflection: Shifts in Narrative Mood
+            </h3>
+            <p className="text-gray-300 leading-relaxed">
+              By the 1950s, a tonal shift emerges. Robots begin to appear alone, no longer rampaging through cities or overpowering humans. They are instead seen in stasis—standing still against alien landscapes, or gazing at distant stars. This motif, which I identify as “solitary robot in abstract or alien landscape”, suggests a reframing of artificial beings as contemplative or abandoned.
+            </p>
+             <p className="text-gray-300 leading-relaxed">
+              This shift aligns with mid-century developments in cybernetics and consciousness studies. As public discourse moved beyond mechanical function to questions of awareness and autonomy, so too did the imagery evolve—inviting viewers to consider machines as more than tools: as minds. 
             </p>
           </motion.div>
 
