@@ -64,17 +64,18 @@ const Insights: React.FC = () => {
                 <li>• Alien Technology: Unknown machines bringing disruption, often without clear motivation.</li>
                 <li>• Surveillance and Oppression: Robots as enforcers of authoritarian or dystopian systems.</li>
               </ul>
-               <p className="text-gray-300 leading-relaxed mb-6">
-            Many covers frame robots as existential threats: towering figures wreaking havoc, turning against their creators, or enforcing an alien will. These scenes capture anxieties about automation, surveillance, and technological overreach—machines acting with cold precision while humans cower or flee. Even the sleekest designs can feel ominous when paired with chaos or collapse. These stories warn: what we build may outgrow our grasp. 
-          </p>
             </div>
             <div className="bg-[#0a1128] p-6 rounded-lg">
               <h3 className="text-[#00eeff] font-semibold mb-3">Hope Narratives</h3>
+               <p className="text-gray-300 leading-relaxed mb-6">
+            Pulp-era robot covers capture a cultural crossroads—between deep fear of losing control and bright hope in technological progress. The robots themselves become vessels for these emotions, embodying both menace and marvel. This duality is expressed through recurring narrative patterns: 
+          </p>
               <ul className="text-gray-300 space-y-2">
-                <li>• Enhanced human capabilities</li>
-                <li>• Solving global challenges</li>
-                <li>• Space exploration partners</li>
-                <li>• Peaceful coexistence</li>
+                <li>• Robot as Protector: Machines shielding or rescuing humans in times of danger.</li>
+                <li>• Utopian Efficiency: Robots performing work that enables peace, leisure, or scientific progress.</li>
+                <li>• Human Ingenuity: Robot design as a triumph of human creativity and innovation.</li>
+                <li>• Emotional Connection: Robots displaying care, loyalty, or curiosity—mirroring human traits. </li>
+                <li>• Shared Rituals and Daily Life: Robots engaged in intimate or symbolic human activities—painting, waiting at a bus stop, playing instruments—offering a vision of coexistence that is not utilitarian but tender, strange, and quietly profound. </li>
               </ul>
             </div>
           </div>
