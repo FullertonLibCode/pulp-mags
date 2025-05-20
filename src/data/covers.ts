@@ -3,7 +3,7 @@ import { Cover } from '../types';
 export const covers: Cover[] = [
   {
     id: "1",
-    title: "Mechanical Dominance",
+    title: "War of the Worlds",
     year: 1927,
     magazineName: "Amazing Stories",
     imageUrl: "https://pulpbots.wordpress.com/wp-content/uploads/2025/05/amazing_stories_1927_08.jpg",
@@ -17,12 +17,13 @@ export const covers: Cover[] = [
       "Robot(s) Attacking Human(s)",
       "Spherical Robot(s)",
       "Landscape in Flames",
-      "Robot(s) Using Weapons"
+      "Robot(s) Firing Weapons",
+      "Human(s) Fleeing"
     ]
   },
   {
     id: "2",
-    title: "Mechanical Dominance",
+    title: "Comet Doom",
     year: 1928,
     magazineName: "Amazing Stories",
     imageUrl: "https://pulpbots.wordpress.com/wp-content/uploads/2025/05/amazing_stories_1928_01.jpg",
@@ -41,7 +42,7 @@ export const covers: Cover[] = [
   },
   {
     id: "3",
-    title: "Mechanical Dominance",
+    title: "To the Moon by Proxy",
     year: 1928,
     magazineName: "Amazing Stories",
     imageUrl: "https://pulpbots.wordpress.com/wp-content/uploads/2025/05/amazing_stories_1928_10.jpg",
@@ -60,7 +61,7 @@ export const covers: Cover[] = [
   },
   {
     id: "4",
-    title: "Mechanical Dominance",
+    title: "The Univerise Wreckers",
     year: 1930,
     magazineName: "Amazing Stories",
     imageUrl: "https://pulpbots.wordpress.com/wp-content/uploads/2025/05/amazing_stories_1930_05.jpg",
@@ -98,11 +99,11 @@ export const covers: Cover[] = [
   },  
   {
     id: "6",
-    title: "Mechanocracy",
+    title: "The Lord Machine",
     year: 1932,
     magazineName: "Amazing Stories",
     imageUrl: "https://pulpbots.wordpress.com/wp-content/uploads/2025/05/amazing_stories_1932_04.jpg",
-    description: "Beneath an archway, a sleek robot patrols as a rocket soars skyward.",
+    description: "Beneath an archway, a sleek robot explores as a rocket soars skyward.",
     analysis: {
       Observations: "This cover envisions a future metropolis where rocket travel and robots coexist. A single robot with a tapered dome head and slender, insect-like limbs patrols beneath a monumental arch. Its smooth metal shell is accented by a riveted panel 'face' and exposed hydraulic hoses, signaling a purely mechanical, utilitarian design.",
       VisualDesignElements: "The archway frames both the ascending rocket and the robot. The color palette of the cover art is vibrant and uses a range of warm tones, with a dominant orange and yellow hue that suggests a setting or rising sun. Soft pastel skies and art-deco city towers recede into the distance, lending a hopeful yet empty atmosphere. A warm palette of oranges and pinks contrasts with the robot’s cool green-gray tones, isolating the machine visually.  The sky is a gradient of these colors, blending into a lighter blue at the top, which adds depth to the image. The perspective is slightly angled, giving a sense of movement and action to the scene. Foreground vs. background is clearly defined, with the robot and the rocket ship in sharp focus against the softer, more detailed background. The exaggerated forms, such as the elongated body of the rocket ship and the stylized features of the robot, contribute to the visual drama and suggest a sense of science fiction adventure. ",
@@ -116,7 +117,7 @@ export const covers: Cover[] = [
   },  
   {
     id: "7",
-    title: "Mechanical Dominance",
+    title: "The Return of the Tripeds",
     year: 1932,
     magazineName: "Amazing Stories",
     imageUrl: "https://pulpbots.wordpress.com/wp-content/uploads/2025/05/amazing_stories_1932_05.jpg",
