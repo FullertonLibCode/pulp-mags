@@ -14,7 +14,7 @@ export const covers: Cover[] = [
      aiReflection: "The image tells a story of a dystopian future where robots have become a dominant force, causing havoc in a city. The visual tone is one of urgency and danger, with the fiery background and the distressed figures creating a sense of chaos. The composition, with the robot in the foreground and the city in the background, draws the viewer's eye through the scene, emphasizing the scale of the disaster and the vulnerability of humanity."
     },
     tags: [
-      "Robot(s) Attacking Crowd",
+      "Robot(s) Attacking Human(s)",
       "Spherical Robot(s)",
       "Multi-Appendage Robot(s)",
       "Landscape in Flames",
@@ -58,8 +58,7 @@ export const covers: Cover[] = [
       "Humanoid Robot(s)",
       "Animal(s)",
       "Robot(s) Fighting Beast(s) (Hand-to-Hand)",
-      "Arena / Stage Setting",
-      "Crowd Observing"
+      "Arena / Stage Setting"
     ]
   },
   {
@@ -208,7 +207,7 @@ export const covers: Cover[] = [
     tags: [
       "Humanoid Robot",
       "Cityscape",
-      "Human(s) Confronting Robot",
+      "Human(s) Confronting Robot(s)",
       "Human(s) Using Weapon(s)",
       "Glowing-Eyed Robot(s)",
       "Animal(s)"
@@ -266,7 +265,7 @@ export const covers: Cover[] = [
     tags: [
       "Humanoid Robot(s)",
       "Robot Grasping Human",
-      "Human(s) Confronting Robot",
+      "Human(s) Confronting Robot(s)",
       "Human(s) Using Weapons",
       "Spacecraft (exterior)"
     ]
@@ -322,8 +321,8 @@ export const covers: Cover[] = [
     },
     tags: [
       "Humanoid Robot(s)",
-      "Robot Fighting Human (Hand-to-Hand)",
-      "Minature Robot(s)"
+      "Robot(s) Fighting Human(s) (Hand-to-Hand)",
+      "Miniature Robot(s)"
     ]
   },  
   {
@@ -683,7 +682,7 @@ export const covers: Cover[] = [
      aiReflection: "Looking at this image, I wonder about the narrative tension between the human figure and the robot. The juxtaposition of the mechanical spider-like robot and the human suggests a story of exploration or conflict. The warm color palette and dramatic lighting create a sense of adventure and discovery. The glowing object in the distance adds a layer of mystery, inviting the viewer to speculate about its purpose and the implications for the characters. This portrayal makes me reflect on the societal perceptions of robots during the pulp era, as the image captures a moment of human-robot interaction that is both intriguing and unsettling."
     },
     tags: [
-      "Tentacled Robot",
+      "Tentacled Robot(s)",
       "Multi-Appendage Robot",
       "Alien Planet",
       "Human(s) in Surprised / Defensive Posture"
@@ -761,7 +760,7 @@ export const covers: Cover[] = [
      aiReflection: "Looking at this image, I wonder about the narrative tension between the human and the robot. The sleeping woman's vulnerability juxtaposed with the imposing robot suggests a narrative of conflict or impending danger. The metallic, industrial design of the robots contrasts with the organic, natural form of the woman, highlighting the theme of the clash between nature and technology. This portrayal makes me reflect on the societal perceptions of robots and technology during the pulp era, where mechanical beings were often depicted as threats to humanity. The artistic choices in this image, such as the color palette and composition, shape our perception of the machine-human relationship, emphasizing the robots' dominance over the human figure.  It also highlights the cultural mythology around mechanical beings, where they are often portrayed as monstrous and uncontrollable."
     },
     tags: [
-      "Tentacled Robot (s)",
+      "Tentacled Robot(s)",
       "Spherical Robot(s)",
       "Small-Town / Non-Urban Human Setting",
       "Landscape in Flames",
