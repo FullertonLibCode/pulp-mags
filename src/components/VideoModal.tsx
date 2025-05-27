@@ -37,8 +37,7 @@ const VideoModal: React.FC<VideoModalProps> = ({ isOpen, onClose }) => {
           // Toggle play/pause
           videoRef.current?.contentWindow?.postMessage(
             JSON.stringify({
-              method: 'play',
-              value: isPlaying ? 'pause' : 'play'
+              event: isPlaying ? 'pause' : 'play'
             }),
             'https://player.cloudinary.com'
           );
@@ -64,7 +63,7 @@ const VideoModal: React.FC<VideoModalProps> = ({ isOpen, onClose }) => {
       }
     };
 
-    // Add message listener for player events
+    // Listen for player events
     const handleMessage = (event: MessageEvent) => {
       if (event.origin === 'https://player.cloudinary.com') {
         try {
