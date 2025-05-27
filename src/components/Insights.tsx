@@ -460,5 +460,3 @@ const Insights: React.FC = () => {
 };
 
 export default Insights;
-
-export default Insights

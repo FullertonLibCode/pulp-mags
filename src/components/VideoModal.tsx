@@ -27,19 +27,20 @@ const VideoModal: React.FC<VideoModalProps> = ({ isOpen, onClose }) => {
         return;
       }
 
-      // Handle video playback controls when video iframe is focused
-      if (document.activeElement === videoRef.current) {
-        if (e.key === 'Enter' || e.key === ' ') {
-          e.preventDefault();
-          // Send play/pause message to iframe
-          videoRef.current?.contentWindow?.postMessage(
-            JSON.stringify({ event: 'command', func: 'togglePlay' }), 
-            'https://player.cloudinary.com'
-          );
+      if (e.key !== 'Tab') {
+        // Handle video playback controls when video iframe is focused
+        if (document.activeElement === videoRef.current) {
+          if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            // Send play/pause message to iframe
+            videoRef.current?.contentWindow?.postMessage(
+              JSON.stringify({ event: 'command', func: 'togglePlay' }), 
+              'https://player.cloudinary.com'
+            );
+          }
         }
+        return;
       }
-
-      if (e.key !== 'Tab') return;
 
       if (e.shiftKey) {
         if (document.activeElement === firstFocusable) {
@@ -61,6 +62,17 @@ const VideoModal: React.FC<VideoModalProps> = ({ isOpen, onClose }) => {
       document.removeEventListener('keydown', handleKeyDown);
     };
   }, [isOpen, onClose]);
+
+  const handleVideoKeyPress = (e: React.KeyboardEvent<HTMLIFrameElement>) => {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      // Send play/pause message to iframe
+      videoRef.current?.contentWindow?.postMessage(
+        JSON.stringify({ event: 'command', func: 'togglePlay' }), 
+        'https://player.cloudinary.com'
+      );
+    }
+  };
 
   return (
     <AnimatePresence>
@@ -105,6 +117,7 @@ const VideoModal: React.FC<VideoModalProps> = ({ isOpen, onClose }) => {
                 title="Meet Kestral: AI Curator Introduction"
                 id="video-title"
                 tabIndex={0}
+                onKeyDown={handleVideoKeyPress}
               />
             </div>
           </motion.div>
