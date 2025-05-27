@@ -15,7 +15,16 @@ export const NavLink: React.FC<NavLinkProps> = ({ to, icon, label, onClick }) =>
   const handleKeyPress = (e: React.KeyboardEvent) => {
     if (e.key === 'Enter' || e.key === ' ') {
       e.preventDefault();
-      onClick?.();
+      if (onClick) {
+        onClick();
+      }
+      // Create a new click event and dispatch it on the link element
+      const clickEvent = new MouseEvent('click', {
+        bubbles: true,
+        cancelable: true,
+        view: window
+      });
+      e.currentTarget.dispatchEvent(clickEvent);
     }
   };
   
