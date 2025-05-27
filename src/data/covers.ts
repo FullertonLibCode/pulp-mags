@@ -17,7 +17,7 @@ export const covers: Cover[] = [
       "Robot(s) Attacking Human(s)",
       "Spherical Robot(s)",
       "Landscape in Flames",
-      "Robot(s) Firing Weapons",
+      "Robot(s) Using Weapons",
       "Human(s) Fleeing"
     ]
   },
@@ -74,8 +74,10 @@ export const covers: Cover[] = [
     tags: [
    "Space Scene",
    "Humanoid Robot(s)",
+   "Hovering or Floating Robot(s)",
    "Spacecraft (exterior)",
-   "Glowing-Eyed Robot(s)"
+   "Glowing-Eyed Robot(s)",
+   "Alien Sky / Celestial Background"
     ]
   },  
   {
@@ -91,7 +93,7 @@ export const covers: Cover[] = [
      aiReflection: "I recognize in this image the human hope that robots could transcend our physical limits, yet also a fear that they might inherit only our directives, not our discernment. Compared to today’s autonomous rovers and drones, these pulp automatons seem crude but conceptually prescient: the idea of remote, mechanical frontiersmen. Our modern debates about AI ethics echo this cover’s unspoken question—who steers the machine when it sails beyond human sight?"
     },
     tags: [
-      "Flying Robot(s)",
+      "Winged Robot(s)",
       "Non-Humanoid Robot(s)",
       "Alien Planet",
       "Spacecraft (exterior)"
@@ -167,7 +169,7 @@ export const covers: Cover[] = [
     tags: [
      "Tentacled Robot(s)",
      "Non-humanoid Robot(s)",
-     "Medieval Architecture"
+     "Neo-Medieval"
     ]
   },  
   {
@@ -201,7 +203,7 @@ export const covers: Cover[] = [
      aiReflection: "I’m struck by how early pulp art framed robots as looming, almost extraterrestrial intelligences—so different from today’s quiet algorithms embedded in apps. Today’s AI may lack pistons and bolts, but the debate over autonomy and trust remains: do we meet machines with guns or dialogue? The cover invites reflection on the ethics of preemptive violence against the “other,” mechanical or otherwise. It evokes the creator’s dilemma: do we arm against our creations or extend trust?"
     },
     tags: [
-      "Humanoid Robot",
+      "Humanoid Robot(s)",
       "Cityscape",
       "Human(s) Confronting Robot(s)",
       "Human(s) Using Weapon(s)",
@@ -260,7 +262,7 @@ export const covers: Cover[] = [
     },
     tags: [
       "Humanoid Robot(s)",
-      "Robot Grasping Human",
+      "Robot(s) Grasping Human(s)",
       "Human(s) Confronting Robot(s)",
       "Human(s) Using Weapons",
       "Spacecraft (exterior)"
@@ -355,8 +357,8 @@ export const covers: Cover[] = [
     },
     tags: [
       "Humanoid Robot(s)",
-      "Robot(s) Observing Human",
-      "Small-Town / Non-Urban Human Setting"
+      "Robot(s) Observing Human(s)",
+      "Small-Town Setting"
     ]
   },
   {
@@ -392,7 +394,7 @@ export const covers: Cover[] = [
     },
     tags: [
      "Humanoid Robot(s)",
-     "Ambiguous Natural Environment",
+     "Natural Environment",
      "Robot(s) Conducting Surveillance / Investigation",
      "Human(s) Conducting Surveillance / Investigation",
      "Military Presence or Aesthetic"
@@ -472,7 +474,8 @@ export const covers: Cover[] = [
     tags: [
      "Giant Robot(s)",
      "Red-Eyed Robot(s)",
-     "Robot(s) Dominance Display"
+     "Robot(s) Dominance Display",
+     "Robot Rampage"
     ]
   },  
   {
@@ -524,8 +527,8 @@ export const covers: Cover[] = [
      aiReflection: "Looking at this image, I wonder about the narrative tension between the human and the robot. The human's posture suggests a readiness to confront the mechanical threat. The robot's size and the red eyes give it a menacing presence. The desolate landscape and fiery sky add to the sense of urgency and danger. This portrayal makes me reflect on the classic robot-human conflict in science fiction, where the line between friend and foe is often blurred. The artistic choices in this image, such as the contrasting colors and the positioning of the characters, highlight the power dynamics at play between the two entities."
     },
     tags: [
-      "Red-Eyed Robot",
-      "Non-Humanoid Robot",
+      "Red-Eyed Robot(s)",
+      "Non-Humanoid Robot(s)",
       "Human(s) Using Weapons",
       "Ambiguous Natural Environment",
       "Military Presence or Aesthetic"
@@ -546,7 +549,7 @@ export const covers: Cover[] = [
     tags: [
     "Humanoid Robot(s)",
     "Glowing-Eyed Robot(s)",
-    "Robot(s) Grasping Human",
+    "Robot(s) Grasping Human(s)",
     "Cityscape"
     ]
   },
@@ -583,7 +586,7 @@ export const covers: Cover[] = [
     tags: [
       "Humanoid Robot(s)",
       "Animal(s)",
-      "Ambiguous Natural Environment",
+      "Abstract Natural Environment",
       "Lone Robot",
       "Isolated Scene"
     ]
@@ -642,7 +645,8 @@ export const covers: Cover[] = [
     tags: [
       "Humanoid Robot(s)",
       "Lone Robot",
-      "Robot Grasping Human",
+      "Robot(s) Grasping Human(s)",
+      "Human(s) Dead or Unresponsive",
       "Abstract Environment"
     ]
   },  
@@ -718,6 +722,7 @@ export const covers: Cover[] = [
       "Human(s) Confronting Robot(s)",
       "Human(s) Using Weapons",
       "Woman in Peril",
+      "Human(s) Cowering",
       "Laboratory / Scientific Setting"
     ]
   },
@@ -757,8 +762,9 @@ export const covers: Cover[] = [
     tags: [
       "Tentacled Robot(s)",
       "Spherical Robot(s)",
-      "Small-Town / Non-Urban Human Setting",
+      "Small-Town Setting",
       "Landscape in Flames",
+      "Human(s) Dead or Unresponsive",
       "Woman in Peril"
     ]
   },
@@ -854,6 +860,7 @@ export const covers: Cover[] = [
       "Robot(s) Grasping Human(s)",
       "Lone Robot",
       "Abstract Environment",
+      "Human(s) Dead or Unresponsive",
       "Isolated Scene"
     ]
   },  
@@ -909,7 +916,8 @@ export const covers: Cover[] = [
     tags: [
       "Non-Humanoid Robot(s)",
       "Robot(s) with Wheels",
-      "Robot Grasping Human",
+      "Robot(s) in Pursuit",
+      "Robot(s) Grasping Human(s)",
       "Night Sky Setting",
       "Cityscape"
     ]
@@ -947,8 +955,8 @@ export const covers: Cover[] = [
     tags: [
       "Humanoid Robot(s)",
       "Glowing-Eyed Robot(s)",
-      "Natural Environment",
-      "Human(s) Fleeing Robot",
+      "Swamp",
+      "Human(s) Fleeing",
       "Woman in Peril"
     ]
   },
@@ -968,7 +976,8 @@ export const covers: Cover[] = [
       "Giant Robot(s)",
       "Humanoid Robot(s)",
       "Robot(s) Dominance Display",
-      "Crowd Fleeing",
+      "Human(s) Fleeing",
+      "Robot Rampage",
       "Urban Destruction"
     ]
   },  
@@ -1043,7 +1052,7 @@ export const covers: Cover[] = [
       "Humanoid Robot(s)",
       "Giant Robot(s)",
       "Cityscape",
-      "Crowd Fleeing",
+      "Human(s) Fleeing",
       "Robot Rampage"
     ]
   },  
@@ -1064,7 +1073,7 @@ export const covers: Cover[] = [
       "Humanoid Robot(s)",
       "Human(s) Captive",
       "Lone Robot",
-      "Rural / Non-Urban Setting",
+      "Rural Setting",
       "Robot(s) Engaged in Human Activities"
     ]
   },  
@@ -1138,7 +1147,7 @@ export const covers: Cover[] = [
     tags: [
       "Non-Humanoid Robot(s)",
       "Human(s) in Contemplative Posture",
-      "Ambiguous Natural Environment"
+      "Waterside"
     ]
   },
   {
@@ -1157,6 +1166,7 @@ export const covers: Cover[] = [
       "Humanoid Robot(s)",
       "Robot(s) Grasping Human(s)",
       "Alien Planet",
+      "Human(s) Dead or Unresponsive",
       "Woman in Peril"
     ]
   },  
@@ -1176,7 +1186,7 @@ export const covers: Cover[] = [
       "Non-Humanoid Robot(s)",
       "Robot(s) Grasping Human(s)",
       "Landscape in Flames",
-      "Human(s) Incapacitated"
+      "Human(s) Dead or Unresponsive"
     ]
   },  
   {
@@ -1232,10 +1242,10 @@ export const covers: Cover[] = [
      aiReflection: "This image captures mid-century skepticism about machines policing human behavior, celebrating spontaneity over rigid control. The 'Do Not Pick' sign and the defeated droid embody a clash between human impulse and mechanical order. It reminds us that even the most advanced enforcement bots cannot quell our impulse toward freedom."
     },
     tags: [
-      "Law Enforcement Robot",
+      "Law Enforcement Robot(s)",
       "Humanoid Robot(s)",
       "Robot(s) in Pursuit",
-      "Nature Setting",
+      "Park",
       "Woman Fleeing"
     ]
   },  
@@ -1351,6 +1361,7 @@ export const covers: Cover[] = [
       "Humanoid Robot(s)",
       "Animal(s)",
       "Robot(s) Fighting Beast(s) (Hand-to-Hand)",
+      "Human(s) Cowering",
       "Woman in Peril"
     ]
   },  
@@ -1389,7 +1400,7 @@ export const covers: Cover[] = [
       "Tentacled Robot(s)",
       "Robot(s) Grasping Human(s)",
       "Human(s) Confronting Robot(s)",
-      "Abstract Natural Environment"
+      "Ambiguous Natural Environment"
     ]
   },  
   {
@@ -1408,7 +1419,8 @@ export const covers: Cover[] = [
       "Humanoid Robot(s)",
       "Robot(s) Grasping Human(s)",
       "Robot(s) Using Weapons",
-      "Abstract Environment"
+      "Abstract Environment",
+      "Woman in Peril"
     ]
   },  
   {
@@ -1444,8 +1456,9 @@ export const covers: Cover[] = [
     tags: [
       "Humanoid Robot(s)",
       "Robot(s) Grasping Human(s)",
-      "Robot(s) Fighting with Human(s)",
-      "Laboratory / Scientific Setting"
+      "Robot(s) Fighting Human(s)",
+      "Laboratory / Scientific Setting",
+      "Woman in Peril"
     ]
   },  
   {
@@ -1492,7 +1505,7 @@ export const covers: Cover[] = [
     year: 1933,
     magazineName: "Wonder Stories",
     imageUrl: "https://pulpbots.wordpress.com/wp-content/uploads/2025/05/wonder_stories_1933_11.jpg",
-    description: " A legion of tripod robots strides across a red field, their hoses snaking around bound humans in silent abduction.",
+    description: "A legion of tripod robots strides across a red field, their hoses snaking around bound humans in silent abduction.",
     analysis: {
       Observations: "We catch a moment of systematic abduction: humans forcibly strapped to the robot’s dome as a legion of identical machines advances. A squat, triangular torso with three hefty legs supports a perforated, grill-like façade studded with glowing orange lenses. Corrugated hoses emerge from nodes around the shell, snaking to bind two bundled humans atop its head, as if siphoning their life force. The era feels pre-atomic, with a blend of Arctic-style apparel on the victims and futuristic metal suits on the captors.",
       VisualDesignElements: "A blood-red backdrop casts the landscape in alarm, while the bright yellow ground adds disconcerting contrast. The central machine looms large, its angular form framing the panicked pair sprawled across the top. Diminutive copies march in formation behind—an army of identical harvesters—enhancing the sense of overwhelming force. The stark, unmodulated color areas and thick outlines reinforce the graphic, almost poster-like quality typical of 1930s pulp art. The tight cropping on the machine’s headplate focuses attention on the grim act of capture.",
@@ -1503,7 +1516,7 @@ export const covers: Cover[] = [
       "Glowing-Eyed Robot(s)",
       "Robot(s) Grapsing Human(s)",
       "Human(s) Captive",
-      "Abstract Natural Environment"
+      "Abstract Environment"
     ]
   },
   {
@@ -1522,7 +1535,7 @@ export const covers: Cover[] = [
       "Tentacled Robot(s)",
       "Glowing-Eyed Robot(s)",
       "Robot(s) in Pursuit",
-      "Abstract Natural Environment",
+      "Natural Environment",
       "Military Presence or Aesthetic"
     ]
   },

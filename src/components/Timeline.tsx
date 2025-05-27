@@ -1,11 +1,47 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { timelineCovers } from '../data/covers';
 import { motion } from 'framer-motion';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const Timeline = () => {
+  const navigate = useNavigate();
   // Sort covers by year in ascending order
   const sortedCovers = [...timelineCovers].sort((a, b) => a.year - b.year);
+
+  const getAltText = (cover: typeof timelineCovers[0]) => {
+    return `Cover of ${cover.magazineName} ${cover.year} depicting ${cover.description}`;
+  };
+
+  const handleKeyPress = (e: React.KeyboardEvent, coverId: string) => {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      navigate(`/cover/${coverId}`, { state: { from: 'timeline' } });
+    }
+    if (e.key === 'Escape') {
+      e.preventDefault();
+      const mainContent = document.getElementById('main-content');
+      if (mainContent) {
+        mainContent.focus();
+      }
+    }
+  };
+
+  // Handle escape key at the document level
+  useEffect(() => {
+    const handleEscape = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') {
+        const mainContent = document.getElementById('main-content');
+        if (mainContent) {
+          mainContent.focus();
+        }
+      }
+    };
+
+    document.addEventListener('keydown', handleEscape);
+    return () => {
+      document.removeEventListener('keydown', handleEscape);
+    };
+  }, []);
 
   return (
     <div className="max-w-5xl mx-auto">
@@ -43,13 +79,16 @@ const Timeline = () => {
             <div className="sm:w-1/2 flex justify-center sm:justify-end sm:pr-8">
               <Link 
                 to={`/cover/${cover.id}`}
-                className="block bg-[#132347] rounded-lg overflow-hidden border border-[#1e3a8a] hover:border-[#00eeff] transition-all duration-200 w-64 lg:w-80"
+                state={{ from: 'timeline' }}
+                className="block bg-[#132347] rounded-lg overflow-hidden border border-[#1e3a8a] hover:border-[#00eeff] transition-all duration-200 w-64 lg:w-80 focus:outline-none focus:ring-2 focus:ring-[#00eeff] focus:ring-offset-2 focus:ring-offset-[#0a1128]"
+                onKeyDown={(e) => handleKeyPress(e, cover.id)}
+                aria-label={`View details for ${cover.title} from ${cover.magazineName}, ${cover.year}`}
               >
                 <div className="relative pt-[133%] overflow-hidden">
                   <img 
                     src={cover.imageUrl} 
-                    alt={cover.title} 
-                    className="absolute inset-0 w-full h-full object-contain"
+                    alt={getAltText(cover)}
+                    className="absolute inset-0 w-full h-full object-contain transition-transform duration-300 hover:scale-110"
                   />
                 </div>
               </Link>

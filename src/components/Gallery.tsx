@@ -3,8 +3,9 @@ import { covers } from '../data/covers';
 import { motion } from 'framer-motion';
 import { useLocation, useNavigate } from 'react-router-dom';
 import Slideshow from './Slideshow';
-import { Sliders as SlideshowIcon, Lightbulb } from 'lucide-react';
+import { Sliders as SlideshowIcon, Lightbulb, BookOpen, X } from 'lucide-react';
 import KestralInsights from './KestralInsights';
+import Insights from './Insights';
 
 const Gallery: React.FC = () => {
   const location = useLocation();
@@ -12,21 +13,46 @@ const Gallery: React.FC = () => {
   const [activeFilter, setActiveFilter] = useState<string>('all');
   const [showSlideshow, setShowSlideshow] = useState(false);
   const [showInsights, setShowInsights] = useState(false);
+  const [showAnalysis, setShowAnalysis] = useState(false);
   const [currentSlideIndex, setCurrentSlideIndex] = useState(0);
+  const [lastFocusedElement, setLastFocusedElement] = useState<HTMLElement | null>(null);
   
-  // Get all unique tags
   const allTags = Array.from(new Set(covers.flatMap(cover => cover.tags)));
   
-  // Parse tag from URL on component mount
   useEffect(() => {
     const params = new URLSearchParams(location.search);
     const tagParam = params.get('tag');
     if (tagParam) {
       setActiveFilter(tagParam);
     }
+
+    // Check if we should open insights modal
+    if (location.state?.openInsights) {
+      setShowInsights(true);
+      // Clear the state so it doesn't reopen on subsequent navigations
+      window.history.replaceState({}, document.title);
+    }
   }, [location]);
 
-  // Update URL when filter changes
+  // Lock body scroll and store last focused element when modals are open
+  useEffect(() => {
+    if (showInsights || showAnalysis) {
+      setLastFocusedElement(document.activeElement as HTMLElement);
+      document.body.style.overflow = 'hidden';
+      document.body.style.paddingRight = '15px'; // Prevent layout shift
+    } else {
+      document.body.style.overflow = '';
+      document.body.style.paddingRight = '';
+      if (lastFocusedElement) {
+        lastFocusedElement.focus();
+      }
+    }
+    return () => {
+      document.body.style.overflow = '';
+      document.body.style.paddingRight = '';
+    };
+  }, [showInsights, showAnalysis, lastFocusedElement]);
+
   const handleFilterChange = (tag: string) => {
     setActiveFilter(tag);
     if (tag === 'all') {
@@ -35,10 +61,43 @@ const Gallery: React.FC = () => {
       navigate(`/gallery?tag=${encodeURIComponent(tag)}`);
     }
   };
+
+  const handleKeyPress = (e: React.KeyboardEvent, action: () => void) => {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      action();
+    }
+  };
+
+  const handleEscapeKey = (e: KeyboardEvent) => {
+    if (e.key === 'Escape') {
+      if (showAnalysis) setShowAnalysis(false);
+      if (showInsights) setShowInsights(false);
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener('keydown', handleEscapeKey);
+    return () => {
+      document.removeEventListener('keydown', handleEscapeKey);
+    };
+  }, [showAnalysis, showInsights]);
+
+  const getAltText = (cover: typeof covers[0]) => {
+    return `Cover of ${cover.magazineName} ${cover.year} depicting ${cover.description}`;
+  };
     
   const filteredCovers = activeFilter === 'all' 
     ? covers 
     : covers.filter(cover => cover.tags.includes(activeFilter));
+
+  const openInsights = () => {
+    setShowInsights(true);
+  };
+
+  const openAnalysis = () => {
+    setShowAnalysis(true);
+  };
     
   return (
     <div className="max-w-[2000px] mx-auto px-4">
@@ -52,10 +111,16 @@ const Gallery: React.FC = () => {
           Gallery of Visions
         </motion.h1>
         
-        <div className="mb-12 overflow-x-auto whitespace-nowrap pb-3 relative">
+        <div 
+          className="mb-12 overflow-x-auto whitespace-nowrap pb-3 relative"
+          role="region" 
+          aria-label="Gallery filters"
+        >
           <div className="flex items-center space-x-2">
             <button
               onClick={() => handleFilterChange('all')}
+              onKeyDown={(e) => handleKeyPress(e, () => handleFilterChange('all'))}
+              aria-pressed={activeFilter === 'all'}
               className={`px-6 py-3 rounded-full text-sm transition-all duration-300 ${
                 activeFilter === 'all' 
                   ? 'pulp-border bg-[#00eeff] text-[#0a1128] font-semibold' 
@@ -68,6 +133,8 @@ const Gallery: React.FC = () => {
               <button
                 key={tag}
                 onClick={() => handleFilterChange(tag)}
+                onKeyDown={(e) => handleKeyPress(e, () => handleFilterChange(tag))}
+                aria-pressed={activeFilter === tag}
                 className={`px-6 py-3 rounded-full text-sm transition-all duration-300 ${
                   activeFilter === tag 
                     ? 'pulp-border bg-[#00eeff] text-[#0a1128] font-semibold' 
@@ -81,76 +148,110 @@ const Gallery: React.FC = () => {
         </div>
 
         <div className="flex justify-between items-center mb-6">
-          <button
-            onClick={() => setShowInsights(true)}
-            className="flex items-center space-x-2 px-6 py-3 bg-[#132347] text-[#00eeff] rounded-full hover:bg-[#1e3a8a] transition-all duration-300"
-          >
-            <Lightbulb className="w-5 h-5" />
-            <span>Kestral's Insights</span>
-          </button>
+          <div className="flex items-center space-x-4">
+            <button
+              onClick={openInsights}
+              onKeyDown={(e) => handleKeyPress(e, openInsights)}
+              className="flex items-center space-x-2 px-6 py-3 bg-[#132347] text-[#00eeff] rounded-full hover:bg-[#1e3a8a] transition-all duration-300"
+              aria-label="Open Kestral's Narrative Insights"
+            >
+              <Lightbulb className="w-5 h-5" aria-hidden="true" />
+              <span>Kestral's Insights:</span>
+              <span className="text-sm text-gray-300">Narrative Reflections</span>
+            </button>
+
+            <button
+              onClick={openAnalysis}
+              onKeyDown={(e) => handleKeyPress(e, openAnalysis)}
+              className="flex items-center space-x-2 px-6 py-3 bg-[#132347] text-[#00eeff] rounded-full hover:bg-[#1e3a8a] transition-all duration-300"
+              aria-label="Open Kestral's Visual Analysis"
+            >
+              <BookOpen className="w-5 h-5" aria-hidden="true" />
+              <span>Kestral's Analysis:</span>
+              <span className="text-sm text-gray-300">Visual Language</span>
+            </button>
+          </div>
 
           <button
             onClick={() => {
               setCurrentSlideIndex(0);
               setShowSlideshow(true);
             }}
+            onKeyDown={(e) => handleKeyPress(e, () => {
+              setCurrentSlideIndex(0);
+              setShowSlideshow(true);
+            })}
             className="flex items-center space-x-2 px-6 py-3 bg-[#132347] text-[#00eeff] rounded-full hover:bg-[#1e3a8a] transition-all duration-300"
+            aria-label="View gallery as slideshow"
           >
-            <SlideshowIcon className="w-5 h-5" />
+            <SlideshowIcon className="w-5 h-5" aria-hidden="true" />
             <span>View as Slideshow</span>
           </button>
         </div>
         
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+        <ul 
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8"
+          role="list"
+          aria-label="Gallery covers"
+        >
           {filteredCovers.map((cover, index) => (
-            <motion.div
+            <li
               key={cover.id}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
               className="relative group"
             >
-              <button 
-                onClick={() => {
-                  setCurrentSlideIndex(covers.findIndex(c => c.id === cover.id));
-                  setShowSlideshow(true);
-                }}
-                className="block w-full bg-[#132347] rounded-xl overflow-hidden hover:pulp-border transition-all duration-300 group-hover:shadow-[0_0_30px_rgba(0,238,255,0.2)]"
-              >
-                <div className="relative pt-[133%] overflow-hidden">
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#0a1128] via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                  <div className="absolute inset-0 vintage-texture mix-blend-overlay" />
-                  <img 
-                    src={cover.imageUrl} 
-                    alt={cover.title} 
-                    className="absolute inset-0 w-full h-full object-contain transition-transform duration-500 group-hover:scale-110"
-                  />
-                </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-semibold mb-2 group-hover:text-[#00eeff] transition-colors duration-300">
-                    {cover.title}
-                  </h3>
-                  <p className="text-gray-400 mb-3 font-mono">{cover.magazineName}, {cover.year}</p>
-                  <p className="text-gray-300 mb-4 line-clamp-2">{cover.description}</p>
-                  <div className="flex flex-wrap gap-2">
-                    {cover.tags.map(tag => (
-                      <button 
-                        key={tag}
-                        onClick={(e) => {
-                          e.stopPropagation();
-                          handleFilterChange(tag);
-                        }}
-                        className="bg-[#0a1128] text-xs px-3 py-1.5 rounded-full text-gray-300 transition-colors duration-300 hover:bg-[#1e3a8a] hover:text-white"
-                      >
-                        {tag}
-                      </button>
-                    ))}
+              <div className="block w-full bg-[#132347] rounded-xl overflow-hidden hover:pulp-border transition-all duration-300 group-hover:shadow-[0_0_30px_rgba(0,238,255,0.2)]">
+                <button
+                  onClick={() => {
+                    setCurrentSlideIndex(covers.findIndex(c => c.id === cover.id));
+                    setShowSlideshow(true);
+                  }}
+                  onKeyDown={(e) => handleKeyPress(e, () => {
+                    setCurrentSlideIndex(covers.findIndex(c => c.id === cover.id));
+                    setShowSlideshow(true);
+                  })}
+                  className="w-full text-left focus:outline-none focus:ring-2 focus:ring-[#00eeff] focus:ring-offset-2 focus:ring-offset-[#0a1128] rounded-xl"
+                  aria-label={`View ${cover.title} in slideshow`}
+                >
+                  <div className="relative pt-[133%] overflow-hidden">
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#0a1128] via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                    <div className="absolute inset-0 vintage-texture mix-blend-overlay" />
+                    <img 
+                      src={cover.imageUrl} 
+                      alt={getAltText(cover)} 
+                      className="absolute inset-0 w-full h-full object-contain transition-transform duration-500 group-hover:scale-110"
+                    />
                   </div>
+                  <div className="p-6">
+                    <h3 className="text-xl font-semibold mb-2 group-hover:text-[#00eeff] transition-colors duration-300">
+                      {cover.title}
+                    </h3>
+                    <p className="text-gray-400 mb-3 font-mono">{cover.magazineName}, {cover.year}</p>
+                    <p className="text-gray-300 mb-4 line-clamp-2">{cover.description}</p>
+                  </div>
+                </button>
+                <div className="px-6 pb-6 flex flex-wrap gap-2">
+                  {cover.tags.map(tag => (
+                    <button 
+                      key={tag}
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        handleFilterChange(tag);
+                      }}
+                      onKeyDown={(e) => {
+                        e.stopPropagation();
+                        handleKeyPress(e, () => handleFilterChange(tag));
+                      }}
+                      className="bg-[#0a1128] text-xs px-3 py-1.5 rounded-full text-gray-300 transition-colors duration-300 hover:bg-[#1e3a8a] hover:text-white focus:outline-none focus:ring-2 focus:ring-[#00eeff] focus:ring-offset-2 focus:ring-offset-[#0a1128]"
+                      aria-label={`Filter by ${tag}`}
+                    >
+                      {tag}
+                    </button>
+                  ))}
                 </div>
-              </button>
-            </motion.div>
+              </div>
+            </li>
           ))}
-        </div>
+        </ul>
         
         {filteredCovers.length === 0 && (
           <motion.div 
@@ -162,6 +263,7 @@ const Gallery: React.FC = () => {
             <p className="text-gray-400 text-lg mb-4">No covers found with the selected tag.</p>
             <button
               onClick={() => handleFilterChange('all')}
+              onKeyDown={(e) => handleKeyPress(e, () => handleFilterChange('all'))}
               className="px-6 py-3 bg-[#00eeff] text-[#0a1128] rounded-full font-semibold pulp-border transition-all duration-300"
             >
               Show all covers
@@ -177,6 +279,30 @@ const Gallery: React.FC = () => {
         />
       )}
       {showInsights && <KestralInsights onClose={() => setShowInsights(false)} />}
+      {showAnalysis && (
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          className="fixed inset-0 bg-[#0a1128]/95 z-50 overflow-y-auto"
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="analysis-title"
+        >
+          <div className="absolute top-4 right-4">
+            <button
+              onClick={() => setShowAnalysis(false)}
+              onKeyDown={(e) => handleKeyPress(e, () => setShowAnalysis(false))}
+              className="flex items-center gap-2 px-4 py-2 rounded-full bg-[#132347] text-[#00eeff] hover:bg-[#1e3a8a] transition-colors focus:outline-none focus:ring-2 focus:ring-[#00eeff]"
+              aria-label="Close Analysis"
+            >
+              <X className="w-5 h-5" aria-hidden="true" />
+              <span>Close Analysis</span>
+            </button>
+          </div>
+          <Insights />
+        </motion.div>
+      )}
     </div>
   );
 };

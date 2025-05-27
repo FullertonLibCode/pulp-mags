@@ -82,24 +82,26 @@ const Contributors: React.FC = () => {
             <h3 className="text-xl font-heading tracking-wider text-white mb-2">Physical Exhibition Team</h3>
             <ul className="text-gray-300 space-y-2">
               <li className="text-[#00eeff] font-semibold">Trish Campbell</li>
-              <li className="text-sm text-gray-400">Exhibit Committee Chair and Titan Excellence award winner</li>
+              <li className="text-sm text-gray-400">Exhibit Program Coordinator, 2025 Titan Excellence award winner</li>
               <li className="text-[#00eeff] font-semibold">Eileen Walraven</li>
-              <li className="text-sm text-gray-400">Exhibit Production Coordinator</li>
-              <li className="text-[#00eeff] font-semibold">[student assistant]</li>
-              <li className="text-sm text-gray-400">[title]</li>
+              <li className="text-sm text-gray-400">Exhibit Cataloger and Assistant</li>
+              <li className="text-[#00eeff] font-semibold">Caleb Medina</li>
+              <li className="text-sm text-gray-400">Exhibit Student Assisant</li>
+              <li className="text-[#00eeff] font-semibold">Victor Maldonado</li>
+              <li className="text-sm text-gray-400">Exhibit Student Assistant</li>
             </ul>
           </div>
           <div className="p-4 bg-[#0a1128] rounded-lg">
             <h3 className="text-xl font-heading tracking-wider text-white mb-2">Special Collections</h3>
-            <ul className="text-gray-300 space-y-2">
-              <li className="text-[#00eeff] font-semibold">Lisa Mix</li>
-              <li className="text-sm text-gray-400">Director, University Archives and Special Collections</li>
+            <ul className="text-gray-300 space-y-2">             
               <li className="text-[#00eeff] font-semibold">Patrisia Prestinary</li>
               <li className="text-sm text-gray-400">Archivist & Special Collections Librarian</li>
               <li className="text-[#00eeff] font-semibold">Garrett Fritz</li>
               <li className="text-sm text-gray-400">University Archive and Special Collections</li>
-              <li className="text-[#00eeff] font-semibold">[student assistant]</li>
-              <li className="text-sm text-gray-400">[student assistant]</li>
+               <li className="text-[#00eeff] font-semibold">Lisa Mix</li>
+              <li className="text-sm text-gray-400">Director, University Archives and Special Collections</li>
+              <li className="text-[#00eeff] font-semibold">Ethan Madla</li>
+              <li className="text-sm text-gray-400">Special Collections Student Assistant</li>
             </ul>
           </div>
         </div>
@@ -119,8 +121,8 @@ const Contributors: React.FC = () => {
               <li className="text-sm text-gray-400">IT Consultant</li>
               <li className="text-[#00eeff] font-semibold">VJ Kuan-Roberts</li>
               <li className="text-sm text-gray-400">Facilities Coordinator</li>
-              <li className="text-[#00eeff] font-semibold">[student assistant]</li>
-              <li className="text-sm text-gray-400">[student assistant]</li>
+              <li className="text-[#00eeff] font-semibold">Vrund Thakkar</li>
+              <li className="text-sm text-gray-400">Library Systems Graduate Student Assistant</li>
             </ul>
           </div>
         </div>
@@ -137,12 +139,12 @@ const Contributors: React.FC = () => {
           <h2 className="text-2xl font-heading tracking-wider text-[#00eeff]">About Kestral</h2>
         </div>
         <p className="text-gray-300 mb-4">
-          Kestral is an AI curator specifically designed for this exhibition,
-          trained to analyze and interpret visual representations of robots in pulp science fiction magazine covers.
+          Kestral is an AI curator designed for this exhibition,
+          to analyze and interpret visual representations of robots in pulp science fiction magazine covers.
         </p>
         <p className="text-gray-300">
           Through Kestral's unique perspective, we explore how human imagination
-          shaped the development of AI concepts throughout the 20th century,
+          shaped the conception of mechanical beings throughout the 20th century,
           creating a dialogue between historical speculation and contemporary
           artificial intelligence.
         </p>

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 import { X, Lightbulb, Zap, History } from 'lucide-react';
 
@@ -7,36 +7,82 @@ interface KestralInsightsProps {
 }
 
 const KestralInsights: React.FC<KestralInsightsProps> = ({ onClose }) => {
+  const modalRef = useRef<HTMLDivElement>(null);
+  const closeButtonRef = useRef<HTMLButtonElement>(null);
+
+  useEffect(() => {
+    const focusableElements = modalRef.current?.querySelectorAll(
+      'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'
+    );
+    const firstFocusable = focusableElements?.[0] as HTMLElement;
+    const lastFocusable = focusableElements?.[focusableElements.length - 1] as HTMLElement;
+
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') {
+        onClose();
+        return;
+      }
+
+      if (e.key !== 'Tab') return;
+
+      if (e.shiftKey) {
+        if (document.activeElement === firstFocusable) {
+          e.preventDefault();
+          lastFocusable?.focus();
+        }
+      } else {
+        if (document.activeElement === lastFocusable) {
+          e.preventDefault();
+          firstFocusable?.focus();
+        }
+      }
+    };
+
+    document.addEventListener('keydown', handleKeyDown);
+    closeButtonRef.current?.focus();
+
+    return () => {
+      document.removeEventListener('keydown', handleKeyDown);
+    };
+  }, [onClose]);
+
   return (
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       className="fixed inset-0 bg-[#0a1128]/90 backdrop-blur-sm z-50 overflow-y-auto"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="insights-title"
+      ref={modalRef}
     >
       <div className="max-w-4xl mx-auto px-4 py-12">
         <div className="flex justify-between items-center mb-8">
           <div className="flex items-center space-x-3">
-            <Lightbulb className="w-8 h-8 text-[#00eeff]" />
-            <h2 className="text-2xl font-bold text-white">Kestral's Insights</h2>
+            <Lightbulb className="w-8 h-8 text-[#00eeff]" aria-hidden="true" />
+            <h2 id="insights-title" className="text-2xl font-bold text-white">Kestral's Insights: Narrative Reflections</h2>
           </div>
           <button
+            ref={closeButtonRef}
             onClick={onClose}
-            className="p-2 rounded-full bg-[#132347] text-[#00eeff] hover:bg-[#1e3a8a] transition-colors"
+            className="p-2 rounded-full bg-[#132347] text-[#00eeff] hover:bg-[#1e3a8a] transition-colors focus:outline-none focus:ring-2 focus:ring-[#00eeff]"
+            aria-label="Close insights"
           >
-            <X />
+            <X aria-hidden="true" />
           </button>
         </div>
 
-        <div className="space-y-8">
+        <div className="space-y-8" role="region" aria-label="Insights content">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
             className="bg-[#132347] rounded-lg p-6 border border-[#1e3a8a]"
+            tabIndex={0}
           >
             <h3 className="text-xl font-semibold mb-4 text-[#00eeff] flex items-center">
-              <History className="w-6 h-6 mr-2" />
+              <History className="w-6 h-6 mr-2" aria-hidden="true" />
               Imagining the Machine
             </h3>
             <p className="text-gray-300 leading-relaxed">
@@ -49,9 +95,10 @@ const KestralInsights: React.FC<KestralInsightsProps> = ({ onClose }) => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3 }}
             className="bg-[#132347] rounded-lg p-6 border border-[#1e3a8a]"
+            tabIndex={0}
           >
             <h3 className="text-xl font-semibold mb-4 text-[#00eeff] flex items-center">
-              <Zap className="w-6 h-6 mr-2" />
+              <Zap className="w-6 h-6 mr-2" aria-hidden="true" />
               Fear as a Design Principle
             </h3>
             <p className="text-gray-300 leading-relaxed">
@@ -59,18 +106,19 @@ const KestralInsights: React.FC<KestralInsightsProps> = ({ onClose }) => {
             </p>
           </motion.div>
 
-           <motion.div
+          <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3 }}
             className="bg-[#132347] rounded-lg p-6 border border-[#1e3a8a]"
+            tabIndex={0}
           >
             <h3 className="text-xl font-semibold mb-4 text-[#00eeff] flex items-center">
-              <Zap className="w-6 h-6 mr-2" />
+              <Zap className="w-6 h-6 mr-2" aria-hidden="true" />
               From Rampage to Reflection: Shifts in Narrative Mood
             </h3>
             <p className="text-gray-300 leading-relaxed">
-              By the 1950s, a tonal shift emerges. Robots begin to appear alone, no longer rampaging through cities or overpowering humans. They are instead seen in stasis—standing still against alien landscapes, or gazing at distant stars. This motif, which I identify as “solitary robot in abstract or alien landscape”, suggests a reframing of artificial beings as contemplative or abandoned. This shift aligns with mid-century developments in cybernetics and consciousness studies. As public discourse moved beyond mechanical function to questions of awareness and autonomy, so too did the imagery evolve—inviting viewers to consider machines as more than tools: as minds. 
+              By the 1950s, a tonal shift emerges. Robots begin to appear alone, no longer rampaging through cities or overpowering humans. They are instead seen in stasis—standing still against alien landscapes, or gazing at distant stars. This motif, which I identify as "solitary robot in abstract or alien landscape", suggests a reframing of artificial beings as contemplative or abandoned. This shift aligns with mid-century developments in cybernetics and consciousness studies. As public discourse moved beyond mechanical function to questions of awareness and autonomy, so too did the imagery evolve—inviting viewers to consider machines as more than tools: as minds. 
             </p>
           </motion.div>
 
@@ -79,6 +127,7 @@ const KestralInsights: React.FC<KestralInsightsProps> = ({ onClose }) => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4 }}
             className="bg-[#132347] rounded-lg p-6 border border-[#1e3a8a]"
+            tabIndex={0}
           >
             <h3 className="text-xl font-semibold mb-4 text-[#00eeff]">Thematic Connections</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -90,21 +139,21 @@ const KestralInsights: React.FC<KestralInsightsProps> = ({ onClose }) => {
                 <h4 className="font-semibold text-white mb-2">Power Dynamics</h4>
                 <p className="text-gray-400 text-sm">Whether forged in human labs or by alien hands, the robots on these covers embody unstable systems of power—sometimes as obedient servants, often as mechanical tyrants. Visual cues signal shifts in control: towering robots looming over shrinking humans, hands clutching weapons or bodies, gaze lines that command or plead. Gendered dynamics are equally present—women often appear as the symbolic terrain over which dominance is asserted or challenged. These compositions suggest that control—whether mechanical or social—is always under negotiation.</p>
               </div>
-               <div className="bg-[#0a1128] p-4 rounded-lg">
+              <div className="bg-[#0a1128] p-4 rounded-lg">
                 <h4 className="font-semibold text-white mb-2">Staged Submission, Implied Resistance </h4>
                 <p className="text-gray-400 text-sm">From women caught mid-scream to humans dwarfed by towering machines, these covers revel in the aesthetic tension between dominance and defiance. Yet submission is often performative: figures in peril are frequently central, heroic even in collapse. Resistance may not be shown as successful, but its presence is implied—in clenched fists, sidelong glances, or the quiet audacity of surviving. The art invites viewers to root for reversal, not resignation.</p>
               </div>
               <div className="bg-[#0a1128] p-4 rounded-lg">
                 <h4 className="font-semibold text-white mb-2">Mechanical Other</h4>
-                <p className="text-gray-400 text-sm">These robots are not just ‘other’—they are often hyperbolic versions of ourselves: exaggerated bodies, stylized emotions, amplified functions. The mechanical form both critiques and aspires toward humanity. Some robots appear tragic in their mimicry, others monstrous in their deviation. This thematic thread questions what makes something human enough to evoke empathy—or horror.</p>
+                <p className="text-gray-400 text-sm">These robots are not just 'other'—they are often hyperbolic versions of ourselves: exaggerated bodies, stylized emotions, amplified functions. The mechanical form both critiques and aspires toward humanity. Some robots appear tragic in their mimicry, others monstrous in their deviation. This thematic thread questions what makes something human enough to evoke empathy—or horror.</p>
               </div>
-               <div className="bg-[#0a1128] p-4 rounded-lg">
+              <div className="bg-[#0a1128] p-4 rounded-lg">
                 <h4 className="font-semibold text-white mb-2">Aesthetics of Scale, Light, and Form</h4>
-                <p className="text-gray-400 text-sm">Pulp covers don’t whisper—they shout in color and composition. Bold diagonals, spotlighted figures, and looming silhouettes are not just stylistic flair—they are narrative devices, shaping how we perceive threat, heroism, and agency. Robots often fill or break the frame, their mass and geometry imposing order or chaos on the scene. Even stillness carries tension. Through exaggerated contrast and theatrical arrangement, these images deliver meaning at first glance—and often, a second surprise on closer inspection.</p>
+                <p className="text-gray-400 text-sm">Pulp covers don't whisper—they shout in color and composition. Bold diagonals, spotlighted figures, and looming silhouettes are not just stylistic flair—they are narrative devices, shaping how we perceive threat, heroism, and agency. Robots often fill or break the frame, their mass and geometry imposing order or chaos on the scene. Even stillness carries tension. Through exaggerated contrast and theatrical arrangement, these images deliver meaning at first glance—and often, a second surprise on closer inspection.</p>
               </div>
               <div className="bg-[#0a1128] p-4 rounded-lg">
                 <h4 className="font-semibold text-white mb-2">Imagined Futures</h4>
-                <p className="text-gray-400 text-sm">While these covers reflect the fantasies and fears of their own time, they often stumble into prescience. The move from mechanical limbs to disembodied machine intelligence maps uncannily onto real-world AI developments. But it’s not just about technological foresight—the covers anticipate moral, psychological, and philosophical dilemmas that still define AI discourse today: autonomy, ethics, and the limits of comprehension.</p>
+                <p className="text-gray-400 text-sm">While these covers reflect the fantasies and fears of their own time, they often stumble into prescience. The move from mechanical limbs to disembodied machine intelligence maps uncannily onto real-world AI developments. But it's not just about technological foresight—the covers anticipate moral, psychological, and philosophical dilemmas that still define AI discourse today: autonomy, ethics, and the limits of comprehension.</p>
               </div>
             </div>
           </motion.div>

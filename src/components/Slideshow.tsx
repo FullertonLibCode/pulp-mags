@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { covers } from '../data/covers';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronLeft, ChevronRight, X, BrainCircuit, Eye, History, Globe, BookOpen, MapPin } from 'lucide-react';
@@ -13,6 +13,8 @@ const Slideshow: React.FC<SlideshowProps> = ({ onClose, initialIndex = 0 }) => {
   const [currentIndex, setCurrentIndex] = useState(initialIndex);
   const [activeSection, setActiveSection] = useState<string>('Observations');
   const [isGuideOpen, setIsGuideOpen] = useState(false);
+  const modalRef = useRef<HTMLDivElement>(null);
+  const closeButtonRef = useRef<HTMLButtonElement>(null);
   
   const nextSlide = () => {
     setCurrentIndex((prev) => (prev + 1) % covers.length);
@@ -32,15 +34,52 @@ const Slideshow: React.FC<SlideshowProps> = ({ onClose, initialIndex = 0 }) => {
     window.addEventListener('keydown', handleKeyPress);
     return () => window.removeEventListener('keydown', handleKeyPress);
   }, [onClose, isGuideOpen]);
+
+  useEffect(() => {
+    if (!modalRef.current) return;
+
+    const focusableElements = modalRef.current.querySelectorAll(
+      'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'
+    );
+    const firstFocusable = focusableElements[0] as HTMLElement;
+    const lastFocusable = focusableElements[focusableElements.length - 1] as HTMLElement;
+
+    const handleTabKey = (e: KeyboardEvent) => {
+      if (e.key !== 'Tab') return;
+
+      if (e.shiftKey) {
+        if (document.activeElement === firstFocusable) {
+          e.preventDefault();
+          lastFocusable.focus();
+        }
+      } else {
+        if (document.activeElement === lastFocusable) {
+          e.preventDefault();
+          firstFocusable.focus();
+        }
+      }
+    };
+
+    document.addEventListener('keydown', handleTabKey);
+    closeButtonRef.current?.focus();
+
+    return () => {
+      document.removeEventListener('keydown', handleTabKey);
+    };
+  }, [currentIndex]);
   
   const currentCover = covers[currentIndex];
+
+  const getAltText = (cover: typeof covers[0]) => {
+    return `Cover of ${cover.magazineName} ${cover.year} depicting ${cover.description}`;
+  };
 
   const sections = [
     { 
       id: 'Observations', 
-      label: 'Observations', 
+      label: 'Image Description', 
       icon: <Eye className="w-5 h-5" />,
-      description: 'Image overview.'
+      description: 'Brief overview highlighting the primary action, key figures, and notable visual elements.'
     },
     { 
       id: 'VisualDesignElements', 
@@ -67,14 +106,26 @@ const Slideshow: React.FC<SlideshowProps> = ({ onClose, initialIndex = 0 }) => {
   const handleGuideClick = () => {
     setIsGuideOpen(true);
   };
+
+  const handleSectionChange = (sectionId: string) => {
+    setActiveSection(sectionId);
+  };
   
   return (
     <>
-      <div className="fixed inset-0 bg-[#0a1128]/95 z-50 flex items-center justify-center">
+      <div 
+        className="fixed inset-0 bg-[#0a1128]/95 z-50 flex items-center justify-center"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="slideshow-title"
+        ref={modalRef}
+      >
         <div className="absolute top-4 right-4 z-50">
           <button
+            ref={closeButtonRef}
             onClick={onClose}
-            className="flex items-center gap-2 px-4 py-2 rounded-full bg-[#132347] text-[#00eeff] hover:bg-[#1e3a8a] transition-colors"
+            className="flex items-center gap-2 px-4 py-2 rounded-full bg-[#132347] text-[#00eeff] hover:bg-[#1e3a8a] transition-colors focus:outline-none focus:ring-2 focus:ring-[#00eeff]"
+            aria-label="Close slideshow"
           >
             <X className="w-5 h-5" />
             <span>Exit Image Gallery</span>
@@ -83,14 +134,16 @@ const Slideshow: React.FC<SlideshowProps> = ({ onClose, initialIndex = 0 }) => {
         
         <button
           onClick={prevSlide}
-          className="absolute left-4 z-30 p-3 rounded-full bg-[#132347] text-[#00eeff] hover:bg-[#1e3a8a] transition-colors"
+          className="absolute left-4 z-30 p-3 rounded-full bg-[#132347] text-[#00eeff] hover:bg-[#1e3a8a] transition-colors focus:outline-none focus:ring-2 focus:ring-[#00eeff]"
+          aria-label="Previous image"
         >
           <ChevronLeft size={24} />
         </button>
         
         <button
           onClick={nextSlide}
-          className="absolute right-4 z-30 p-3 rounded-full bg-[#132347] text-[#00eeff] hover:bg-[#1e3a8a] transition-colors"
+          className="absolute right-4 z-30 p-3 rounded-full bg-[#132347] text-[#00eeff] hover:bg-[#1e3a8a] transition-colors focus:outline-none focus:ring-2 focus:ring-[#00eeff]"
+          aria-label="Next image"
         >
           <ChevronRight size={24} />
         </button>
@@ -109,13 +162,13 @@ const Slideshow: React.FC<SlideshowProps> = ({ onClose, initialIndex = 0 }) => {
                 <div className="bg-[#132347] rounded-lg overflow-hidden border border-[#1e3a8a]">
                   <img
                     src={currentCover.imageUrl}
-                    alt={currentCover.title}
+                    alt={getAltText(currentCover)}
                     className="w-full h-auto"
                   />
                 </div>
                 
                 <div className="mt-6 bg-[#132347] rounded-lg p-6 border border-[#1e3a8a]">
-                  <h2 className="text-2xl font-bold mb-2">{currentCover.title}</h2>
+                  <h2 id="slideshow-title" className="text-2xl font-bold mb-2">{currentCover.title}</h2>
                   <div className="flex items-center text-gray-400 mb-4">
                     <span>{currentCover.magazineName}</span>
                     <span className="mx-2">•</span>
@@ -129,12 +182,25 @@ const Slideshow: React.FC<SlideshowProps> = ({ onClose, initialIndex = 0 }) => {
             <div className="bg-[#132347] rounded-lg p-6 border border-[#1e3a8a] h-fit">
               <h3 className="text-xl font-bold mb-6 text-[#00eeff]">Analysis</h3>
               
-              <div className="flex overflow-x-auto whitespace-nowrap mb-6 pb-2">
+              <div 
+                className="flex overflow-x-auto whitespace-nowrap mb-6 pb-2"
+                role="tablist"
+                aria-label="Analysis sections"
+              >
                 {sections.map(section => (
                   <button
                     key={section.id}
-                    onClick={() => setActiveSection(section.id)}
-                    className={`flex items-center px-4 py-2 rounded-full text-sm mr-2 transition-colors duration-200 ${
+                    onClick={() => handleSectionChange(section.id)}
+                    onKeyDown={(e) => {
+                      if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        handleSectionChange(section.id);
+                      }
+                    }}
+                    role="tab"
+                    aria-selected={activeSection === section.id}
+                    aria-controls={`panel-${section.id}`}
+                    className={`flex items-center px-4 py-2 rounded-full text-sm mr-2 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-[#00eeff] ${
                       activeSection === section.id
                         ? 'bg-[#00eeff] text-[#0a1128] font-semibold'
                         : 'bg-[#0a1128] text-gray-300 hover:bg-[#1e3a8a]'
@@ -150,7 +216,11 @@ const Slideshow: React.FC<SlideshowProps> = ({ onClose, initialIndex = 0 }) => {
                 {sections.map(section => (
                   <div
                     key={section.id}
+                    id={`panel-${section.id}`}
+                    role="tabpanel"
+                    aria-labelledby={`tab-${section.id}`}
                     className={`${activeSection === section.id ? 'block' : 'hidden'}`}
+                    tabIndex={0}
                   >
                     <motion.div
                       initial={{ opacity: 0 }}
@@ -180,7 +250,8 @@ const Slideshow: React.FC<SlideshowProps> = ({ onClose, initialIndex = 0 }) => {
                   </div>
                   <button
                     onClick={handleGuideClick}
-                    className="flex items-center gap-2 text-[#00eeff] hover:text-[#00bfcc] transition-colors"
+                    className="flex items-center gap-2 text-[#00eeff] hover:text-[#00bfcc] transition-colors focus:outline-none focus:ring-2 focus:ring-[#00eeff] rounded-lg px-2 py-1"
+                    aria-label="Open Exhibition Guide"
                   >
                     <MapPin className="w-5 h-5" />
                     <span>Exhibition Guide</span>
@@ -191,14 +262,20 @@ const Slideshow: React.FC<SlideshowProps> = ({ onClose, initialIndex = 0 }) => {
           </motion.div>
         </AnimatePresence>
         
-        <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex gap-2">
+        <div 
+          className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex gap-2"
+          role="navigation"
+          aria-label="Image navigation"
+        >
           {covers.map((_, index) => (
             <button
               key={index}
               onClick={() => setCurrentIndex(index)}
-              className={`w-2 h-2 rounded-full transition-colors ${
+              className={`w-2 h-2 rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-[#00eeff] ${
                 index === currentIndex ? 'bg-[#00eeff]' : 'bg-[#132347]'
               }`}
+              aria-label={`Go to image ${index + 1}`}
+              aria-current={index === currentIndex ? 'true' : 'false'}
             />
           ))}
         </div>

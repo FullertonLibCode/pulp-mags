@@ -67,12 +67,15 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
             />
           </div>
           <div className="mb-6">
-            <p className="text-gray-300 mb-2">© 2025 Dreaming in Metal: Pulp Sci-Fi through the Eyes of AI</p>
-            <p className="text-gray-300 mt-2">Hosted by the University Archives and Special Collections (UA&SC)</p>
+            <p className="text-gray-300 mb-2">© 2025 California State University, Fullerton. All Rights Reserved.</p>
+            <p className="text-gray-300 mt-2">Hosted by University Archives and Special Collections (UA&SC)</p>
           </div>
           <div className="bg-[#132347] p-6 rounded-lg border border-[#1e3a8a] max-w-3xl mx-auto">
             <p className="text-[#00eeff] font-semibold mb-2">Accessibility Statement</p>
-            <p className="text-gray-200">CSUF events are open to all who are interested or would like to participate, regardless of race, sex, color, ethnicity, national origin, or other protected statuses.</p>
+            <p className="text-gray-200">CSUF is committed to ensuring equal accessibility to our users. Let us know about any accessibility problems you encounter using this website. We'll do our best to improve things and get you the information you need.</p>
+          </div>
+          <div className="mb-6">
+            <p className="text-gray-300 mt-2">To report problems or comments with this site, please contact uasc@fullerton.libanswers.com</p>
           </div>
         </div>
       </footer>

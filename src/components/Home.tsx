@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
-import { Link } from 'react-router-dom';
-import { BrainCircuit, Zap, History, Eye, Play, BrainCircuit as Circuit, Cpu, MapPin } from 'lucide-react';
+import { Link, useNavigate, useLocation } from 'react-router-dom';
+import { BrainCircuit, Zap, History, Eye, BrainCircuit as Circuit, Cpu, MapPin } from 'lucide-react';
 import { useInView } from 'react-intersection-observer';
 import ExhibitionGuide from './ExhibitionGuide';
 
@@ -10,11 +10,27 @@ const Home: React.FC = () => {
   const { scrollY } = useScroll();
   const opacity = useTransform(scrollY, [0, 400], [1, 0.8]);
   const blur = useTransform(scrollY, [0, 400], [0, 6]);
+  const navigate = useNavigate();
+  const location = useLocation();
 
   const [ref, inView] = useInView({
     triggerOnce: true,
     threshold: 0.1,
   });
+
+  useEffect(() => {
+    if (location.state?.scrollToVideo) {
+      setTimeout(() => {
+        document.getElementById('intro-video')?.scrollIntoView({ behavior: 'smooth' });
+      }, 100);
+      window.history.replaceState({}, document.title);
+    }
+  }, [location]);
+
+  const handleFeatureClick = (path: string) => {
+    navigate(path);
+    window.scrollTo(0, 0);
+  };
 
   return (
     <div className="relative">
@@ -158,7 +174,6 @@ const Home: React.FC = () => {
         </div>
       </motion.section>
 
-      {/* Video Section */}
       <motion.section
         id="intro-video"
         className="relative py-20 px-4 bg-[#0a1128]"
@@ -169,37 +184,26 @@ const Home: React.FC = () => {
         aria-label="Introduction video"
       >
         <div className="max-w-4xl mx-auto">
-          <div 
-            className="relative aspect-video bg-[#132347] rounded-lg overflow-hidden border border-[#1e3a8a] group cursor-pointer hover:border-[#00eeff] transition-all duration-300"
-            role="button"
-            tabIndex={0}
-            aria-label="Play introduction video"
-            onKeyPress={(e) => {
-              if (e.key === 'Enter' || e.key === ' ') {
-                // Video play logic here
-              }
-            }}
-          >
-            <div className="absolute inset-0 flex items-center justify-center">
-              <motion.div 
-                className="w-20 h-20 rounded-full bg-[#00eeff]/20 flex items-center justify-center group-hover:bg-[#00eeff]/30 transition-all duration-300"
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.9 }}
-                aria-hidden="true"
-              >
-                <Play className="w-8 h-8 text-[#00eeff] transform translate-x-1" />
-              </motion.div>
-            </div>
-            <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" aria-hidden="true" />
-            <div className="absolute bottom-0 left-0 right-0 p-6">
-              <h2 className="text-2xl font-bold text-white mb-2">Meet Kestral, AI Curator</h2>
-              <p className="text-gray-300">Join Kestral, your AI curator, on a journey through the imaginative worlds of pulp science fiction, exploring how robots were portrayed in classic tales of the future.</p>
-            </div>
+          <div className="relative bg-[#132347] rounded-lg overflow-hidden border border-[#1e3a8a]">
+            <iframe 
+              src="https://player.cloudinary.com/embed/?cloud_name=dn0ugggvb&public_id=Exhibit_-_Intro_-_Kestral_z7ut3e&profile=cld-default"
+              style={{
+                width: '100%',
+                aspectRatio: '16 / 9'
+              }}
+              allow="autoplay; fullscreen; encrypted-media; picture-in-picture"
+              allowFullScreen
+              frameBorder="0"
+              title="Kestral Introduction"
+            />
+          </div>
+          <div className="mt-6">
+            <h2 className="text-2xl font-bold text-white mb-2">Meet Kestral, AI Curator</h2>
+            <p className="text-gray-300">Join Kestral, your AI curator, on a journey through the imaginative worlds of pulp science fiction, exploring how robots were portrayed in classic tales of the future.</p>
           </div>
         </div>
       </motion.section>
 
-      {/* Features Section */}
       <motion.section 
         ref={ref}
         className="relative py-20 px-4"
@@ -234,9 +238,9 @@ const Home: React.FC = () => {
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6, delay: index * 0.2 }}
             >
-              <Link 
-                to={feature.link}
-                className="block bg-[#132347] p-8 border border-[#1e3a8a] rounded-xl hover:border-[#00eeff] transition-all duration-300 group-hover:bg-[#132347]/80"
+              <button 
+                onClick={() => handleFeatureClick(feature.link)}
+                className="block w-full text-left bg-[#132347] p-8 border border-[#1e3a8a] rounded-xl hover:border-[#00eeff] transition-all duration-300 group-hover:bg-[#132347]/80 group-hover:shadow-[0_0_30px_rgba(0,238,255,0.2)]"
               >
                 <div className="relative z-10">
                   {feature.icon}
@@ -244,7 +248,7 @@ const Home: React.FC = () => {
                   <p className="text-gray-300">{feature.description}</p>
                 </div>
                 <div className="absolute inset-0 bg-gradient-to-br from-[#132347]/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-              </Link>
+              </button>
             </motion.div>
           ))}
         </div>
