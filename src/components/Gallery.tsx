@@ -36,17 +36,14 @@ const Gallery: React.FC = () => {
     if (showInsights || showAnalysis) {
       setLastFocusedElement(document.activeElement as HTMLElement);
       document.body.style.overflow = 'hidden';
-      document.body.style.paddingRight = '15px';
     } else {
       document.body.style.overflow = '';
-      document.body.style.paddingRight = '';
       if (lastFocusedElement) {
         lastFocusedElement.focus();
       }
     }
     return () => {
       document.body.style.overflow = '';
-      document.body.style.paddingRight = '';
     };
   }, [showInsights, showAnalysis, lastFocusedElement]);
 
@@ -92,11 +89,18 @@ const Gallery: React.FC = () => {
     setShowInsights(true);
   };
 
+  const closeInsights = () => {
+    setShowInsights(false);
+    if (lastFocusedElement) {
+      lastFocusedElement.focus();
+    }
+  };
+
   const openAnalysis = () => {
     setShowAnalysis(true);
   };
 
-  const handleCloseAnalysis = () => {
+  const closeAnalysis = () => {
     setShowAnalysis(false);
     if (lastFocusedElement) {
       lastFocusedElement.focus();
@@ -282,7 +286,11 @@ const Gallery: React.FC = () => {
           initialIndex={currentSlideIndex}
         />
       )}
-      {showInsights && <KestralInsights onClose={() => setShowInsights(false)} />}
+
+      {showInsights && (
+        <KestralInsights onClose={closeInsights} />
+      )}
+
       {showAnalysis && (
         <motion.div
           initial={{ opacity: 0 }}
@@ -295,8 +303,8 @@ const Gallery: React.FC = () => {
         >
           <div className="absolute top-4 right-4">
             <button
-              onClick={handleCloseAnalysis}
-              onKeyDown={(e) => handleKeyPress(e, handleCloseAnalysis)}
+              onClick={closeAnalysis}
+              onKeyDown={(e) => handleKeyPress(e, closeAnalysis)}
               className="flex items-center gap-2 px-4 py-2 rounded-full bg-[#132347] text-[#00eeff] hover:bg-[#1e3a8a] transition-colors focus:outline-none focus:ring-2 focus:ring-[#00eeff]"
               aria-label="Close Analysis"
             >

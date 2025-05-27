@@ -11,6 +11,7 @@ const VideoModal: React.FC<VideoModalProps> = ({ isOpen, onClose }) => {
   const closeButtonRef = useRef<HTMLButtonElement>(null);
   const modalRef = useRef<HTMLDivElement>(null);
   const videoRef = useRef<HTMLIFrameElement>(null);
+  const [isPlaying, setIsPlaying] = React.useState(false);
 
   useEffect(() => {
     if (!isOpen) return;
@@ -32,14 +33,17 @@ const VideoModal: React.FC<VideoModalProps> = ({ isOpen, onClose }) => {
         if (e.key === 'Enter' || e.key === ' ') {
           e.preventDefault();
           e.stopPropagation();
-          // Send play/pause message to Cloudinary player
+          
+          // Toggle play/pause
           videoRef.current?.contentWindow?.postMessage(
             JSON.stringify({
               method: 'play',
-              value: 'toggle'
+              value: isPlaying ? 'pause' : 'play'
             }),
             'https://player.cloudinary.com'
           );
+          
+          setIsPlaying(!isPlaying);
           return;
         }
       }
@@ -60,17 +64,16 @@ const VideoModal: React.FC<VideoModalProps> = ({ isOpen, onClose }) => {
       }
     };
 
-    document.addEventListener('keydown', handleKeyDown);
-    closeButtonRef.current?.focus();
-
     // Add message listener for player events
     const handleMessage = (event: MessageEvent) => {
       if (event.origin === 'https://player.cloudinary.com') {
         try {
           const data = JSON.parse(event.data);
           if (data.event === 'play') {
+            setIsPlaying(true);
             videoRef.current?.setAttribute('aria-label', 'Video is playing. Press Space or Enter to pause');
           } else if (data.event === 'pause') {
+            setIsPlaying(false);
             videoRef.current?.setAttribute('aria-label', 'Video is paused. Press Space or Enter to play');
           }
         } catch (e) {
@@ -79,13 +82,15 @@ const VideoModal: React.FC<VideoModalProps> = ({ isOpen, onClose }) => {
       }
     };
 
+    document.addEventListener('keydown', handleKeyDown);
     window.addEventListener('message', handleMessage);
+    closeButtonRef.current?.focus();
 
     return () => {
       document.removeEventListener('keydown', handleKeyDown);
       window.removeEventListener('message', handleMessage);
     };
-  }, [isOpen, onClose]);
+  }, [isOpen, onClose, isPlaying]);
 
   return (
     <AnimatePresence>
