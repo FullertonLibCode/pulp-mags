@@ -108,26 +108,23 @@ const VideoModal: React.FC<VideoModalProps> = ({ isOpen, onClose }) => {
             initial={{ scale: 0.9, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
             exit={{ scale: 0.9, opacity: 0 }}
-            className="relative w-full max-w-4xl mx-4 focus:outline-none"
+            className="relative w-full h-full flex items-center justify-center focus:outline-none"
             tabIndex={-1}
           >
             <button
               ref={closeButtonRef}
               onClick={onClose}
-              className="absolute -top-12 right-0 p-2 text-white hover:text-[#00eeff] transition-colors focus:outline-none focus:ring-2 focus:ring-[#00eeff] rounded-lg"
+              className="absolute top-4 right-4 p-2 text-white hover:text-[#00eeff] transition-colors focus:outline-none focus:ring-2 focus:ring-[#00eeff] rounded-lg z-10"
               aria-label="Close video"
             >
               <X className="w-6 h-6" />
             </button>
             
-            <div className="relative bg-[#132347] rounded-lg overflow-hidden border border-[#1e3a8a]">
+            <div className="w-full h-full max-w-[90vw] max-h-[90vh] flex items-center justify-center">
               <iframe 
                 ref={videoRef}
                 src="https://player.cloudinary.com/embed/?cloud_name=dn0ugggvb&public_id=Exhibit_-_Intro_-_Kestral_z7ut3e&profile=cld-default"
-                style={{
-                  width: '100%',
-                  aspectRatio: '16 / 9'
-                }}
+                className="w-full h-full aspect-video"
                 allow="autoplay; fullscreen; encrypted-media; picture-in-picture"
                 allowFullScreen
                 frameBorder="0"
