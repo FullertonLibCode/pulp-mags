@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { covers } from '../data/covers';
 import { motion } from 'framer-motion';
-import { useLocation, useNavigate } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import Slideshow from './Slideshow';
 import { Sliders as SlideshowIcon, Lightbulb, BookOpen, X } from 'lucide-react';
 import KestralInsights from './KestralInsights';
@@ -26,20 +26,17 @@ const Gallery: React.FC = () => {
       setActiveFilter(tagParam);
     }
 
-    // Check if we should open insights modal
     if (location.state?.openInsights) {
       setShowInsights(true);
-      // Clear the state so it doesn't reopen on subsequent navigations
       window.history.replaceState({}, document.title);
     }
   }, [location]);
 
-  // Lock body scroll and store last focused element when modals are open
   useEffect(() => {
     if (showInsights || showAnalysis) {
       setLastFocusedElement(document.activeElement as HTMLElement);
       document.body.style.overflow = 'hidden';
-      document.body.style.paddingRight = '15px'; // Prevent layout shift
+      document.body.style.paddingRight = '15px';
     } else {
       document.body.style.overflow = '';
       document.body.style.paddingRight = '';
@@ -98,6 +95,13 @@ const Gallery: React.FC = () => {
   const openAnalysis = () => {
     setShowAnalysis(true);
   };
+
+  const handleCloseAnalysis = () => {
+    setShowAnalysis(false);
+    if (lastFocusedElement) {
+      lastFocusedElement.focus();
+    }
+  };
     
   return (
     <div className="max-w-[2000px] mx-auto px-4">
@@ -112,11 +116,11 @@ const Gallery: React.FC = () => {
         </motion.h1>
         
         <div 
-          className="mb-12 overflow-x-auto whitespace-nowrap pb-3 relative"
+          className="mb-12 overflow-x-auto pb-3 relative"
           role="region" 
           aria-label="Gallery filters"
         >
-          <div className="flex items-center space-x-2">
+          <div className="flex items-center space-x-2 min-w-max">
             <button
               onClick={() => handleFilterChange('all')}
               onKeyDown={(e) => handleKeyPress(e, () => handleFilterChange('all'))}
@@ -147,8 +151,8 @@ const Gallery: React.FC = () => {
           </div>
         </div>
 
-        <div className="flex justify-between items-center mb-6">
-          <div className="flex items-center space-x-4">
+        <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-6 gap-4">
+          <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
             <button
               onClick={openInsights}
               onKeyDown={(e) => handleKeyPress(e, openInsights)}
@@ -230,7 +234,7 @@ const Gallery: React.FC = () => {
                   </div>
                 </button>
                 <div className="px-6 pb-6 flex flex-wrap gap-2">
-                  {cover.tags.map(tag => (
+                  {cover.tags.slice(0, 2).map(tag => (
                     <button 
                       key={tag}
                       onClick={(e) => {
@@ -291,8 +295,8 @@ const Gallery: React.FC = () => {
         >
           <div className="absolute top-4 right-4">
             <button
-              onClick={() => setShowAnalysis(false)}
-              onKeyDown={(e) => handleKeyPress(e, () => setShowAnalysis(false))}
+              onClick={handleCloseAnalysis}
+              onKeyDown={(e) => handleKeyPress(e, handleCloseAnalysis)}
               className="flex items-center gap-2 px-4 py-2 rounded-full bg-[#132347] text-[#00eeff] hover:bg-[#1e3a8a] transition-colors focus:outline-none focus:ring-2 focus:ring-[#00eeff]"
               aria-label="Close Analysis"
             >

@@ -1,12 +1,13 @@
 import React, { useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
-import { BrainCircuit, CircuitBoard, Bot, Palette, Zap, Lightbulb } from 'lucide-react';
+import { BrainCircuit, CircuitBoard, Bot, Palette, Zap, Lightbulb, X } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import KestralInsights from './KestralInsights';
 
 const Insights: React.FC = () => {
   const modalRef = useRef<HTMLDivElement>(null);
   const contentRef = useRef<HTMLDivElement>(null);
+  const closeButtonRef = useRef<HTMLButtonElement>(null);
   const navigate = useNavigate();
   const [showKestralInsights, setShowKestralInsights] = React.useState(false);
 
@@ -18,7 +19,6 @@ const Insights: React.FC = () => {
     const lastFocusable = focusableElements?.[focusableElements.length - 1] as HTMLElement;
 
     const handleKeyDown = (e: KeyboardEvent) => {
-      // Handle Tab key for focus trapping
       if (e.key === 'Tab') {
         if (e.shiftKey) {
           if (document.activeElement === firstFocusable) {
@@ -33,21 +33,17 @@ const Insights: React.FC = () => {
         }
       }
 
-      // Handle Escape key
       if (e.key === 'Escape') {
         if (showKestralInsights) {
           setShowKestralInsights(false);
         } else {
-          const mainContent = document.getElementById('main-content');
-          if (mainContent) {
-            mainContent.focus();
-          }
+          handleClose();
         }
       }
     };
 
     document.addEventListener('keydown', handleKeyDown);
-    firstFocusable?.focus();
+    closeButtonRef.current?.focus();
 
     return () => {
       document.removeEventListener('keydown', handleKeyDown);
@@ -65,6 +61,14 @@ const Insights: React.FC = () => {
     }
   };
 
+  const handleClose = () => {
+    const analysisModal = document.querySelector('[role="dialog"]');
+    if (analysisModal) {
+      analysisModal.remove();
+    }
+    navigate('/gallery');
+  };
+
   return (
     <>
       <div 
@@ -74,6 +78,18 @@ const Insights: React.FC = () => {
         aria-modal="true"
         aria-labelledby="analysis-title"
       >
+        <div className="absolute top-4 right-4">
+          <button
+            ref={closeButtonRef}
+            onClick={handleClose}
+            className="flex items-center gap-2 px-4 py-2 rounded-full bg-[#132347] text-[#00eeff] hover:bg-[#1e3a8a] transition-colors focus:outline-none focus:ring-2 focus:ring-[#00eeff]"
+            aria-label="Close Analysis"
+          >
+            <X className="w-5 h-5" aria-hidden="true" />
+            <span>Close Analysis</span>
+          </button>
+        </div>
+
         <div 
           ref={contentRef}
           className="max-w-5xl mx-auto px-4 py-12"

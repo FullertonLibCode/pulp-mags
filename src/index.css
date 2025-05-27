@@ -5,11 +5,13 @@
 @layer base {
   html {
     @apply scroll-smooth;
+    font-size: 16px;
   }
   
   body {
-    @apply font-sans;
+    @apply font-sans text-base;
     background: radial-gradient(circle at 50% -20%, #3b82f6 0%, #1e40af 50%, #1e3a8a 100%);
+    -webkit-tap-highlight-color: transparent;
   }
   
   h1, h2, h3, h4, h5, h6 {
@@ -24,6 +26,16 @@
   /* Skip to main content link */
   .skip-link {
     @apply sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 bg-[#00eeff] text-[#0a1128] px-4 py-2 rounded-lg z-50;
+  }
+
+  /* Ensure minimum touch target size */
+  button, a, [role="button"] {
+    @apply min-h-[44px] min-w-[44px];
+  }
+
+  /* Improved text readability */
+  p, li {
+    @apply leading-relaxed;
   }
 }
 
@@ -78,6 +90,22 @@
     background: linear-gradient(45deg, transparent 30%, rgba(0, 238, 255, 0.3), transparent 70%);
     z-index: -1;
     animation: borderGlow 3s linear infinite;
+  }
+
+  /* Mobile-optimized containers */
+  .container {
+    @apply w-full px-4 mx-auto;
+    max-width: min(100%, 1440px);
+  }
+
+  /* Responsive text sizes */
+  .text-responsive {
+    @apply text-base sm:text-lg md:text-xl;
+  }
+
+  /* Touch-friendly buttons */
+  .touch-button {
+    @apply p-4 rounded-lg active:scale-95 transition-transform;
   }
 }
 
@@ -164,4 +192,49 @@
 .vintage-texture {
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
   opacity: 0.1;
+}
+
+/* Mobile-specific styles */
+@media (max-width: 640px) {
+  html {
+    font-size: 14px;
+  }
+
+  .container {
+    @apply px-4;
+  }
+
+  /* Improve touch targets on mobile */
+  button, a, [role="button"] {
+    @apply p-3;
+  }
+
+  /* Adjust spacing for mobile */
+  .space-y-mobile > * + * {
+    @apply mt-4;
+  }
+
+  /* Optimize modal display on mobile */
+  .modal-mobile {
+    @apply px-4 py-16;
+  }
+
+  /* Enhance mobile navigation */
+  .nav-mobile {
+    @apply fixed bottom-0 left-0 right-0 bg-[#0a1128]/95 backdrop-blur-md border-t border-[#1e3a8a];
+  }
+}
+
+/* Tablet-specific styles */
+@media (min-width: 641px) and (max-width: 1024px) {
+  .container {
+    @apply px-6;
+  }
+}
+
+/* Larger screens */
+@media (min-width: 1025px) {
+  .container {
+    @apply px-8;
+  }
 }

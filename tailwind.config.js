@@ -10,23 +10,23 @@ export default {
       colors: {
         neon: {
           blue: '#60a5fa',
-          cyan: '#00ffff', // Updated for better contrast
+          cyan: '#00ffff',
           purple: '#a78bfa',
         },
         glass: {
           light: 'rgba(255, 255, 255, 0.1)',
-          dark: 'rgba(15, 23, 42, 0.9)', // Increased opacity for better contrast
+          dark: 'rgba(15, 23, 42, 0.9)',
         },
         primary: {
-          DEFAULT: '#00ffff', // Brighter cyan
+          DEFAULT: '#00ffff',
           hover: '#00cccc',
         },
         secondary: {
-          DEFAULT: '#e2e8f0', // Lighter gray
+          DEFAULT: '#e2e8f0',
           muted: '#94a3b8',
         },
         background: {
-          DEFAULT: '#0f172a', // Darker background
+          DEFAULT: '#0f172a',
           hover: '#1e293b',
         }
       },
@@ -35,6 +35,26 @@ export default {
         'neon-strong': '0 0 30px rgba(0, 255, 255, 0.7)',
         'neon-glow': '0 0 40px rgba(0, 255, 255, 0.6)',
         'inner-glow': 'inset 0 0 20px rgba(0, 255, 255, 0.3)',
+      },
+      spacing: {
+        'safe-top': 'env(safe-area-inset-top)',
+        'safe-bottom': 'env(safe-area-inset-bottom)',
+        'safe-left': 'env(safe-area-inset-left)',
+        'safe-right': 'env(safe-area-inset-right)',
+      },
+      screens: {
+        'xs': '375px',
+        'sm': '640px',
+        'md': '768px',
+        'lg': '1024px',
+        'xl': '1280px',
+        '2xl': '1536px',
+      },
+      minHeight: {
+        'touch': '44px',
+      },
+      minWidth: {
+        'touch': '44px',
       },
     },
   },
