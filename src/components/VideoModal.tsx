@@ -32,8 +32,12 @@ const VideoModal: React.FC<VideoModalProps> = ({ isOpen, onClose }) => {
         if (e.key === 'Enter' || e.key === ' ') {
           e.preventDefault();
           e.stopPropagation();
+          // Send play/pause message to Cloudinary player
           videoRef.current?.contentWindow?.postMessage(
-            '{"event":"command","func":"togglePlay","args":""}',
+            JSON.stringify({
+              method: 'play',
+              value: 'toggle'
+            }),
             'https://player.cloudinary.com'
           );
           return;
@@ -59,8 +63,27 @@ const VideoModal: React.FC<VideoModalProps> = ({ isOpen, onClose }) => {
     document.addEventListener('keydown', handleKeyDown);
     closeButtonRef.current?.focus();
 
+    // Add message listener for player events
+    const handleMessage = (event: MessageEvent) => {
+      if (event.origin === 'https://player.cloudinary.com') {
+        try {
+          const data = JSON.parse(event.data);
+          if (data.event === 'play') {
+            videoRef.current?.setAttribute('aria-label', 'Video is playing. Press Space or Enter to pause');
+          } else if (data.event === 'pause') {
+            videoRef.current?.setAttribute('aria-label', 'Video is paused. Press Space or Enter to play');
+          }
+        } catch (e) {
+          // Ignore invalid JSON
+        }
+      }
+    };
+
+    window.addEventListener('message', handleMessage);
+
     return () => {
       document.removeEventListener('keydown', handleKeyDown);
+      window.removeEventListener('message', handleMessage);
     };
   }, [isOpen, onClose]);
 
@@ -107,6 +130,11 @@ const VideoModal: React.FC<VideoModalProps> = ({ isOpen, onClose }) => {
                 title="Meet Kestral: AI Curator Introduction"
                 id="video-title"
                 tabIndex={0}
+                aria-label="Video player. Press Space or Enter to play or pause"
+                role="application"
+                onLoad={() => {
+                  videoRef.current?.focus();
+                }}
               />
             </div>
           </motion.div>
