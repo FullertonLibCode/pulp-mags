@@ -207,18 +207,22 @@ const Gallery: React.FC = () => {
               key={cover.id}
               className="relative group"
             >
-              <div className="block w-full bg-[#132347] rounded-xl overflow-hidden hover:pulp-border transition-all duration-300 group-hover:shadow-[0_0_30px_rgba(0,238,255,0.2)]">
-                <button
-                  onClick={() => {
-                    setCurrentSlideIndex(covers.findIndex(c => c.id === cover.id));
-                    setShowSlideshow(true);
-                  }}
-                  onKeyDown={(e) => handleKeyPress(e, () => {
-                    setCurrentSlideIndex(covers.findIndex(c => c.id === cover.id));
-                    setShowSlideshow(true);
-                  })}
-                  className="w-full text-left focus:outline-none focus:ring-2 focus:ring-[#00eeff] focus:ring-offset-2 focus:ring-offset-[#0a1128] rounded-xl"
-                  aria-label={`View ${cover.title} in slideshow`}
+              <button
+                tabIndex={0}
+                className="block w-full bg-[#132347] rounded-xl overflow-hidden hover:pulp-border transition-all duration-300 group-hover:shadow-[0_0_30px_rgba(0,238,255,0.2)]"
+                onClick={() => {
+                  setCurrentSlideIndex(covers.findIndex(c => c.id === cover.id));
+                  setShowSlideshow(true);
+                }}
+                onKeyDown={(e) => handleKeyPress(e, () => {
+                  setCurrentSlideIndex(covers.findIndex(c => c.id === cover.id));
+                  setShowSlideshow(true);
+                })}
+              aria-label={`View ${cover.title} in slideshow`}
+              >
+                <div
+                  tabIndex={-1}
+                  className="w-full text-left focus:outline-none rounded-xl"
                 >
                   <div className="relative pt-[133%] overflow-hidden">
                     <div className="absolute inset-0 bg-gradient-to-t from-[#0a1128] via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
@@ -236,7 +240,7 @@ const Gallery: React.FC = () => {
                     <p className="text-gray-400 mb-3 font-mono">{cover.magazineName}, {cover.year}</p>
                     <p className="text-gray-300 mb-4 line-clamp-2">{cover.description}</p>
                   </div>
-                </button>
+                </div>
                 <div className="px-6 pb-6 flex flex-wrap gap-2">
                   {cover.tags.slice(0, 2).map(tag => (
                     <button 
@@ -256,7 +260,7 @@ const Gallery: React.FC = () => {
                     </button>
                   ))}
                 </div>
-              </div>
+              </button>
             </li>
           ))}
         </ul>
