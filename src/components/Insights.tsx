@@ -62,11 +62,14 @@ const Insights: React.FC = () => {
   };
 
   const handleClose = () => {
-    const analysisModal = document.querySelector('[role="dialog"]');
-    if (analysisModal) {
-      analysisModal.remove();
-    }
     navigate('/gallery');
+  };
+
+  const handleCloseKeyPress = (e: React.KeyboardEvent) => {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      handleClose();
+    }
   };
 
   return (
@@ -78,21 +81,22 @@ const Insights: React.FC = () => {
         aria-modal="true"
         aria-labelledby="analysis-title"
       >
-        <div className="absolute top-4 right-4">
+        <div className="sticky top-0 right-0 w-full p-4 z-[60] flex justify-end bg-[#0a1128]/95 backdrop-blur-sm">
           <button
             ref={closeButtonRef}
             onClick={handleClose}
-            className="flex items-center gap-2 px-4 py-2 rounded-full bg-[#132347] text-[#00eeff] hover:bg-[#1e3a8a] transition-colors focus:outline-none focus:ring-2 focus:ring-[#00eeff]"
-            aria-label="Close Analysis"
+            onKeyDown={handleCloseKeyPress}
+            className="p-3 rounded-full bg-[#132347] text-[#00eeff] hover:bg-[#1e3a8a] transition-colors focus:outline-none focus:ring-2 focus:ring-[#00eeff] shadow-lg hover:shadow-[0_0_15px_rgba(0,238,255,0.3)] flex items-center gap-2"
+            aria-label="Close analysis"
           >
             <X className="w-5 h-5" aria-hidden="true" />
-            <span>Close Analysis</span>
+            <span className="text-sm font-semibold">Close</span>
           </button>
         </div>
 
         <div 
           ref={contentRef}
-          className="max-w-5xl mx-auto px-4 py-12"
+          className="max-w-5xl mx-auto px-4 pb-12"
         >
           <motion.div
             initial={{ opacity: 0, y: 20 }}

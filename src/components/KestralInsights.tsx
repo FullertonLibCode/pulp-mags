@@ -62,6 +62,13 @@ const KestralInsights: React.FC<KestralInsightsProps> = ({ onClose }) => {
     };
   }, [onClose]);
 
+  const handleCloseKeyPress = (e: React.KeyboardEvent) => {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      onClose();
+    }
+  };
+
   return (
     <AnimatePresence mode="wait">
       <motion.div
@@ -76,20 +83,23 @@ const KestralInsights: React.FC<KestralInsightsProps> = ({ onClose }) => {
         aria-labelledby="insights-title"
         ref={modalRef}
       >
-        <div className="max-w-4xl mx-auto px-4 py-12">
-          <div className="flex justify-between items-center mb-8">
-            <div className="flex items-center space-x-3">
-              <Lightbulb className="w-8 h-8 text-[#00eeff]" aria-hidden="true" />
-              <h2 id="insights-title" className="text-2xl font-bold text-white">Kestral's Insights: Narrative Reflections</h2>
-            </div>
-            <button
-              ref={closeButtonRef}
-              onClick={onClose}
-              className="p-2 rounded-full bg-[#132347] text-[#00eeff] hover:bg-[#1e3a8a] transition-colors focus:outline-none focus:ring-2 focus:ring-[#00eeff]"
-              aria-label="Close insights"
-            >
-              <X className="w-5 h-5" aria-hidden="true" />
-            </button>
+        <div className="sticky top-0 right-0 w-full p-4 z-[60] flex justify-end bg-[#0a1128]/95 backdrop-blur-sm">
+          <button
+            ref={closeButtonRef}
+            onClick={onClose}
+            onKeyDown={handleCloseKeyPress}
+            className="p-3 rounded-full bg-[#132347] text-[#00eeff] hover:bg-[#1e3a8a] transition-colors focus:outline-none focus:ring-2 focus:ring-[#00eeff] shadow-lg hover:shadow-[0_0_15px_rgba(0,238,255,0.3)] flex items-center gap-2"
+            aria-label="Close insights"
+          >
+            <X className="w-5 h-5" aria-hidden="true" />
+            <span className="text-sm font-semibold">Close</span>
+          </button>
+        </div>
+
+        <div className="max-w-4xl mx-auto px-4 pb-12">
+          <div className="flex items-center space-x-3 mb-8">
+            <Lightbulb className="w-8 h-8 text-[#00eeff]" aria-hidden="true" />
+            <h2 id="insights-title" className="text-2xl font-bold text-white">Kestral's Insights: Narrative Reflections</h2>
           </div>
 
           <div className="space-y-8" role="region" aria-label="Insights content">
