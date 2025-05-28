@@ -263,7 +263,7 @@ const Slideshow: React.FC<SlideshowProps> = ({ onClose, initialIndex = 0 }) => {
         </AnimatePresence>
         
         <div 
-          className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex gap-2"
+          className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex gap-2 w-full max-w-[95%] overflow-x-hidden justify-center"
           role="navigation"
           aria-label="Image navigation"
         >
@@ -271,7 +271,7 @@ const Slideshow: React.FC<SlideshowProps> = ({ onClose, initialIndex = 0 }) => {
             <button
               key={index}
               onClick={() => setCurrentIndex(index)}
-              className={`w-2 h-2 rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-[#00eeff] ${
+              className={`lg:block hidden shrink min-h-7 min-w-0 w-3.5 h-3.5 rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-[#00eeff] border border-[#1e3a8a] ${
                 index === currentIndex ? 'bg-[#00eeff]' : 'bg-[#132347]'
               }`}
               aria-label={`Go to image ${index + 1}`}
