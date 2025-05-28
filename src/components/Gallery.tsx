@@ -292,28 +292,7 @@ const Gallery: React.FC = () => {
       )}
 
       {showAnalysis && (
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-          className="fixed inset-0 bg-[#0a1128]/95 z-50 overflow-y-auto"
-          role="dialog"
-          aria-modal="true"
-          aria-labelledby="analysis-title"
-        >
-          <div className="absolute top-4 right-4">
-            <button
-              onClick={closeAnalysis}
-              onKeyDown={(e) => handleKeyPress(e, closeAnalysis)}
-              className="flex items-center gap-2 px-4 py-2 rounded-full bg-[#132347] text-[#00eeff] hover:bg-[#1e3a8a] transition-colors focus:outline-none focus:ring-2 focus:ring-[#00eeff]"
-              aria-label="Close Analysis"
-            >
-              <X className="w-5 h-5" aria-hidden="true" />
-              <span>Close Analysis</span>
-            </button>
-          </div>
-          <Insights />
-        </motion.div>
+        <Insights onClose={() => setShowAnalysis(false)} />
       )}
     </div>
   );
