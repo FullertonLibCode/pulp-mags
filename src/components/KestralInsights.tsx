@@ -88,7 +88,7 @@ const KestralInsights: React.FC<KestralInsightsProps> = ({ onClose }) => {
               className="p-2 rounded-full bg-[#132347] text-[#00eeff] hover:bg-[#1e3a8a] transition-colors focus:outline-none focus:ring-2 focus:ring-[#00eeff]"
               aria-label="Close insights"
             >
-              <X className="w-5 h-5" aria-hidden="true" />
+              <X className="m-auto w-5 h-5" aria-hidden="true" />
             </button>
           </div>
 
