@@ -97,7 +97,7 @@ const Contributors: React.FC = () => {
               <li className="text-[#00eeff] font-semibold">Patrisia Prestinary</li>
               <li className="text-sm text-gray-400">Archivist & Special Collections Librarian</li>
               <li className="text-[#00eeff] font-semibold">Garrett Fritz</li>
-              <li className="text-sm text-gray-400">University Archive and Special Collections</li>
+              <li className="text-sm text-gray-400">Archives Specialist</li>
                <li className="text-[#00eeff] font-semibold">Lisa Mix</li>
               <li className="text-sm text-gray-400">Director, University Archives and Special Collections</li>
               <li className="text-[#00eeff] font-semibold">Ethan Madla</li>
@@ -110,11 +110,11 @@ const Contributors: React.FC = () => {
             <h3 className="text-xl font-heading tracking-wider text-white mb-2">Installation & Exhibit Support</h3>
             <ul className="text-gray-300 space-y-2">
               <li className="text-[#00eeff] font-semibold">Sepehr Sobhani</li>
-              <li className="text-sm text-gray-400">Director of User/Classroom Support Services</li>
+              <li className="text-sm text-gray-400">Director of User / Classroom Support Services</li>
               <li className="text-[#00eeff] font-semibold">Eunseok Song</li>
               <li className="text-sm text-gray-400">Associate Director for Classroom / AV Tech Support</li>
               <li className="text-[#00eeff] font-semibold">David Palmquist</li>
-              <li className="text-sm text-gray-400">Analyst/Programer</li>
+              <li className="text-sm text-gray-400">Analyst/Programmer</li>
               <li className="text-[#00eeff] font-semibold">Jason Lorge</li>
               <li className="text-sm text-gray-400">IT Consultant</li>
               <li className="text-[#00eeff] font-semibold">Tu-An Nguyen</li>
