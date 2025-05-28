@@ -16,19 +16,19 @@ const VideoModal: React.FC<VideoModalProps> = ({ isOpen, onClose }) => {
   useEffect(() => {
     if (!isOpen) return;
 
-    const focusableElements = modalRef.current?.querySelectorAll(
-      'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'
-    );
-    const firstFocusable = focusableElements?.[0] as HTMLElement;
-    const lastFocusable = focusableElements?.[focusableElements.length - 1] as HTMLElement;
-
     const handleKeyDown = (e: KeyboardEvent) => {
       if (e.key === 'Escape') {
+        e.preventDefault();
+        // Stop video playback
+        videoRef.current?.contentWindow?.postMessage(
+          JSON.stringify({ event: 'pause' }),
+          'https://player.cloudinary.com'
+        );
+        setIsPlaying(false);
         onClose();
-        return;
       }
 
-      // Handle video playback controls
+      // Handle video playback controls when video is focused
       if (document.activeElement === videoRef.current) {
         if (e.key === 'Enter' || e.key === ' ') {
           e.preventDefault();
@@ -43,22 +43,6 @@ const VideoModal: React.FC<VideoModalProps> = ({ isOpen, onClose }) => {
           );
           
           setIsPlaying(!isPlaying);
-          return;
-        }
-      }
-
-      // Handle tab navigation
-      if (e.key === 'Tab') {
-        if (e.shiftKey) {
-          if (document.activeElement === firstFocusable) {
-            e.preventDefault();
-            lastFocusable?.focus();
-          }
-        } else {
-          if (document.activeElement === lastFocusable) {
-            e.preventDefault();
-            firstFocusable?.focus();
-          }
         }
       }
     };
@@ -91,6 +75,16 @@ const VideoModal: React.FC<VideoModalProps> = ({ isOpen, onClose }) => {
     };
   }, [isOpen, onClose, isPlaying]);
 
+  const handleClose = () => {
+    // Stop video playback
+    videoRef.current?.contentWindow?.postMessage(
+      JSON.stringify({ event: 'pause' }),
+      'https://player.cloudinary.com'
+    );
+    setIsPlaying(false);
+    onClose();
+  };
+
   return (
     <AnimatePresence>
       {isOpen && (
@@ -98,6 +92,7 @@ const VideoModal: React.FC<VideoModalProps> = ({ isOpen, onClose }) => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
+          transition={{ duration: 0.2 }}
           className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm"
           role="dialog"
           aria-modal="true"
@@ -108,12 +103,13 @@ const VideoModal: React.FC<VideoModalProps> = ({ isOpen, onClose }) => {
             initial={{ scale: 0.9, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
             exit={{ scale: 0.9, opacity: 0 }}
+            transition={{ duration: 0.2 }}
             className="relative w-full h-full flex items-center justify-center focus:outline-none"
             tabIndex={-1}
           >
             <button
               ref={closeButtonRef}
-              onClick={onClose}
+              onClick={handleClose}
               className="absolute top-4 right-4 p-2 text-white hover:text-[#00eeff] transition-colors focus:outline-none focus:ring-2 focus:ring-[#00eeff] rounded-lg z-10"
               aria-label="Close video"
             >
