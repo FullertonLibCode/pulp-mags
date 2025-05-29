@@ -9,10 +9,14 @@ export default defineConfig({
     viteCompression({
       algorithm: 'gzip',
       ext: '.gz',
+      threshold: 1024,
+      deleteOriginFile: false,
     }),
     viteCompression({
       algorithm: 'brotliCompress',
       ext: '.br',
+      threshold: 1024,
+      deleteOriginFile: false,
     }),
     viteImagemin({
       gifsicle: {
@@ -45,6 +49,7 @@ export default defineConfig({
   ],
   optimizeDeps: {
     exclude: ['lucide-react'],
+    include: ['react', 'react-dom', 'react-router-dom', 'framer-motion'],
   },
   server: {
     host: true,
@@ -57,9 +62,19 @@ export default defineConfig({
     rollupOptions: {
       output: {
         manualChunks: {
-          vendor: ['react', 'react-dom', 'react-router-dom'],
+          vendor: ['react', 'react-dom'],
+          router: ['react-router-dom'],
           animations: ['framer-motion'],
+          icons: ['lucide-react'],
         },
+        assetFileNames: (assetInfo) => {
+          if (assetInfo.name.endsWith('.css')) {
+            return 'assets/[name].[hash].css';
+          }
+          return 'assets/[name].[hash][extname]';
+        },
+        chunkFileNames: 'assets/[name].[hash].js',
+        entryFileNames: 'assets/[name].[hash].js',
       },
     },
     cssCodeSplit: true,
@@ -69,7 +84,17 @@ export default defineConfig({
       compress: {
         drop_console: true,
         drop_debugger: true,
+        pure_funcs: ['console.log', 'console.info', 'console.debug', 'console.trace'],
+        passes: 2,
+      },
+      mangle: {
+        toplevel: true,
+      },
+      format: {
+        comments: false,
       },
     },
+    reportCompressedSize: true,
+    chunkSizeWarningLimit: 1000,
   },
 });

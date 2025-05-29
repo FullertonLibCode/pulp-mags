@@ -59,4 +59,18 @@ export default {
     },
   },
   plugins: [],
+  purge: {
+    enabled: true,
+    content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+    options: {
+      safelist: [
+        'text-[#00eeff]',
+        'bg-[#00eeff]',
+        'border-[#00eeff]',
+        'bg-[#0a1128]',
+        'bg-[#132347]',
+        'border-[#1e3a8a]',
+      ],
+    },
+  },
 };
