@@ -1,9 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, lazy, Suspense } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
 import { BrainCircuit, Zap, History, Eye, BrainCircuit as Circuit, Cpu, MapPin } from 'lucide-react';
 import { useInView } from 'react-intersection-observer';
-import ExhibitionGuide from './ExhibitionGuide';
+
+const ExhibitionGuide = lazy(() => import('./ExhibitionGuide'));
 
 const Home: React.FC = () => {
   const [isGuideOpen, setIsGuideOpen] = useState(false);
@@ -20,16 +21,36 @@ const Home: React.FC = () => {
 
   useEffect(() => {
     if (location.state?.scrollToVideo) {
-      setTimeout(() => {
-        document.getElementById('intro-video')?.scrollIntoView({ behavior: 'smooth' });
-      }, 100);
+      const videoElement = document.getElementById('intro-video');
+      if (videoElement) {
+        if ('requestIdleCallback' in window) {
+          window.requestIdleCallback(() => {
+            videoElement.scrollIntoView({ behavior: 'smooth' });
+          });
+        } else {
+          setTimeout(() => {
+            videoElement.scrollIntoView({ behavior: 'smooth' });
+          }, 0);
+        }
+      }
       window.history.replaceState({}, document.title);
     }
   }, [location]);
 
   const handleFeatureClick = (path: string) => {
     navigate(path);
-    window.scrollTo(0, 0);
+    requestAnimationFrame(() => {
+      window.scrollTo(0, 0);
+    });
+  };
+
+  const handleGuideButtonHover = () => {
+    const guideModule = import('./ExhibitionGuide');
+    if ('requestIdleCallback' in window) {
+      window.requestIdleCallback(() => {
+        guideModule.catch(() => {});
+      });
+    }
   };
 
   return (
@@ -46,7 +67,6 @@ const Home: React.FC = () => {
         <div className="absolute inset-0">
           <div className="absolute inset-0 bg-gradient-to-b from-[#0a1128]/70 via-[#132347]/60 to-[#0a1128]/70" />
           
-          {/* Floating Brain Circuits */}
           {[...Array(30)].map((_, i) => (
             <motion.div
               key={i}
@@ -82,7 +102,7 @@ const Home: React.FC = () => {
               }}
             >
               {i % 3 === 0 ? (
-                <BrainCircuit className="text-[#00eeff]" style={{ width: `${Math.random() * 40 + 20}px`, height: `${Math.random() * 40 + 20}px` }} />
+                <BrainCircuit className="text-[#00eeff]\" style={{ width: `${Math.random() * 40 + 20}px`, height: `${Math.random() * 40 + 20}px` }} />
               ) : i % 3 === 1 ? (
                 <Circuit className="text-[#00eeff]" style={{ width: `${Math.random() * 40 + 20}px`, height: `${Math.random() * 40 + 20}px` }} />
               ) : (
@@ -91,7 +111,6 @@ const Home: React.FC = () => {
             </motion.div>
           ))}
 
-          {/* Glowing Orbs */}
           {[...Array(15)].map((_, i) => (
             <motion.div
               key={`orb-${i}`}
@@ -157,6 +176,7 @@ const Home: React.FC = () => {
           >
             <button
               onClick={() => setIsGuideOpen(true)}
+              onMouseEnter={handleGuideButtonHover}
               className="inline-flex items-center gap-2 bg-[#00eeff] text-[#0a1128] font-semibold px-8 py-4 rounded-md hover:bg-[#00bfcc] transition-all duration-300 hover:shadow-[0_0_20px_rgba(0,238,255,0.5)]"
               aria-label="Open Exhibition Guide"
             >
@@ -254,9 +274,11 @@ const Home: React.FC = () => {
         </div>
       </motion.section>
 
-      <ExhibitionGuide isOpen={isGuideOpen} onClose={() => setIsGuideOpen(false)} />
+      <Suspense fallback={null}>
+        {isGuideOpen && <ExhibitionGuide isOpen={isGuideOpen} onClose={() => setIsGuideOpen(false)} />}
+      </Suspense>
     </div>
   );
 };
 
-export default Home;
+export default React.memo(Home);
