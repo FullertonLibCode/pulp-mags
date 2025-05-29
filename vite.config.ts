@@ -9,13 +9,13 @@ export default defineConfig({
     viteCompression({
       algorithm: 'gzip',
       ext: '.gz',
-      threshold: 512, // Lower threshold to compress more files
+      threshold: 1024,
       deleteOriginFile: false,
     }),
     viteCompression({
       algorithm: 'brotliCompress',
       ext: '.br',
-      threshold: 512, // Lower threshold to compress more files
+      threshold: 1024,
       deleteOriginFile: false,
     }),
     viteImagemin({
@@ -51,6 +51,18 @@ export default defineConfig({
     exclude: ['lucide-react'],
     include: ['react', 'react-dom', 'react-router-dom', 'framer-motion'],
   },
+  server: {
+    host: true,
+    headers: {
+      'Content-Security-Policy': "frame-src 'self' https://player.cloudinary.com",
+      'Cache-Control': 'public, max-age=31536000',
+    },
+    hmr: {
+      protocol: 'wss',
+      clientPort: 443,
+      host: 'zp1v56uxy8rdx5ypatb0ockcb9tr6a-oci3-q5amcidu--5173--55edb8f4.local-credentialless.webcontainer-api.io'
+    }
+  },
   build: {
     rollupOptions: {
       output: {
@@ -78,7 +90,7 @@ export default defineConfig({
         drop_console: true,
         drop_debugger: true,
         pure_funcs: ['console.log', 'console.info', 'console.debug', 'console.trace'],
-        passes: 3, // Increased from 2 to 3 for better minification
+        passes: 2,
       },
       mangle: {
         toplevel: true,
@@ -89,14 +101,5 @@ export default defineConfig({
     },
     reportCompressedSize: true,
     chunkSizeWarningLimit: 1000,
-    target: 'esnext', // Target modern browsers for better optimization
-  },
-  server: {
-    headers: {
-      'Cache-Control': 'public, max-age=31536000, immutable',
-      'Content-Security-Policy': "frame-src 'self' https://player.cloudinary.com",
-    },
-    cors: true,
-    compression: true,
   },
 });

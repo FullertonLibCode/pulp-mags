@@ -23,9 +23,15 @@ const Home: React.FC = () => {
     if (location.state?.scrollToVideo) {
       const videoElement = document.getElementById('intro-video');
       if (videoElement) {
-        requestIdleCallback(() => {
-          videoElement.scrollIntoView({ behavior: 'smooth' });
-        });
+        if ('requestIdleCallback' in window) {
+          window.requestIdleCallback(() => {
+            videoElement.scrollIntoView({ behavior: 'smooth' });
+          });
+        } else {
+          setTimeout(() => {
+            videoElement.scrollIntoView({ behavior: 'smooth' });
+          }, 0);
+        }
       }
       window.history.replaceState({}, document.title);
     }
@@ -40,9 +46,11 @@ const Home: React.FC = () => {
 
   const handleGuideButtonHover = () => {
     const guideModule = import('./ExhibitionGuide');
-    requestIdleCallback(() => {
-      guideModule.catch(() => {});
-    });
+    if ('requestIdleCallback' in window) {
+      window.requestIdleCallback(() => {
+        guideModule.catch(() => {});
+      });
+    }
   };
 
   return (
