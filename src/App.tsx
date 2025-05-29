@@ -2,7 +2,7 @@ import React, { lazy, Suspense, useEffect } from 'react';
 import { BrowserRouter, Routes, Route, Navigate, useLocation } from 'react-router-dom';
 import Layout from './components/Layout';
 
-// Lazy load route components
+// Lazy load route components with preload
 const Home = lazy(() => import('./components/Home'));
 const Gallery = lazy(() => import('./components/Gallery'));
 const CoverDetail = lazy(() => import('./components/CoverDetail'));
@@ -10,6 +10,15 @@ const Timeline = lazy(() => import('./components/Timeline'));
 const Tags = lazy(() => import('./components/Tags'));
 const Insights = lazy(() => import('./components/Insights'));
 const Contributors = lazy(() => import('./components/Contributors'));
+
+// Preload components
+const preloadComponent = (component: () => Promise<any>) => {
+  if ('requestIdleCallback' in window) {
+    window.requestIdleCallback(() => {
+      component().catch(() => {});
+    });
+  }
+};
 
 // Scroll to top component
 function ScrollToTop() {
@@ -34,6 +43,15 @@ const LoadingFallback = () => (
 );
 
 function App() {
+  // Preload other routes when idle
+  useEffect(() => {
+    preloadComponent(() => import('./components/Gallery'));
+    preloadComponent(() => import('./components/Timeline'));
+    preloadComponent(() => import('./components/Tags'));
+    preloadComponent(() => import('./components/Insights'));
+    preloadComponent(() => import('./components/Contributors'));
+  }, []);
+
   return (
     <BrowserRouter>
       <ScrollToTop />

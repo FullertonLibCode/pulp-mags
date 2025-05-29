@@ -71,6 +71,12 @@ export default defineConfig({
           router: ['react-router-dom'],
           animations: ['framer-motion'],
           icons: ['lucide-react'],
+          home: ['./src/components/Home.tsx'],
+          gallery: ['./src/components/Gallery.tsx'],
+          timeline: ['./src/components/Timeline.tsx'],
+          tags: ['./src/components/Tags.tsx'],
+          insights: ['./src/components/Insights.tsx'],
+          contributors: ['./src/components/Contributors.tsx']
         },
         assetFileNames: (assetInfo) => {
           if (assetInfo.name.endsWith('.css')) {
