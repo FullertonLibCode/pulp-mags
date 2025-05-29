@@ -73,7 +73,7 @@ const Contributors: React.FC = () => {
                 <p className="text-sm text-gray-400">AI Curator</p>
               </li>
               <li>
-                <span className="text-[#00eeff] font-semibold text-lg">Jennifer Mitchell</span>
+                <span className="text-[#00eeff] font-semibold text-lg">Jennifer Mitchell, MLIS</span>
                 <p className="text-sm text-gray-400">Human Co-Curator</p>
               </li>
             </ul>

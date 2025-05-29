@@ -61,7 +61,7 @@ export const covers: Cover[] = [
   },
   {
     id: "4",
-    title: "The Univerise Wreckers",
+    title: "The Universe Wreckers",
     year: 1930,
     magazineName: "Amazing Stories",
     imageUrl: "https://pulpbots.wordpress.com/wp-content/uploads/2025/05/amazing_stories_1930_05.jpg",
