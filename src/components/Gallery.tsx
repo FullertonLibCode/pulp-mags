@@ -30,6 +30,11 @@ const Gallery: React.FC = () => {
       setShowInsights(true);
       window.history.replaceState({}, document.title);
     }
+
+    if (location.state?.openAnalysis) {
+      setShowAnalysis(true);
+      window.history.replaceState({}, document.title);
+    }
   }, [location]);
 
   useEffect(() => {
@@ -108,7 +113,7 @@ const Gallery: React.FC = () => {
   };
     
   return (
-    <div className="max-w-[2000px] mx-auto px-4">
+    <div className="max-w-[2000px] mx-auto px-4" data-component="gallery">
       <div className="relative retro-grid circuit-overlay">
         <motion.h1 
           className="text-4xl font-bold mb-8 retro-title"
@@ -296,7 +301,10 @@ const Gallery: React.FC = () => {
       )}
 
       {showAnalysis && (
-        <Insights onClose={() => setShowAnalysis(false)} />
+        <Insights 
+          onClose={closeAnalysis}
+          isOpen={showAnalysis}
+        />
       )}
     </div>
   );

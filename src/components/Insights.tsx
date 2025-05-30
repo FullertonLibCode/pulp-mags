@@ -1,18 +1,32 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { BrainCircuit, CircuitBoard, Bot, Palette, Zap, Lightbulb, X } from 'lucide-react';
 import KestralInsights from './KestralInsights';
 
 interface InsightsProps {
   onClose: () => void;
+  isOpen: boolean;
 }
 
-const Insights: React.FC<InsightsProps> = ({ onClose }) => {
+const Insights: React.FC<InsightsProps> = ({ onClose, isOpen }) => {
   const modalRef = useRef<HTMLDivElement>(null);
   const contentRef = useRef<HTMLDivElement>(null);
   const closeButtonRef = useRef<HTMLButtonElement>(null);
   const [showKestralInsights, setShowKestralInsights] = React.useState(false);
-  const [isOpen, setIsOpen] = React.useState(true);
+
+  const handleInsightsClick = () => {
+    setShowKestralInsights(true);
+  };
+
+  const handleClose = useCallback(() => {
+    onClose();
+  }, [onClose]);
+
+  const handleBackdropClick = (e: React.MouseEvent) => {
+    if (e.target === e.currentTarget) {
+      handleClose();
+    }
+  };
 
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
@@ -21,30 +35,15 @@ const Insights: React.FC<InsightsProps> = ({ onClose }) => {
       }
     };
 
-    document.addEventListener('keydown', handleKeyDown);
-    closeButtonRef.current?.focus();
+    if (isOpen) {
+      document.addEventListener('keydown', handleKeyDown);
+      closeButtonRef.current?.focus();
+    }
 
     return () => {
       document.removeEventListener('keydown', handleKeyDown);
     };
-  }, []);
-
-  const handleInsightsClick = () => {
-    setShowKestralInsights(true);
-  };
-
-  const handleClose = () => {
-    setIsOpen(false);
-    setTimeout(() => {
-      onClose();
-    }, 200); // Match the exit animation duration
-  };
-
-  const handleBackdropClick = (e: React.MouseEvent) => {
-    if (e.target === e.currentTarget) {
-      handleClose();
-    }
-  };
+  }, [isOpen, handleClose]);
 
   return (
     <>

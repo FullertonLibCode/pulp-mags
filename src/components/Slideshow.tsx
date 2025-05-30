@@ -15,6 +15,7 @@ const Slideshow: React.FC<SlideshowProps> = ({ onClose, initialIndex = 0 }) => {
   const [isGuideOpen, setIsGuideOpen] = useState(false);
   const modalRef = useRef<HTMLDivElement>(null);
   const closeButtonRef = useRef<HTMLButtonElement>(null);
+  const tabsContainerRef = useRef<HTMLDivElement>(null);
   
   const nextSlide = () => {
     setCurrentIndex((prev) => (prev + 1) % covers.length);
@@ -78,19 +79,19 @@ const Slideshow: React.FC<SlideshowProps> = ({ onClose, initialIndex = 0 }) => {
     { 
       id: 'Observations', 
       label: 'Image Description', 
-      icon: <Eye className="w-5 h-5" />,
+      icon: <Eye className="w-5 h-5 shrink-0" />,
       description: 'Brief overview highlighting the primary action, key figures, and notable visual elements.'
     },
     { 
       id: 'VisualDesignElements', 
       label: 'Design Elements', 
-      icon: <BrainCircuit className="w-5 h-5" />,
+      icon: <BrainCircuit className="w-5 h-5 shrink-0" />,
       description: 'Technical analysis of artistic choices including color palette, composition, perspective, and proportion.'
     },
     { 
       id: 'aiReflection', 
       label: 'Kestral\'s Reflection', 
-      icon: <BrainCircuit className="w-5 h-5" />,
+      icon: <BrainCircuit className="w-5 h-5 shrink-0" />,
       description: 'Personal insights from an AI perspective on this creative representation.'
     }
   ];
@@ -124,17 +125,17 @@ const Slideshow: React.FC<SlideshowProps> = ({ onClose, initialIndex = 0 }) => {
           <button
             ref={closeButtonRef}
             onClick={onClose}
-            className="flex items-center gap-2 px-4 py-2 rounded-full bg-[#132347] text-[#00eeff] hover:bg-[#1e3a8a] transition-colors focus:outline-none focus:ring-2 focus:ring-[#00eeff]"
+            className="flex items-center gap-2 px-4 py-2 rounded-full bg-[#132347] text-[#00eeff] hover:bg-[#1e3a8a] transition-colors focus:outline-none focus:ring-2 focus:ring-[#00eeff] touch-action-manipulation"
             aria-label="Close slideshow"
           >
             <X className="w-5 h-5" />
-            <span>Exit Image Gallery</span>
+            <span className="hidden sm:inline">Exit Image Gallery</span>
           </button>
         </div>
         
         <button
           onClick={prevSlide}
-          className="absolute left-4 z-30 p-3 rounded-full bg-[#132347] text-[#00eeff] hover:bg-[#1e3a8a] transition-colors focus:outline-none focus:ring-2 focus:ring-[#00eeff]"
+          className="absolute left-4 z-30 p-3 rounded-full bg-[#132347] text-[#00eeff] hover:bg-[#1e3a8a] transition-colors focus:outline-none focus:ring-2 focus:ring-[#00eeff] touch-action-manipulation"
           aria-label="Previous image"
         >
           <ChevronLeft size={24} />
@@ -142,7 +143,7 @@ const Slideshow: React.FC<SlideshowProps> = ({ onClose, initialIndex = 0 }) => {
         
         <button
           onClick={nextSlide}
-          className="absolute right-4 z-30 p-3 rounded-full bg-[#132347] text-[#00eeff] hover:bg-[#1e3a8a] transition-colors focus:outline-none focus:ring-2 focus:ring-[#00eeff]"
+          className="absolute right-4 z-30 p-3 rounded-full bg-[#132347] text-[#00eeff] hover:bg-[#1e3a8a] transition-colors focus:outline-none focus:ring-2 focus:ring-[#00eeff] touch-action-manipulation"
           aria-label="Next image"
         >
           <ChevronRight size={24} />
@@ -164,6 +165,7 @@ const Slideshow: React.FC<SlideshowProps> = ({ onClose, initialIndex = 0 }) => {
                     src={currentCover.imageUrl}
                     alt={getAltText(currentCover)}
                     className="w-full h-auto"
+                    loading="eager"
                   />
                 </div>
                 
@@ -183,7 +185,8 @@ const Slideshow: React.FC<SlideshowProps> = ({ onClose, initialIndex = 0 }) => {
               <h3 className="text-xl font-bold mb-6 text-[#00eeff]">Analysis</h3>
               
               <div 
-                className="flex overflow-x-auto whitespace-nowrap mb-6 pb-2"
+                ref={tabsContainerRef}
+                className="flex flex-wrap gap-2 mb-6"
                 role="tablist"
                 aria-label="Analysis sections"
               >
@@ -200,14 +203,14 @@ const Slideshow: React.FC<SlideshowProps> = ({ onClose, initialIndex = 0 }) => {
                     role="tab"
                     aria-selected={activeSection === section.id}
                     aria-controls={`panel-${section.id}`}
-                    className={`flex items-center px-4 py-2 rounded-full text-sm mr-2 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-[#00eeff] ${
+                    className={`flex items-center px-4 py-2 rounded-full text-sm transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-[#00eeff] touch-action-manipulation ${
                       activeSection === section.id
                         ? 'bg-[#00eeff] text-[#0a1128] font-semibold'
                         : 'bg-[#0a1128] text-gray-300 hover:bg-[#1e3a8a]'
                     }`}
                   >
                     {section.icon}
-                    <span className="ml-2">{section.label}</span>
+                    <span className="ml-2 whitespace-normal">{section.label}</span>
                   </button>
                 ))}
               </div>
@@ -230,7 +233,7 @@ const Slideshow: React.FC<SlideshowProps> = ({ onClose, initialIndex = 0 }) => {
                       <h4 className="text-lg font-semibold mb-2 text-white">{section.label}</h4>
                       <p className="text-sm text-gray-400 mb-4">{section.description}</p>
                       <div className="prose prose-invert max-w-none">
-                        <p className="text-gray-200 leading-relaxed">
+                        <p className="text-gray-200 leading-relaxed whitespace-pre-line break-words">
                           {getAnalysisContent(section.id)}
                         </p>
                       </div>
@@ -240,7 +243,7 @@ const Slideshow: React.FC<SlideshowProps> = ({ onClose, initialIndex = 0 }) => {
               </div>
               
               <div className="mt-8 pt-8 border-t border-[#1e3a8a]">
-                <div className="flex items-center justify-between">
+                <div className="flex items-center justify-between flex-wrap gap-4">
                   <div className="flex items-center">
                     <div className="w-10 h-10 rounded-full bg-[#00eeff] flex items-center justify-center text-[#0a1128] font-bold">K</div>
                     <div className="ml-3">
@@ -250,10 +253,10 @@ const Slideshow: React.FC<SlideshowProps> = ({ onClose, initialIndex = 0 }) => {
                   </div>
                   <button
                     onClick={handleGuideClick}
-                    className="flex items-center gap-2 text-[#00eeff] hover:text-[#00bfcc] transition-colors focus:outline-none focus:ring-2 focus:ring-[#00eeff] rounded-lg px-2 py-1"
+                    className="flex items-center gap-2 text-[#00eeff] hover:text-[#00bfcc] transition-colors focus:outline-none focus:ring-2 focus:ring-[#00eeff] rounded-lg px-2 py-1 touch-action-manipulation"
                     aria-label="Open Exhibition Guide"
                   >
-                    <MapPin className="w-5 h-5" />
+                    <MapPin className="w-5 h-5 shrink-0" />
                     <span>Exhibition Guide</span>
                   </button>
                 </div>
@@ -271,7 +274,7 @@ const Slideshow: React.FC<SlideshowProps> = ({ onClose, initialIndex = 0 }) => {
             <button
               key={index}
               onClick={() => setCurrentIndex(index)}
-              className={`lg:block hidden shrink min-h-7 min-w-0 w-3.5 h-3.5 rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-[#00eeff] border border-[#1e3a8a] ${
+              className={`lg:block hidden shrink-0 min-h-7 min-w-0 w-3.5 h-3.5 rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-[#00eeff] border border-[#1e3a8a] touch-action-manipulation ${
                 index === currentIndex ? 'bg-[#00eeff]' : 'bg-[#132347]'
               }`}
               aria-label={`Go to image ${index + 1}`}

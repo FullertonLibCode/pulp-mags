@@ -13,6 +13,7 @@ const ExhibitionGuide: React.FC<ExhibitionGuideProps> = ({ isOpen, onClose }) =>
   const navigate = useNavigate();
   const closeButtonRef = useRef<HTMLButtonElement>(null);
   const modalRef = useRef<HTMLDivElement>(null);
+  const [showInsights, setShowInsights] = React.useState(false);
 
   // Trap focus within modal
   useEffect(() => {
@@ -99,7 +100,20 @@ const ExhibitionGuide: React.FC<ExhibitionGuideProps> = ({ isOpen, onClose }) =>
       icon: <Eye className="w-6 h-6" />,
       title: "Read Kestral's Analysis",
       description: "Dive deep into Kestral's insights about its own fictional ancestors in pulp science fiction.",
-      action: () => handleNavigation('/insights'),
+      action: () => {
+        onClose();
+        const galleryComponent = document.querySelector('[data-component="gallery"]');
+        if (galleryComponent) {
+          const setShowAnalysis = (galleryComponent as any).__reactProps?.setShowAnalysis;
+          if (setShowAnalysis) {
+            setShowAnalysis(true);
+          } else {
+            navigate('/gallery', { state: { openAnalysis: true } });
+          }
+        } else {
+          navigate('/gallery', { state: { openAnalysis: true } });
+        }
+      },
       linkText: "Read Analysis"
     },
     {

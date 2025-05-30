@@ -1,18 +1,21 @@
 import React, { useState, useEffect, lazy, Suspense } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
-import { BrainCircuit, Zap, History, Eye, BrainCircuit as Circuit, Cpu, MapPin } from 'lucide-react';
+import { BrainCircuit, Play, History, Eye, BrainCircuit as Circuit, Cpu, MapPin } from 'lucide-react';
 import { useInView } from 'react-intersection-observer';
 
 const ExhibitionGuide = lazy(() => import('./ExhibitionGuide'));
+const Insights = lazy(() => import('./Insights'));
 
 const Home: React.FC = () => {
   const [isGuideOpen, setIsGuideOpen] = useState(false);
+  const [showInsights, setShowInsights] = useState(false);
   const { scrollY } = useScroll();
   const opacity = useTransform(scrollY, [0, 400], [1, 0.8]);
   const blur = useTransform(scrollY, [0, 400], [0, 6]);
   const navigate = useNavigate();
   const location = useLocation();
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
 
   const [ref, inView] = useInView({
     triggerOnce: true,
@@ -20,28 +23,35 @@ const Home: React.FC = () => {
   });
 
   useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  useEffect(() => {
     if (location.state?.scrollToVideo) {
       const videoElement = document.getElementById('intro-video');
       if (videoElement) {
-        if ('requestIdleCallback' in window) {
-          window.requestIdleCallback(() => {
-            videoElement.scrollIntoView({ behavior: 'smooth' });
-          });
-        } else {
-          setTimeout(() => {
-            videoElement.scrollIntoView({ behavior: 'smooth' });
-          }, 0);
-        }
+        requestAnimationFrame(() => {
+          videoElement.scrollIntoView({ behavior: 'smooth' });
+        });
       }
       window.history.replaceState({}, document.title);
     }
   }, [location]);
 
   const handleFeatureClick = (path: string) => {
-    navigate(path);
-    requestAnimationFrame(() => {
-      window.scrollTo(0, 0);
-    });
+    if (path === '/insights') {
+      setShowInsights(true);
+    } else {
+      navigate(path);
+      requestAnimationFrame(() => {
+        window.scrollTo(0, 0);
+      });
+    }
   };
 
   const handleGuideButtonHover = () => {
@@ -52,6 +62,9 @@ const Home: React.FC = () => {
       });
     }
   };
+
+  const iconCount = isMobile ? 10 : 30;
+  const orbCount = isMobile ? 5 : 15;
 
   return (
     <div className="relative">
@@ -67,7 +80,7 @@ const Home: React.FC = () => {
         <div className="absolute inset-0">
           <div className="absolute inset-0 bg-gradient-to-b from-[#0a1128]/70 via-[#132347]/60 to-[#0a1128]/70" />
           
-          {[...Array(30)].map((_, i) => (
+          {[...Array(iconCount)].map((_, i) => (
             <motion.div
               key={i}
               className="absolute"
@@ -104,14 +117,14 @@ const Home: React.FC = () => {
               {i % 3 === 0 ? (
                 <BrainCircuit className="text-[#00eeff]\" style={{ width: `${Math.random() * 40 + 20}px`, height: `${Math.random() * 40 + 20}px` }} />
               ) : i % 3 === 1 ? (
-                <Circuit className="text-[#00eeff]" style={{ width: `${Math.random() * 40 + 20}px`, height: `${Math.random() * 40 + 20}px` }} />
+                <Circuit className="text-[#00eeff]\" style={{ width: `${Math.random() * 40 + 20}px`, height: `${Math.random() * 40 + 20}px` }} />
               ) : (
-                <Cpu className="text-[#00eeff]" style={{ width: `${Math.random() * 40 + 20}px`, height: `${Math.random() * 40 + 20}px` }} />
+                <Cpu className="text-[#00eeff]\" style={{ width: `${Math.random() * 40 + 20}px`, height: `${Math.random() * 40 + 20}px` }} />
               )}
             </motion.div>
           ))}
 
-          {[...Array(15)].map((_, i) => (
+          {[...Array(orbCount)].map((_, i) => (
             <motion.div
               key={`orb-${i}`}
               className="absolute rounded-full mix-blend-screen"
@@ -144,7 +157,7 @@ const Home: React.FC = () => {
         
         <div className="relative z-10 text-center px-4">
           <motion.h1 
-            className="text-6xl md:text-7xl font-bold mb-4 font-heading"
+            className="text-4xl sm:text-6xl md:text-7xl font-bold mb-4 font-heading"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
@@ -153,7 +166,7 @@ const Home: React.FC = () => {
             <span className="text-white">in Metal</span>
           </motion.h1>
           <motion.h2
-            className="text-2xl md:text-3xl mb-8 text-gray-300 font-heading"
+            className="text-xl sm:text-2xl md:text-3xl mb-8 text-gray-300 font-heading"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
@@ -161,7 +174,7 @@ const Home: React.FC = () => {
             Pulp Sci-Fi through the Eyes of AI
           </motion.h2>
           <motion.p 
-            className="text-xl md:text-2xl mb-8 max-w-2xl mx-auto text-gray-300"
+            className="text-lg sm:text-xl md:text-2xl mb-8 max-w-2xl mx-auto text-gray-300"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.4 }}
@@ -177,7 +190,7 @@ const Home: React.FC = () => {
             <button
               onClick={() => setIsGuideOpen(true)}
               onMouseEnter={handleGuideButtonHover}
-              className="inline-flex items-center gap-2 bg-[#00eeff] text-[#0a1128] font-semibold px-8 py-4 rounded-md hover:bg-[#00bfcc] transition-all duration-300 hover:shadow-[0_0_20px_rgba(0,238,255,0.5)]"
+              className="inline-flex items-center gap-2 bg-[#00eeff] text-[#0a1128] font-semibold px-8 py-4 rounded-md hover:bg-[#00bfcc] transition-colors duration-300 hover:shadow-[0_0_20px_rgba(0,238,255,0.5)] touch-action-manipulation"
               aria-label="Open Exhibition Guide"
             >
               <MapPin className="w-5 h-5" aria-hidden="true" />
@@ -185,7 +198,7 @@ const Home: React.FC = () => {
             </button>
             <Link 
               to="/gallery"
-              className="inline-block bg-transparent text-[#00eeff] font-semibold px-8 py-4 rounded-md hover:bg-[#00eeff]/10 transition-all duration-300 border-2 border-[#00eeff]"
+              className="inline-block bg-transparent text-[#00eeff] font-semibold px-8 py-4 rounded-md hover:bg-[#00eeff]/10 transition-colors duration-300 border-2 border-[#00eeff] touch-action-manipulation"
               aria-label="Enter Exhibition Gallery"
             >
               Explore the Gallery
@@ -276,6 +289,7 @@ const Home: React.FC = () => {
 
       <Suspense fallback={null}>
         {isGuideOpen && <ExhibitionGuide isOpen={isGuideOpen} onClose={() => setIsGuideOpen(false)} />}
+        {showInsights && <Insights isOpen={showInsights} onClose={() => setShowInsights(false)} />}
       </Suspense>
     </div>
   );
