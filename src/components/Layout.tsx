@@ -33,7 +33,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
               <div>
                 <h1 className="text-2xl font-bold tracking-tight">Dreaming in Metal</h1>
                 <p className="text-sm text-gray-300 italic">Pulp Sci-Fi through the Eyes of AI</p>
-                 <p className="text-[#00eeff] font-semibold hover:underline"><a href="https://www.library.fullerton.edu/">An exhibit from the collections and creativity of Pollak Library</a></p>
+                 <p className="text-[#00eeff] font-semibold hover:underline"><a href="https://www.library.fullerton.edu/">An exhibit from the collections and creativity of Pollak Library, CSU Fullerton</a></p>
               </div>
             </div>
 
