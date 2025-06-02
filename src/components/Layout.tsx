@@ -61,15 +61,17 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
       <footer className="py-8 px-6 border-t border-[#1e3a8a] text-center pb-32">
         <div className="container mx-auto">
           <div className="flex justify-center items-center gap-8 mb-6">
+            <a href="https://www.library.fullerton.edu/find/archives/index.html" target="_blank" rel="noopener noreferrer">
             <img
               src="https://pulpbots.wordpress.com/wp-content/uploads/2025/05/univ-archives-special-collections-reversed.png"
               alt="University Archives Special Collections Logo"
               className="h-12"
             />
+            </a>
           </div>
           <div className="mb-6">
             <p className="text-gray-300 mb-2">© 2025 California State University, Fullerton. All Rights Reserved.</p>
-            <p className="text-gray-300 mt-2">Hosted by University Archives and Special Collections (UA&SC)</p>
+            <p className="text-gray-300 mt-2 hover:underline"><a href="https://www.library.fullerton.edu/find/archives/index.html">Hosted by University Archives and Special Collections (UA&SC)</a></p>
           </div>
           <div className="bg-[#132347] p-6 rounded-lg border border-[#1e3a8a] max-w-3xl mx-auto">
             <p className="text-[#00eeff] font-semibold mb-2">Accessibility Statement</p>
