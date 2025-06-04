@@ -111,6 +111,69 @@ const Gallery: React.FC = () => {
       lastFocusedElement.focus();
     }
   };
+
+  const GalleryItem = React.memo(({ cover }: { cover: typeof covers[0] }) => {
+    return (
+      <li className="relative group">
+        <button
+          tabIndex={0}
+          className="block w-full bg-[#132347] rounded-xl overflow-hidden hover:pulp-border transition-all duration-300 group-hover:shadow-[0_0_30px_rgba(0,238,255,0.2)]"
+          onClick={() => {
+            setCurrentSlideIndex(covers.findIndex(c => c.id === cover.id));
+            setShowSlideshow(true);
+          }}
+          onKeyDown={(e) => handleKeyPress(e, () => {
+            setCurrentSlideIndex(covers.findIndex(c => c.id === cover.id));
+            setShowSlideshow(true);
+          })}
+          aria-label={`View ${cover.title} in slideshow`}
+        >
+          <div
+            tabIndex={-1}
+            className="w-full text-left focus:outline-none rounded-xl"
+          >
+            <div className="relative pt-[133%] overflow-hidden">
+              <div className="absolute inset-0 bg-gradient-to-t from-[#0a1128] via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              <div className="absolute inset-0 vintage-texture mix-blend-overlay" />
+              <img 
+                src={cover.imageUrl} 
+                alt={getAltText(cover)} 
+                className="absolute inset-0 w-full h-full object-contain transition-transform duration-500 group-hover:scale-110"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <div className="p-6">
+              <h3 className="text-xl font-semibold mb-2 group-hover:text-[#00eeff] transition-colors duration-300">
+                {cover.title}
+              </h3>
+              <p className="text-gray-400 mb-3 font-mono">{cover.magazineName}, {cover.year}</p>
+              <p className="text-gray-300 mb-4">{cover.description}</p>
+            </div>
+          </div>
+          <div className="px-6 pb-6 flex flex-wrap gap-2">
+            {cover.tags.map(tag => (
+              <button 
+                key={tag}
+                onClick={(e) => {
+                  e.stopPropagation();
+                  handleFilterChange(tag);
+                }}
+                onKeyDown={(e) => {
+                  e.stopPropagation();
+                  handleKeyPress(e, () => handleFilterChange(tag));
+                }}
+                className="bg-[#0a1128] text-xs px-3 py-1.5 rounded-full text-gray-300 transition-colors duration-300 hover:bg-[#1e3a8a] hover:text-white focus:outline-none focus:ring-2 focus:ring-[#00eeff] focus:ring-offset-2 focus:ring-offset-[#0a1128]"
+                aria-label={`Filter by ${tag}`}
+              >
+                {tag}
+              </button>
+            ))}
+          </div>
+        </button>
+      </li>
+    );
+  });
     
   return (
     <div className="max-w-[2000px] mx-auto px-4" data-component="gallery">
@@ -207,66 +270,8 @@ const Gallery: React.FC = () => {
           role="list"
           aria-label="Gallery covers"
         >
-          {filteredCovers.map((cover, index) => (
-            <li
-              key={cover.id}
-              className="relative group h-full"
-            >
-              <button
-                tabIndex={0}
-                className="block w-full h-full bg-[#132347] rounded-xl overflow-hidden hover:pulp-border transition-all duration-300 group-hover:shadow-[0_0_30px_rgba(0,238,255,0.2)]"
-                onClick={() => {
-                  setCurrentSlideIndex(covers.findIndex(c => c.id === cover.id));
-                  setShowSlideshow(true);
-                }}
-                onKeyDown={(e) => handleKeyPress(e, () => {
-                  setCurrentSlideIndex(covers.findIndex(c => c.id === cover.id));
-                  setShowSlideshow(true);
-                })}
-                aria-label={`View ${cover.title} in slideshow`}
-              >
-                <div
-                  tabIndex={-1}
-                  className="w-full h-full flex flex-col text-left focus:outline-none rounded-xl"
-                >
-                  <div className="relative pt-[133%] overflow-hidden">
-                    <div className="absolute inset-0 bg-gradient-to-t from-[#0a1128] via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                    <div className="absolute inset-0 vintage-texture mix-blend-overlay" />
-                    <img 
-                      src={cover.imageUrl} 
-                      alt={getAltText(cover)} 
-                      className="absolute inset-0 w-full h-full object-contain transition-transform duration-500 group-hover:scale-110"
-                    />
-                  </div>
-                  <div className="p-4">
-                    <h3 className="text-xl font-semibold mb-2 group-hover:text-[#00eeff] transition-colors duration-300">
-                      {cover.title}
-                    </h3>
-                    <p className="text-sm text-gray-400 mb-2 font-mono">{cover.magazineName}, {cover.year}</p>
-                    <p className="text-sm text-gray-300 mb-3">{cover.description}</p>
-                    <div className="flex flex-wrap gap-1.5">
-                      {cover.tags.map(tag => (
-                        <button 
-                          key={tag}
-                          onClick={(e) => {
-                            e.stopPropagation();
-                            handleFilterChange(tag);
-                          }}
-                          onKeyDown={(e) => {
-                            e.stopPropagation();
-                            handleKeyPress(e, () => handleFilterChange(tag));
-                          }}
-                          className="bg-[#0a1128] text-xs px-2 py-1 rounded-full text-gray-300 transition-colors duration-300 hover:bg-[#1e3a8a] hover:text-white focus:outline-none focus:ring-2 focus:ring-[#00eeff] focus:ring-offset-2 focus:ring-offset-[#0a1128]"
-                          aria-label={`Filter by ${tag}`}
-                        >
-                          {tag}
-                        </button>
-                      ))}
-                    </div>
-                  </div>
-                </div>
-              </button>
-            </li>
+          {filteredCovers.map((cover) => (
+            <GalleryItem key={cover.id} cover={cover} />
           ))}
         </ul>
         
