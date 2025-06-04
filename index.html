@@ -15,8 +15,10 @@
     <!-- Preconnect to external domains -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://images.pexels.com" crossorigin>
+    <link rel="preconnect" href="https://pulpbots.wordpress.com" crossorigin>
     
-    <!-- Load fonts after page load -->
+    <!-- Load fonts with font-display: swap -->
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&family=Titillium+Web:wght@300;400;600;700&display=swap" as="stylesheet" onload="this.onload=null;this.rel='stylesheet'">
     <noscript>
       <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&family=Titillium+Web:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -52,6 +54,12 @@
       @font-face {
         font-family: 'Titillium Web';
         font-display: swap;
+      }
+
+      /* Optimize content visibility for large components */
+      .content-visibility-auto {
+        content-visibility: auto;
+        contain-intrinsic-size: 1px 5000px;
       }
     </style>
     

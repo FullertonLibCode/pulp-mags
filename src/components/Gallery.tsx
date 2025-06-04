@@ -141,6 +141,7 @@ const Gallery: React.FC = () => {
                 className="absolute inset-0 w-full h-full object-contain transition-transform duration-500 group-hover:scale-110"
                 loading="lazy"
                 decoding="async"
+                fetchpriority={covers.indexOf(cover) < 4 ? "high" : "auto"}
               />
             </div>
             <div className="p-6">
@@ -266,7 +267,7 @@ const Gallery: React.FC = () => {
         </div>
         
         <ul 
-          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8"
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 content-visibility-auto"
           role="list"
           aria-label="Gallery covers"
         >
