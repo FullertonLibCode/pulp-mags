@@ -76,6 +76,11 @@ const Contributors: React.FC = () => {
                 <span className="text-[#00eeff] font-semibold text-lg">Jennifer Mitchell, MLIS</span>
                 <p className="text-sm text-gray-400">Human Co-Curator</p>
               </li>
+              <li>                  
+                <p className="text-sm text-gray-300"><a href="mailto:jenmitchell@fullerton.edu" class="email-link" aria-label="Send email to jenmitchell@fullerton.edu">
+    Curious about the exhibit and want to know more? Email me: jenmitchell@fullerton.edu
+  </a></p>
+              </li>
             </ul>
           </div>
           <div className="p-4 bg-[#0a1128] rounded-lg">
