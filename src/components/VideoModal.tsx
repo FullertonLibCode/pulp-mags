@@ -137,7 +137,7 @@ const VideoModal: React.FC<VideoModalProps> = ({ isOpen, onClose }) => {
             <div className="w-full h-full max-w-[90vw] max-h-[90vh] flex items-center justify-center">
               <iframe 
                 ref={videoRef}
-                src="https://player.cloudinary.com/embed/?cloud_name=dn0ugggvb&public_id=Exhibit_-_Intro_-_Kestral_z7ut3e&profile=cld-default&fluid=true&controls=true&muted=false&autoplay=false&loop=false&colors%5Baccent%5D=%2300eeff&colors%5Bbase%5D=%23000000&colors%5Btext%5D=%23ffffff&fontFace=Orbitron"
+                src="https://player.cloudinary.com/embed/?cloud_name=dn0ugggvb&public_id=Exhibit_-_Intro_-_Kestral_z7ut3e&profile=cld-default"
                 className="w-full h-full aspect-video"
                 allow="autoplay; fullscreen; encrypted-media; picture-in-picture"
                 allowFullScreen
