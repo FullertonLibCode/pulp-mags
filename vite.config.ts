@@ -54,7 +54,7 @@ export default defineConfig({
   server: {
     host: true,
     headers: {
-      'Content-Security-Policy': "frame-src 'self' https://player.cloudinary.com",
+      'Content-Security-Policy': "frame-src 'self' https://player.cloudinary.com https://*.cloudinary.com; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://player.cloudinary.com https://*.cloudinary.com; connect-src 'self' https://player.cloudinary.com https://*.cloudinary.com;",
       'Cache-Control': 'public, max-age=31536000',
     },
     hmr: {

@@ -20,10 +20,16 @@ const VideoModal: React.FC<VideoModalProps> = ({ isOpen, onClose }) => {
       if (e.key === 'Escape') {
         e.preventDefault();
         // Stop video playback
-        videoRef.current?.contentWindow?.postMessage(
-          JSON.stringify({ event: 'pause' }),
-          'https://player.cloudinary.com'
-        );
+        if (videoRef.current?.contentWindow) {
+          try {
+            videoRef.current.contentWindow.postMessage(
+              JSON.stringify({ event: 'pause' }),
+              'https://player.cloudinary.com'
+            );
+          } catch (error) {
+            console.log('Could not pause video:', error);
+          }
+        }
         setIsPlaying(false);
         onClose();
       }
@@ -35,12 +41,18 @@ const VideoModal: React.FC<VideoModalProps> = ({ isOpen, onClose }) => {
           e.stopPropagation();
           
           // Toggle play/pause
-          videoRef.current?.contentWindow?.postMessage(
-            JSON.stringify({
-              event: isPlaying ? 'pause' : 'play'
-            }),
-            'https://player.cloudinary.com'
-          );
+          if (videoRef.current?.contentWindow) {
+            try {
+              videoRef.current.contentWindow.postMessage(
+                JSON.stringify({
+                  event: isPlaying ? 'pause' : 'play'
+                }),
+                'https://player.cloudinary.com'
+              );
+            } catch (error) {
+              console.log('Could not control video playback:', error);
+            }
+          }
           
           setIsPlaying(!isPlaying);
         }
@@ -77,10 +89,16 @@ const VideoModal: React.FC<VideoModalProps> = ({ isOpen, onClose }) => {
 
   const handleClose = () => {
     // Stop video playback
-    videoRef.current?.contentWindow?.postMessage(
-      JSON.stringify({ event: 'pause' }),
-      'https://player.cloudinary.com'
-    );
+    if (videoRef.current?.contentWindow) {
+      try {
+        videoRef.current.contentWindow.postMessage(
+          JSON.stringify({ event: 'pause' }),
+          'https://player.cloudinary.com'
+        );
+      } catch (error) {
+        console.log('Could not pause video:', error);
+      }
+    }
     setIsPlaying(false);
     onClose();
   };
@@ -119,7 +137,7 @@ const VideoModal: React.FC<VideoModalProps> = ({ isOpen, onClose }) => {
             <div className="w-full h-full max-w-[90vw] max-h-[90vh] flex items-center justify-center">
               <iframe 
                 ref={videoRef}
-                src="https://player.cloudinary.com/embed/?cloud_name=dn0ugggvb&public_id=Exhibit_-_Intro_-_Kestral_z7ut3e&profile=cld-default"
+                src="https://player.cloudinary.com/embed/?cloud_name=dn0ugggvb&public_id=Exhibit_-_Intro_-_Kestral_z7ut3e&profile=cld-default&fluid=true&controls=true&muted=false&autoplay=false&loop=false&colors%5Baccent%5D=%2300eeff&colors%5Bbase%5D=%23000000&colors%5Btext%5D=%23ffffff&fontFace=Orbitron"
                 className="w-full h-full aspect-video"
                 allow="autoplay; fullscreen; encrypted-media; picture-in-picture"
                 allowFullScreen
@@ -129,9 +147,11 @@ const VideoModal: React.FC<VideoModalProps> = ({ isOpen, onClose }) => {
                 tabIndex={0}
                 aria-label="Video player. Press Space or Enter to play or pause"
                 role="application"
+                sandbox="allow-scripts allow-same-origin allow-presentation"
                 onLoad={() => {
                   videoRef.current?.focus();
                 }}
+                style={{ border: 'none' }}
               />
             </div>
           </motion.div>

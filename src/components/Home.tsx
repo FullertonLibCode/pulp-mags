@@ -245,18 +245,20 @@ const Home: React.FC = () => {
             }}
           >
             <iframe 
-              src="https://player.cloudinary.com/embed/?cloud_name=dn0ugggvb&public_id=Exhibit_-_Intro_-_Kestral_z7ut3e&profile=cld-default"
+              src="https://player.cloudinary.com/embed/?cloud_name=dn0ugggvb&public_id=Exhibit_-_Intro_-_Kestral_z7ut3e&profile=cld-default&fluid=true&controls=true&muted=false&autoplay=false&loop=false&colors%5Baccent%5D=%2300eeff&colors%5Bbase%5D=%23000000&colors%5Btext%5D=%23ffffff&fontFace=Orbitron"
               style={{
                 width: '100%',
                 height: '100%',
                 position: 'absolute',
                 top: 0,
                 left: 0,
+                border: 'none',
               }}
               allow="autoplay; fullscreen; encrypted-media; picture-in-picture"
               allowFullScreen
               loading="lazy"
-              title="Kestral Introduction"
+              title="Kestral Introduction - Meet your AI curator for the Dreaming in Metal exhibition"
+              sandbox="allow-scripts allow-same-origin allow-presentation"
             />
           </div>
           <div className="mt-6">
